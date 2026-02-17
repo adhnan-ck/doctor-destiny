@@ -1,0 +1,389 @@
+---
+import DestinationCard from "./DestinationCard.jsx";
+import {
+  ArrowRight,
+  CheckCircle,
+  GraduationCap,
+  Globe,
+  Users,
+} from "lucide-react";
+import HeroBanner from "./HeroBanner";
+import WinningRecord from "./WinningRecord";
+import ServiceCards from "./ServiceCards.jsx";
+import WhyChooseUs from "./WhyChooseUs";
+import OurProcess from "./OurProcess";
+import TestimonialSection from "./TestimonialSection";
+---
+
+<div
+  class="relative bg-[#F0F7FF] min-h-screen shadow-[0_-20px_60px_rgba(0,0,0,0.1)] border-t border-white/50"
+>
+  <!-- About Section -->
+  <!-- <section class="max-w-6xl mx-auto px-6 pt-24 pb-16 text-center">
+    <span
+      class="inline-block py-1 px-3 rounded-full bg-[#D5AD36]/20 text-[#D5AD36] text-sm font-semibold mb-6 tracking-wide"
+    >
+      INDIA'S TOP CONSULTANT
+    </span>
+    <h2
+      class="text-4xl md:text-5xl font-bold text-[#0E0C4F] mb-8 leading-tight"
+    >
+      Top-Rated Consultant for Study <span class="text-[#00BFFF]"
+        >MBBS Abroad in India</span
+      >
+    </h2>
+    <p class="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
+      India's leading and most trusted consultants for MBBS abroad, guiding you
+      to a successful medical career with expertise and transparency
+    </p>
+
+    
+    <div class="grid grid-cols-2 md:grid-cols-4 gap-8 mt-16">
+      <div
+        class="p-6 bg-white rounded-2xl shadow-[0_4px_20px_rgba(0,0,0,0.08)] hover:shadow-[0_8px_30px_rgba(0,191,255,0.3)] transition-all duration-300"
+      >
+        <div class="text-[#00BFFF] mb-2 flex justify-center">
+          <Users size="32" />
+        </div>
+        <div class="text-3xl font-bold text-[#0E0C4F]">5000+</div>
+        <div class="text-sm text-gray-500 font-medium">Students Placed</div>
+      </div>
+      <div
+        class="p-6 bg-white rounded-2xl shadow-[0_4px_20px_rgba(0,0,0,0.08)] hover:shadow-[0_8px_30px_rgba(0,191,255,0.3)] transition-all duration-300"
+      >
+        <div class="text-[#00BFFF] mb-2 flex justify-center">
+          <GraduationCap size="32" />
+        </div>
+        <div class="text-3xl font-bold text-[#0E0C4F]">50+</div>
+        <div class="text-sm text-gray-500 font-medium">Universities</div>
+      </div>
+      <div
+        class="p-6 bg-white rounded-2xl shadow-[0_4px_20px_rgba(0,0,0,0.08)] hover:shadow-[0_8px_30px_rgba(0,191,255,0.3)] transition-all duration-300"
+      >
+        <div class="text-[#00BFFF] mb-2 flex justify-center">
+          <Globe size="32" />
+        </div>
+        <div class="text-3xl font-bold text-[#0E0C4F]">12+</div>
+        <div class="text-sm text-gray-500 font-medium">Countries</div>
+      </div>
+      <div
+        class="p-6 bg-white rounded-2xl shadow-[0_4px_20px_rgba(0,0,0,0.08)] hover:shadow-[0_8px_30px_rgba(213,173,54,0.3)] transition-all duration-300"
+      >
+        <div class="text-[#D5AD36] mb-2 flex justify-center">
+          <CheckCircle size="32" />
+        </div>
+        <div class="text-3xl font-bold text-[#0E0C4F]">100%</div>
+        <div class="text-sm text-gray-500 font-medium">Visa Success</div>
+      </div>
+    </div>
+  </section> -->
+
+  <!-- Content + Form Section -->
+  <section class="w-full bg-[#EBF2FA] py-16 px-6">
+    <div
+      class="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-12 items-center"
+    >
+      {/* Left Column: Content */}
+      <div class="text-left md:pr-10">
+        <h2
+          class="text-3xl md:text-5xl font-bold text-[#333] mb-6 leading-tight"
+        >
+          India's <span
+            class="text-[#0E0C4F] underline decoration-[#D5AD36] decoration-4 underline-offset-4"
+            >Leading and Most Trusted</span
+          > Consultants for MBBS Abroad
+        </h2>
+
+        <p class="text-lg text-gray-600 mb-8 leading-relaxed">
+          Achieve your dream of becoming a doctor with our Top-Rated MBBS Abroad
+          Consultant services! We guide Indian students towards a successful
+          medical career at prestigious universities across various major
+          countries like Russia, Georgia, Philippines, and China, Kyrgyzstan.
+          Our expert counsellors provide affordable and budget-friendly options,
+          ensuring a smooth and stress-free journey to becoming a medical
+          professional.
+        </p>
+
+        <div class="flex flex-col sm:flex-row gap-6 mt-8">
+          <div class="flex items-center gap-4">
+            <div class="bg-white p-3 rounded-full shadow-md text-[#D5AD36]">
+              <CheckCircle size="32" />
+            </div>
+            <div>
+              <p class="font-bold text-[#0E0C4F] text-lg">15+ Years</p>
+              <p class="text-gray-500 text-sm">Of Experience</p>
+            </div>
+          </div>
+
+          <div class="flex items-center gap-4">
+            <div class="bg-white p-3 rounded-full shadow-md text-[#D5AD36]">
+              <GraduationCap size="32" />
+            </div>
+            <div>
+              <p class="font-bold text-[#0E0C4F] text-lg">Award Winning</p>
+              <p class="text-gray-500 text-sm">Facilitators</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      {/* Right Column: Form Card */}
+      <div
+        class="bg-[#0E0C4F] p-8 md:p-10 rounded-3xl shadow-xl text-white relative overflow-hidden"
+      >
+        {/* Decorative background circle */}
+        <div
+          class="absolute -top-10 -right-10 w-32 h-32 bg-[#D5AD36] rounded-full opacity-20 blur-2xl pointer-events-none"
+        >
+        </div>
+
+        <h3
+          class="text-2xl md:text-3xl font-bold mb-6 text-center leading-snug"
+        >
+          Get Your <span class="text-[#D5AD36]">Blueprint</span> To <br /> MBBS Study
+          Abroad
+        </h3>
+
+        <form class="space-y-3 md:space-y-4">
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-3 md:gap-4">
+            <input
+              type="text"
+              placeholder="Full Name"
+              class="w-full px-4 py-2.5 md:py-3 rounded-xl bg-white/10 border border-white/20 text-white placeholder-gray-300 focus:outline-none focus:border-[#D5AD36] transition-colors"
+            />
+            <input
+              type="tel"
+              placeholder="Phone Number"
+              class="w-full px-4 py-2.5 md:py-3 rounded-xl bg-white/10 border border-white/20 text-white placeholder-gray-300 focus:outline-none focus:border-[#D5AD36] transition-colors"
+            />
+          </div>
+
+          <input
+            type="email"
+            placeholder="Email Address"
+            class="w-full px-4 py-2.5 md:py-3 rounded-xl bg-white/10 border border-white/20 text-white placeholder-gray-300 focus:outline-none focus:border-[#D5AD36] transition-colors"
+          />
+
+          <input
+            type="text"
+            placeholder="City / Address"
+            class="w-full px-4 py-2.5 md:py-3 rounded-xl bg-white/10 border border-white/20 text-white placeholder-gray-300 focus:outline-none focus:border-[#D5AD36] transition-colors"
+          />
+
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-3 md:gap-4">
+            <select
+              class="w-full px-4 py-2.5 md:py-3 rounded-xl bg-white/10 border border-white/20 text-white focus:outline-none focus:border-[#D5AD36] transition-colors appearance-none cursor-pointer"
+            >
+              <option value="" disabled selected class="text-gray-500"
+                >Select Course</option
+              >
+              <option value="mbbs" class="text-black">MBBS</option>
+              <option value="md-ms" class="text-black">MD-MS</option>
+              <option value="ms" class="text-black">MS</option>
+              <option value="bds" class="text-black">BDS</option>
+              <option value="bds" class="text-black">MDS</option>
+            </select>
+            <select
+              class="w-full px-4 py-2.5 md:py-3 rounded-xl bg-white/10 border border-white/20 text-white focus:outline-none focus:border-[#D5AD36] transition-colors appearance-none cursor-pointer"
+            >
+              <option value="" disabled selected class="text-gray-500"
+                >How did you hear about us?</option
+              >
+              <option value="facebook" class="text-black">FaceBook</option>
+              <option value="youtube" class="text-black">YouTube</option>
+              <option value="instagram" class="text-black">Instagram</option>
+              <option value="friends" class="text-black"
+                >Friends & Family</option
+              >
+              <option value="others" class="text-black">Others</option>
+            </select>
+          </div>
+
+          <div class="w-full">
+            <input
+              type="text"
+              placeholder="Country Preference, College, Budget, Facility"
+              class="w-full px-4 py-4 md:py-5 rounded-xl bg-white/10 border border-white/20 text-white placeholder-gray-300 focus:outline-none focus:border-[#D5AD36] transition-colors text-lg"
+            />
+          </div>
+
+          <button
+            class="w-full bg-[#d5ad36] hover:bg-[#d62f3a] text-white font-bold py-4 rounded-xl shadow-lg transform hover:-translate-y-1 transition-all duration-300 mt-2 text-lg"
+          >
+            Request A Callback
+          </button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- Destinations Grid (Bento Style) -->
+  <section class="max-w-7xl mx-auto px-6 py-16">
+    <div class="flex justify-between items-end mb-12">
+      <h2 class="text-3xl md:text-4xl font-bold text-[#0E0C4F]">
+        Top Countries for Study MBBS
+      </h2>
+
+      <a
+        href="#"
+        class="hidden md:flex items-center gap-2 text-[#D5AD36] font-semibold hover:text-[#D5AD36]/80 transition-colors"
+      >
+        View All Countries <ArrowRight size="20" />
+      </a>
+    </div>
+
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+      <!-- Russia - Featured -->
+      <!-- <DestinationCard
+        client:visible
+        country="Russia"
+        image="https://images.unsplash.com/photo-1513326738677-b964603b136d?w=800&q=80"
+        details="Top-ranked universities | Value for money"
+        span="md:col-span-2"
+      /> -->
+      <DestinationCard
+        client:visible
+        country="Russia"
+        image="https://images.unsplash.com/photo-1592316787160-c632fb8d2ce7?w=800&q=80"
+        details="European standard education"
+      />
+      <DestinationCard
+        client:visible
+        country="Georgia"
+        image="https://images.unsplash.com/photo-1592316787160-c632fb8d2ce7?w=800&q=80"
+        details="European standard education"
+      />
+      <DestinationCard
+        client:visible
+        country="Belarus"
+        image="https://images.unsplash.com/photo-1592316787160-c632fb8d2ce7?w=800&q=80"
+        details="European standard education"
+      />
+
+      <!-- Georgia -->
+      <DestinationCard
+        client:visible
+        country="China"
+        image="https://images.unsplash.com/photo-1592316787160-c632fb8d2ce7?w=800&q=80"
+        details="European standard education"
+      />
+
+      <!-- Philippines -->
+      <DestinationCard
+        client:visible
+        country="Philippines"
+        image="https://images.unsplash.com/photo-1580651315530-69c8e0026377?w=800&q=80"
+        details="US-based curriculum | English medium"
+      />
+
+      <!-- Kazakhstan -->
+      <DestinationCard
+        client:visible
+        country="Bangladesh"
+        image="https://images.unsplash.com/photo-1559827260-dc66d52bef19?w=800&q=80"
+        details="5-year course duration"
+      />
+
+      <!-- Kazakhstan -->
+      <DestinationCard
+        client:visible
+        country="Bosnia"
+        image="https://images.unsplash.com/photo-1559827260-dc66d52bef19?w=800&q=80"
+        details="5-year course duration"
+      />
+
+      <!-- Bangladesh -->
+      <DestinationCard
+        client:visible
+        country="Nepal"
+        image="https://images.unsplash.com/photo-1564507592333-c60657eea523?w=800&q=80"
+        details="Similar culture & climate to India"
+      />
+
+      <!-- Egypt -->
+      <DestinationCard
+        client:visible
+        country="Serbia"
+        image="https://images.unsplash.com/photo-1572252009286-268acec5ca0a?w=800&q=80"
+        details="Clinical exposure from year 1"
+      />
+
+      <!-- Uzbekistan -->
+      <!-- <DestinationCard
+        client:visible
+        country="Uzbekistan"
+        image="https://images.unsplash.com/photo-1596422846543-75c6fc197f07?w=800&q=80"
+        details="Emerging destination | Low cost"
+        span="md:col-span-2"
+      /> -->
+    </div>
+  </section>
+
+  <ServiceCards client:visible />
+  <WhyChooseUs client:visible />
+  <OurProcess client:visible />
+  <WinningRecord client:visible />
+  <TestimonialSection client:visible />
+  <!-- Footer / Contact -->
+  <footer class="bg-[#0E0C4F] text-white pt-20 pb-10 rounded-t-[3rem]">
+    <div class="max-w-7xl mx-auto px-6">
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-16">
+        <div>
+          <h3 class="text-2xl font-bold mb-6 text-[#D5AD36]">Doctor Destiny</h3>
+          <p class="text-gray-300 leading-relaxed">
+            Empowering aspiring doctors with the right guidance and
+            opportunities to study medicine globally.
+          </p>
+        </div>
+
+        <div>
+          <h4 class="text-lg font-bold mb-6 text-[#D5AD36]">Quick Links</h4>
+          <ul class="space-y-4 text-gray-300">
+            <li>
+              <a href="#" class="hover:text-[#00BFFF] transition-colors"
+                >About Us</a
+              >
+            </li>
+            <li>
+              <a href="#" class="hover:text-[#00BFFF] transition-colors"
+                >MBBS in Russia</a
+              >
+            </li>
+            <li>
+              <a href="#" class="hover:text-[#00BFFF] transition-colors"
+                >Services</a
+              >
+            </li>
+            <li>
+              <a href="#" class="hover:text-[#00BFFF] transition-colors"
+                >Contact</a
+              >
+            </li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="text-lg font-bold mb-6 text-[#D5AD36]">Offices</h4>
+          <p class="text-gray-300 mb-2">Bangalore (HQ)</p>
+          <p class="text-gray-300 mb-2">Chennai</p>
+          <p class="text-gray-300 mb-2">Davangere</p>
+          <p class="text-gray-300">Hubballi</p>
+        </div>
+
+        <div>
+          <h4 class="text-lg font-bold mb-6 text-[#D5AD36]">Contact Us</h4>
+          <p class="text-gray-300 mb-4">info@doctordestiny.in</p>
+          <button
+            class="bg-gradient-to-r from-[#D5AD36] to-[#f0c847] hover:shadow-[0_0_20px_rgba(213,173,54,0.6)] text-[#0E0C4F] px-6 py-3 rounded-xl w-full font-semibold transition-all duration-300 hover:scale-105"
+          >
+            Book Consultation
+          </button>
+        </div>
+      </div>
+
+      <div class="border-t border-white/10 pt-8 text-center text-gray-400">
+        <p>&copy; 2026 Doctor Destiny. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+</div>
