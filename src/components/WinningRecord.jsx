@@ -374,7 +374,7 @@ export default function WinningRecord() {
         }}
         className="text-center mb-16"
       >
-        <h2 className="text-4xl md:text-5xl font-bold text-gray-900">
+        <h2 className="text-4xl md:text-5xl font-bold text-[#0E0C4F]">
           Our Winning Record
         </h2>
         <div className="mt-3 mx-auto w-16 h-1 rounded-full bg-[#D5AD36]" />

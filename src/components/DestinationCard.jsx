@@ -1,6 +1,6 @@
 import { motion } from 'framer-motion';
 
-export default function DestinationCard({ country, image, details, span = '' }) {
+export default function DestinationCard({ country, image, flag, span = '' }) {
     return (
         <motion.div
             whileHover={{ y: -5 }}
@@ -11,18 +11,25 @@ export default function DestinationCard({ country, image, details, span = '' }) 
             className={`relative overflow-hidden rounded-2xl shadow-xl group cursor-pointer h-72 ${span}`}
         >
             {/* Background Image */}
-            <div
-                className="absolute inset-0 bg-cover bg-center transition-transform duration-700 group-hover:scale-110"
-                style={{ backgroundImage: `url(${image})` }}
+            <img
+                src={image}
+                alt={country}
+                className="absolute inset-0 w-full h-full object-cover object-center transition-transform duration-700 group-hover:scale-110"
             />
 
             {/* Overlay Gradient */}
             <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent" />
 
+            {/* Flag Badge — top right */}
+            {flag && (
+                <div className="absolute top-3 right-3 z-10 shadow-lg rounded-md overflow-hidden border border-white/30" style={{ width: '36px', height: '24px' }}>
+                    <span className={`fi fi-${flag}`} style={{ width: '100%', height: '100%', display: 'block', backgroundSize: 'cover' }} />
+                </div>
+            )}
+
             {/* Content */}
             <div className="absolute bottom-0 left-0 right-0 p-6 text-white">
                 <h3 className="text-2xl font-bold mb-1">{country}</h3>
-                <p className="text-sm font-medium text-gray-200 opacity-90">{details}</p>
 
                 {/* Action Button (Hidden until hover) */}
                 <div className="h-0 overflow-hidden group-hover:h-10 transition-all duration-300 mt-0 group-hover:mt-3">

@@ -40,7 +40,7 @@ const WhyChooseUs = () => {
             <div className="max-w-7xl mx-auto px-6">
 
                 {/* Section Title */}
-                <h2 className="text-3xl md:text-4xl font-bold mb-12">
+                <h2 className="text-4xl md:text-5xl font-bold text-center mb-12">
                     Why Choose Us?
                 </h2>
 

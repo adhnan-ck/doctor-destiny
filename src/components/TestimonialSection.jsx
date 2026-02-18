@@ -5,7 +5,7 @@ const testimonials = [
         name: "Pranitha",
         university: "Crimean Federal University",
         country: "Russia 🇷🇺",
-        quote: "I am glad to share the journey with DOCTOR DREAMS which was a very positive one. The atmosphere is very professional as they pay attention to all matters and brought it to our knowledge.",
+        quote: "I am glad to share the journey with DOCTOR DESTINY which was a very positive one. The atmosphere is very professional as they pay attention to all matters and brought it to our knowledge.",
         initials: "PR",
         color: "#2563EB",
     },
@@ -13,7 +13,7 @@ const testimonials = [
         name: "Sagar R G",
         university: "Orel State Medical University",
         country: "Russia 🇷🇺",
-        quote: "Thanks to Doctor Dreams, I am now studying at my dream university in Russia. Their consultants were incredibly knowledgeable and helpful throughout the entire process.",
+        quote: "Thanks to Doctor Destiny, I am now studying at my dream university in Russia. Their consultants were incredibly knowledgeable and helpful throughout the entire process.",
         initials: "SA",
         color: "#1D4ED8",
     },
@@ -29,7 +29,7 @@ const testimonials = [
         name: "Ashwini",
         university: "Altai State Medical University",
         country: "Russia 🇷🇺",
-        quote: "I always had a high aspiration to pursue my career in Medicine. I approached Doctor Dreams and on the first instant they gave me complete confidence and a clear roadmap.",
+        quote: "I always had a high aspiration to pursue my career in Medicine. I approached Doctor Destiny and on the first instant they gave me complete confidence and a clear roadmap.",
         initials: "AS",
         color: "#0EA5E9",
     }
@@ -139,14 +139,7 @@ export default function TestimonialSection() {
                     }}>
                         Student Stories
                     </span>
-                    <h2 style={{
-                        fontSize: 'clamp(26px, 4vw, 42px)',
-                        fontWeight: 800,
-                        color: '#0F172A',
-                        margin: '0 0 16px',
-                        lineHeight: 1.2,
-                        letterSpacing: '-0.5px',
-                    }}>
+                    <h2 className="text-4xl md:text-5xl font-bold text-center text-[#0E0C4F]" style={{ lineHeight: 1.2 }}>
                         What Our Students{' '}
                         <span style={{
                             background: 'linear-gradient(135deg, #2563EB, #60A5FA)',

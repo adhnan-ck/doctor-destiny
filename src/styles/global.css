@@ -46,4 +46,50 @@ body {
 
 ::-webkit-scrollbar-thumb:hover {
     background: linear-gradient(180deg, #f0c847, #00BFFF);
+    border-radius: 5px;
+}
+
+/* Shimmer sweep effect for CTA buttons */
+@keyframes shimmer {
+    0% {
+        background-position: -200% 0;
+    }
+
+    100% {
+        background-position: 200% 0;
+    }
+}
+
+@keyframes glowPulse {
+
+    0%,
+    100% {
+        box-shadow: 0 0 15px rgba(213, 173, 54, 0.3), 0 0 30px rgba(213, 173, 54, 0.1);
+    }
+
+    50% {
+        box-shadow: 0 0 20px rgba(213, 173, 54, 0.5), 0 0 40px rgba(213, 173, 54, 0.2);
+    }
+}
+
+.btn-shimmer {
+    position: relative;
+    overflow: hidden;
+    animation: glowPulse 3s ease-in-out infinite;
+}
+
+.btn-shimmer::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(110deg,
+            transparent 25%,
+            rgba(255, 255, 255, 0.25) 45%,
+            rgba(255, 255, 255, 0.35) 50%,
+            rgba(255, 255, 255, 0.25) 55%,
+            transparent 75%);
+    background-size: 200% 100%;
+    animation: shimmer 3s ease-in-out infinite;
+    pointer-events: none;
+    border-radius: inherit;
 }

@@ -51,7 +51,7 @@ const OurProcess = () => {
 
                     {/* Left Side - Process Steps */}
                     <div>
-                        <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-12">
+                        <h2 className="text-4xl md:text-5xl font-bold text-[#0E0C4F] text-center mb-12">
                             Our Process
                         </h2>
 
