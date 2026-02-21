@@ -112,7 +112,7 @@ const OurProcess = () => {
                                 }}
                             >
                                 <img
-                                    src="/student-image.png"
+                                    src="/mbbs.avif"
                                     alt="Student with books"
                                     className="w-full h-full object-cover"
                                 />
