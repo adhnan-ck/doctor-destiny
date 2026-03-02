@@ -60,7 +60,7 @@ const Navbar = () => {
                 {/* Logo */}
                 <a href="/" className="flex items-center gap-2">
                     <img src="/logo2.png" alt="Doctor Dreams Logo" className="h-12 w-auto" />
-                    <span className={`font-bold text-xl md:text-2xl tracking-wide transition-colors ${scrolled ? 'text-[#0E0C4F]' : 'text-white'
+                    <span className={`font-trajan font-bold text-lg md:text-2xl tracking-widest transition-colors ${scrolled ? 'text-[#0E0C4F]' : 'text-white'
                         }`}>
                         DOCTOR DESTINY
                     </span>

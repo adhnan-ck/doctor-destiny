@@ -232,306 +232,331 @@ import TestimonialSection from "./TestimonialSection";
       <h2 class="text-4xl md:text-5xl font-bold text-[#0E0C4F]">
         Top Countries for Study MBBS
       </h2>
-
-      <a
-        href="#"
-        class="hidden md:flex items-center gap-2 text-[#D5AD36] font-semibold hover:text-[#D5AD36]/80 transition-colors"
-      >
-        View All Countries <ArrowRight size="20" />
-      </a>
+    </div>
+    <!-- Cards grid -->
+    <div
+      id="countries-grid"
+      class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-6"
+    >
+      {
+        [
+          {
+            country: "Timor Leste",
+            image: "/countries/timorleste.jpg",
+            flag: "tl",
+          },
+          { country: "Russia", image: "/countries/russia.jpg", flag: "ru" },
+          { country: "Georgia", image: "/countries/georgia.avif", flag: "ge" },
+          { country: "India", image: "/countries/india.jpg", flag: "in" },
+          { country: "Europe", image: "/countries/europe.jpg", flag: "eu" },
+          {
+            country: "UK and USA",
+            image: "/countries/belarus.avif",
+            flag: "gb",
+          },
+          { country: "Germany", image: "/countries/germany.jpg", flag: "de" },
+          {
+            country: "Kyrgyzstan",
+            image: "/countries/krygystan.jpg",
+            flag: "kg",
+          },
+          { country: "Nepal", image: "/countries/nepal.avif", flag: "np" },
+          { country: "China", image: "/countries/china.jpg", flag: "cn" },
+          {
+            country: "Australia",
+            image: "/countries/australia.jpg",
+            flag: "au",
+          },
+          {
+            country: "Kazakhstan",
+            image: "/countries/kazakhstan.jpg",
+            flag: "kz",
+          },
+          {
+            country: "Uzbekistan",
+            image: "/countries/uzbekistan.jpg",
+            flag: "uz",
+          },
+          {
+            country: "Bangladesh",
+            image: "/countries/bangladesh.avif",
+            flag: "bd",
+          },
+          {
+            country: "Mauritius",
+            image: "/countries/mauritius.jpg",
+            flag: "mu",
+          },
+          {
+            country: "Philippines",
+            image: "/countries/philippines.avif",
+            flag: "ph",
+          },
+        ].map((item, index) => (
+          <div class={index >= 8 ? "mobile-hidden md:block" : ""}>
+            <DestinationCard
+              client:visible
+              country={item.country}
+              image={item.image}
+              flag={item.flag}
+            />
+          </div>
+        ))
+      }
     </div>
 
-    <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
-      <!-- Russia - Featured -->
-      <!-- <DestinationCard
-        client:visible
-        country="Russia"
-        image="https://images.unsplash.com/photo-1513326738677-b964603b136d?w=800&q=80"
-        details="Top-ranked universities | Value for money"
-        span="md:col-span-2"
-      /> -->
-      <DestinationCard
-        client:visible
-        country="Russia"
-        image="/countries/russia.jpg"
-        flag="ru"
-      />
-      <DestinationCard
-        client:visible
-        country="Georgia"
-        image="/countries/georgia.avif"
-        flag="ge"
-      />
-      <DestinationCard
-        client:visible
-        country="Belarus"
-        image="/countries/belarus.avif"
-        flag="by"
-      />
-
-      <!-- Georgia -->
-      <DestinationCard
-        client:visible
-        country="China"
-        image="/countries/china.avif"
-        flag="cn"
-      />
-
-      <!-- Philippines -->
-      <DestinationCard
-        client:visible
-        country="Philippines"
-        image="/countries/philippines.avif"
-        flag="ph"
-      />
-
-      <!-- Kazakhstan -->
-      <DestinationCard
-        client:visible
-        country="Bangladesh"
-        image="/countries/bangladesh.avif"
-        flag="bd"
-      />
-
-      <!-- Kazakhstan -->
-      <DestinationCard
-        client:visible
-        country="Bosnia"
-        image="/countries/bosnia.avif"
-        flag="ba"
-      />
-
-      <!-- Bangladesh -->
-      <DestinationCard
-        client:visible
-        country="Nepal"
-        image="/countries/nepal.avif"
-        flag="np"
-      />
-
-      <!-- Egypt -->
-      <DestinationCard
-        client:visible
-        country="Serbia"
-        image="/countries/serbia.avif"
-        flag="rs"
-      />
-
-      <!-- Uzbekistan -->
-      <!-- <DestinationCard
-        client:visible
-        country="Uzbekistan"
-        image="https://images.unsplash.com/photo-1596422846543-75c6fc197f07?w=800&q=80"
-        details="Emerging destination | Low cost"
-        span="md:col-span-2"
-      /> -->
+    <!-- Show More button — mobile only -->
+    <div class="flex justify-center mt-8 md:hidden">
+      <button
+        id="show-more-btn"
+        class="flex items-center gap-2 bg-[#0E0C4F] text-white px-6 py-3 rounded-full font-semibold hover:bg-[#0E0C4F]/90 transition-all"
+      >
+        Show More <span
+          id="show-more-icon"
+          class="transition-transform duration-300">↓</span
+        >
+      </button>
     </div>
   </section>
-
-  <ServiceCards client:visible />
-  <WhyChooseUs client:visible />
-  <OurProcess client:visible />
-  <WinningRecord client:visible />
-  <TestimonialSection client:visible />
-  <!-- Footer / Contact -->
-  <footer
-    class="bg-[#0E0C4F] text-white pt-20 pb-10 rounded-t-[3rem]"
-    style="position:relative; overflow:hidden;"
-  >
-    <!-- MBBS-themed decorative background icons -->
-    <div
-      style="position:absolute;inset:0;pointer-events:none;z-index:0;overflow:hidden;"
-      aria-hidden="true"
-    >
-      <!-- Stethoscope — top left -->
-      <svg
-        style="position:absolute;top:-10px;left:-20px;width:220px;height:220px;opacity:0.055;"
-        viewBox="0 0 24 24"
-        fill="none"
-        stroke="white"
-        stroke-width="0.8"
-      >
-        <path d="M4.5 2h3a1 1 0 0 1 1 1v5a4 4 0 0 1-8 0V3a1 1 0 0 1 1-1z"
-        ></path>
-        <path d="M8 11a6 6 0 0 0 6 6 6 6 0 0 0 6-6v-1"></path>
-        <circle cx="20" cy="10" r="2"></circle>
-      </svg>
-
-      <!-- Medical Cross — top center -->
-      <svg
-        style="position:absolute;top:20px;left:50%;transform:translateX(-50%);width:110px;height:110px;opacity:0.04;"
-        viewBox="0 0 24 24"
-        fill="white"
-      >
-        <rect x="9" y="2" width="6" height="20" rx="1.5"></rect>
-        <rect x="2" y="9" width="20" height="6" rx="1.5"></rect>
-      </svg>
-
-      <!-- Globe — top right -->
-      <svg
-        style="position:absolute;top:-30px;right:-30px;width:240px;height:240px;opacity:0.055;"
-        viewBox="0 0 24 24"
-        fill="none"
-        stroke="white"
-        stroke-width="0.7"
-      >
-        <circle cx="12" cy="12" r="10"></circle>
-        <ellipse cx="12" cy="12" rx="4" ry="10"></ellipse>
-        <line x1="2" y1="12" x2="22" y2="12"></line>
-        <line x1="12" y1="2" x2="12" y2="22"></line>
-      </svg>
-
-      <!-- Heartbeat / ECG line — mid left -->
-      <svg
-        style="position:absolute;top:40%;left:0;width:280px;height:80px;opacity:0.06;"
-        viewBox="0 0 100 30"
-        fill="none"
-        stroke="white"
-        stroke-width="1.2"
-      >
-        <polyline
-          points="0,15 15,15 20,5 25,25 30,13 35,13 45,15 55,15 60,3 65,27 70,12 75,12 90,15 100,15"
-        ></polyline>
-      </svg>
-
-      <!-- DNA double helix — mid right -->
-      <svg
-        style="position:absolute;top:30%;right:-10px;width:90px;height:180px;opacity:0.055;"
-        viewBox="0 0 24 60"
-        fill="none"
-        stroke="white"
-        stroke-width="0.9"
-      >
-        <path d="M4 2 Q12 10 20 18 Q12 26 4 34 Q12 42 20 50 Q12 58 4 66"></path>
-        <path d="M20 2 Q12 10 4 18 Q12 26 20 34 Q12 42 4 50 Q12 58 20 66"
-        ></path>
-        <line x1="8" y1="10" x2="16" y2="10"></line>
-        <line x1="8" y1="26" x2="16" y2="26"></line>
-        <line x1="8" y1="42" x2="16" y2="42"></line>
-        <line x1="8" y1="58" x2="16" y2="58"></line>
-      </svg>
-
-      <!-- Graduation Cap — bottom left -->
-      <svg
-        style="position:absolute;bottom:-20px;left:8%;width:180px;height:180px;opacity:0.05;"
-        viewBox="0 0 24 24"
-        fill="none"
-        stroke="white"
-        stroke-width="0.8"
-      >
-        <path d="M22 10l-10-5-10 5 10 5 10-5z"></path>
-        <path d="M6 12v5c0 2 2 3 6 3s6-1 6-3v-5"></path>
-        <line x1="22" y1="10" x2="22" y2="16"></line>
-      </svg>
-
-      <!-- Pill capsule — bottom center-right -->
-      <svg
-        style="position:absolute;bottom:30px;right:25%;width:120px;height:60px;opacity:0.05;"
-        viewBox="0 0 60 24"
-        fill="none"
-        stroke="white"
-        stroke-width="1"
-      >
-        <rect x="2" y="8" width="56" height="8" rx="4"></rect>
-        <line x1="30" y1="8" x2="30" y2="16"></line>
-      </svg>
-
-      <!-- Small scattered medical cross — bottom right -->
-      <svg
-        style="position:absolute;bottom:-10px;right:-10px;width:160px;height:160px;opacity:0.04;"
-        viewBox="0 0 24 24"
-        fill="white"
-      >
-        <rect x="9" y="2" width="6" height="20" rx="1"></rect>
-        <rect x="2" y="9" width="20" height="6" rx="1"></rect>
-      </svg>
-
-      <!-- Tiny star/sparkle accents -->
-      <svg
-        style="position:absolute;top:22%;left:38%;width:18px;height:18px;opacity:0.1;"
-        viewBox="0 0 24 24"
-        fill="#D5AD36"
-      >
-        <polygon points="12,2 14,9 22,9 16,14 18,21 12,17 6,21 8,14 2,9 10,9"
-        ></polygon>
-      </svg>
-      <svg
-        style="position:absolute;top:60%;left:55%;width:14px;height:14px;opacity:0.09;"
-        viewBox="0 0 24 24"
-        fill="#D5AD36"
-      >
-        <polygon points="12,2 14,9 22,9 16,14 18,21 12,17 6,21 8,14 2,9 10,9"
-        ></polygon>
-      </svg>
-      <svg
-        style="position:absolute;top:12%;right:35%;width:16px;height:16px;opacity:0.08;"
-        viewBox="0 0 24 24"
-        fill="#D5AD36"
-      >
-        <polygon points="12,2 14,9 22,9 16,14 18,21 12,17 6,21 8,14 2,9 10,9"
-        ></polygon>
-      </svg>
-    </div>
-
-    <!-- Footer Content (above background icons) -->
-    <div class="max-w-7xl mx-auto px-6" style="position:relative;z-index:1;">
-      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-16">
-        <div>
-          <h3 class="text-2xl font-bold mb-6 text-[#D5AD36]">Doctor Destiny</h3>
-          <p class="text-gray-300 leading-relaxed">
-            Empowering aspiring doctors with the right guidance and
-            opportunities to study medicine globally.
-          </p>
-        </div>
-
-        <div>
-          <h4 class="text-lg font-bold mb-6 text-[#D5AD36]">Quick Links</h4>
-          <ul class="space-y-4 text-gray-300">
-            <li>
-              <a href="#" class="hover:text-[#00BFFF] transition-colors"
-                >About Us</a
-              >
-            </li>
-            <li>
-              <a href="#" class="hover:text-[#00BFFF] transition-colors"
-                >MBBS in Russia</a
-              >
-            </li>
-            <li>
-              <a href="#" class="hover:text-[#00BFFF] transition-colors"
-                >Services</a
-              >
-            </li>
-            <li>
-              <a href="#" class="hover:text-[#00BFFF] transition-colors"
-                >Contact</a
-              >
-            </li>
-          </ul>
-        </div>
-
-        <div>
-          <h4 class="text-lg font-bold mb-6 text-[#D5AD36]">Offices</h4>
-          <p class="text-gray-300 mb-2">Bangalore (HQ)</p>
-          <p class="text-gray-300 mb-2">Chennai</p>
-          <p class="text-gray-300 mb-2">Davangere</p>
-          <p class="text-gray-300">Hubballi</p>
-        </div>
-
-        <div>
-          <h4 class="text-lg font-bold mb-6 text-[#D5AD36]">Contact Us</h4>
-          <p class="text-gray-300 mb-4">info@doctordestiny.in</p>
-          <button
-            class="bg-gradient-to-r from-[#D5AD36] to-[#f0c847] hover:shadow-[0_0_20px_rgba(213,173,54,0.6)] text-[#0E0C4F] px-6 py-3 rounded-xl w-full font-semibold transition-all duration-300 hover:scale-105"
-          >
-            Book Consultation
-          </button>
-        </div>
-      </div>
-
-      <div class="border-t border-white/10 pt-8 text-center text-gray-400">
-        <p>&copy; 2026 Doctor Destiny. All rights reserved.</p>
-      </div>
-    </div>
-  </footer>
 </div>
+
+<ServiceCards client:visible />
+<WhyChooseUs client:visible />
+<OurProcess client:visible />
+<WinningRecord client:visible />
+<TestimonialSection client:visible />
+<!-- Footer / Contact -->
+<footer
+  class="bg-[#0E0C4F] text-white pt-20 pb-10 rounded-t-[3rem]"
+  style="position:relative; overflow:hidden;"
+>
+  <!-- MBBS-themed decorative background icons -->
+  <div
+    style="position:absolute;inset:0;pointer-events:none;z-index:0;overflow:hidden;"
+    aria-hidden="true"
+  >
+    <!-- Stethoscope — top left -->
+    <svg
+      style="position:absolute;top:-10px;left:-20px;width:220px;height:220px;opacity:0.055;"
+      viewBox="0 0 24 24"
+      fill="none"
+      stroke="white"
+      stroke-width="0.8"
+    >
+      <path d="M4.5 2h3a1 1 0 0 1 1 1v5a4 4 0 0 1-8 0V3a1 1 0 0 1 1-1z"></path>
+      <path d="M8 11a6 6 0 0 0 6 6 6 6 0 0 0 6-6v-1"></path>
+      <circle cx="20" cy="10" r="2"></circle>
+    </svg>
+
+    <!-- Medical Cross — top center -->
+    <svg
+      style="position:absolute;top:20px;left:50%;transform:translateX(-50%);width:110px;height:110px;opacity:0.04;"
+      viewBox="0 0 24 24"
+      fill="white"
+    >
+      <rect x="9" y="2" width="6" height="20" rx="1.5"></rect>
+      <rect x="2" y="9" width="20" height="6" rx="1.5"></rect>
+    </svg>
+
+    <!-- Globe — top right -->
+    <svg
+      style="position:absolute;top:-30px;right:-30px;width:240px;height:240px;opacity:0.055;"
+      viewBox="0 0 24 24"
+      fill="none"
+      stroke="white"
+      stroke-width="0.7"
+    >
+      <circle cx="12" cy="12" r="10"></circle>
+      <ellipse cx="12" cy="12" rx="4" ry="10"></ellipse>
+      <line x1="2" y1="12" x2="22" y2="12"></line>
+      <line x1="12" y1="2" x2="12" y2="22"></line>
+    </svg>
+
+    <!-- Heartbeat / ECG line — mid left -->
+    <svg
+      style="position:absolute;top:40%;left:0;width:280px;height:80px;opacity:0.06;"
+      viewBox="0 0 100 30"
+      fill="none"
+      stroke="white"
+      stroke-width="1.2"
+    >
+      <polyline
+        points="0,15 15,15 20,5 25,25 30,13 35,13 45,15 55,15 60,3 65,27 70,12 75,12 90,15 100,15"
+      ></polyline>
+    </svg>
+
+    <!-- DNA double helix — mid right -->
+    <svg
+      style="position:absolute;top:30%;right:-10px;width:90px;height:180px;opacity:0.055;"
+      viewBox="0 0 24 60"
+      fill="none"
+      stroke="white"
+      stroke-width="0.9"
+    >
+      <path d="M4 2 Q12 10 20 18 Q12 26 4 34 Q12 42 20 50 Q12 58 4 66"></path>
+      <path d="M20 2 Q12 10 4 18 Q12 26 20 34 Q12 42 4 50 Q12 58 20 66"></path>
+      <line x1="8" y1="10" x2="16" y2="10"></line>
+      <line x1="8" y1="26" x2="16" y2="26"></line>
+      <line x1="8" y1="42" x2="16" y2="42"></line>
+      <line x1="8" y1="58" x2="16" y2="58"></line>
+    </svg>
+
+    <!-- Graduation Cap — bottom left -->
+    <svg
+      style="position:absolute;bottom:-20px;left:8%;width:180px;height:180px;opacity:0.05;"
+      viewBox="0 0 24 24"
+      fill="none"
+      stroke="white"
+      stroke-width="0.8"
+    >
+      <path d="M22 10l-10-5-10 5 10 5 10-5z"></path>
+      <path d="M6 12v5c0 2 2 3 6 3s6-1 6-3v-5"></path>
+      <line x1="22" y1="10" x2="22" y2="16"></line>
+    </svg>
+
+    <!-- Pill capsule — bottom center-right -->
+    <svg
+      style="position:absolute;bottom:30px;right:25%;width:120px;height:60px;opacity:0.05;"
+      viewBox="0 0 60 24"
+      fill="none"
+      stroke="white"
+      stroke-width="1"
+    >
+      <rect x="2" y="8" width="56" height="8" rx="4"></rect>
+      <line x1="30" y1="8" x2="30" y2="16"></line>
+    </svg>
+
+    <!-- Small scattered medical cross — bottom right -->
+    <svg
+      style="position:absolute;bottom:-10px;right:-10px;width:160px;height:160px;opacity:0.04;"
+      viewBox="0 0 24 24"
+      fill="white"
+    >
+      <rect x="9" y="2" width="6" height="20" rx="1"></rect>
+      <rect x="2" y="9" width="20" height="6" rx="1"></rect>
+    </svg>
+
+    <!-- Tiny star/sparkle accents -->
+    <svg
+      style="position:absolute;top:22%;left:38%;width:18px;height:18px;opacity:0.1;"
+      viewBox="0 0 24 24"
+      fill="#D5AD36"
+    >
+      <polygon points="12,2 14,9 22,9 16,14 18,21 12,17 6,21 8,14 2,9 10,9"
+      ></polygon>
+    </svg>
+    <svg
+      style="position:absolute;top:60%;left:55%;width:14px;height:14px;opacity:0.09;"
+      viewBox="0 0 24 24"
+      fill="#D5AD36"
+    >
+      <polygon points="12,2 14,9 22,9 16,14 18,21 12,17 6,21 8,14 2,9 10,9"
+      ></polygon>
+    </svg>
+    <svg
+      style="position:absolute;top:12%;right:35%;width:16px;height:16px;opacity:0.08;"
+      viewBox="0 0 24 24"
+      fill="#D5AD36"
+    >
+      <polygon points="12,2 14,9 22,9 16,14 18,21 12,17 6,21 8,14 2,9 10,9"
+      ></polygon>
+    </svg>
+  </div>
+
+  <!-- Footer Content (above background icons) -->
+  <div class="max-w-7xl mx-auto px-6" style="position:relative;z-index:1;">
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-16">
+      <div>
+        <h3 class="text-2xl font-bold mb-6 text-[#D5AD36]">Doctor Destiny</h3>
+        <p class="text-gray-300 leading-relaxed">
+          Empowering aspiring doctors with the right guidance and opportunities
+          to study medicine globally.
+        </p>
+      </div>
+
+      <div>
+        <h4 class="text-lg font-bold mb-6 text-[#D5AD36]">Quick Links</h4>
+        <ul class="space-y-4 text-gray-300">
+          <li>
+            <a href="#" class="hover:text-[#00BFFF] transition-colors"
+              >About Us</a
+            >
+          </li>
+          <li>
+            <a href="#" class="hover:text-[#00BFFF] transition-colors"
+              >MBBS in Russia</a
+            >
+          </li>
+          <li>
+            <a href="#" class="hover:text-[#00BFFF] transition-colors"
+              >Services</a
+            >
+          </li>
+          <li>
+            <a href="#" class="hover:text-[#00BFFF] transition-colors"
+              >Contact</a
+            >
+          </li>
+        </ul>
+      </div>
+
+      <div>
+        <h4 class="text-lg font-bold mb-6 text-[#D5AD36]">Offices</h4>
+        <p class="text-gray-300 mb-2">Bangalore (HQ)</p>
+        <p class="text-gray-300 mb-2">Chennai</p>
+        <p class="text-gray-300 mb-2">Davangere</p>
+        <p class="text-gray-300">Hubballi</p>
+      </div>
+
+      <div>
+        <h4 class="text-lg font-bold mb-6 text-[#D5AD36]">Contact Us</h4>
+        <p class="text-gray-300 mb-4">info@doctordestiny.com</p>
+        <button
+          class="bg-gradient-to-r from-[#D5AD36] to-[#f0c847] hover:shadow-[0_0_20px_rgba(213,173,54,0.6)] text-[#0E0C4F] px-6 py-3 rounded-xl w-full font-semibold transition-all duration-300 hover:scale-105"
+        >
+          Book Consultation
+        </button>
+      </div>
+    </div>
+
+    <div class="border-t border-white/10 pt-8 text-center text-gray-400">
+      <p>&copy; 2026 Doctor Destiny. All rights reserved.</p>
+    </div>
+  </div>
+</footer>
+
+<style>
+  .mobile-hidden {
+    display: none;
+  }
+  @media (min-width: 768px) {
+    .mobile-hidden {
+      display: block;
+    }
+  }
+</style>
+
+<script>
+  const btn = document.getElementById("show-more-btn");
+  const icon = document.getElementById("show-more-icon");
+  const hiddenCards = document.querySelectorAll(".mobile-hidden");
+  let expanded = false;
+
+  btn?.addEventListener("click", () => {
+    expanded = !expanded;
+
+    hiddenCards.forEach((card) => {
+      if (expanded) {
+        card.classList.remove("mobile-hidden");
+        card.classList.add("mobile-visible");
+      } else {
+        card.classList.add("mobile-hidden");
+        card.classList.remove("mobile-visible");
+      }
+    });
+
+    btn.innerHTML = expanded
+      ? `Show Less <span style="display:inline-block; transform: rotate(180deg)">↓</span>`
+      : `Show More <span>↓</span>`;
+  });
+</script>

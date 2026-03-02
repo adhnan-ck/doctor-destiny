@@ -8,7 +8,7 @@ export default function DestinationCard({ country, image, flag, span = '' }) {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true, margin: "-50px" }}
             transition={{ duration: 0.5 }}
-            className={`relative overflow-hidden rounded-2xl shadow-xl group cursor-pointer h-72 ${span}`}
+            className={`relative overflow-hidden rounded-2xl shadow-xl group cursor-pointer h-44 sm:h-56 lg:h-72 ${span}`}
         >
             {/* Background Image */}
             <img
@@ -28,8 +28,8 @@ export default function DestinationCard({ country, image, flag, span = '' }) {
             )}
 
             {/* Content */}
-            <div className="absolute bottom-0 left-0 right-0 p-6 text-white">
-                <h3 className="text-2xl font-bold mb-1">{country}</h3>
+            <div className="absolute bottom-0 left-0 right-0 p-3 sm:p-4 lg:p-6 text-white">
+                <h3 className="text-base sm:text-xl lg:text-2xl font-bold mb-1">{country}</h3>
 
                 {/* Action Button (Hidden until hover) */}
                 <div className="h-0 overflow-hidden group-hover:h-10 transition-all duration-300 mt-0 group-hover:mt-3">

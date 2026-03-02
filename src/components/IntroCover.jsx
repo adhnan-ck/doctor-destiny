@@ -79,7 +79,7 @@ export default function IntroCover() {
                     className="flex flex-col sm:flex-row gap-4 mt-10 pointer-events-auto"
                 >
                     <a
-                        href="tel:+919876543210"
+                        href="tel:+919071100445"
                         className="btn-shimmer flex items-center gap-3 px-7 py-3.5 rounded-full font-semibold text-sm tracking-wide transition-all duration-300 hover:scale-105 hover:brightness-110"
                         style={{
                             backgroundColor: '#D5AD36',
@@ -91,7 +91,7 @@ export default function IntroCover() {
                     </a>
 
                     <a
-                        href="mailto:info@doctordreams.com"
+                        href="mailto:admissions@doctordestiny.com"
                         className="btn-shimmer flex items-center gap-3 px-7 py-3.5 rounded-full font-semibold text-sm tracking-wide transition-all duration-300 hover:scale-105 hover:brightness-110"
                         style={{
                             backgroundColor: 'transparent',
