@@ -1,0 +1,674 @@
+---
+import "../styles/global.css";
+import "flag-icons/css/flag-icons.min.css";
+import Navbar from "../components/Navbar.jsx";
+import CountryLayout from "../components/CountryLayout.astro";
+---
+
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&display=swap"
+            rel="stylesheet"
+        />
+        <meta
+            name="description"
+            content="Study MBBS in Georgia — Affordable fees, globally recognized universities, and expert guidance from Doctor Destiny."
+        />
+        <title>Study MBBS in Georgia | Doctor Destiny</title>
+    </head>
+    <body class="bg-[#F0F7FF] overflow-x-hidden">
+        <Navbar client:load />
+
+        <!-- Page Hero -->
+        <div class="bg-[#0E0C4F] pt-28 pb-16 px-6">
+            <div class="max-w-5xl mx-auto text-center">
+                <span
+                    class="inline-block py-1 px-4 rounded-full bg-white/10 text-[#D5AD36] text-sm font-bold mb-4 tracking-widest uppercase"
+                >
+                    Study Abroad
+                </span>
+                <h1
+                    class="text-4xl md:text-6xl font-extrabold text-white leading-tight mb-4"
+                >
+                    Study MBBS in <span class="text-[#00BFFF]">Georgia</span>
+                </h1>
+                <p
+                    class="text-lg text-gray-300 max-w-2xl mx-auto leading-relaxed"
+                >
+                    Georgia has emerged as one of the most popular destinations
+                    for Indian students aspiring to pursue MBBS abroad with
+                    affordable tuition and globally recognized medical
+                    universities.
+                </p>
+            </div>
+        </div>
+
+        <!-- Country Layout (3-column) -->
+        <CountryLayout
+            countryName="Georgia"
+            navItems={[
+                { label: "MBBS Duration in Georgia", id: "duration" },
+                {
+                    label: "Medical Universities in Georgia",
+                    id: "universities",
+                },
+                { label: "Admission Process for MBBS", id: "admission" },
+                { label: "MBBS Tuition Fees in Georgia", id: "fees" },
+                { label: "Fee Structure for MBBS", id: "fee-structure" },
+                {
+                    label: "MBBS Curriculum in Georgian Universities",
+                    id: "curriculum",
+                },
+                {
+                    label: "MBBS Program Duration in Georgia",
+                    id: "program-duration",
+                },
+                { label: "Documents Required for Visa", id: "documents" },
+            ]}
+            faqs={[
+                {
+                    question:
+                        "Is MBBS in Georgia recognized by NMC (formerly MCI)?",
+                    answer: "Yes, several Georgian medical universities are recognized by NMC (National Medical Commission), WHO, and other international bodies. Graduates are eligible to appear for FMGE/NEXT exam in India.",
+                },
+                {
+                    question:
+                        "What is the medium of instruction for MBBS in Georgia?",
+                    answer: "The medium of instruction for MBBS in Georgia is English, making it convenient for Indian students. No additional language course is required during the initial years.",
+                },
+                {
+                    question:
+                        "What is the total cost of studying MBBS in Georgia?",
+                    answer: "The total cost of MBBS in Georgia ranges from ₹20-35 Lakhs for the entire 6-year program, including tuition fees. Living expenses are approximately $200-$350 per month.",
+                },
+                {
+                    question: "Is NEET required for studying MBBS in Georgia?",
+                    answer: "Yes, NEET qualification is mandatory for Indian students who wish to pursue MBBS abroad, including Georgia, as per NMC regulations.",
+                },
+                {
+                    question:
+                        "What are the living conditions for students in Georgia?",
+                    answer: "Georgian universities provide comfortable hostel facilities with modern amenities. The country is very safe, and Indian food is readily available in major cities like Tbilisi and Batumi.",
+                },
+                {
+                    question:
+                        "Can I practice medicine in India after completing MBBS from Georgia?",
+                    answer: "Yes, after completing your MBBS from a recognized Georgian university, you need to clear the FMGE/NEXT screening test conducted by NMC to practice medicine in India.",
+                },
+            ]}
+        >
+            <!-- SECTION: Duration -->
+            <section id="duration" class="mb-12">
+                <h2
+                    class="text-2xl md:text-3xl font-bold text-[#0E0C4F] mb-4 pb-3 border-b-2 border-[#00BFFF]/30"
+                >
+                    MBBS Duration in Georgia
+                </h2>
+                <p class="text-gray-600 leading-relaxed mb-4">
+                    The MBBS program in Georgia spans a total of <strong
+                        >6 years</strong
+                    >, which includes 5 years of academic study and 1 year of
+                    internship/clinical practice. The curriculum is designed to
+                    meet international standards and provides hands-on clinical
+                    training.
+                </p>
+                <div
+                    class="bg-white rounded-xl p-5 shadow-sm border border-gray-100"
+                >
+                    <h3 class="font-bold text-[#0E0C4F] mb-3">
+                        Program Breakdown:
+                    </h3>
+                    <ol
+                        class="list-decimal list-inside space-y-2 text-gray-600 text-[15px]"
+                    >
+                        <li>
+                            <strong>Five years of classroom learning:</strong> Students
+                            study pre-clinical and clinical subjects including Anatomy,
+                            Physiology, Biochemistry, Pathology, Pharmacology, and
+                            more.
+                        </li>
+                        <li>
+                            <strong>One year of internship program:</strong> After
+                            completing the classroom learning, students undergo a
+                            year-long internship in affiliated hospitals, where they
+                            gain hands-on experience and practical training in a clinical
+                            environment.
+                        </li>
+                    </ol>
+                </div>
+            </section>
+
+            <!-- SECTION: Universities -->
+            <section id="universities" class="mb-12">
+                <h2
+                    class="text-2xl md:text-3xl font-bold text-[#0E0C4F] mb-4 pb-3 border-b-2 border-[#00BFFF]/30"
+                >
+                    Top Medical Universities in Georgia for Indian Students
+                </h2>
+                <p class="text-gray-600 leading-relaxed mb-5">
+                    Georgia is home to several globally recognized medical
+                    universities that offer high-quality MBBS programs at
+                    affordable tuition fees.
+                </p>
+                <div
+                    class="overflow-x-auto rounded-xl border border-gray-200 shadow-sm"
+                >
+                    <table class="w-full text-left border-collapse">
+                        <thead>
+                            <tr class="bg-[#0E0C4F] text-white text-sm">
+                                <th class="px-5 py-3.5 font-semibold"
+                                    >Establishment Year</th
+                                >
+                                <th class="px-5 py-3.5 font-semibold">Place</th>
+                                <th class="px-5 py-3.5 font-semibold"
+                                    >Universities</th
+                                >
+                            </tr>
+                        </thead>
+                        <tbody class="text-gray-700 text-sm">
+                            {
+                                [
+                                    {
+                                        year: "2004",
+                                        place: "Tbilisi, Georgia",
+                                        name: "SEU Georgian National University",
+                                    },
+                                    {
+                                        year: "1998",
+                                        place: "Georgia",
+                                        name: "Geomedi Medical University",
+                                    },
+                                    {
+                                        year: "1930",
+                                        place: "Georgia",
+                                        name: "Akaki Tsereteli Medical State University",
+                                    },
+                                    {
+                                        year: "1945",
+                                        place: "Batumi, Georgia",
+                                        name: "Batumi Shota Rustaveli State University",
+                                    },
+                                    {
+                                        year: "1995",
+                                        place: "Tbilisi, Georgia",
+                                        name: "Caucasus International University",
+                                    },
+                                    {
+                                        year: "1989",
+                                        place: "Tbilisi, Georgia",
+                                        name: "David Tvildiani Medical University",
+                                    },
+                                    {
+                                        year: "2011",
+                                        place: "Tbilisi, Georgia",
+                                        name: "European University",
+                                    },
+                                    {
+                                        year: "2006",
+                                        place: "Tbilisi, Georgia",
+                                        name: "Ilia State University",
+                                    },
+                                    {
+                                        year: "1918",
+                                        place: "Tbilisi, Georgia",
+                                        name: "Ivane Javakhishvili Tbilisi State University",
+                                    },
+                                    {
+                                        year: "2013",
+                                        place: "Tbilisi, Georgia",
+                                        name: "New Vision University",
+                                    },
+                                    {
+                                        year: "1992",
+                                        place: "Tbilisi, Georgia",
+                                        name: "Tbilisi Medical Academy (TMA)",
+                                    },
+                                    {
+                                        year: "1918",
+                                        place: "Tbilisi, Georgia",
+                                        name: "Tbilisi State Medical University",
+                                    },
+                                    {
+                                        year: "1785",
+                                        place: "Tbilisi, Georgia",
+                                        name: "University of Georgia",
+                                    },
+                                ].map((uni, index) => (
+                                    <tr
+                                        class={`border-b border-gray-100 transition-colors hover:bg-blue-50/40 ${index % 2 === 0 ? "bg-white" : "bg-gray-50/50"}`}
+                                    >
+                                        <td class="px-5 py-4">{uni.year}</td>
+                                        <td class="px-5 py-4">{uni.place}</td>
+                                        <td class="px-5 py-4 font-medium text-[#0E0C4F]">
+                                            {uni.name}
+                                        </td>
+                                    </tr>
+                                ))
+                            }
+                        </tbody>
+                    </table>
+                </div>
+            </section>
+
+            <!-- SECTION: Admission -->
+            <section id="admission" class="mb-12">
+                <h2
+                    class="text-2xl md:text-3xl font-bold text-[#0E0C4F] mb-4 pb-3 border-b-2 border-[#00BFFF]/30"
+                >
+                    Admission Process for MBBS in Georgia
+                </h2>
+                <p class="text-gray-600 leading-relaxed mb-4">
+                    The admission process for MBBS in Georgia is straightforward
+                    and hassle-free. Indian students can apply directly or
+                    through authorized consultants like Doctor Destiny.
+                </p>
+                <div
+                    class="bg-white rounded-xl p-5 shadow-sm border border-gray-100"
+                >
+                    <h3 class="font-bold text-[#0E0C4F] mb-3">
+                        Eligibility Criteria:
+                    </h3>
+                    <ul class="space-y-2 text-gray-600 text-[15px]">
+                        <li class="flex items-start gap-2">
+                            <span class="text-[#00BFFF] mt-1">✓</span>
+                            <span
+                                >The student must have completed 12th with
+                                Physics, Chemistry, and Biology</span
+                            >
+                        </li>
+                        <li class="flex items-start gap-2">
+                            <span class="text-[#00BFFF] mt-1">✓</span>
+                            <span
+                                >Minimum 50% aggregate marks in PCB (40% for
+                                reserved categories)</span
+                            >
+                        </li>
+                        <li class="flex items-start gap-2">
+                            <span class="text-[#00BFFF] mt-1">✓</span>
+                            <span>NEET qualification is mandatory</span>
+                        </li>
+                        <li class="flex items-start gap-2">
+                            <span class="text-[#00BFFF] mt-1">✓</span>
+                            <span
+                                >Age should be 17 years or above at the time of
+                                admission</span
+                            >
+                        </li>
+                    </ul>
+                </div>
+            </section>
+
+            <!-- SECTION: Fees -->
+            <section id="fees" class="mb-12">
+                <h2
+                    class="text-2xl md:text-3xl font-bold text-[#0E0C4F] mb-4 pb-3 border-b-2 border-[#00BFFF]/30"
+                >
+                    MBBS Tuition Fees in Georgia
+                </h2>
+                <p class="text-gray-600 leading-relaxed mb-5">
+                    One of the biggest advantages of studying MBBS in Georgia is
+                    the affordability. Here's a comparison of tuition fees
+                    across top universities:
+                </p>
+                <div
+                    class="overflow-x-auto rounded-xl border border-gray-200 shadow-sm"
+                >
+                    <table class="w-full text-left">
+                        <thead>
+                            <tr class="bg-[#0E0C4F] text-white text-sm">
+                                <th class="px-5 py-3.5 font-semibold"
+                                    >University</th
+                                >
+                                <th class="px-5 py-3.5 font-semibold"
+                                    >Annual Tuition (USD)</th
+                                >
+                                <th class="px-5 py-3.5 font-semibold"
+                                    >Total 6-Year (Approx.)</th
+                                >
+                            </tr>
+                        </thead>
+                        <tbody class="text-gray-700 text-sm">
+                            <tr
+                                class="border-b border-gray-100 bg-white hover:bg-blue-50/40 transition-colors"
+                            >
+                                <td class="px-5 py-4 font-medium"
+                                    >SEU Georgian National University</td
+                                >
+                                <td class="px-5 py-4">$5,500</td>
+                                <td class="px-5 py-4">$33,000</td>
+                            </tr>
+                            <tr
+                                class="border-b border-gray-100 bg-gray-50/50 hover:bg-blue-50/40 transition-colors"
+                            >
+                                <td class="px-5 py-4 font-medium"
+                                    >Tbilisi State Medical University</td
+                                >
+                                <td class="px-5 py-4">$8,000</td>
+                                <td class="px-5 py-4">$48,000</td>
+                            </tr>
+                            <tr
+                                class="border-b border-gray-100 bg-white hover:bg-blue-50/40 transition-colors"
+                            >
+                                <td class="px-5 py-4 font-medium"
+                                    >Geomedi Medical University</td
+                                >
+                                <td class="px-5 py-4">$5,000</td>
+                                <td class="px-5 py-4">$30,000</td>
+                            </tr>
+                            <tr
+                                class="bg-gray-50/50 hover:bg-blue-50/40 transition-colors"
+                            >
+                                <td class="px-5 py-4 font-medium"
+                                    >University of Georgia</td
+                                >
+                                <td class="px-5 py-4">$5,500</td>
+                                <td class="px-5 py-4">$33,000</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </section>
+
+            <!-- SECTION: Fee Structure -->
+            <section id="fee-structure" class="mb-12">
+                <h2
+                    class="text-2xl md:text-3xl font-bold text-[#0E0C4F] mb-4 pb-3 border-b-2 border-[#00BFFF]/30"
+                >
+                    Fee Structure for MBBS in Private Universities
+                </h2>
+                <p class="text-gray-600 leading-relaxed mb-4">
+                    The fee structure varies across private medical universities
+                    in Georgia. Most universities offer affordable tuition with
+                    no hidden charges. Additional costs include hostel fees
+                    ($100-$200/month) and living expenses ($150-$300/month).
+                </p>
+                <div
+                    class="bg-white rounded-xl p-5 shadow-sm border border-gray-100"
+                >
+                    <h3 class="font-bold text-[#0E0C4F] mb-3">
+                        Typical Annual Costs:
+                    </h3>
+                    <ul class="space-y-2 text-gray-600 text-[15px]">
+                        <li class="flex items-start gap-2">
+                            <span class="text-[#D5AD36] mt-1">•</span>
+                            <span
+                                ><strong>Tuition Fee:</strong> $4,000 – $8,000 per
+                                year</span
+                            >
+                        </li>
+                        <li class="flex items-start gap-2">
+                            <span class="text-[#D5AD36] mt-1">•</span>
+                            <span
+                                ><strong>Hostel Fee:</strong> $1,200 – $2,400 per
+                                year</span
+                            >
+                        </li>
+                        <li class="flex items-start gap-2">
+                            <span class="text-[#D5AD36] mt-1">•</span>
+                            <span
+                                ><strong>Food & Living:</strong> $1,800 – $3,600 per
+                                year</span
+                            >
+                        </li>
+                        <li class="flex items-start gap-2">
+                            <span class="text-[#D5AD36] mt-1">•</span>
+                            <span
+                                ><strong>Health Insurance:</strong> $200 – $400 per
+                                year</span
+                            >
+                        </li>
+                    </ul>
+                </div>
+            </section>
+
+            <!-- SECTION: Curriculum -->
+            <section id="curriculum" class="mb-12">
+                <h2
+                    class="text-2xl md:text-3xl font-bold text-[#0E0C4F] mb-4 pb-3 border-b-2 border-[#00BFFF]/30"
+                >
+                    MBBS Curriculum in Georgian Universities
+                </h2>
+                <p class="text-gray-600 leading-relaxed mb-4">
+                    The MBBS curriculum in Georgia follows international medical
+                    education standards and is divided into pre-clinical and
+                    clinical phases.
+                </p>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                    <div
+                        class="bg-white rounded-xl p-5 shadow-sm border border-gray-100"
+                    >
+                        <h3 class="font-bold text-[#0E0C4F] mb-3">
+                            Pre-Clinical (Year 1-2)
+                        </h3>
+                        <ul class="space-y-1.5 text-gray-600 text-[15px]">
+                            <li>• Anatomy</li>
+                            <li>• Physiology</li>
+                            <li>• Biochemistry</li>
+                            <li>• Histology</li>
+                            <li>• Medical Biology</li>
+                        </ul>
+                    </div>
+                    <div
+                        class="bg-white rounded-xl p-5 shadow-sm border border-gray-100"
+                    >
+                        <h3 class="font-bold text-[#0E0C4F] mb-3">
+                            Clinical (Year 3-5)
+                        </h3>
+                        <ul class="space-y-1.5 text-gray-600 text-[15px]">
+                            <li>• Pathology & Pharmacology</li>
+                            <li>• Internal Medicine</li>
+                            <li>• Surgery</li>
+                            <li>• Obstetrics & Gynecology</li>
+                            <li>• Pediatrics</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+            <!-- SECTION: Program Duration -->
+            <section id="program-duration" class="mb-12">
+                <h2
+                    class="text-2xl md:text-3xl font-bold text-[#0E0C4F] mb-4 pb-3 border-b-2 border-[#00BFFF]/30"
+                >
+                    MBBS Program Duration in Georgia
+                </h2>
+                <p class="text-gray-600 leading-relaxed mb-4">
+                    The total MBBS program duration in Georgia is 6 years (5
+                    years of academics + 1 year of internship). The academic
+                    year typically starts in September/October, with some
+                    universities offering a February intake as well.
+                </p>
+                <div
+                    class="overflow-x-auto rounded-xl border border-gray-200 shadow-sm"
+                >
+                    <table class="w-full text-left">
+                        <thead>
+                            <tr class="bg-[#0E0C4F] text-white text-sm">
+                                <th class="px-5 py-3.5 font-semibold">Year</th>
+                                <th class="px-5 py-3.5 font-semibold"
+                                    >Focus Area</th
+                                >
+                            </tr>
+                        </thead>
+                        <tbody class="text-gray-700 text-sm">
+                            <tr class="border-b border-gray-100 bg-white">
+                                <td class="px-5 py-3.5 font-medium">Year 1-2</td
+                                >
+                                <td class="px-5 py-3.5"
+                                    >Pre-clinical / Basic Medical Sciences</td
+                                >
+                            </tr>
+                            <tr class="border-b border-gray-100 bg-gray-50/50">
+                                <td class="px-5 py-3.5 font-medium">Year 3-5</td
+                                >
+                                <td class="px-5 py-3.5"
+                                    >Clinical Sciences & Hospital Rotations</td
+                                >
+                            </tr>
+                            <tr class="bg-white">
+                                <td class="px-5 py-3.5 font-medium">Year 6</td>
+                                <td class="px-5 py-3.5"
+                                    >Clinical Internship / Practical Training</td
+                                >
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </section>
+
+            <!-- SECTION: Documents -->
+            <section id="documents" class="mb-12">
+                <h2
+                    class="text-2xl md:text-3xl font-bold text-[#0E0C4F] mb-4 pb-3 border-b-2 border-[#00BFFF]/30"
+                >
+                    Documents Required for a Visa for MBBS in Georgia
+                </h2>
+                <p class="text-gray-600 leading-relaxed mb-4">
+                    Indian students require a student visa to study MBBS in
+                    Georgia. Below are the essential documents required for the
+                    visa application process:
+                </p>
+                <div
+                    class="bg-white rounded-xl p-5 shadow-sm border border-gray-100"
+                >
+                    <ul class="space-y-2.5 text-gray-600 text-[15px]">
+                        <li class="flex items-start gap-2">
+                            <span class="text-[#00BFFF] mt-1">✓</span>
+                            <span
+                                >Valid passport with at least 18 months validity</span
+                            >
+                        </li>
+                        <li class="flex items-start gap-2">
+                            <span class="text-[#00BFFF] mt-1">✓</span>
+                            <span
+                                >10th and 12th mark sheets and certificates</span
+                            >
+                        </li>
+                        <li class="flex items-start gap-2">
+                            <span class="text-[#00BFFF] mt-1">✓</span>
+                            <span>NEET scorecard</span>
+                        </li>
+                        <li class="flex items-start gap-2">
+                            <span class="text-[#00BFFF] mt-1">✓</span>
+                            <span
+                                >Admission letter from the Georgian university</span
+                            >
+                        </li>
+                        <li class="flex items-start gap-2">
+                            <span class="text-[#00BFFF] mt-1">✓</span>
+                            <span
+                                >Passport-size photographs (white background)</span
+                            >
+                        </li>
+                        <li class="flex items-start gap-2">
+                            <span class="text-[#00BFFF] mt-1">✓</span>
+                            <span
+                                >Health certificate & medical fitness report</span
+                            >
+                        </li>
+                        <li class="flex items-start gap-2">
+                            <span class="text-[#00BFFF] mt-1">✓</span>
+                            <span>Bank statement showing sufficient funds</span>
+                        </li>
+                        <li class="flex items-start gap-2">
+                            <span class="text-[#00BFFF] mt-1">✓</span>
+                            <span>Birth certificate</span>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+        </CountryLayout>
+
+        <!-- Footer -->
+        <footer
+            class="bg-[#0E0C4F] text-white pt-20 pb-10 rounded-t-[3rem]"
+            style="position:relative; overflow:hidden;"
+        >
+            <div
+                class="max-w-7xl mx-auto px-6"
+                style="position:relative;z-index:1;"
+            >
+                <div
+                    class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-16"
+                >
+                    <div>
+                        <h3 class="text-2xl font-bold mb-6 text-[#D5AD36]">
+                            Doctor Destiny
+                        </h3>
+                        <p class="text-gray-300 leading-relaxed">
+                            Empowering aspiring doctors with the right guidance
+                            and opportunities to study medicine globally.
+                        </p>
+                    </div>
+                    <div>
+                        <h4 class="text-lg font-bold mb-6 text-[#D5AD36]">
+                            Quick Links
+                        </h4>
+                        <ul class="space-y-4 text-gray-300">
+                            <li>
+                                <a
+                                    href="/"
+                                    class="hover:text-[#00BFFF] transition-colors"
+                                    >Home</a
+                                >
+                            </li>
+                            <li>
+                                <a
+                                    href="#"
+                                    class="hover:text-[#00BFFF] transition-colors"
+                                    >About Us</a
+                                >
+                            </li>
+                            <li>
+                                <a
+                                    href="#"
+                                    class="hover:text-[#00BFFF] transition-colors"
+                                    >Services</a
+                                >
+                            </li>
+                            <li>
+                                <a
+                                    href="#"
+                                    class="hover:text-[#00BFFF] transition-colors"
+                                    >Contact</a
+                                >
+                            </li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h4 class="text-lg font-bold mb-6 text-[#D5AD36]">
+                            Offices
+                        </h4>
+                        <p class="text-gray-300 mb-2">Bangalore (HQ)</p>
+                        <p class="text-gray-300 mb-2">Chennai</p>
+                        <p class="text-gray-300 mb-2">Davangere</p>
+                        <p class="text-gray-300">Hubballi</p>
+                    </div>
+                    <div>
+                        <h4 class="text-lg font-bold mb-6 text-[#D5AD36]">
+                            Contact Us
+                        </h4>
+                        <p class="text-gray-300 mb-4">info@doctordestiny.com</p>
+                        <button
+                            class="bg-gradient-to-r from-[#D5AD36] to-[#f0c847] hover:shadow-[0_0_20px_rgba(213,173,54,0.6)] text-[#0E0C4F] px-6 py-3 rounded-xl w-full font-semibold transition-all duration-300 hover:scale-105"
+                        >
+                            Book Consultation
+                        </button>
+                    </div>
+                </div>
+                <div
+                    class="border-t border-white/10 pt-8 text-center text-gray-400"
+                >
+                    <p>&copy; 2026 Doctor Destiny. All rights reserved.</p>
+                </div>
+            </div>
+        </footer>
+    </body>
+</html>

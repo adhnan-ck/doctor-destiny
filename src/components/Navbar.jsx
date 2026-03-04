@@ -30,7 +30,7 @@ const Navbar = () => {
             name: 'Study MBBS Abroad',
             href: '#',
             dropdown: [
-                { name: 'MBBS in Russia', href: '/mbbs-in-russia' },
+                { name: 'MBBS in Georgia', href: '/study-mbbs-in-georgia' },
                 { name: 'MBBS in Belarus', href: '/mbbs-in-belarus' },
                 { name: 'MBBS in USA', href: '/mbbs-in-usa' },
             ],
