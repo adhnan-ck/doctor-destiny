@@ -35,18 +35,19 @@ const Navbar = () => {
                 { name: 'MBBS in USA', href: '/mbbs-in-usa' },
             ],
         },
-        {
-            name: 'Universities',
-            href: '#',
-            dropdown: [
-                { name: 'Crimea Federal University', href: '#' },
-                { name: 'Kazan Federal University', href: '#' },
-                { name: 'Bashkir State Medical University', href: '#' },
-                { name: 'Orenburg State Medical University', href: '#' },
-                { name: 'Perm State Medical University', href: '#' },
-            ],
-        },
-        { name: 'Contact Us', href: '/contact', isButton: true },
+        // {
+        //     name: 'Universities',
+        //     href: '#',
+        //     dropdown: [
+        //         { name: 'Crimea Federal University', href: '#' },
+        //         { name: 'Kazan Federal University', href: '#' },
+        //         { name: 'Bashkir State Medical University', href: '#' },
+        //         { name: 'Orenburg State Medical University', href: '#' },
+        //         { name: 'Perm State Medical University', href: '#' },
+        //     ],
+        // },
+        { name: 'About Us', href: '/about-us' },
+        { name: 'Contact Us', href: '/contact-us', isButton: true },
     ];
 
     return (
