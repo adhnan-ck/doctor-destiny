@@ -1,14 +1,15 @@
 import { motion } from 'framer-motion';
 
-export default function DestinationCard({ country, image, flag, span = '' }) {
+export default function DestinationCard({ country, image, flag, span = '', href }) {
     return (
-        <motion.div
+        <motion.a
+            href={href}
             whileHover={{ y: -5 }}
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true, margin: "-50px" }}
             transition={{ duration: 0.5 }}
-            className={`relative overflow-hidden rounded-2xl shadow-xl group cursor-pointer h-44 sm:h-56 lg:h-72 ${span}`}
+            className={`relative overflow-hidden rounded-2xl shadow-xl group cursor-pointer h-44 sm:h-56 lg:h-72 block ${span}`}
         >
             {/* Background Image */}
             <img
@@ -38,6 +39,6 @@ export default function DestinationCard({ country, image, flag, span = '' }) {
                     </button>
                 </div>
             </div>
-        </motion.div>
+        </motion.a>
     );
 }

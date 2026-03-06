@@ -237,55 +237,99 @@ import WhoWeAre from "./WhoWeAre";
         [
           {
             country: "Timor Leste",
-            image: "/countries/timorleste.jpg",
+            image: "/countries/timor-leste.jpg",
             flag: "tl",
+            href: "/study-mbbs-in-timor-leste",
           },
-          { country: "Russia", image: "/countries/russia.jpg", flag: "ru" },
-          { country: "Georgia", image: "/countries/georgia.avif", flag: "ge" },
-          { country: "India", image: "/countries/india.jpg", flag: "in" },
-          { country: "Europe", image: "/countries/europe.jpg", flag: "eu" },
+          {
+            country: "Russia",
+            image: "/countries/russia.jpg",
+            flag: "ru",
+            href: "/study-mbbs-in-russia",
+          },
+          {
+            country: "Georgia",
+            image: "/countries/georgia.avif",
+            flag: "ge",
+            href: "/study-mbbs-in-georgia",
+          },
+          {
+            country: "India",
+            image: "/countries/india.jpg",
+            flag: "in",
+            href: "/study-mbbs-in-india",
+          },
+          {
+            country: "Europe",
+            image: "/countries/europe.jpg",
+            flag: "eu",
+            href: "/study-mbbs-in-europe",
+          },
           {
             country: "UK and USA",
-            image: "/countries/belarus.avif",
-            flag: "gb",
+            image: "/countries/uk-usa.jpg",
+            flag: "uk-usa",
+            href: "/study-mbbs-in-uk-and-usa",
           },
-          { country: "Germany", image: "/countries/germany.jpg", flag: "de" },
+          {
+            country: "Germany",
+            image: "/countries/germany.jpg",
+            flag: "de",
+            href: "/study-mbbs-in-germany",
+          },
           {
             country: "Kyrgyzstan",
             image: "/countries/krygystan.jpg",
             flag: "kg",
+            href: "/study-mbbs-in-kyrgyzstan",
           },
-          { country: "Nepal", image: "/countries/nepal.avif", flag: "np" },
-          { country: "China", image: "/countries/china.jpg", flag: "cn" },
+          {
+            country: "Nepal",
+            image: "/countries/nepal.avif",
+            flag: "np",
+            href: "/study-mbbs-in-nepal",
+          },
+          {
+            country: "China",
+            image: "/countries/china.jpg",
+            flag: "cn",
+            href: "/study-mbbs-in-china",
+          },
           {
             country: "Australia",
             image: "/countries/australia.jpg",
             flag: "au",
+            href: "/study-mbbs-in-australia",
           },
           {
             country: "Kazakhstan",
             image: "/countries/kazakhstan.jpg",
             flag: "kz",
+            href: "/study-mbbs-in-kazakhstan",
           },
           {
             country: "Uzbekistan",
             image: "/countries/uzbekistan.jpg",
             flag: "uz",
+            href: "/study-mbbs-in-uzbekistan",
           },
           {
             country: "Bangladesh",
             image: "/countries/bangladesh.avif",
             flag: "bd",
+            href: "/study-mbbs-in-bangladesh",
           },
           {
             country: "Mauritius",
             image: "/countries/mauritius.jpg",
             flag: "mu",
+            href: "/study-mbbs-in-mauritius",
           },
           {
             country: "Philippines",
             image: "/countries/philippines.avif",
             flag: "ph",
+            href: "/study-mbbs-in-philippines",
           },
         ].map((item, index) => (
           <div class={index >= 8 ? "mobile-hidden md:block" : ""}>
@@ -294,23 +338,11 @@ import WhoWeAre from "./WhoWeAre";
               country={item.country}
               image={item.image}
               flag={item.flag}
+              href={item.href}
             />
           </div>
         ))
       }
-    </div>
-
-    <!-- Show More button — mobile only -->
-    <div class="flex justify-center mt-8 md:hidden">
-      <button
-        id="show-more-btn"
-        class="flex items-center gap-2 bg-[#0E0C4F] text-white px-6 py-3 rounded-full font-semibold hover:bg-[#0E0C4F]/90 transition-all"
-      >
-        Show More <span
-          id="show-more-icon"
-          class="transition-transform duration-300">↓</span
-        >
-      </button>
     </div>
   </section>
 </div>
