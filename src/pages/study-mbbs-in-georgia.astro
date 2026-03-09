@@ -54,121 +54,120 @@ import CountryLayout from "../components/CountryLayout.astro";
         <CountryLayout
             countryName="Georgia"
             navItems={[
-                { label: "MBBS Duration in Georgia", id: "duration" },
-                {
-                    label: "Medical Universities in Georgia",
-                    id: "universities",
-                },
-                { label: "Admission Process for MBBS", id: "admission" },
-                { label: "MBBS Tuition Fees in Georgia", id: "fees" },
-                { label: "Fee Structure for MBBS", id: "fee-structure" },
-                {
-                    label: "MBBS Curriculum in Georgian Universities",
-                    id: "curriculum",
-                },
-                {
-                    label: "MBBS Program Duration in Georgia",
-                    id: "program-duration",
-                },
-                { label: "Documents Required for Visa", id: "documents" },
+                { label: "MBBS Duration", id: "duration" },
+                { label: "Top Universities", id: "universities" },
+                { label: "Tuition Fees", id: "fees" },
+                { label: "Fee Structure (Govt)", id: "fee-structure" },
+                { label: "Syllabus & Curriculum", id: "curriculum" },
+                { label: "Admission Process", id: "admission" },
+                { label: "Documents Required", id: "documents" },
+                { label: "Why Georgia?", id: "benefits" },
+                { label: "Loan Assistance", id: "loans" },
+                { label: "Career & PG Options", id: "career" },
+                { label: "Safety & Housing", id: "safety" },
+                { label: "NEET Requirement", id: "neet" },
             ]}
             faqs={[
                 {
                     question:
                         "Is MBBS in Georgia recognized by NMC (formerly MCI)?",
-                    answer: "Yes, several Georgian medical universities are recognized by NMC (National Medical Commission), WHO, and other international bodies. Graduates are eligible to appear for FMGE/NEXT exam in India.",
+                    answer: "Yes, Georgian medical universities are recognized by NMC, WHO, and other international bodies. Graduates are eligible for FMGE/NEXT in India.",
                 },
                 {
                     question:
                         "What is the medium of instruction for MBBS in Georgia?",
-                    answer: "The medium of instruction for MBBS in Georgia is English, making it convenient for Indian students. No additional language course is required during the initial years.",
+                    answer: "The medium of instruction is English, making it convenient for Indian students without requiring additional language courses.",
                 },
                 {
                     question:
                         "What is the total cost of studying MBBS in Georgia?",
-                    answer: "The total cost of MBBS in Georgia ranges from ₹20-35 Lakhs for the entire 6-year program, including tuition fees. Living expenses are approximately $200-$350 per month.",
+                    answer: "The total cost ranges from ₹20-35 Lakhs for the 6-year program. Living expenses are roughly $200-$350 monthly.",
                 },
                 {
                     question: "Is NEET required for studying MBBS in Georgia?",
-                    answer: "Yes, NEET qualification is mandatory for Indian students who wish to pursue MBBS abroad, including Georgia, as per NMC regulations.",
+                    answer: "Yes, qualifying NEET is mandatory for Indian students intending to practice in India after graduation.",
                 },
                 {
                     question:
                         "What are the living conditions for students in Georgia?",
-                    answer: "Georgian universities provide comfortable hostel facilities with modern amenities. The country is very safe, and Indian food is readily available in major cities like Tbilisi and Batumi.",
+                    answer: "Universities offer modern hostels, and the country is exceptionally safe. Indian food is widely available in major cities.",
                 },
                 {
                     question:
-                        "Can I practice medicine in India after completing MBBS from Georgia?",
-                    answer: "Yes, after completing your MBBS from a recognized Georgian university, you need to clear the FMGE/NEXT screening test conducted by NMC to practice medicine in India.",
+                        "Can I practice in India after completing MBBS from Georgia?",
+                    answer: "Yes, you can practice in India after clearing the FMGE/NEXT screening test conducted by the NMC.",
                 },
             ]}
         >
             <!-- SECTION: Duration -->
-            <section id="duration" class="mb-12">
+            <section id="duration" class="mb-12 scroll-mt-24">
                 <h2
                     class="text-2xl md:text-3xl font-bold text-[#0E0C4F] mb-4 pb-3 border-b-2 border-[#00BFFF]/30"
                 >
                     MBBS Duration in Georgia
                 </h2>
-                <p class="text-gray-600 leading-relaxed mb-4">
-                    The MBBS program in Georgia spans a total of <strong
-                        >6 years</strong
-                    >, which includes 5 years of academic study and 1 year of
-                    internship/clinical practice. The curriculum is designed to
-                    meet international standards and provides hands-on clinical
-                    training.
-                </p>
-                <div
-                    class="bg-white rounded-xl p-5 shadow-sm border border-gray-100"
-                >
-                    <h3 class="font-bold text-[#0E0C4F] mb-3">
-                        Program Breakdown:
-                    </h3>
-                    <ol
-                        class="list-decimal list-inside space-y-2 text-gray-600 text-[15px]"
+                <div class="grid md:grid-cols-2 gap-6 items-center">
+                    <div>
+                        <p class="text-gray-600 leading-relaxed mb-4">
+                            The MBBS program in Georgia spans <strong
+                                >6 years</strong
+                            > (12 semesters). The first 5 years focus on academic
+                            instruction and clinical theory, followed by a mandatory
+                            1-year clinical internship.
+                        </p>
+                        <ul class="space-y-3">
+                            <li class="flex items-center gap-3 text-gray-700">
+                                <span class="w-2 h-2 rounded-full bg-[#00BFFF]"
+                                ></span>
+                                5 Years: Pre-clinical & Clinical Study
+                            </li>
+                            <li class="flex items-center gap-3 text-gray-700">
+                                <span class="w-2 h-2 rounded-full bg-[#00BFFF]"
+                                ></span>
+                                1 Year: Mandatory Internship
+                            </li>
+                        </ul>
+                    </div>
+                    <div
+                        class="bg-blue-50/50 p-6 rounded-2xl border border-blue-100"
                     >
-                        <li>
-                            <strong>Five years of classroom learning:</strong> Students
-                            study pre-clinical and clinical subjects including Anatomy,
-                            Physiology, Biochemistry, Pathology, Pharmacology, and
-                            more.
-                        </li>
-                        <li>
-                            <strong>One year of internship program:</strong> After
-                            completing the classroom learning, students undergo a
-                            year-long internship in affiliated hospitals, where they
-                            gain hands-on experience and practical training in a clinical
-                            environment.
-                        </li>
-                    </ol>
+                        <h4 class="font-bold text-[#0E0C4F] mb-2">
+                            Subject Coverage:
+                        </h4>
+                        <p class="text-sm text-gray-600">
+                            Physiology, Pathology, Pharmacology, Microbiology,
+                            Surgery, OB-GYN, and Pediatrics.
+                        </p>
+                    </div>
                 </div>
             </section>
 
             <!-- SECTION: Universities -->
-            <section id="universities" class="mb-12">
+            <section id="universities" class="mb-12 scroll-mt-24">
                 <h2
                     class="text-2xl md:text-3xl font-bold text-[#0E0C4F] mb-4 pb-3 border-b-2 border-[#00BFFF]/30"
                 >
-                    Top Medical Universities in Georgia for Indian Students
+                    Top Medical Universities in Georgia
                 </h2>
                 <p class="text-gray-600 leading-relaxed mb-5">
-                    Georgia is home to several globally recognized medical
-                    universities that offer high-quality MBBS programs at
-                    affordable tuition fees.
+                    Georgia hosts prestigious medical universities recognized by <strong
+                        >WHO, NMC, ECFMG</strong
+                    >, and other global bodies.
                 </p>
                 <div
-                    class="overflow-x-auto rounded-xl border border-gray-200 shadow-sm"
+                    class="overflow-x-auto rounded-xl border border-gray-200 shadow-sm mb-6"
                 >
                     <table class="w-full text-left border-collapse">
                         <thead>
                             <tr class="bg-[#0E0C4F] text-white text-sm">
                                 <th class="px-5 py-3.5 font-semibold"
-                                    >Establishment Year</th
+                                    >Establishment</th
                                 >
-                                <th class="px-5 py-3.5 font-semibold">Place</th>
                                 <th class="px-5 py-3.5 font-semibold"
-                                    >Universities</th
+                                    >Location</th
+                                >
+                                <th class="px-5 py-3.5 font-semibold"
+                                    >University Name</th
                                 >
                             </tr>
                         </thead>
@@ -177,7 +176,7 @@ import CountryLayout from "../components/CountryLayout.astro";
                                 [
                                     {
                                         year: "2004",
-                                        place: "Tbilisi, Georgia",
+                                        place: "Tbilisi",
                                         name: "SEU Georgian National University",
                                     },
                                     {
@@ -192,57 +191,27 @@ import CountryLayout from "../components/CountryLayout.astro";
                                     },
                                     {
                                         year: "1945",
-                                        place: "Batumi, Georgia",
+                                        place: "Batumi",
                                         name: "Batumi Shota Rustaveli State University",
                                     },
                                     {
-                                        year: "1995",
-                                        place: "Tbilisi, Georgia",
-                                        name: "Caucasus International University",
-                                    },
-                                    {
-                                        year: "1989",
-                                        place: "Tbilisi, Georgia",
-                                        name: "David Tvildiani Medical University",
-                                    },
-                                    {
-                                        year: "2011",
-                                        place: "Tbilisi, Georgia",
-                                        name: "European University",
-                                    },
-                                    {
-                                        year: "2006",
-                                        place: "Tbilisi, Georgia",
-                                        name: "Ilia State University",
-                                    },
-                                    {
                                         year: "1918",
-                                        place: "Tbilisi, Georgia",
-                                        name: "Ivane Javakhishvili Tbilisi State University",
-                                    },
-                                    {
-                                        year: "2013",
-                                        place: "Tbilisi, Georgia",
-                                        name: "New Vision University",
-                                    },
-                                    {
-                                        year: "1992",
-                                        place: "Tbilisi, Georgia",
-                                        name: "Tbilisi Medical Academy (TMA)",
-                                    },
-                                    {
-                                        year: "1918",
-                                        place: "Tbilisi, Georgia",
+                                        place: "Tbilisi",
                                         name: "Tbilisi State Medical University",
                                     },
                                     {
                                         year: "1785",
-                                        place: "Tbilisi, Georgia",
+                                        place: "Tbilisi",
                                         name: "University of Georgia",
+                                    },
+                                    {
+                                        year: "1992",
+                                        place: "Tbilisi",
+                                        name: "Tbilisi Medical Academy (TMA)",
                                     },
                                 ].map((uni, index) => (
                                     <tr
-                                        class={`border-b border-gray-100 transition-colors hover:bg-blue-50/40 ${index % 2 === 0 ? "bg-white" : "bg-gray-50/50"}`}
+                                        class={`border-b border-gray-100 ${index % 2 === 0 ? "bg-white" : "bg-gray-50/50"}`}
                                     >
                                         <td class="px-5 py-4">{uni.year}</td>
                                         <td class="px-5 py-4">{uni.place}</td>
@@ -255,381 +224,616 @@ import CountryLayout from "../components/CountryLayout.astro";
                         </tbody>
                     </table>
                 </div>
-                <ul class="list-disc list-inside space-y-2 text-gray-700 pt-5">
-                    <li>Limited number of MBBS seats</li>
-                    <li>
-                        MBBS seats are available on first-come, first-served
-                        basis
-                    </li>
-                    <li>MBBS course duration is 5+1 years</li>
-                    <li>
-                        Proficiency in the English language is required to
-                        pursue an MBBS in Georgia
-                    </li>
-                    <li>The NEET exam is mandatory for MBBS in Georgia</li>
-                    <li>
-                        Doctor Dreams has tie-ups with top government and
-                        private medical universities in Georgia
-                    </li>
-                    <li>SEU Georgian National University</li>
-                    <li>Geomedi Medical University</li>
-                    <li>Tbilisi State Medical University</li>
-                </ul>
             </section>
 
-            <!-- SECTION: Admission -->
-            <section id="admission" class="mb-12">
+            <!-- SECTION: Fees -->
+            <section id="fees" class="mb-12 scroll-mt-24">
                 <h2
                     class="text-2xl md:text-3xl font-bold text-[#0E0C4F] mb-4 pb-3 border-b-2 border-[#00BFFF]/30"
                 >
-                    Admission Process for MBBS in Georgia
+                    MBBS Tuition Fees & Expenses
                 </h2>
-                <p class="text-gray-600 leading-relaxed mb-4">
-                    The admission procedure for studying MBBS in Georgia is
-                    straightforward and streamlined:
+                <p class="text-gray-600 mb-6">
+                    Georgia offers high-quality medical education at a fraction
+                    of the cost compared to the USA, UK, or even private
+                    colleges in India.
                 </p>
 
-                <div
-                    class="bg-white rounded-xl p-5 shadow-sm border border-gray-100"
-                >
-                    <h3 class="font-bold text-[#0E0C4F] mb-3">
-                        Admission Process:
-                    </h3>
-                    <ul class="space-y-2 text-gray-600 text-[15px]">
-                        <li class="flex items-start gap-2">
-                            <span class="text-[#00BFFF] mt-1">✓</span>
+                <div class="grid md:grid-cols-3 gap-6 mb-8">
+                    {
+                        [
+                            {
+                                name: "Geomedi Medical University",
+                                year: "$5,500",
+                                total: "₹27,40,000",
+                            },
+                            {
+                                name: "Akaki Tsereteli State Univ.",
+                                year: "$4,500",
+                                total: "₹22,41,000",
+                            },
+                            {
+                                name: "Batumi Shota Rustaveli State",
+                                year: "$4,000",
+                                total: "₹19,92,000",
+                            },
+                        ].map((fee) => (
+                            <div class="bg-white p-5 rounded-2xl border border-gray-100 shadow-sm hover:border-[#00BFFF] transition-colors">
+                                <h4 class="font-bold text-[#0E0C4F] h-12 flex items-center mb-2">
+                                    {fee.name}
+                                </h4>
+                                <div class="space-y-1">
+                                    <p class="text-sm text-gray-500">
+                                        Per Year
+                                    </p>
+                                    <p class="text-2xl font-bold text-[#00BFFF]">
+                                        {fee.year}
+                                    </p>
+                                </div>
+                                <div class="mt-4 pt-4 border-t border-gray-50">
+                                    <p class="text-[12px] uppercase tracking-wider text-gray-400 font-bold">
+                                        Total Budget
+                                    </p>
+                                    <p class="text-lg font-semibold text-gray-700">
+                                        {fee.total}
+                                    </p>
+                                </div>
+                            </div>
+                        ))
+                    }
+                </div>
+
+                <div class="bg-[#0E0C4F] text-white p-6 rounded-2xl">
+                    <h4 class="font-bold mb-3 flex items-center gap-2">
+                        <span class="text-[#D5AD36]">ℹ</span> Additional Cost Considerations
+                    </h4>
+                    <ul class="grid md:grid-cols-2 gap-4 text-sm text-gray-300">
+                        <li class="flex gap-2">
+                            <span class="text-[#00BFFF] font-bold">•</span>
                             <span
-                                ><strong>Submit Application:</strong> Complete the
-                                online application form accurately.</span
+                                >Food expenses are estimated at <strong
+                                    >$150/month</strong
+                                >.</span
                             >
                         </li>
-                        <li class="flex items-start gap-2">
-                            <span class="text-[#00BFFF] mt-1">✓</span>
+                        <li class="flex gap-2">
+                            <span class="text-[#00BFFF] font-bold">•</span>
                             <span
-                                ><strong>Receive Offer Letter:</strong> Once the application
-                                is reviewed, you will receive an offer letter from
-                                a Georgian medical university.</span
-                            >
-                        </li>
-                        <li class="flex items-start gap-2">
-                            <span class="text-[#00BFFF] mt-1">✓</span>
-                            <span
-                                ><strong>Pay Course Fees:</strong> After receiving
-                                the offer, proceed to pay the course fees.</span
-                            >
-                        </li>
-                        <li class="flex items-start gap-2">
-                            <span class="text-[#00BFFF] mt-1">✓</span>
-                            <span
-                                ><strong>Begin Visa Process:</strong> With your fees
-                                paid, you can start the student visa process.</span
-                            >
-                        </li>
-                        <li class="flex items-start gap-2">
-                            <span class="text-[#00BFFF] mt-1">✓</span>
-                            <span
-                                ><strong>Obtain Student Visa:</strong> Secure your
-                                student visa.</span
-                            >
-                        </li>
-                        <li class="flex items-start gap-2">
-                            <span class="text-[#00BFFF] mt-1">✓</span>
-                            <span
-                                ><strong>Travel to Georgia:</strong> Once the visa
-                                is granted, it’s time to book your flight and begin
-                                your MBBS journey in Georgia!</span
+                                >Living costs are approx. 2.5x lower than
+                                Western Europe.</span
                             >
                         </li>
                     </ul>
                 </div>
-                <p class="text-gray-800 leading-relaxed mb-5 mt-5">
-                    Studying in Georgia offers more than academic
-                    benefits—you’ll also get to experience European art,
-                    history, and culture. <br />
-                    <br /> Note: The admission process for MBBS in Georgia is lengthy,
-                    and obtaining a student visa from the embassy typically requires
-                    more than 30 days. Therefore, it is recommended that students
-                    begin preparing and completing paperwork at least 3 months before
-                    the deadlines.
-                </p>
-            </section>
-            <!-- SECTION: Fees -->
-            <section id="fees" class="mb-12">
-                <h2
-                    class="text-2xl md:text-3xl font-bold text-[#0E0C4F] mb-4 pb-3 border-b-2 border-[#00BFFF]/30"
-                >
-                    MBBS Tuition Fees in Georgia
-                </h2>
-                <p class="text-gray-600 leading-relaxed mb-5">
-                    One of the biggest advantages of studying MBBS in Georgia is
-                    the affordability. Here's a comparison of tuition fees
-                    across top universities:
-                </p>
-                <div
-                    class="overflow-x-auto rounded-xl border border-gray-200 shadow-sm"
-                >
-                    <table class="w-full text-left">
-                        <thead>
-                            <tr class="bg-[#0E0C4F] text-white text-sm">
-                                <th class="px-5 py-3.5 font-semibold"
-                                    >University</th
-                                >
-                                <th class="px-5 py-3.5 font-semibold"
-                                    >Annual Tuition (USD)</th
-                                >
-                                <th class="px-5 py-3.5 font-semibold"
-                                    >Total 6-Year (Approx.)</th
-                                >
-                            </tr>
-                        </thead>
-                        <tbody class="text-gray-700 text-sm">
-                            <tr
-                                class="border-b border-gray-100 bg-white hover:bg-blue-50/40 transition-colors"
-                            >
-                                <td class="px-5 py-4 font-medium"
-                                    >SEU Georgian National University</td
-                                >
-                                <td class="px-5 py-4">$5,500</td>
-                                <td class="px-5 py-4">$33,000</td>
-                            </tr>
-                            <tr
-                                class="border-b border-gray-100 bg-gray-50/50 hover:bg-blue-50/40 transition-colors"
-                            >
-                                <td class="px-5 py-4 font-medium"
-                                    >Tbilisi State Medical University</td
-                                >
-                                <td class="px-5 py-4">$8,000</td>
-                                <td class="px-5 py-4">$48,000</td>
-                            </tr>
-                            <tr
-                                class="border-b border-gray-100 bg-white hover:bg-blue-50/40 transition-colors"
-                            >
-                                <td class="px-5 py-4 font-medium"
-                                    >Geomedi Medical University</td
-                                >
-                                <td class="px-5 py-4">$5,000</td>
-                                <td class="px-5 py-4">$30,000</td>
-                            </tr>
-                            <tr
-                                class="bg-gray-50/50 hover:bg-blue-50/40 transition-colors"
-                            >
-                                <td class="px-5 py-4 font-medium"
-                                    >University of Georgia</td
-                                >
-                                <td class="px-5 py-4">$5,500</td>
-                                <td class="px-5 py-4">$33,000</td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </div>
             </section>
 
-            <!-- SECTION: Fee Structure -->
-            <section id="fee-structure" class="mb-12">
+            <!-- SECTION: Fee Structure Govt -->
+            <section id="fee-structure" class="mb-12 scroll-mt-24">
                 <h2
                     class="text-2xl md:text-3xl font-bold text-[#0E0C4F] mb-4 pb-3 border-b-2 border-[#00BFFF]/30"
                 >
-                    Fee Structure for MBBS in Private Universities
+                    Government University Fee Structure
                 </h2>
-                <p class="text-gray-600 leading-relaxed mb-4">
-                    The fee structure varies across private medical universities
-                    in Georgia. Most universities offer affordable tuition with
-                    no hidden charges. Additional costs include hostel fees
-                    ($100-$200/month) and living expenses ($150-$300/month).
-                </p>
                 <div
-                    class="bg-white rounded-xl p-5 shadow-sm border border-gray-100"
+                    class="bg-white p-6 rounded-2xl shadow-sm border border-gray-100"
                 >
-                    <h3 class="font-bold text-[#0E0C4F] mb-3">
-                        Typical Annual Costs:
-                    </h3>
-                    <ul class="space-y-2 text-gray-600 text-[15px]">
-                        <li class="flex items-start gap-2">
-                            <span class="text-[#D5AD36] mt-1">•</span>
-                            <span
-                                ><strong>Tuition Fee:</strong> $4,000 – $8,000 per
-                                year</span
-                            >
+                    <p class="text-gray-600 mb-4">
+                        Government universities in Georgia are prestigious and
+                        offer competitive tuition fees for international
+                        students.
+                    </p>
+                    <div class="flex flex-wrap gap-4 items-center">
+                        <div
+                            class="px-6 py-3 bg-blue-50 rounded-xl border border-blue-100"
+                        >
+                            <p class="text-sm text-gray-500 font-medium">
+                                Annual Tuition
+                            </p>
+                            <p class="text-xl font-bold text-[#0E0C4F]">
+                                $4,000 - $5,000
+                            </p>
+                        </div>
+                        <div
+                            class="px-6 py-3 bg-yellow-50 rounded-xl border border-yellow-100"
+                        >
+                            <p class="text-sm text-gray-500 font-medium">
+                                Approx. in INR
+                            </p>
+                            <p class="text-xl font-bold text-[#b4912d]">
+                                ₹3.3 - 5 Lakhs
+                            </p>
+                        </div>
+                    </div>
+                    <ul
+                        class="mt-6 space-y-2 text-gray-600 text-sm list-disc list-inside"
+                    >
+                        <li>
+                            High-quality education with excellent campus
+                            facilities
                         </li>
-                        <li class="flex items-start gap-2">
-                            <span class="text-[#D5AD36] mt-1">•</span>
-                            <span
-                                ><strong>Hostel Fee:</strong> $1,200 – $2,400 per
-                                year</span
-                            >
+                        <li>Favorable student-teacher ratio</li>
+                        <li>
+                            Modern healthcare facilities for hands-on learning
                         </li>
-                        <li class="flex items-start gap-2">
-                            <span class="text-[#D5AD36] mt-1">•</span>
-                            <span
-                                ><strong>Food & Living:</strong> $1,800 – $3,600 per
-                                year</span
-                            >
-                        </li>
-                        <li class="flex items-start gap-2">
-                            <span class="text-[#D5AD36] mt-1">•</span>
-                            <span
-                                ><strong>Health Insurance:</strong> $200 – $400 per
-                                year</span
-                            >
-                        </li>
+                        <li>Simple and efficient admission process</li>
                     </ul>
                 </div>
             </section>
 
             <!-- SECTION: Curriculum -->
-            <section id="curriculum" class="mb-12">
+            <section id="curriculum" class="mb-12 scroll-mt-24">
                 <h2
                     class="text-2xl md:text-3xl font-bold text-[#0E0C4F] mb-4 pb-3 border-b-2 border-[#00BFFF]/30"
                 >
-                    MBBS Curriculum in Georgian Universities
+                    MBBS Syllabus & Curriculum
                 </h2>
-                <p class="text-gray-600 leading-relaxed mb-4">
-                    The MBBS curriculum in Georgia follows international medical
-                    education standards and is divided into pre-clinical and
-                    clinical phases.
-                </p>
-                <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
-                    <div
-                        class="bg-white rounded-xl p-5 shadow-sm border border-gray-100"
-                    >
-                        <h3 class="font-bold text-[#0E0C4F] mb-3">
-                            Pre-Clinical (Year 1-2)
-                        </h3>
-                        <ul class="space-y-1.5 text-gray-600 text-[15px]">
-                            <li>• Anatomy</li>
-                            <li>• Physiology</li>
-                            <li>• Biochemistry</li>
-                            <li>• Histology</li>
-                            <li>• Medical Biology</li>
-                        </ul>
-                    </div>
-                    <div
-                        class="bg-white rounded-xl p-5 shadow-sm border border-gray-100"
-                    >
-                        <h3 class="font-bold text-[#0E0C4F] mb-3">
-                            Clinical (Year 3-5)
-                        </h3>
-                        <ul class="space-y-1.5 text-gray-600 text-[15px]">
-                            <li>• Pathology & Pharmacology</li>
-                            <li>• Internal Medicine</li>
-                            <li>• Surgery</li>
-                            <li>• Obstetrics & Gynecology</li>
-                            <li>• Pediatrics</li>
-                        </ul>
-                    </div>
-                </div>
-            </section>
-
-            <!-- SECTION: Program Duration -->
-            <section id="program-duration" class="mb-12">
-                <h2
-                    class="text-2xl md:text-3xl font-bold text-[#0E0C4F] mb-4 pb-3 border-b-2 border-[#00BFFF]/30"
-                >
-                    MBBS Program Duration in Georgia
-                </h2>
-                <p class="text-gray-600 leading-relaxed mb-4">
-                    The total MBBS program duration in Georgia is 6 years (5
-                    years of academics + 1 year of internship). The academic
-                    year typically starts in September/October, with some
-                    universities offering a February intake as well.
-                </p>
                 <div
                     class="overflow-x-auto rounded-xl border border-gray-200 shadow-sm"
                 >
-                    <table class="w-full text-left">
+                    <table class="w-full text-left border-collapse">
                         <thead>
                             <tr class="bg-[#0E0C4F] text-white text-sm">
-                                <th class="px-5 py-3.5 font-semibold">Year</th>
                                 <th class="px-5 py-3.5 font-semibold"
-                                    >Focus Area</th
+                                    >Semester</th
+                                >
+                                <th class="px-5 py-3.5 font-semibold"
+                                    >Core Subjects</th
                                 >
                             </tr>
                         </thead>
                         <tbody class="text-gray-700 text-sm">
-                            <tr class="border-b border-gray-100 bg-white">
-                                <td class="px-5 py-3.5 font-medium">Year 1-2</td
-                                >
-                                <td class="px-5 py-3.5"
-                                    >Pre-clinical / Basic Medical Sciences</td
-                                >
-                            </tr>
-                            <tr class="border-b border-gray-100 bg-gray-50/50">
-                                <td class="px-5 py-3.5 font-medium">Year 3-5</td
-                                >
-                                <td class="px-5 py-3.5"
-                                    >Clinical Sciences & Hospital Rotations</td
-                                >
-                            </tr>
-                            <tr class="bg-white">
-                                <td class="px-5 py-3.5 font-medium">Year 6</td>
-                                <td class="px-5 py-3.5"
-                                    >Clinical Internship / Practical Training</td
-                                >
-                            </tr>
+                            {
+                                [
+                                    {
+                                        sem: "1st",
+                                        sub: "Medical Terminology, Genetics, Language, Anatomy Part I",
+                                    },
+                                    {
+                                        sem: "2nd",
+                                        sub: "Laboratory Chemistry, Medical History, Language",
+                                    },
+                                    {
+                                        sem: "3rd",
+                                        sub: "Physiology Part 2, Anatomy Part 3, Microbiology Part I, Biochemistry Part 2, Bioethics, Clinical Skills",
+                                    },
+                                    {
+                                        sem: "4th",
+                                        sub: "Pathology, Microbiology Part 2, Physiology Part 3, Behavioral Physiology, Pharmacology Part 1",
+                                    },
+                                    {
+                                        sem: "5th",
+                                        sub: "Systemic Pathology Part 1, Pharmacology Part 2, Behavioral Science, Clinical Skills, Surgery Part I",
+                                    },
+                                    {
+                                        sem: "6th",
+                                        sub: "Surgery Part 2, Systemic Pathology, Radiology",
+                                    },
+                                    {
+                                        sem: "7th",
+                                        sub: "Psychiatry, Professional Pathologies, Neurology",
+                                    },
+                                    {
+                                        sem: "8th",
+                                        sub: "Obstetrics, Surgery, Infectious Diseases, Electrocardiogram",
+                                    },
+                                    {
+                                        sem: "9th",
+                                        sub: "Dermatovenerology, Gynecology, Surgery, Nutrition, Traumatology",
+                                    },
+                                    {
+                                        sem: "10th",
+                                        sub: "Pediatric Surgery, Clinical Pharmacology",
+                                    },
+                                    {
+                                        sem: "11th",
+                                        sub: "Pharmacotherapy, Plastic Surgery, Oncology, Tuberculosis",
+                                    },
+                                    {
+                                        sem: "12th",
+                                        sub: "Internal Medicine, Surgery, Obstetrics, Critical Care, Ethics, Law, Toxicology",
+                                    },
+                                ].map((item, index) => (
+                                    <tr
+                                        class={`border-b border-gray-100 ${index % 2 === 0 ? "bg-white" : "bg-gray-50/50"}`}
+                                    >
+                                        <td class="px-5 py-4 font-bold text-[#0E0C4F]">
+                                            {item.sem}
+                                        </td>
+                                        <td class="px-5 py-4 text-gray-600">
+                                            {item.sub}
+                                        </td>
+                                    </tr>
+                                ))
+                            }
                         </tbody>
                     </table>
                 </div>
             </section>
 
-            <!-- SECTION: Documents -->
-            <section id="documents" class="mb-12">
+            <!-- SECTION: Admission -->
+            <section id="admission" class="mb-12 scroll-mt-24">
                 <h2
                     class="text-2xl md:text-3xl font-bold text-[#0E0C4F] mb-4 pb-3 border-b-2 border-[#00BFFF]/30"
                 >
-                    Documents Required for a Visa for MBBS in Georgia
+                    Admission Process & Timeline
                 </h2>
-                <p class="text-gray-600 leading-relaxed mb-4">
-                    Indian students require a student visa to study MBBS in
-                    Georgia. Below are the essential documents required for the
-                    visa application process:
-                </p>
-                <div
-                    class="bg-white rounded-xl p-5 shadow-sm border border-gray-100"
+                <div class="grid md:grid-cols-2 gap-8">
+                    <div>
+                        <h4 class="font-bold text-[#0E0C4F] mb-4">
+                            Step-by-Step Enrollment:
+                        </h4>
+                        <div class="space-y-4">
+                            {
+                                [
+                                    {
+                                        step: "1",
+                                        title: "Apply Online",
+                                        desc: "Submit application form with academic documents.",
+                                    },
+                                    {
+                                        step: "2",
+                                        title: "Offer Letter",
+                                        desc: "Receive admission confirmation from university.",
+                                    },
+                                    {
+                                        step: "3",
+                                        title: "Fee Payment",
+                                        desc: "Pay first-year tuition directly to the university.",
+                                    },
+                                    {
+                                        step: "4",
+                                        title: "Visa Processing",
+                                        desc: "Ministry of Education approval & Embassy visa.",
+                                    },
+                                    {
+                                        step: "5",
+                                        title: "Departure",
+                                        desc: "Document preparation and travel to Georgia.",
+                                    },
+                                ].map((s) => (
+                                    <div class="flex gap-4">
+                                        <span class="flex-shrink-0 w-8 h-8 rounded-full bg-[#00BFFF] text-white flex items-center justify-center font-bold">
+                                            {s.step}
+                                        </span>
+                                        <div>
+                                            <p class="font-bold text-gray-800">
+                                                {s.title}
+                                            </p>
+                                            <p class="text-sm text-gray-600">
+                                                {s.desc}
+                                            </p>
+                                        </div>
+                                    </div>
+                                ))
+                            }
+                        </div>
+                    </div>
+                    <div>
+                        <h4 class="font-bold text-[#0E0C4F] mb-4">
+                            Session Timeline:
+                        </h4>
+                        <div
+                            class="overflow-x-auto rounded-xl border border-gray-200"
+                        >
+                            <table
+                                class="w-full text-left border-collapse text-sm"
+                            >
+                                <thead class="bg-gray-100 text-gray-600">
+                                    <tr>
+                                        <th class="px-4 py-2">Month</th>
+                                        <th class="px-4 py-2">Process</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    {
+                                        [
+                                            {
+                                                m: "April - May",
+                                                p: "Registration Starts",
+                                            },
+                                            {
+                                                m: "May - June",
+                                                p: "Document Qualification",
+                                            },
+                                            {
+                                                m: "June - July",
+                                                p: "Acceptance Letter",
+                                            },
+                                            {
+                                                m: "July - Aug",
+                                                p: "Invitation Letter",
+                                            },
+                                            {
+                                                m: "September",
+                                                p: "Visa & Departure",
+                                            },
+                                            {
+                                                m: "Oct - Dec",
+                                                p: "Enrollment & Classes",
+                                            },
+                                        ].map((t) => (
+                                            <tr class="border-b border-gray-50">
+                                                <td class="px-4 py-2 font-medium">
+                                                    {t.m}
+                                                </td>
+                                                <td class="px-4 py-2 text-gray-600">
+                                                    {t.p}
+                                                </td>
+                                            </tr>
+                                        ))
+                                    }
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- SECTION: Documents -->
+            <section id="documents" class="mb-12 scroll-mt-24">
+                <h2
+                    class="text-2xl md:text-3xl font-bold text-[#0E0C4F] mb-4 pb-3 border-b-2 border-[#00BFFF]/30"
                 >
-                    <ul class="space-y-2.5 text-gray-600 text-[15px]">
-                        <li class="flex items-start gap-2">
-                            <span class="text-[#00BFFF] mt-1">✓</span>
-                            <span
-                                >Valid passport with at least 18 months validity</span
-                            >
-                        </li>
-                        <li class="flex items-start gap-2">
-                            <span class="text-[#00BFFF] mt-1">✓</span>
-                            <span
-                                >10th and 12th mark sheets and certificates</span
-                            >
-                        </li>
-                        <li class="flex items-start gap-2">
-                            <span class="text-[#00BFFF] mt-1">✓</span>
-                            <span>NEET scorecard</span>
-                        </li>
-                        <li class="flex items-start gap-2">
-                            <span class="text-[#00BFFF] mt-1">✓</span>
-                            <span
-                                >Admission letter from the Georgian university</span
-                            >
-                        </li>
-                        <li class="flex items-start gap-2">
-                            <span class="text-[#00BFFF] mt-1">✓</span>
-                            <span
-                                >Passport-size photographs (white background)</span
-                            >
-                        </li>
-                        <li class="flex items-start gap-2">
-                            <span class="text-[#00BFFF] mt-1">✓</span>
-                            <span
-                                >Health certificate & medical fitness report</span
-                            >
-                        </li>
-                        <li class="flex items-start gap-2">
-                            <span class="text-[#00BFFF] mt-1">✓</span>
-                            <span>Bank statement showing sufficient funds</span>
-                        </li>
-                        <li class="flex items-start gap-2">
-                            <span class="text-[#00BFFF] mt-1">✓</span>
-                            <span>Birth certificate</span>
-                        </li>
+                    Documents Required for Visa
+                </h2>
+                <div
+                    class="bg-white rounded-2xl p-6 border border-gray-100 shadow-sm"
+                >
+                    <ul class="grid md:grid-cols-2 gap-y-3 gap-x-8">
+                        {
+                            [
+                                "10th & 12th Marksheets",
+                                "NEET Scorecard",
+                                "Digitized Passport Sized Photos",
+                                "Official Invitation Letter",
+                                "Rector's Directive",
+                                "Birth Certificate",
+                                "Original Passport",
+                                "Letter of Sponsorship",
+                                "NOC Certificate",
+                                "Travel Insurance",
+                                "Latest Bank Statements",
+                            ].map((doc) => (
+                                <li class="flex items-center gap-3 text-gray-600">
+                                    <span class="text-[#00BFFF]">✔</span> {doc}
+                                </li>
+                            ))
+                        }
                     </ul>
+                    <div
+                        class="mt-6 p-4 bg-orange-50 rounded-xl border border-orange-100"
+                    >
+                        <p class="text-xs text-orange-800 font-medium">
+                            Note: Prepare documents at least 1 month in advance
+                            as embassy processing usually takes over 30 days.
+                        </p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- SECTION: Benefits -->
+            <section id="benefits" class="mb-12 scroll-mt-24">
+                <h2
+                    class="text-2xl md:text-3xl font-bold text-[#0E0C4F] mb-4 pb-3 border-b-2 border-[#00BFFF]/30"
+                >
+                    Why Study MBBS in Georgia?
+                </h2>
+                <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+                    {
+                        [
+                            {
+                                title: "Global Recognition",
+                                desc: "Accredited by WHO, NMC, and FAIMER.",
+                            },
+                            {
+                                title: "English Medium",
+                                desc: "No IELTS/TOEFL required. Courses are 100% in English.",
+                            },
+                            {
+                                title: "Affordable Living",
+                                desc: "Living costs are significantly lower than USA/UK/Europe.",
+                            },
+                            {
+                                title: "Safe Environment",
+                                desc: "Georgia is in the top 10 safest countries globally.",
+                            },
+                            {
+                                title: "No Donation",
+                                desc: "Direct admissions based on merit with no hidden fees.",
+                            },
+                            {
+                                title: "Practical Exposure",
+                                desc: "Emphasis on hands-on learning in modern hospitals.",
+                            },
+                        ].map((b) => (
+                            <div class="p-5 rounded-2xl bg-white border border-gray-100 shadow-sm">
+                                <h4 class="font-bold text-[#0E0C4F] mb-2">
+                                    {b.title}
+                                </h4>
+                                <p class="text-sm text-gray-600">{b.desc}</p>
+                            </div>
+                        ))
+                    }
+                </div>
+            </section>
+
+            <!-- SECTION: Loan Assistance -->
+            <section id="loans" class="mb-12 scroll-mt-24">
+                <h2
+                    class="text-2xl md:text-3xl font-bold text-[#0E0C4F] mb-4 pb-3 border-b-2 border-[#00BFFF]/30"
+                >
+                    Education Loan Assistance
+                </h2>
+                <div
+                    class="bg-gradient-to-br from-[#0E0C4F] to-[#252374] p-8 rounded-2xl text-white shadow-lg"
+                >
+                    <h3 class="text-xl font-bold mb-4 text-[#D5AD36]">
+                        Fueling Your Dreams
+                    </h3>
+                    <p class="text-gray-300 mb-6">
+                        We provide full support to Indian students seeking
+                        education loans for their MBBS in Georgia.
+                    </p>
+                    <div class="grid md:grid-cols-2 gap-4">
+                        {
+                            [
+                                "Guidance on bank documentation",
+                                "Connections with private & national banks",
+                                "Assistance in lower interest rates",
+                                "Form filling & liaison support",
+                                "Seamless hassle-free processing",
+                            ].map((item) => (
+                                <div class="flex gap-2 items-start text-sm">
+                                    <span class="text-[#00BFFF]">✦</span>
+                                    <span class="text-gray-200">{item}</span>
+                                </div>
+                            ))
+                        }
+                    </div>
+                </div>
+            </section>
+
+            <!-- SECTION: Career & PG Options -->
+            <section id="career" class="mb-12 scroll-mt-24">
+                <h2
+                    class="text-2xl md:text-3xl font-bold text-[#0E0C4F] mb-4 pb-3 border-b-2 border-[#00BFFF]/30"
+                >
+                    Career Scope & PG Options
+                </h2>
+                <p class="text-gray-600 mb-6 font-medium">
+                    Graduates from Georgian medical universities have a wide
+                    horizon of global opportunities:
+                </p>
+                <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+                    {
+                        [
+                            { title: "USA", desc: "Qualify USMLE" },
+                            { title: "UK", desc: "Clear PLAB" },
+                            { title: "India", desc: "Clear NMC (FMGE/NEXT)" },
+                            { title: "Australia", desc: "Pass AMC Exams" },
+                            { title: "Germany", desc: "Join PG Program" },
+                            { title: "Europe", desc: "Language & License" },
+                            { title: "Admin", desc: "Hospital Mgmt" },
+                            { title: "Private", desc: "Open Clinic" },
+                        ].map((o) => (
+                            <div class="bg-white p-4 rounded-xl border border-gray-100 text-center">
+                                <h5 class="text-[#00BFFF] font-extrabold uppercase tracking-widest text-[10px] mb-1">
+                                    {o.title}
+                                </h5>
+                                <p class="text-sm font-bold text-gray-700">
+                                    {o.desc}
+                                </p>
+                            </div>
+                        ))
+                    }
+                </div>
+            </section>
+
+            <!-- SECTION: Safety & Housing -->
+            <section id="safety" class="mb-12 scroll-mt-24">
+                <h2
+                    class="text-2xl md:text-3xl font-bold text-[#0E0C4F] mb-4 pb-3 border-b-2 border-[#00BFFF]/30"
+                >
+                    Safety & Accommodation
+                </h2>
+                <div class="grid md:grid-cols-2 gap-8">
+                    <div class="space-y-4">
+                        <div
+                            class="bg-green-50/50 p-5 rounded-2xl border border-green-100"
+                        >
+                            <h4 class="font-bold text-green-900 mb-2">
+                                Safety Overview
+                            </h4>
+                            <p class="text-sm text-green-800">
+                                Georgia is known for its hospitality and low
+                                crime rate. Visible police patrols and friendly
+                                locals ensure a secure environment for Indian
+                                students.
+                            </p>
+                        </div>
+                        <ul
+                            class="text-sm text-gray-600 space-y-2 list-disc list-inside"
+                        >
+                            <li>Visible night police presence</li>
+                            <li>Welcoming and hospitable culture</li>
+                            <li>
+                                Separate hostels for male and female students
+                            </li>
+                        </ul>
+                    </div>
+                    <div
+                        class="bg-gray-50 p-5 rounded-2xl border border-gray-200"
+                    >
+                        <h4 class="font-bold text-[#0E0C4F] mb-3">
+                            Housing Options
+                        </h4>
+                        <div class="space-y-3">
+                            <div>
+                                <p class="text-sm font-bold text-gray-800">
+                                    University Hostels
+                                </p>
+                                <p class="text-xs text-gray-500">
+                                    Modern, shared or private rooms with
+                                    amenities.
+                                </p>
+                            </div>
+                            <div>
+                                <p class="text-sm font-bold text-gray-800">
+                                    Private Apartments
+                                </p>
+                                <p class="text-xs text-gray-500">
+                                    For students with higher budgets, usually in
+                                    city centers.
+                                </p>
+                            </div>
+                            <div>
+                                <p class="text-sm font-bold text-gray-800">
+                                    Home Stays
+                                </p>
+                                <p class="text-xs text-gray-500">
+                                    Living with local families for cultural
+                                    immersion.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- SECTION: NEET -->
+            <section id="neet" class="mb-12 scroll-mt-24">
+                <h2
+                    class="text-2xl md:text-3xl font-bold text-[#0E0C4F] mb-4 pb-3 border-b-2 border-[#00BFFF]/30"
+                >
+                    NEET Requirement for Georgia
+                </h2>
+                <div class="bg-red-50 p-6 rounded-2xl border border-red-100">
+                    <p class="text-gray-800 font-medium mb-4">
+                        Per NMC regulations, qualifying NEET is mandatory for
+                        Indian students intending to practice in India after
+                        MBBS abroad.
+                    </p>
+                    <div class="grid md:grid-cols-2 gap-6">
+                        <div class="p-4 bg-white rounded-xl shadow-sm">
+                            <h5 class="text-red-600 font-bold mb-1">
+                                With NEET
+                            </h5>
+                            <p class="text-xs text-gray-600 leading-relaxed">
+                                Eligible to clear FMGE/NEXT in India and
+                                practice as a registered doctor.
+                            </p>
+                        </div>
+                        <div class="p-4 bg-white rounded-xl shadow-sm">
+                            <h5 class="text-gray-600 font-bold mb-1">
+                                Without NEET
+                            </h5>
+                            <p class="text-xs text-gray-600 leading-relaxed">
+                                Can still study in Georgia but ineligible to
+                                practice in India. Careers restricted to Georgia
+                                or other nations.
+                            </p>
+                        </div>
+                    </div>
                 </div>
             </section>
         </CountryLayout>

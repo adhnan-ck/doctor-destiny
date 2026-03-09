@@ -1,4 +1,5 @@
 import React from 'react';
+import mbbsImg from '../assets/mbbs.avif';
 
 const OurProcess = () => {
     const processes = [
@@ -112,7 +113,7 @@ const OurProcess = () => {
                                 }}
                             >
                                 <img
-                                    src="/mbbs.avif"
+                                    src={mbbsImg.src}
                                     alt="Student with books"
                                     className="w-full h-full object-cover"
                                 />

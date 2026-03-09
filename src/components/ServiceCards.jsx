@@ -1,18 +1,22 @@
+import img1 from '../assets/InternationalStudyAdvisory.avif';
+import img2 from '../assets/HelpChooseUniversities.avif';
+import img3 from '../assets/TravelLogisticsSupport.avif';
+
 const services = [
     {
         title: "International Study Advisory",
         description: "Your global guide to educational opportunities abroad.",
-        image: "/InternationalStudyAdvisory.avif"
+        image: img1.src
     },
     {
         title: "Help Choose Universities",
         description: "Select universities based location, and finances best academic experience",
-        image: "/HelpChooseUniversities.avif"
+        image: img2.src
     },
     {
         title: "Travel Logistics Support",
         description: "Comprehensive travel logistics assistance and support.",
-        image: "/TravelLogisticsSupport.avif"
+        image: img3.src
     }
 ];
 

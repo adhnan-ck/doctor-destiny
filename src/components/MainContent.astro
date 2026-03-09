@@ -14,6 +14,25 @@ import WhyChooseUs from "./WhyChooseUs";
 import OurProcess from "./OurProcess";
 import TestimonialSection from "./TestimonialSection";
 import WhoWeAre from "./WhoWeAre";
+
+import tlImage from "../assets/countries/timor-leste.jpg";
+import ruImage from "../assets/countries/russia.jpg";
+import geImage from "../assets/countries/georgia.avif";
+import inImage from "../assets/countries/india.jpg";
+import euImage from "../assets/countries/europe.jpg";
+import ukusaImage from "../assets/countries/uk-usa.jpg";
+import deImage from "../assets/countries/germany.jpg";
+import kgImage from "../assets/countries/krygystan.jpg";
+import npImage from "../assets/countries/nepal.avif";
+import cnImage from "../assets/countries/china.jpg";
+import auImage from "../assets/countries/australia.jpg";
+import kzImage from "../assets/countries/kazakhstan.jpg";
+import uzImage from "../assets/countries/uzbekistan.jpg";
+import bdImage from "../assets/countries/bangladesh.avif";
+import muImage from "../assets/countries/mauritius.jpg";
+import phImage from "../assets/countries/philippines.avif";
+import { Image } from "astro:assets";
+import mdImg from "../assets/MD.png";
 ---
 
 <div
@@ -23,7 +42,19 @@ import WhoWeAre from "./WhoWeAre";
   <!-- About Section -->
   <section class="max-w-6xl mx-auto px-6 pt-24 pb-16">
     <div class="flex flex-col md:flex-row items-center gap-12 lg:gap-20">
-      <!-- Left: Text Content -->
+      <!-- Left: Image -->
+      <div class="flex-1 w-full">
+        <div class="w-full aspect-[4/3] rounded-3xl overflow-hidden shadow-xl">
+          <Image
+            src={mdImg}
+            alt="Top-Rated Consultant for MBBS Abroad"
+            class="w-full h-full object-cover"
+            loading="eager"
+          />
+        </div>
+      </div>
+
+      <!-- Right: Text Content -->
       <div class="flex-1 text-left">
         <span
           class="inline-block py-1 px-3 rounded-full bg-[#D5AD36]/20 text-[#D5AD36] text-sm font-semibold mb-6 tracking-wide"
@@ -40,30 +71,6 @@ import WhoWeAre from "./WhoWeAre";
           India's leading and most trusted consultants for MBBS abroad, guiding
           you to a successful medical career with expertise and transparency.
         </p>
-      </div>
-
-      <!-- Right: Image Placeholder -->
-      <div class="flex-1 w-full">
-        <div
-          class="w-full aspect-[4/3] rounded-3xl bg-gray-100 border-2 border-dashed border-gray-300 flex flex-col items-center justify-center text-gray-400"
-        >
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            class="w-14 h-14 mb-3 text-gray-300"
-            fill="none"
-            viewBox="0 0 24 24"
-            stroke="currentColor"
-          >
-            <path
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              stroke-width="1.5"
-              d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z"
-            ></path>
-          </svg>
-          <span class="text-sm font-medium">Image Placeholder</span>
-          <span class="text-xs mt-1">Recommended: 800 × 600px</span>
-        </div>
       </div>
     </div>
   </section>
@@ -219,7 +226,7 @@ import WhoWeAre from "./WhoWeAre";
   </section>
 
   <!-- Who We Are Section -->
-  <WhoWeAre client:visible />
+  <WhoWeAre />
 
   <!-- Destinations Grid (Bento Style) -->
   <section class="max-w-7xl mx-auto px-6 py-16">
@@ -237,97 +244,97 @@ import WhoWeAre from "./WhoWeAre";
         [
           {
             country: "Timor Leste",
-            image: "/countries/timor-leste.jpg",
+            image: tlImage.src,
             flag: "tl",
             href: "/study-mbbs-in-timor-leste",
           },
           {
             country: "Russia",
-            image: "/countries/russia.jpg",
+            image: ruImage.src,
             flag: "ru",
             href: "/study-mbbs-in-russia",
           },
           {
             country: "Georgia",
-            image: "/countries/georgia.avif",
+            image: geImage.src,
             flag: "ge",
             href: "/study-mbbs-in-georgia",
           },
           {
             country: "India",
-            image: "/countries/india.jpg",
+            image: inImage.src,
             flag: "in",
             href: "/study-mbbs-in-india",
           },
           {
             country: "Europe",
-            image: "/countries/europe.jpg",
+            image: euImage.src,
             flag: "eu",
             href: "/study-mbbs-in-europe",
           },
           {
             country: "UK and USA",
-            image: "/countries/uk-usa.jpg",
+            image: ukusaImage.src,
             flag: "uk-usa",
             href: "/study-mbbs-in-uk-and-usa",
           },
           {
             country: "Germany",
-            image: "/countries/germany.jpg",
+            image: deImage.src,
             flag: "de",
             href: "/study-mbbs-in-germany",
           },
           {
             country: "Kyrgyzstan",
-            image: "/countries/krygystan.jpg",
+            image: kgImage.src,
             flag: "kg",
             href: "/study-mbbs-in-kyrgyzstan",
           },
           {
             country: "Nepal",
-            image: "/countries/nepal.avif",
+            image: npImage.src,
             flag: "np",
             href: "/study-mbbs-in-nepal",
           },
           {
             country: "China",
-            image: "/countries/china.jpg",
+            image: cnImage.src,
             flag: "cn",
             href: "/study-mbbs-in-china",
           },
           {
             country: "Australia",
-            image: "/countries/australia.jpg",
+            image: auImage.src,
             flag: "au",
             href: "/study-mbbs-in-australia",
           },
           {
             country: "Kazakhstan",
-            image: "/countries/kazakhstan.jpg",
+            image: kzImage.src,
             flag: "kz",
             href: "/study-mbbs-in-kazakhstan",
           },
           {
             country: "Uzbekistan",
-            image: "/countries/uzbekistan.jpg",
+            image: uzImage.src,
             flag: "uz",
             href: "/study-mbbs-in-uzbekistan",
           },
           {
             country: "Bangladesh",
-            image: "/countries/bangladesh.avif",
+            image: bdImage.src,
             flag: "bd",
             href: "/study-mbbs-in-bangladesh",
           },
           {
             country: "Mauritius",
-            image: "/countries/mauritius.jpg",
+            image: muImage.src,
             flag: "mu",
             href: "/study-mbbs-in-mauritius",
           },
           {
             country: "Philippines",
-            image: "/countries/philippines.avif",
+            image: phImage.src,
             flag: "ph",
             href: "/study-mbbs-in-philippines",
           },
@@ -344,12 +351,34 @@ import WhoWeAre from "./WhoWeAre";
         ))
       }
     </div>
+
+    <!-- View More Button (Mobile Only) -->
+    <div class="mt-12 flex justify-center md:hidden">
+      <button
+        id="show-more-btn"
+        class="group bg-white border-2 border-[#0E0C4F] text-[#0E0C4F] px-8 py-3.5 rounded-2xl font-bold hover:bg-[#0E0C4F] hover:text-white transition-all duration-300 flex items-center gap-3 shadow-lg shadow-blue-900/5 active:scale-95"
+      >
+        <span>Show More Countries</span>
+        <svg
+          id="show-more-icon"
+          class="w-5 h-5 transition-transform duration-300 group-hover:translate-y-0.5"
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="2.5"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        >
+          <path d="M6 9l6 6 6-6"></path>
+        </svg>
+      </button>
+    </div>
   </section>
 </div>
 
-<ServiceCards client:visible />
-<WhyChooseUs client:visible />
-<OurProcess client:visible />
+<ServiceCards />
+<WhyChooseUs />
+<OurProcess />
 <!-- <WinningRecord client:visible />
 <TestimonialSection client:visible /> -->
 <!-- Footer / Contact -->
@@ -563,6 +592,7 @@ import WhoWeAre from "./WhoWeAre";
 
 <script>
   const btn = document.getElementById("show-more-btn");
+  const btnText = btn?.querySelector("span");
   const icon = document.getElementById("show-more-icon");
   const hiddenCards = document.querySelectorAll(".mobile-hidden");
   let expanded = false;
@@ -580,8 +610,12 @@ import WhoWeAre from "./WhoWeAre";
       }
     });
 
-    btn.innerHTML = expanded
-      ? `Show Less <span style="display:inline-block; transform: rotate(180deg)">↓</span>`
-      : `Show More <span>↓</span>`;
+    if (btnText) {
+      btnText.textContent = expanded ? "Show Less" : "Show More Countries";
+    }
+
+    if (icon) {
+      icon.style.transform = expanded ? "rotate(180deg)" : "rotate(0deg)";
+    }
   });
 </script>

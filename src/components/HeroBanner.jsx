@@ -1,4 +1,5 @@
 import React from 'react';
+import doctorImage from '../assets/doctor-image.png';
 
 const HeroBanner = () => {
     return (
@@ -44,7 +45,7 @@ const HeroBanner = () => {
                     {/* Right: Doctor Image */}
                     <div className="md:col-span-5 flex justify-center md:justify-end">
                         <img
-                            src="/doctor-image.png"
+                            src={doctorImage.src}
                             alt="Medical Consultant"
                             className="w-48 max-w-xs sm:w-64 md:max-w-md md:w-full h-auto object-cover object-bottom"
                         />

@@ -1,6 +1,7 @@
 import { motion, useScroll, useTransform } from 'framer-motion';
 import { ArrowDown, Phone, Mail } from 'lucide-react';
 import AnimatedBackground from './AnimatedBackground';
+import logoPng from '../assets/logo.png';
 
 export default function IntroCover() {
     const { scrollY } = useScroll();
@@ -37,7 +38,7 @@ export default function IntroCover() {
 
                     {/* Logo with cinematic entrance */}
                     <motion.img
-                        src="/logo.png"
+                        src={logoPng.src}
                         alt="Doctor Destiny Logo"
                         className="w-64 md:w-80 lg:w-96 h-auto drop-shadow-2xl relative"
                         initial={{ scale: 0.6, opacity: 0, filter: 'blur(12px)' }}

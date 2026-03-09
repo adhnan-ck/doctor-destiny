@@ -1,5 +1,7 @@
 import React, { useState, useEffect } from 'react';
 
+import logo2 from '../assets/logo2.png';
+
 const Navbar = () => {
     const [isOpen, setIsOpen] = useState(false);
     const [scrolled, setScrolled] = useState(false);
@@ -63,7 +65,7 @@ const Navbar = () => {
             <div className="max-w-[1920px] mx-auto w-full px-4 lg:px-8 xl:px-12 flex justify-between items-center">
                 {/* Logo */}
                 <a href="/" className="flex items-center gap-3 group">
-                    <img src="/logo2.png" alt="Doctor Dreams Logo" className="h-12 w-auto group-hover:scale-105 transition-transform duration-300" />
+                    <img src={logo2.src} alt="Doctor Dreams Logo" className="h-12 w-auto group-hover:scale-105 transition-transform duration-300" />
                     <span className={`font-trajan font-bold text-lg md:text-2xl tracking-widest transition-colors duration-300 ${scrolled ? 'text-[#0E0C4F]' : 'text-white'
                         }`}>
                         DOCTOR DESTINY
