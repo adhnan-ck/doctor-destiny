@@ -3,6 +3,7 @@ import "../styles/global.css";
 import "flag-icons/css/flag-icons.min.css";
 import Navbar from "../components/Navbar.jsx";
 import CountryLayout from "../components/CountryLayout.astro";
+import Footer from "../components/Footer.astro";
 ---
 
 <!doctype html>
@@ -838,89 +839,6 @@ import CountryLayout from "../components/CountryLayout.astro";
             </section>
         </CountryLayout>
 
-        <!-- Footer -->
-        <footer
-            class="bg-[#0E0C4F] text-white pt-20 pb-10 rounded-t-[3rem]"
-            style="position:relative; overflow:hidden;"
-        >
-            <div
-                class="max-w-7xl mx-auto px-6"
-                style="position:relative;z-index:1;"
-            >
-                <div
-                    class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-16"
-                >
-                    <div>
-                        <h3 class="text-2xl font-bold mb-6 text-[#D5AD36]">
-                            Doctor Destiny
-                        </h3>
-                        <p class="text-gray-300 leading-relaxed">
-                            Empowering aspiring doctors with the right guidance
-                            and opportunities to study medicine globally.
-                        </p>
-                    </div>
-                    <div>
-                        <h4 class="text-lg font-bold mb-6 text-[#D5AD36]">
-                            Quick Links
-                        </h4>
-                        <ul class="space-y-4 text-gray-300">
-                            <li>
-                                <a
-                                    href="/"
-                                    class="hover:text-[#00BFFF] transition-colors"
-                                    >Home</a
-                                >
-                            </li>
-                            <li>
-                                <a
-                                    href="#"
-                                    class="hover:text-[#00BFFF] transition-colors"
-                                    >About Us</a
-                                >
-                            </li>
-                            <li>
-                                <a
-                                    href="#"
-                                    class="hover:text-[#00BFFF] transition-colors"
-                                    >Services</a
-                                >
-                            </li>
-                            <li>
-                                <a
-                                    href="#"
-                                    class="hover:text-[#00BFFF] transition-colors"
-                                    >Contact</a
-                                >
-                            </li>
-                        </ul>
-                    </div>
-                    <div>
-                        <h4 class="text-lg font-bold mb-6 text-[#D5AD36]">
-                            Offices
-                        </h4>
-                        <p class="text-gray-300 mb-2">Bangalore (HQ)</p>
-                        <p class="text-gray-300 mb-2">Chennai</p>
-                        <p class="text-gray-300 mb-2">Davangere</p>
-                        <p class="text-gray-300">Hubballi</p>
-                    </div>
-                    <div>
-                        <h4 class="text-lg font-bold mb-6 text-[#D5AD36]">
-                            Contact Us
-                        </h4>
-                        <p class="text-gray-300 mb-4">info@doctordestiny.com</p>
-                        <button
-                            class="bg-gradient-to-r from-[#D5AD36] to-[#f0c847] hover:shadow-[0_0_20px_rgba(213,173,54,0.6)] text-[#0E0C4F] px-6 py-3 rounded-xl w-full font-semibold transition-all duration-300 hover:scale-105"
-                        >
-                            Book Consultation
-                        </button>
-                    </div>
-                </div>
-                <div
-                    class="border-t border-white/10 pt-8 text-center text-gray-400"
-                >
-                    <p>&copy; 2026 Doctor Destiny. All rights reserved.</p>
-                </div>
-            </div>
-        </footer>
+        <Footer />
     </body>
 </html>

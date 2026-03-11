@@ -2,6 +2,8 @@
 import "../styles/global.css";
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer.astro";
+import { Image } from "astro:assets";
+import mdImg from "../assets/MD.png";
 ---
 
 <html lang="en">
@@ -66,17 +68,18 @@ import Footer from "../components/Footer.astro";
             }
 
             .founder-inner {
-                max-width: 1000px;
+                max-width: 1200px;
                 margin: 0 auto;
                 display: grid;
-                grid-template-columns: 0.8fr 1.2fr;
-                gap: 60px;
+                grid-template-columns: 1fr 1.15fr;
+                gap: 80px;
                 align-items: center;
             }
 
             .founder-image-wrap {
                 position: relative;
-                max-width: 380px;
+                max-width: 480px;
+                width: 100%;
                 margin: 0 auto;
             }
 
@@ -84,24 +87,40 @@ import Footer from "../components/Footer.astro";
                 width: 100%;
                 aspect-ratio: 3/4;
                 border-radius: 24px;
-                background: #e5e7eb;
-                border: 2px dashed #d1d5db;
+                background: linear-gradient(135deg, #f0f9ff 0%, #e0f2fe 100%);
+                border: 1px solid rgba(0, 191, 255, 0.1);
                 display: flex;
                 flex-direction: column;
                 align-items: center;
-                justify-content: center;
-                color: #9ca3af;
-                gap: 10px;
+                justify-content: flex-end;
+                position: relative;
+                overflow: hidden;
+                padding: 20px;
+                box-shadow: 0 20px 40px rgba(0, 0, 0, 0.05);
             }
 
-            .founder-image-placeholder svg {
-                width: 56px;
-                height: 56px;
-                color: #d1d5db;
+            .placeholder-bg-icons {
+                position: absolute;
+                inset: 0;
+                z-index: 0;
+                opacity: 0.4;
+                pointer-events: none;
             }
-            .founder-image-placeholder span {
-                font-size: 0.85rem;
-                font-weight: 500;
+
+            .placeholder-bg-icons svg {
+                position: absolute;
+                color: rgba(0, 191, 255, 0.15);
+                fill: currentColor;
+            }
+
+            .founder-image-placeholder :global(img) {
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                z-index: 1;
             }
 
             .founder-accent {
@@ -142,16 +161,18 @@ import Footer from "../components/Footer.astro";
             }
 
             .founder-name-card {
-                margin-top: 2rem;
+                position: relative;
+                z-index: 2;
                 display: flex;
                 align-items: center;
                 gap: 14px;
-                padding: 16px 20px;
-                background: white;
-                border-radius: 14px;
-                box-shadow: 0 4px 20px rgba(0, 0, 0, 0.07);
+                padding: 12px 16px;
+                background: rgba(255, 255, 255, 0.9);
+                backdrop-filter: blur(10px);
+                border-radius: 12px;
+                box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
                 border-left: 4px solid var(--sky);
-                width: fit-content;
+                width: 100%;
             }
 
             .founder-name-card strong {
@@ -734,27 +755,41 @@ import Footer from "../components/Footer.astro";
                 <div class="founder-image-wrap">
                     <div class="founder-accent"></div>
                     <div class="founder-accent-2"></div>
-                    <div
-                        class="founder-image-placeholder"
-                        style="position:relative;z-index:1;"
-                    >
-                        <svg
-                            xmlns="http://www.w3.org/2000/svg"
-                            fill="none"
-                            viewBox="0 0 24 24"
-                            stroke="currentColor"
-                        >
-                            <path
-                                stroke-linecap="round"
-                                stroke-linejoin="round"
-                                stroke-width="1.5"
-                                d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z"
-                            ></path>
-                        </svg>
-                        <span>Founder Photo</span>
-                        <span style="font-size:0.72rem;color:#c4c9d4;"
-                            >Recommended: 600 × 800px</span
-                        >
+                    <div class="founder-image-placeholder">
+                        <div class="placeholder-bg-icons">
+                            <svg
+                                style="top: 10%; left: 10%; width: 60px; height: 60px;"
+                                viewBox="0 0 24 24"
+                                ><path
+                                    d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-2 10h-4v4h-2v-4H7v-2h4V7h2v4h4v2z"
+                                ></path></svg
+                            >
+                            <svg
+                                style="bottom: 20%; right: 10%; width: 80px; height: 80px;"
+                                viewBox="0 0 24 24"
+                                ><path
+                                    d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"
+                                ></path></svg
+                            >
+                            <svg
+                                style="top: 40%; right: 15%; width: 40px; height: 40px;"
+                                viewBox="0 0 24 24"
+                                ><path
+                                    d="M12 3L1 9l11 6 9-4.91V17h2V9L12 3zM5 13.18v2.81l7 3.82 7-3.82v-2.81l-7 3.82-7-3.82z"
+                                ></path></svg
+                            >
+                        </div>
+                        <Image
+                            src={mdImg}
+                            alt="Mr. Feroz H.S - Founder & CEO"
+                            loading="eager"
+                        />
+                        <div class="founder-name-card">
+                            <div>
+                                <strong>Mr. FEROZ H.S</strong>
+                                <span>Founder &amp; CEO, Doctor Destiny</span>
+                            </div>
+                        </div>
                     </div>
                 </div>
 
@@ -776,12 +811,6 @@ import Footer from "../components/Footer.astro";
                         students, guiding them on their path to becoming
                         successful medical professionals.
                     </p>
-                    <div class="founder-name-card">
-                        <div>
-                            <strong>Mr. FEROZ H.S</strong>
-                            <span>Founder &amp; CEO, Doctor Destiny</span>
-                        </div>
-                    </div>
                 </div>
             </div>
         </section>

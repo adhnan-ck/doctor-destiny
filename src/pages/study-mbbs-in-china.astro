@@ -1,0 +1,867 @@
+---
+import "../styles/global.css";
+import "flag-icons/css/flag-icons.min.css";
+import Navbar from "../components/Navbar.jsx";
+import CountryLayout from "../components/CountryLayout.astro";
+import Footer from "../components/Footer.astro";
+---
+
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&display=swap"
+            rel="stylesheet"
+        />
+        <meta
+            name="description"
+            content="Study MBBS in China – Complete guide including fees, top universities, syllabus, admission process, and benefits for Indian students."
+        />
+        <title>
+            MBBS in China for Indian Students: Fees, Admissions, and
+            Universities | Doctor Destiny
+        </title>
+    </head>
+    <body class="bg-[#F0F7FF] overflow-x-hidden">
+        <Navbar client:load />
+
+        <!-- Page Hero -->
+        <div class="bg-[#0E0C4F] pt-28 pb-16 px-6">
+            <div class="max-w-5xl mx-auto text-center">
+                <span
+                    class="inline-block py-1 px-4 rounded-full bg-white/10 text-[#D5AD36] text-sm font-bold mb-4 tracking-widest uppercase"
+                >
+                    Study Abroad
+                </span>
+                <h1
+                    class="text-4xl md:text-6xl font-extrabold text-white leading-tight mb-4"
+                >
+                    Study MBBS in <span class="text-[#00BFFF]">China</span>
+                </h1>
+                <p
+                    class="text-lg text-gray-300 max-w-3xl mx-auto leading-relaxed"
+                >
+                    China is an ideal place to study MBBS with 45 NMC-approved
+                    universities offering high-class state-of-the-art
+                    infrastructure. Experience international educational
+                    standards, globally recognized medical degrees, and a
+                    hassle-free admission process in a safe environment.
+                </p>
+                <div class="mt-8">
+                    <button
+                        class="bg-gradient-to-r from-[#D5AD36] to-[#f0c847] hover:shadow-[0_0_20px_rgba(213,173,54,0.6)] text-[#0E0C4F] px-8 py-3 rounded-full font-bold transition-all duration-300 hover:scale-105"
+                    >
+                        Enroll Now
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Country Layout (3-column) -->
+        <CountryLayout
+            countryName="China"
+            navItems={[
+                { label: "Duration & Medium", id: "duration-medium" },
+                { label: "Global Recognition", id: "recognition" },
+                { label: "Eligibility", id: "eligibility" },
+                { label: "Documents & Admission", id: "admission" },
+                { label: "Why China?", id: "benefits-challenges" },
+                { label: "Top Universities", id: "universities" },
+                { label: "Fee Structure", id: "fees" },
+                { label: "Syllabus", id: "syllabus" },
+                { label: "NMC Approved Univs", id: "nmc-approved" },
+                { label: "Important Deadlines", id: "deadlines" },
+            ]}
+            faqs={[
+                {
+                    question: "What is the duration of MBBS in China?",
+                    answer: "The MBBS course is 6 years long, consisting of 5 years of classroom learning and 1 year of mandatory clinical internship.",
+                },
+                {
+                    question: "Is Chinese language mandatory?",
+                    answer: "No, all NMC-approved universities teach in English. However, learning basic Mandarin helps during clinical practice.",
+                },
+                {
+                    question: "Is NEET required to study in China?",
+                    answer: "Yes, qualifying for the NEET examination is mandatory for direct admission to top universities in China.",
+                },
+                {
+                    question:
+                        "Are Chinese medical degrees recognized in India?",
+                    answer: "Yes, universities are approved by NMC and WHO. Graduates must clear the FMGE/NEXT exam to practice in India.",
+                },
+                {
+                    question: "Is China safe for Indian students?",
+                    answer: "Yes, China is a safe country for international students due to its minimal crime rate and strict security measures.",
+                },
+            ]}
+        >
+            <!-- SECTION: Duration & Medium -->
+            <section id="duration-medium" class="mb-12 scroll-mt-24">
+                <h2
+                    class="text-2xl md:text-3xl font-bold text-[#0E0C4F] mb-4 pb-3 border-b-2 border-[#00BFFF]/30"
+                >
+                    Duration & Medium of Teaching
+                </h2>
+                <div class="grid md:grid-cols-2 gap-6">
+                    <div
+                        class="bg-white p-6 rounded-2xl shadow-sm border border-gray-100"
+                    >
+                        <h3
+                            class="flex items-center gap-2 font-bold text-[#0E0C4F] mb-3"
+                        >
+                            <span class="text-[#00BFFF]">⏱</span> Duration of MBBS
+                        </h3>
+                        <p class="text-gray-600 mb-3">
+                            The institution facilitates <strong>6 years</strong> of
+                            MBBS courses.
+                        </p>
+                        <ul
+                            class="space-y-2 text-sm text-gray-600 list-disc list-inside"
+                        >
+                            <li>
+                                <strong>5 Years:</strong> Classroom learning and theoretical
+                                knowledge.
+                            </li>
+                            <li>
+                                <strong>1 Year:</strong> Mandatory internship in a
+                                medical institution.
+                            </li>
+                        </ul>
+                    </div>
+                    <div
+                        class="bg-white p-6 rounded-2xl shadow-sm border border-gray-100"
+                    >
+                        <h3
+                            class="flex items-center gap-2 font-bold text-[#0E0C4F] mb-3"
+                        >
+                            <span class="text-[#00BFFF]">🗣</span> Medium of Teaching
+                        </h3>
+                        <p class="text-gray-600 leading-relaxed text-sm">
+                            All NMC-approved universities in China provide
+                            medical education in <strong>English</strong>. This
+                            eliminates any language barriers for Indian students
+                            seeking admission to MBBS programs. You will also
+                            learn basic conversational Chinese to assist with
+                            patient communication during internships.
+                        </p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- SECTION: Recognition -->
+            <section id="recognition" class="mb-12 scroll-mt-24">
+                <h2
+                    class="text-2xl md:text-3xl font-bold text-[#0E0C4F] mb-4 pb-3 border-b-2 border-[#00BFFF]/30"
+                >
+                    Recognition of Medical Universities in China
+                </h2>
+                <div class="bg-[#0E0C4F] text-white p-6 rounded-2xl">
+                    <p class="mb-4 text-gray-300">
+                        Top medical universities in China are globally
+                        recognized and fully accredited by major international
+                        medical commissions and councils, including:
+                    </p>
+                    <div class="grid grid-cols-2 md:grid-cols-3 gap-4">
+                        {
+                            [
+                                "National Medical Commission (NMC)",
+                                "World Health Organization (WHO)",
+                                "Ministry of Education, China (MOE)",
+                                "Foundation of Advancements of Int. Medical Ed. (FAIMER)",
+                                "Accreditation Council for Graduate Medical Ed. (ACGME)",
+                                "UNESCO",
+                            ].map((org) => (
+                                <div class="bg-white/10 p-3 rounded-lg text-sm text-center font-medium border border-white/20">
+                                    {org}
+                                </div>
+                            ))
+                        }
+                    </div>
+                </div>
+            </section>
+
+            <!-- SECTION: Eligibility -->
+            <section id="eligibility" class="mb-12 scroll-mt-24">
+                <h2
+                    class="text-2xl md:text-3xl font-bold text-[#0E0C4F] mb-4 pb-3 border-b-2 border-[#00BFFF]/30"
+                >
+                    Eligibility Criteria
+                </h2>
+
+                <div class="mb-8">
+                    <ul
+                        class="grid md:grid-cols-2 gap-3 text-gray-700 bg-blue-50/50 p-6 rounded-2xl border border-blue-100"
+                    >
+                        <li class="flex gap-2 items-start">
+                            <span class="text-[#00BFFF]">✔</span> Medical aspirants
+                            must be between 17 and 25 years old.
+                        </li>
+                        <li class="flex gap-2 items-start">
+                            <span class="text-[#00BFFF]">✔</span> Cleared the 12th
+                            standard examination from a recognized board with at least
+                            60% marks in the science stream.
+                        </li>
+                        <li class="flex gap-2 items-start md:col-span-2">
+                            <span class="text-[#00BFFF]">✔</span> Qualifying for the
+                            NEET examination is mandatory for direct admission to
+                            top universities.
+                        </li>
+                    </ul>
+                </div>
+
+                <div
+                    class="overflow-x-auto rounded-xl border border-gray-200 shadow-sm mt-6"
+                >
+                    <table
+                        class="w-full text-left border-collapse min-w-[500px]"
+                    >
+                        <thead>
+                            <tr class="bg-[#0E0C4F] text-white text-sm">
+                                <th class="px-4 py-3 font-semibold"
+                                    >University Name</th
+                                >
+                                <th class="px-4 py-3 font-semibold"
+                                    >Eligibility Criteria</th
+                                >
+                            </tr>
+                        </thead>
+                        <tbody class="text-gray-700 text-sm">
+                            {
+                                [
+                                    {
+                                        u: "Jilin University",
+                                        e: "70% in PCBE, NEET score of 250",
+                                    },
+                                    {
+                                        u: "Dalian University",
+                                        e: "70% in PCBE, NEET score of 250",
+                                    },
+                                    {
+                                        u: "China Medical University",
+                                        e: "80% in PCBE, NEET qualification",
+                                    },
+                                    {
+                                        u: "Anhui Medical University",
+                                        e: "70% in PCBE, NEET score of 200",
+                                    },
+                                    {
+                                        u: "Shandong University",
+                                        e: "65% in PCBE, NEET score of 250",
+                                    },
+                                    {
+                                        u: "Nanjing Medical University",
+                                        e: "85% (State Board) or 70% (CBSE) in PCBE, NEET score of 230",
+                                    },
+                                    {
+                                        u: "Fujian Medical University",
+                                        e: "65% in PCBE, NEET score of 200",
+                                    },
+                                    {
+                                        u: "Wenzhou Medical University",
+                                        e: "70% in PCBE, NEET score of 200",
+                                    },
+                                    {
+                                        u: "Sichuan University",
+                                        e: "70% in PCBE, NEET score of 300",
+                                    },
+                                    {
+                                        u: "Guangzhou Medical University",
+                                        e: "70% in PCBE, NEET score of 250, Internship required",
+                                    },
+                                    {
+                                        u: "China Three Gorges University",
+                                        e: "75% in PCBE, NEET score of 250, Internship required",
+                                    },
+                                ].map((item, index) => (
+                                    <tr
+                                        class={`border-b border-gray-100 ${index % 2 === 0 ? "bg-white" : "bg-gray-50/50"}`}
+                                    >
+                                        <td class="px-4 py-3 font-bold text-[#0E0C4F]">
+                                            {item.u}
+                                        </td>
+                                        <td class="px-4 py-3">{item.e}</td>
+                                    </tr>
+                                ))
+                            }
+                        </tbody>
+                    </table>
+                </div>
+            </section>
+
+            <!-- SECTION: Admission & Documents -->
+            <section id="admission" class="mb-12 scroll-mt-24">
+                <h2
+                    class="text-2xl md:text-3xl font-bold text-[#0E0C4F] mb-4 pb-3 border-b-2 border-[#00BFFF]/30"
+                >
+                    Documents & Admission Procedure
+                </h2>
+
+                <h3 class="font-bold text-lg text-[#0E0C4F] mb-4">
+                    Required Documents
+                </h3>
+                <div
+                    class="bg-gray-50 p-6 rounded-2xl border border-gray-200 mb-8"
+                >
+                    <ul
+                        class="grid md:grid-cols-2 gap-y-2 gap-x-6 text-sm text-gray-700 list-disc list-inside"
+                    >
+                        <li>Notarized copy of birth certificate</li>
+                        <li>Mark sheets & certificates of 10th and 12th</li>
+                        <li>HIV test report</li>
+                        <li>Passport-size photographs</li>
+                        <li>Official docs of Ministry of External Affairs</li>
+                        <li>Invitation letter from the university</li>
+                        <li>A valid passport copy</li>
+                        <li>NEET Scorecard</li>
+                    </ul>
+                </div>
+
+                <h3 class="font-bold text-lg text-[#0E0C4F] mb-4">
+                    Step-by-Step Procedure
+                </h3>
+                <div class="space-y-4">
+                    {
+                        [
+                            {
+                                step: "1",
+                                title: "Registration",
+                                desc: "Contact Doctor Dreams and provide scanned copies of 10th, 12th, NEET cert, and passport.",
+                            },
+                            {
+                                step: "2",
+                                title: "Application & PAO",
+                                desc: "We forward your application. Upon acceptance, receive a Provisional Admission Order (PAO).",
+                            },
+                            {
+                                step: "3",
+                                title: "Form Submission",
+                                desc: "Fill the visa, physical examination, and rules forms. Submit with police clearance certificate.",
+                            },
+                            {
+                                step: "4",
+                                title: "Medical Checkup",
+                                desc: "Complete Physical Exam Form (signed by Govt doctor) with tests like HIV, ECG, X-Ray, etc.",
+                            },
+                            {
+                                step: "5",
+                                title: "JW202 & Visa",
+                                desc: "Doctor Dreams applies for JW202 form and visa at China Consulate, processing in approx 10 days.",
+                            },
+                            {
+                                step: "6",
+                                title: "Departure",
+                                desc: "Obtain Letter of Direction, make travel arrangements, and present original documents upon arrival.",
+                            },
+                        ].map((s) => (
+                            <div class="flex gap-4 p-4 bg-white rounded-xl shadow-sm border border-gray-100">
+                                <span class="flex-shrink-0 w-8 h-8 rounded-full bg-[#00BFFF] text-white flex items-center justify-center font-bold">
+                                    {s.step}
+                                </span>
+                                <div>
+                                    <p class="font-bold text-gray-800">
+                                        {s.title}
+                                    </p>
+                                    <p class="text-sm text-gray-600">
+                                        {s.desc}
+                                    </p>
+                                </div>
+                            </div>
+                        ))
+                    }
+                </div>
+            </section>
+
+            <!-- SECTION: Benefits & Challenges -->
+            <section id="benefits-challenges" class="mb-12 scroll-mt-24">
+                <h2
+                    class="text-2xl md:text-3xl font-bold text-[#0E0C4F] mb-4 pb-3 border-b-2 border-[#00BFFF]/30"
+                >
+                    Why China? (Benefits & Disadvantages)
+                </h2>
+
+                <div class="grid md:grid-cols-2 gap-8">
+                    <!-- Benefits -->
+                    <div>
+                        <h3
+                            class="font-bold text-green-700 flex items-center gap-2 mb-4 bg-green-50 px-4 py-2 rounded-lg"
+                        >
+                            <span>👍</span> Advantages of Studying in China
+                        </h3>
+                        <ul class="space-y-3 text-sm text-gray-700">
+                            <li>
+                                ✔ 45 NMC-approved universities offering globally
+                                recognized degrees.
+                            </li>
+                            <li>
+                                ✔ High-class state-of-the-art infrastructure and
+                                world-class programs.
+                            </li>
+                            <li>
+                                ✔ straightforward and hassle-free admission
+                                process.
+                            </li>
+                            <li>
+                                ✔ No racial discrimination; valuable global
+                                exposure.
+                            </li>
+                            <li>
+                                ✔ Home to several of the world's top 10 medical
+                                colleges.
+                            </li>
+                            <li>
+                                ✔ Extremely safe country with a minimal crime
+                                rate.
+                            </li>
+                            <li>
+                                ✔ Abundant job opportunities globally
+                                post-graduation.
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- Challenges -->
+                    <div>
+                        <h3
+                            class="font-bold text-red-700 flex items-center gap-2 mb-4 bg-red-50 px-4 py-2 rounded-lg"
+                        >
+                            <span>🛑</span> Disadvantages & Challenges
+                        </h3>
+                        <ul class="space-y-3 text-sm text-gray-700">
+                            <li>
+                                ⚠ Adapting to a new culture can be challenging.
+                            </li>
+                            <li>
+                                ⚠ Varying climatic conditions across different
+                                Chinese provinces.
+                            </li>
+                            <li>
+                                ⚠ Language barriers can pose difficulties
+                                outside the campus.
+                            </li>
+                            <li>
+                                ⚠ Students must pass the HSK exam to learn
+                                Mandarin.
+                            </li>
+                            <li>
+                                ⚠ The country has traditionally had lower FMGE
+                                passing rates compared to some competitors.
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+            <!-- SECTION: Top Universities -->
+            <section id="universities" class="mb-12 scroll-mt-24">
+                <h2
+                    class="text-2xl md:text-3xl font-bold text-[#0E0C4F] mb-4 pb-3 border-b-2 border-[#00BFFF]/30"
+                >
+                    Top Medical Universities in China
+                </h2>
+                <div class="flex flex-wrap gap-2">
+                    {
+                        [
+                            "Southeast University",
+                            "Three Gorges Univ.",
+                            "Wuhan University",
+                            "Ningxia Medical Univ.",
+                            "Capital Medical Univ.",
+                            "Fudan University",
+                            "Qingdao University",
+                            "Sun Yat Sen Univ.",
+                            "Jilin University",
+                            "Dalian Medical Univ.",
+                            "Wenzhou Medical Univ.",
+                            "China Medical Univ.",
+                            "Xian Jiaotong Univ.",
+                            "Beihua University",
+                            "Hebei University",
+                            "Anhui Medical Univ.",
+                            "Zhengzhou University",
+                            "Tianjin Medical Univ.",
+                            "Shandong University",
+                            "Nanjing Medical Univ.",
+                            "Jiangsu University",
+                            "Sichuan University",
+                            "Tongji University",
+                            "Fujian Medical Univ.",
+                            "Guangzhou University",
+                            "Kunming Medical Univ.",
+                            "Xiamen University",
+                            "Zhejiang University",
+                        ].map((uni) => (
+                            <span class="px-3 py-1.5 bg-white border border-gray-200 rounded-lg text-sm text-gray-700 shadow-sm">
+                                {uni}
+                            </span>
+                        ))
+                    }
+                </div>
+            </section>
+
+            <!-- SECTION: Fee Structure -->
+            <section id="fees" class="mb-12 scroll-mt-24">
+                <h2
+                    class="text-2xl md:text-3xl font-bold text-[#0E0C4F] mb-4 pb-3 border-b-2 border-[#00BFFF]/30"
+                >
+                    Fee Structure 2024-25
+                </h2>
+                <div
+                    class="overflow-x-auto rounded-xl border border-gray-200 shadow-sm mb-6"
+                >
+                    <table
+                        class="w-full text-left border-collapse min-w-[500px]"
+                    >
+                        <thead>
+                            <tr class="bg-[#0E0C4F] text-white text-sm">
+                                <th class="px-4 py-3 font-semibold"
+                                    >University Name</th
+                                >
+                                <th class="px-4 py-3 font-semibold"
+                                    >Annual Tuition (Rs.)</th
+                                >
+                                <th class="px-4 py-3 font-semibold"
+                                    >Annual Hostel (Rs.)</th
+                                >
+                            </tr>
+                        </thead>
+                        <tbody class="text-gray-700 text-sm">
+                            {
+                                [
+                                    {
+                                        u: "Jilin University",
+                                        t: "4,90,000",
+                                        h: "71,000",
+                                    },
+                                    {
+                                        u: "Dalian Medical University",
+                                        t: "5,45,000",
+                                        h: "95,000",
+                                    },
+                                    {
+                                        u: "China Medical University",
+                                        t: "5,12,000",
+                                        h: "71,000",
+                                    },
+                                    {
+                                        u: "Zhejiang University",
+                                        t: "5,05,000",
+                                        h: "71,000",
+                                    },
+                                    {
+                                        u: "Huazhong Univ of Sci & Tech",
+                                        t: "3,96,000",
+                                        h: "75,000",
+                                    },
+                                    {
+                                        u: "Sun Yat Sen University",
+                                        t: "5,60,000",
+                                        h: "84,000",
+                                    },
+                                    {
+                                        u: "Anhui Medical University",
+                                        t: "4,15,000",
+                                        h: "76,000",
+                                    },
+                                    {
+                                        u: "Capital Medical University",
+                                        t: "4,72,000",
+                                        h: "90,000",
+                                    },
+                                    {
+                                        u: "Tianjin Medical University",
+                                        t: "4,84,000",
+                                        h: "70,000",
+                                    },
+                                    {
+                                        u: "Shandong University",
+                                        t: "6,72,000",
+                                        h: "95,000",
+                                    },
+                                    {
+                                        u: "Nanjing Medical University",
+                                        t: "5,36,000",
+                                        h: "71,000",
+                                    },
+                                ].map((item, index) => (
+                                    <tr
+                                        class={`border-b border-gray-100 ${index % 2 === 0 ? "bg-white" : "bg-gray-50/50"}`}
+                                    >
+                                        <td class="px-4 py-3 font-bold text-[#0E0C4F]">
+                                            {item.u}
+                                        </td>
+                                        <td class="px-4 py-3">Rs. {item.t}</td>
+                                        <td class="px-4 py-3">Rs. {item.h}</td>
+                                    </tr>
+                                ))
+                            }
+                        </tbody>
+                    </table>
+                </div>
+
+                <div
+                    class="bg-orange-50 p-5 rounded-xl border border-orange-100"
+                >
+                    <h4 class="font-bold text-orange-800 mb-2">
+                        Important Financial Notes:
+                    </h4>
+                    <ul
+                        class="text-sm text-gray-700 space-y-1 list-disc list-inside"
+                    >
+                        <li>
+                            Living expenses are approx. <strong
+                                >800 to 1000 RMB</strong
+                            > / month.
+                        </li>
+                        <li>
+                            Medical insurance costs <strong
+                                >600 to 800 RMB</strong
+                            >.
+                        </li>
+                        <li>
+                            Application and registration fees are additional.
+                        </li>
+                        <li>
+                            <em
+                                >Note: 1 RMB is roughly equivalent to 10 INR.
+                                Tuition fees are subject to change by
+                                universities without prior notice.</em>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+
+            <!-- SECTION: Syllabus -->
+            <section id="syllabus" class="mb-12 scroll-mt-24">
+                <h2
+                    class="text-2xl md:text-3xl font-bold text-[#0E0C4F] mb-4 pb-3 border-b-2 border-[#00BFFF]/30"
+                >
+                    Syllabus for 6 Years Course
+                </h2>
+                <div
+                    class="overflow-x-auto rounded-xl border border-gray-200 shadow-sm"
+                >
+                    <table
+                        class="w-full text-left border-collapse min-w-[600px]"
+                    >
+                        <thead>
+                            <tr class="bg-[#0E0C4F] text-white text-sm">
+                                <th class="px-4 py-3 font-semibold w-20"
+                                    >Year</th
+                                >
+                                <th class="px-4 py-3 font-semibold"
+                                    >Subjects Covered</th
+                                >
+                            </tr>
+                        </thead>
+                        <tbody class="text-gray-700 text-sm">
+                            {
+                                [
+                                    {
+                                        y: "1st",
+                                        sub: "Spoken & Integrated Chinese I & II, Intro. to Traditional Chinese Culture, China Today, Anatomy I, Biochemistry",
+                                    },
+                                    {
+                                        y: "2nd",
+                                        sub: "Spoken & Integrated Chinese III & IV, Physiology I & II, Histology & Embryology, Anatomy II, Pathology",
+                                    },
+                                    {
+                                        y: "3rd",
+                                        sub: "Chinese Reading I & II, Pathophysiology, Microbiology, Pharmacology I & II, Medical Psychology, Medical Ethics, Genetics, Community Medicine",
+                                    },
+                                    {
+                                        y: "4th",
+                                        sub: "Med. Chinese I & II, Trad. Chinese Medicine, Radiology, Diagnosis, Clinical Skills, General Surgery, Anesthesiology, Internal Med, OB-GYN, Pediatrics, Infectious Diseases, Acupuncture",
+                                    },
+                                    {
+                                        y: "5th",
+                                        sub: "Med. Chinese III & IV, Internal Med II, Surgery II, Psychiatry, Oncology, Emergency Med, Stomatology, Fundamentals of Nursing, Forensic Med, Neurology, Ophthalmology, Dermatology, Clinical Pharmacology, Patient Safety",
+                                    },
+                                    {
+                                        y: "6th",
+                                        sub: "Mandatory Internships in Obstetrics & Gynecology, Pediatrics, Medicine, Surgery, and other clinical rotations.",
+                                    },
+                                ].map((item, index) => (
+                                    <tr
+                                        class={`border-b border-gray-100 ${index % 2 === 0 ? "bg-white" : "bg-gray-50/50"}`}
+                                    >
+                                        <td class="px-4 py-3 font-bold text-[#0E0C4F] whitespace-nowrap">
+                                            {item.y} Year
+                                        </td>
+                                        <td class="px-4 py-3 leading-relaxed">
+                                            {item.sub}
+                                        </td>
+                                    </tr>
+                                ))
+                            }
+                        </tbody>
+                    </table>
+                </div>
+            </section>
+
+            <!-- SECTION: NMC Approved -->
+            <section id="nmc-approved" class="mb-12 scroll-mt-24">
+                <h2
+                    class="text-2xl md:text-3xl font-bold text-[#0E0C4F] mb-4 pb-3 border-b-2 border-[#00BFFF]/30"
+                >
+                    Top NMC Approved Universities Status
+                </h2>
+                <div
+                    class="overflow-x-auto rounded-xl border border-gray-200 shadow-sm"
+                >
+                    <table
+                        class="w-full text-left border-collapse min-w-[700px]"
+                    >
+                        <thead>
+                            <tr class="bg-[#0E0C4F] text-white text-sm">
+                                <th class="px-4 py-3 font-semibold"
+                                    >University</th
+                                >
+                                <th class="px-4 py-3 font-semibold">City</th>
+                                <th class="px-4 py-3 font-semibold"
+                                    >Country Rank</th
+                                >
+                                <th class="px-4 py-3 font-semibold"
+                                    >World Rank</th
+                                >
+                                <th class="px-4 py-3 font-semibold">Seats</th>
+                            </tr>
+                        </thead>
+                        <tbody class="text-gray-700 text-sm">
+                            {
+                                [
+                                    {
+                                        u: "Zhejiang University",
+                                        c: "Hangzhou",
+                                        cr: "3",
+                                        wr: "215",
+                                        s: "60",
+                                    },
+                                    {
+                                        u: "Fudan University",
+                                        c: "Shanghai",
+                                        cr: "5",
+                                        wr: "170",
+                                        s: "120",
+                                    },
+                                    {
+                                        u: "Sun Yat Sen University",
+                                        c: "Guangzhou",
+                                        cr: "8",
+                                        wr: "202",
+                                        s: "100",
+                                    },
+                                    {
+                                        u: "Tongji University",
+                                        c: "Shanghai",
+                                        cr: "9",
+                                        wr: "460",
+                                        s: "60",
+                                    },
+                                    {
+                                        u: "Xian Jiaotong University",
+                                        c: "Xi'an",
+                                        cr: "10",
+                                        wr: "265",
+                                        s: "100",
+                                    },
+                                    {
+                                        u: "Wuhan University",
+                                        c: "Wuhan",
+                                        cr: "12",
+                                        wr: "245",
+                                        s: "100",
+                                    },
+                                    {
+                                        u: "Huazhong Univ of Sci & Tech",
+                                        c: "Wuhan",
+                                        cr: "12",
+                                        wr: "276",
+                                        s: "100",
+                                    },
+                                    {
+                                        u: "Sichuan University",
+                                        c: "Chengdu",
+                                        cr: "13",
+                                        wr: "296",
+                                        s: "120",
+                                    },
+                                    {
+                                        u: "Xiamen University",
+                                        c: "Xiamen",
+                                        cr: "14",
+                                        wr: "267",
+                                        s: "100",
+                                    },
+                                    {
+                                        u: "Jilin University",
+                                        c: "Changchun",
+                                        cr: "19",
+                                        wr: "334",
+                                        s: "120",
+                                    },
+                                    {
+                                        u: "Shandong University",
+                                        c: "Jinan",
+                                        cr: "26",
+                                        wr: "801",
+                                        s: "120",
+                                    },
+                                ].map((item, index) => (
+                                    <tr
+                                        class={`border-b border-gray-100 ${index % 2 === 0 ? "bg-white" : "bg-gray-50/50"}`}
+                                    >
+                                        <td class="px-4 py-3 font-bold text-[#0E0C4F] bg-white lg:bg-transparent sticky left-0 lg:static shadow-[2px_0_5px_rgba(0,0,0,0.05)] lg:shadow-none">
+                                            {item.u} (Govt)
+                                        </td>
+                                        <td class="px-4 py-3">{item.c}</td>
+                                        <td class="px-4 py-3">#{item.cr}</td>
+                                        <td class="px-4 py-3">#{item.wr}</td>
+                                        <td class="px-4 py-3">{item.s}</td>
+                                    </tr>
+                                ))
+                            }
+                        </tbody>
+                    </table>
+                </div>
+            </section>
+
+            <!-- SECTION: Deadlines -->
+            <section id="deadlines" class="mb-12 scroll-mt-24">
+                <h2
+                    class="text-2xl md:text-3xl font-bold text-[#0E0C4F] mb-4 pb-3 border-b-2 border-[#00BFFF]/30"
+                >
+                    Admission Deadlines
+                </h2>
+                <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-4">
+                    {
+                        [
+                            { p: "10+2 Results", m: "May - June" },
+                            { p: "Admission Start", m: "June" },
+                            { p: "Invitation Letter", m: "July - August" },
+                            { p: "Visa Application", m: "September" },
+                            { p: "Departure to China", m: "September" },
+                            { p: "Univ. Registration", m: "Sep - Oct" },
+                            { p: "Classes Commence", m: "November" },
+                        ].map((d) => (
+                            <div class="flex items-center justify-between p-4 bg-white border border-gray-200 rounded-xl shadow-sm">
+                                <span class="font-medium text-gray-800 text-sm">
+                                    {d.p}
+                                </span>
+                                <span class="text-xs font-bold bg-[#00BFFF]/10 text-[#00BFFF] px-2 py-1 rounded-md">
+                                    {d.m}
+                                </span>
+                            </div>
+                        ))
+                    }
+                </div>
+            </section>
+        </CountryLayout>
+
+        <Footer />
+    </body>
+</html>

@@ -1,0 +1,772 @@
+---
+import "../styles/global.css";
+import "flag-icons/css/flag-icons.min.css";
+import Navbar from "../components/Navbar.jsx";
+import CountryLayout from "../components/CountryLayout.astro";
+import Footer from "../components/Footer.astro";
+---
+
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&display=swap"
+            rel="stylesheet"
+        />
+        <meta
+            name="description"
+            content="Study MBBS in Nepal – Complete guide including fees, top universities, syllabus, admission process, and benefits for Indian students."
+        />
+        <title>
+            MBBS in Nepal for Indian Students: Fees, Admissions, and
+            Universities | Doctor Destiny
+        </title>
+    </head>
+    <body class="bg-[#F0F7FF] overflow-x-hidden">
+        <Navbar client:load />
+
+        <!-- Page Hero -->
+        <div class="bg-[#0E0C4F] pt-28 pb-16 px-6">
+            <div class="max-w-5xl mx-auto text-center">
+                <span
+                    class="inline-block py-1 px-4 rounded-full bg-white/10 text-[#D5AD36] text-sm font-bold mb-4 tracking-widest uppercase"
+                >
+                    Study Abroad
+                </span>
+                <h1
+                    class="text-4xl md:text-6xl font-extrabold text-white leading-tight mb-4"
+                >
+                    Study MBBS in <span class="text-[#00BFFF]">Nepal</span>
+                </h1>
+                <p
+                    class="text-lg text-gray-300 max-w-3xl mx-auto leading-relaxed"
+                >
+                    Study MBBS in Nepal to experience an academic structure
+                    similar to India's in a familiar cultural setting. Benefit
+                    from affordable excellence, no TOEFL/IELTS requirements, and
+                    a visa-free policy for Indian students, all just a short
+                    distance from home.
+                </p>
+                <div class="mt-8">
+                    <button
+                        class="bg-gradient-to-r from-[#D5AD36] to-[#f0c847] hover:shadow-[0_0_20px_rgba(213,173,54,0.6)] text-[#0E0C4F] px-8 py-3 rounded-full font-bold transition-all duration-300 hover:scale-105"
+                    >
+                        Enroll Now
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Country Layout (3-column) -->
+        <CountryLayout
+            countryName="Nepal"
+            navItems={[
+                { label: "Duration & Medium", id: "duration-medium" },
+                { label: "Recognition", id: "recognition" },
+                { label: "Why Nepal & Benefits", id: "benefits" },
+                { label: "NMC Universities", id: "universities" },
+                { label: "Fee Structure", id: "fees" },
+                { label: "Course Syllabus", id: "syllabus" },
+                { label: "Program at a Glance", id: "overview" },
+                { label: "Scope & Outcomes", id: "scope" },
+                { label: "Timeline & Visa", id: "timeline-visa" },
+                { label: "About Nepal", id: "about" },
+            ]}
+            faqs={[
+                {
+                    question:
+                        "Is there a visa required for Indian students to study in Nepal?",
+                    answer: "No, Nepal has a visa-free policy for Indian citizens. Indian students only need valid ID proof and university documentation.",
+                },
+                {
+                    question: "Is NEET mandatory for MBBS in Nepal?",
+                    answer: "Yes, NEET is required with qualifying marks, especially if you plan to return and practice medicine in India.",
+                },
+                {
+                    question: "What language is the course taught in?",
+                    answer: "The MBBS program is primarily taught in English. Hindi is also widely spoken and understood across Nepal, ensuring zero communication barriers for Indian students.",
+                },
+                {
+                    question: "Are IELTS or TOEFL scores needed?",
+                    answer: "No, MBBS admissions in Nepal do not require TOEFL or IELTS.",
+                },
+                {
+                    question: "How long is the MBBS course in Nepal?",
+                    answer: "The course spans 5.5 years, comprising 4.5 years of theoretical/clinical studies and a 1-year internship.",
+                },
+            ]}
+        >
+            <!-- SECTION: Duration & Medium -->
+            <section id="duration-medium" class="mb-12 scroll-mt-24">
+                <h2
+                    class="text-2xl md:text-3xl font-bold text-[#0E0C4F] mb-4 pb-3 border-b-2 border-[#00BFFF]/30"
+                >
+                    Duration & Medium of Teaching
+                </h2>
+                <div class="grid md:grid-cols-2 gap-6">
+                    <div
+                        class="bg-white p-6 rounded-2xl shadow-sm border border-gray-100"
+                    >
+                        <h3
+                            class="flex items-center gap-2 font-bold text-[#0E0C4F] mb-3"
+                        >
+                            <span class="text-[#00BFFF]">⏱</span> Course Duration
+                        </h3>
+                        <p class="text-gray-600 mb-3">
+                            The MBBS program in Nepal spans <strong
+                                >5 years and 6 months</strong
+                            > in total.
+                        </p>
+                        <ul
+                            class="space-y-2 text-sm text-gray-600 list-disc list-inside"
+                        >
+                            <li>
+                                <strong>First 4.5 Years:</strong> Focus on theoretical
+                                and intensive clinical education.
+                            </li>
+                            <li>
+                                <strong>Final 1 Year:</strong> Dedicated to a mandatory
+                                clinical internship.
+                            </li>
+                        </ul>
+                    </div>
+                    <div
+                        class="bg-white p-6 rounded-2xl shadow-sm border border-gray-100"
+                    >
+                        <h3
+                            class="flex items-center gap-2 font-bold text-[#0E0C4F] mb-3"
+                        >
+                            <span class="text-[#00BFFF]">🗣</span> Teaching Medium
+                        </h3>
+                        <p class="text-gray-600 leading-relaxed text-sm mb-3">
+                            MBBS in Nepal is primarily taught in <strong
+                                >English</strong
+                            >, making it accessible to international students.
+                            Some universities may also use Nepali for local
+                            students, ensuring a comprehensive learning
+                            experience for all.
+                        </p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- SECTION: Recognition -->
+            <section id="recognition" class="mb-12 scroll-mt-24">
+                <h2
+                    class="text-2xl md:text-3xl font-bold text-[#0E0C4F] mb-4 pb-3 border-b-2 border-[#00BFFF]/30"
+                >
+                    Recognition of Universities
+                </h2>
+                <div class="bg-[#0E0C4F] text-white p-6 rounded-2xl">
+                    <p class="mb-4 text-gray-300">
+                        Nepal's medical universities are heavily recognized
+                        globally, ensuring that degrees obtained here are valid
+                        for international practice. Accreditations include:
+                    </p>
+                    <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+                        {
+                            [
+                                "National Medical Commission (NMC)",
+                                "World Health Organization (WHO)",
+                                "United Nations Educational, Scientific and Cultural Organization (UNESCO)",
+                            ].map((org) => (
+                                <div class="bg-white/10 p-3 rounded-lg text-sm text-center font-medium border border-white/20 flex items-center justify-center">
+                                    {org}
+                                </div>
+                            ))
+                        }
+                    </div>
+                </div>
+            </section>
+
+            <!-- SECTION: Why Nepal & Benefits -->
+            <section id="benefits" class="mb-12 scroll-mt-24">
+                <h2
+                    class="text-2xl md:text-3xl font-bold text-[#0E0C4F] mb-4 pb-3 border-b-2 border-[#00BFFF]/30"
+                >
+                    Why Study MBBS in Nepal?
+                </h2>
+                <div class="mb-8">
+                    <p class="text-gray-700 leading-relaxed mb-6">
+                        Studying MBBS in Nepal follows a structure very similar
+                        to India’s, with renowned institutions providing
+                        high-quality education. These colleges are distinguished
+                        by their strong academic rankings, focus on student
+                        safety, and outstanding clinical training. Nepal offers
+                        an affordable yet high-quality option, combining
+                        academic excellence with cost-effectiveness.
+                    </p>
+                    <div class="grid md:grid-cols-2 gap-4">
+                        <div
+                            class="bg-blue-50/50 p-5 rounded-xl border border-blue-100"
+                        >
+                            <h4 class="font-bold text-[#0E0C4F] mb-3">
+                                Major Benefits for Indian Students
+                            </h4>
+                            <ul class="space-y-3 text-sm text-gray-700">
+                                <li>
+                                    <strong>Visa-Free Policy:</strong> Proximity to
+                                    India and visa-free travel makes Nepal a hassle-free
+                                    choice.
+                                </li>
+                                <li>
+                                    <strong>Language & Culture:</strong> Shared cultural/religious
+                                    values and the widespread use of Hindi ensure
+                                    smooth communication.
+                                </li>
+                                <li>
+                                    <strong>No TOEFL/IELTS:</strong> Language proficiency
+                                    tests are not required for MBBS admissions.
+                                </li>
+                                <li>
+                                    <strong>Reserved Seats:</strong> The National
+                                    Medical Commission reserves 1,000 medical seats
+                                    annually specifically for Indian students.
+                                </li>
+                                <li>
+                                    <strong>Specializations:</strong> Provides diverse
+                                    medical fields including General Medicine, Dentistry,
+                                    Surgery, etc.
+                                </li>
+                            </ul>
+                        </div>
+                        <div
+                            class="bg-gray-50 p-5 rounded-xl border border-gray-100"
+                        >
+                            <h4 class="font-bold text-[#0E0C4F] mb-3">
+                                Admission Strategy
+                            </h4>
+                            <p class="text-sm text-gray-700 mb-3">
+                                The admission procedure is generally easy and
+                                transparent. While some universities offer
+                                direct admission without entrance exams, others
+                                conduct entrance tests.
+                            </p>
+                            <p class="text-sm text-gray-700">
+                                Medical students with low NEET scores can
+                                explore Nepal as an excellent, cost-effective
+                                alternative. It is crucial to select a reputable
+                                education consultancy (like Doctor Dreams) to
+                                avoid fraudulent agents.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- SECTION: Universities -->
+            <section id="universities" class="mb-12 scroll-mt-24">
+                <h2
+                    class="text-2xl md:text-3xl font-bold text-[#0E0C4F] mb-4 pb-3 border-b-2 border-[#00BFFF]/30"
+                >
+                    NMC-Approved Universities in Nepal
+                </h2>
+                <div
+                    class="overflow-x-auto rounded-xl border border-gray-200 shadow-sm mt-6"
+                >
+                    <table
+                        class="w-full text-left border-collapse min-w-[700px]"
+                    >
+                        <thead>
+                            <tr class="bg-[#0E0C4F] text-white text-sm">
+                                <th class="px-4 py-3 font-semibold"
+                                    >University Name</th
+                                >
+                                <th class="px-4 py-3 font-semibold text-center"
+                                    >Country Rank</th
+                                >
+                                <th class="px-4 py-3 font-semibold text-center"
+                                    >World Rank</th
+                                >
+                            </tr>
+                        </thead>
+                        <tbody class="text-gray-700 text-sm">
+                            {
+                                [
+                                    {
+                                        u: "Kathmandu University School of Medical Sciences",
+                                        cr: "30",
+                                        wr: "20161",
+                                    },
+                                    {
+                                        u: "Institute of Medicine (IOM) in Maharajgunj",
+                                        cr: "15",
+                                        wr: "5639",
+                                    },
+                                    {
+                                        u: "Manipal College of Medical Science, Pokhara",
+                                        cr: "12",
+                                        wr: "13972",
+                                    },
+                                    {
+                                        u: "College of Medical Science, Bhartpur",
+                                        cr: "18",
+                                        wr: "19474",
+                                    },
+                                    {
+                                        u: "Nepalgunj Medical College, Nepalgunj",
+                                        cr: "17",
+                                        wr: "18140",
+                                    },
+                                    {
+                                        u: "Kathmandu Medical Colleges, Kathmandu",
+                                        cr: "3",
+                                        wr: "3302",
+                                    },
+                                    {
+                                        u: "Nepal Medical College, Kathmandu",
+                                        cr: "10",
+                                        wr: "13461",
+                                    },
+                                    {
+                                        u: "Nobel Medical College, Biratnagar",
+                                        cr: "35",
+                                        wr: "24963",
+                                    },
+                                    {
+                                        u: "Lumbini Medical College, Palpa",
+                                        cr: "20",
+                                        wr: "20764",
+                                    },
+                                    {
+                                        u: "National Medical College, Birgunj",
+                                        cr: "23",
+                                        wr: "21996",
+                                    },
+                                    {
+                                        u: "Janaki Medical College, Janakpur",
+                                        cr: "13",
+                                        wr: "11278",
+                                    },
+                                    {
+                                        u: "KIST Medical College, Patan",
+                                        cr: "25",
+                                        wr: "22450",
+                                    },
+                                    {
+                                        u: "Chitwan Medical College, Bharatpur",
+                                        cr: "29",
+                                        wr: "21329",
+                                    },
+                                    {
+                                        u: "Gandaki Medical College, Pokhara",
+                                        cr: "22",
+                                        wr: "21548",
+                                    },
+                                    {
+                                        u: "Nepalese Army Institute of Health Sciences",
+                                        cr: "9",
+                                        wr: "13213",
+                                    },
+                                ].map((item, index) => (
+                                    <tr
+                                        class={`border-b border-gray-100 ${index % 2 === 0 ? "bg-white" : "bg-gray-50/50"}`}
+                                    >
+                                        <td class="px-4 py-3 font-bold text-[#0E0C4F] bg-white lg:bg-transparent sticky left-0 lg:static shadow-[2px_0_5px_rgba(0,0,0,0.05)] lg:shadow-none">
+                                            {item.u}
+                                        </td>
+                                        <td class="px-4 py-3 text-center">
+                                            {item.cr}
+                                        </td>
+                                        <td class="px-4 py-3 text-center">
+                                            {item.wr}
+                                        </td>
+                                    </tr>
+                                ))
+                            }
+                        </tbody>
+                    </table>
+                </div>
+            </section>
+
+            <!-- SECTION: Fee Structure & Expenses -->
+            <section id="fees" class="mb-12 scroll-mt-24">
+                <h2
+                    class="text-2xl md:text-3xl font-bold text-[#0E0C4F] mb-4 pb-3 border-b-2 border-[#00BFFF]/30"
+                >
+                    MBBS Fee Structure (2024-2025)
+                </h2>
+                <div
+                    class="overflow-x-auto rounded-xl border border-gray-200 shadow-sm mb-6"
+                >
+                    <table
+                        class="w-full text-left border-collapse min-w-[500px]"
+                    >
+                        <thead>
+                            <tr class="bg-[#0E0C4F] text-white text-sm">
+                                <th class="px-4 py-3 font-semibold"
+                                    >University Name</th
+                                >
+                                <th class="px-4 py-3 font-semibold"
+                                    >Recognition</th
+                                >
+                                <th class="px-4 py-3 font-semibold"
+                                    >Tuition Fees for 5 Years</th
+                                >
+                            </tr>
+                        </thead>
+                        <tbody class="text-gray-700 text-sm">
+                            {
+                                [
+                                    {
+                                        u: "KIST Medical College",
+                                        rec: "Tribhuvan University",
+                                        tf: "45 to 55 Lakhs",
+                                    },
+                                    {
+                                        u: "National Medical College",
+                                        rec: "Tribhuvan University",
+                                        tf: "60 to 65 Lakhs",
+                                    },
+                                    {
+                                        u: "Devdaha Medical College",
+                                        rec: "Kathmandu University",
+                                        tf: "50 to 55 Lakhs",
+                                    },
+                                    {
+                                        u: "Nepalganj Medical College",
+                                        rec: "Kathmandu University",
+                                        tf: "55 to 60 Lakhs",
+                                    },
+                                ].map((item, index) => (
+                                    <tr
+                                        class={`border-b border-gray-100 ${index % 2 === 0 ? "bg-white" : "bg-gray-50/50"}`}
+                                    >
+                                        <td class="px-4 py-3 font-bold text-[#0E0C4F]">
+                                            {item.u}
+                                        </td>
+                                        <td class="px-4 py-3">{item.rec}</td>
+                                        <td class="px-4 py-3 font-semibold text-blue-800">
+                                            INR {item.tf}
+                                        </td>
+                                    </tr>
+                                ))
+                            }
+                        </tbody>
+                    </table>
+                </div>
+
+                <!-- Setup living costs info -->
+                <div
+                    class="bg-orange-50/50 border border-orange-100 p-5 rounded-xl text-sm text-gray-700"
+                >
+                    <h4 class="font-bold text-orange-900 mb-3">
+                        Other Inexpensive Deals & Costs:
+                    </h4>
+                    <ul class="space-y-2 list-disc list-inside">
+                        <li>
+                            <strong>Hostel Accommodations:</strong> Cost between 70,000
+                            and 1,00,000 INR per year.
+                        </li>
+                        <li>
+                            <strong>Annual Insurance:</strong> 20,000 – 30,000 INR.
+                        </li>
+                        <li>
+                            <strong>Medical Check-ups:</strong> 20,000 – 30,000 INR.
+                        </li>
+                        <li>
+                            <strong>Visa/Registration Expenses:</strong> 10,000 –
+                            30,000 INR per year.
+                        </li>
+                        <li>
+                            <strong>Food/Dining:</strong> Budget around 10,000 – 30,000
+                            INR annually for Nepali cuisine.
+                        </li>
+                    </ul>
+                </div>
+            </section>
+
+            <!-- SECTION: Syllabus -->
+            <section id="syllabus" class="mb-12 scroll-mt-24">
+                <h2
+                    class="text-2xl md:text-3xl font-bold text-[#0E0C4F] mb-4 pb-3 border-b-2 border-[#00BFFF]/30"
+                >
+                    Syllabus for MBBS in Nepal
+                </h2>
+                <div
+                    class="overflow-hidden border border-gray-200 rounded-xl shadow-sm"
+                >
+                    <table class="w-full text-left text-sm">
+                        <thead class="bg-[#0E0C4F] text-white">
+                            <tr>
+                                <th
+                                    class="px-4 py-3 w-20 border-r border-[#ffffff20]"
+                                    >Year</th
+                                >
+                                <th
+                                    class="px-4 py-3 w-32 border-r border-[#ffffff20]"
+                                    >Semesters</th
+                                >
+                                <th class="px-4 py-3">Subjects Covered</th>
+                            </tr>
+                        </thead>
+                        <tbody class="text-gray-700">
+                            <tr class="border-b bg-white">
+                                <td
+                                    class="px-4 py-4 font-bold border-r border-gray-100"
+                                    >1st Year</td
+                                >
+                                <td
+                                    class="px-4 py-4 text-[#00BFFF] font-bold border-r border-gray-100"
+                                    >1st – 2nd Sem</td
+                                >
+                                <td class="px-4 py-4"
+                                    >Clinical Exposure, Communication Skills,
+                                    Integrated Basic Medical Science, Community
+                                    Medicine</td
+                                >
+                            </tr>
+                            <tr class="border-b bg-gray-50">
+                                <td
+                                    class="px-4 py-4 font-bold border-r border-gray-100"
+                                    >2nd Year</td
+                                >
+                                <td
+                                    class="px-4 py-4 text-[#00BFFF] font-bold border-r border-gray-100"
+                                    >3rd – 4th Sem</td
+                                >
+                                <td class="px-4 py-4"
+                                    >Integrated Basic Medical Science, Clinical
+                                    Exposure, Communication Skills</td
+                                >
+                            </tr>
+                            <tr class="border-b bg-white">
+                                <td
+                                    class="px-4 py-4 font-bold border-r border-gray-100"
+                                    >3rd Year</td
+                                >
+                                <td
+                                    class="px-4 py-4 text-[#00BFFF] font-bold border-r border-gray-100"
+                                    >5th – 6th Sem</td
+                                >
+                                <td class="px-4 py-4"
+                                    >Surgery, Internal Medicine, Gynecology,
+                                    Forensic Medicine, Obstetrics, Pediatrics,
+                                    Community Medicine (Applied Epidemiology,
+                                    Family Health Exercise)</td
+                                >
+                            </tr>
+                            <tr class="border-b bg-gray-50">
+                                <td
+                                    class="px-4 py-4 font-bold border-r border-gray-100"
+                                    >4th Year</td
+                                >
+                                <td
+                                    class="px-4 py-4 text-[#00BFFF] font-bold border-r border-gray-100"
+                                    >7th – 8th Sem</td
+                                >
+                                <td class="px-4 py-4"
+                                    >Intensive Clinical Subjects</td
+                                >
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </section>
+
+            <!-- SECTION: Overview -->
+            <section id="overview" class="mb-12 scroll-mt-24">
+                <h2
+                    class="text-2xl md:text-3xl font-bold text-[#0E0C4F] mb-4 pb-3 border-b-2 border-[#00BFFF]/30"
+                >
+                    Nepal MBBS at a Glance
+                </h2>
+                <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+                    {
+                        [
+                            { l: "Intake", v: "September" },
+                            { l: "Min. PCB %", v: "60%" },
+                            { l: "NEET Req.", v: "Yes" },
+                            { l: "Entrance Exam", v: "Yes (Varies)" },
+                            { l: "Duration", v: "6 Years (Total)" },
+                            { l: "Medium", v: "English" },
+                            { l: "Avg Total Fees", v: "50 - 60 Lakhs" },
+                            { l: "Process Time", v: "90 Days" },
+                        ].map((d) => (
+                            <div class="bg-white p-4 rounded-xl border border-gray-100 shadow-sm text-center">
+                                <div class="text-[#00BFFF] text-[10px] font-bold uppercase tracking-widest mb-1">
+                                    {d.l}
+                                </div>
+                                <div class="text-[#0E0C4F] font-extrabold">
+                                    {d.v}
+                                </div>
+                            </div>
+                        ))
+                    }
+                </div>
+            </section>
+
+            <!-- SECTION: Scope Focus -->
+            <section id="scope" class="mb-12 scroll-mt-24">
+                <h2
+                    class="text-2xl md:text-3xl font-bold text-[#0E0C4F] mb-4 pb-3 border-b-2 border-[#00BFFF]/30"
+                >
+                    Scope After Completing MBBS in Nepal
+                </h2>
+                <div
+                    class="bg-white p-6 rounded-2xl border border-gray-200 shadow-sm"
+                >
+                    <p class="mb-4 text-gray-700">
+                        After successfully graduating from Nepal, students have
+                        various postgraduate and career options globally:
+                    </p>
+                    <ul
+                        class="grid md:grid-cols-2 gap-y-3 gap-x-6 text-sm text-gray-700 list-none"
+                    >
+                        <li class="flex gap-2">
+                            <span class="text-[#00BFFF] shrink-0">✔</span> Return
+                            to India to practice (passing the NMC screening exam/FMGE
+                            is mandatory).
+                        </li>
+                        <li class="flex gap-2">
+                            <span class="text-[#00BFFF] shrink-0">✔</span> Pursue
+                            an M.D. in Forensic Science.
+                        </li>
+                        <li class="flex gap-2">
+                            <span class="text-[#00BFFF] shrink-0">✔</span> Master's
+                            programs in Physiology, Pharmacology, or Microbiology.
+                        </li>
+                        <li class="flex gap-2">
+                            <span class="text-[#00BFFF] shrink-0">✔</span> Specializations
+                            in Pathology, Otorhinolaryngology (ENT), and Surgery.
+                        </li>
+                        <li class="flex gap-2">
+                            <span class="text-[#00BFFF] shrink-0">✔</span> Uncapped
+                            opportunities in international hospitals and healthcare
+                            facilities.
+                        </li>
+                        <li class="flex gap-2">
+                            <span class="text-[#00BFFF] shrink-0">✔</span> Explore
+                            domains like Hospital Management or opening an independent
+                            private practice.
+                        </li>
+                    </ul>
+                </div>
+            </section>
+
+            <!-- SECTION: Timeline & Visa -->
+            <section id="timeline-visa" class="mb-12 scroll-mt-24">
+                <h2
+                    class="text-2xl md:text-3xl font-bold text-[#0E0C4F] mb-4 pb-3 border-b-2 border-[#00BFFF]/30"
+                >
+                    Admission Timeline & Visa Process
+                </h2>
+                <div class="grid md:grid-cols-2 gap-8">
+                    <div>
+                        <h4 class="font-bold text-[#0E0C4F] mb-3">
+                            Important Timeline
+                        </h4>
+                        <ul class="text-sm text-gray-700 space-y-3">
+                            <li class="flex justify-between border-b pb-2">
+                                <span>Applications Accepted:</span>
+                                <strong>June - July</strong>
+                            </li>
+                            <li class="flex justify-between border-b pb-2">
+                                <span>Admission Letters Issued:</span>
+                                <strong>Within 15 Days (August)</strong>
+                            </li>
+                            <li class="flex justify-between border-b pb-2">
+                                <span>Visa Process:</span>
+                                <strong>2 - 3 Months (Complete by Sep)</strong>
+                            </li>
+                            <li class="flex justify-between">
+                                <span>Classes Commence:</span>
+                                <strong class="text-[#00BFFF]"
+                                    >September or October</strong>
+                            </li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h4 class="font-bold text-[#0E0C4F] mb-3">
+                            Student VISA Requirements
+                        </h4>
+                        <p class="text-sm text-gray-600 mb-3">
+                            Though there is a visa-free policy for tourism,
+                            student registration logic requires specific
+                            documentation upon entry and for university records:
+                        </p>
+                        <ul
+                            class="text-sm text-gray-700 space-y-2 list-disc list-inside"
+                        >
+                            <li>Valid Passport is absolutely mandatory.</li>
+                            <li>Carry any other valid Government ID proof.</li>
+                            <li>
+                                Download and accurately fill out your
+                                application forms.
+                            </li>
+                            <li>
+                                Official Admission Letter from the Nepalese
+                                university.
+                            </li>
+                            <li>
+                                Carry detailed health check-up medical reports.
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+            <!-- SECTION: About -->
+            <section id="about" class="mb-12 scroll-mt-24">
+                <h2
+                    class="text-2xl md:text-3xl font-bold text-[#0E0C4F] mb-4 pb-3 border-b-2 border-[#00BFFF]/30"
+                >
+                    Let’s Explore Nepal
+                </h2>
+                <div
+                    class="bg-gradient-to-br from-[#0E0C4F] to-[#252374] p-8 rounded-2xl text-white shadow-lg flex flex-col md:flex-row gap-8 items-center"
+                >
+                    <div class="w-full md:w-1/2">
+                        <h3 class="text-xl font-bold mb-4 text-[#D5AD36]">
+                            A Close Neighbor
+                        </h3>
+                        <p class="text-sm text-gray-300 leading-relaxed mb-6">
+                            Nepal is a beautiful Hindu-majority nation bordered
+                            by India to the west, east, and south. It is home to
+                            the majestic Himalayas and the world's second
+                            deepest canyon, Kali Gandaki. Traveling from India
+                            takes merely ~1.5 hours by air, with a marginal time
+                            difference of just 15 minutes!
+                        </p>
+                    </div>
+                    <div
+                        class="w-full md:w-1/2 bg-white/10 p-5 rounded-xl border border-white/20"
+                    >
+                        <ul class="text-sm grid grid-cols-2 gap-y-3 gap-x-4">
+                            <li>
+                                <span class="text-[#00BFFF]">Capital:</span> Kathmandu
+                            </li>
+                            <li>
+                                <span class="text-[#00BFFF]">Currency:</span> Nepalese
+                                Rupee
+                            </li>
+                            <li>
+                                <span class="text-[#00BFFF]">Language:</span> Nepali
+                                & English
+                            </li>
+                            <li>
+                                <span class="text-[#00BFFF]">Climate:</span> 7°C to
+                                40°C
+                            </li>
+                            <li>
+                                <span class="text-[#00BFFF]">Border:</span> India
+                                & China
+                            </li>
+                            <li>
+                                <span class="text-[#00BFFF]">Conversion:</span> 1
+                                NPR = 0.63 INR
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+        </CountryLayout>
+
+        <Footer />
+    </body>
+</html>

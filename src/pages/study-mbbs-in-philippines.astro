@@ -1,0 +1,936 @@
+---
+import "../styles/global.css";
+import "flag-icons/css/flag-icons.min.css";
+import Navbar from "../components/Navbar.jsx";
+import CountryLayout from "../components/CountryLayout.astro";
+import Footer from "../components/Footer.astro";
+---
+
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&display=swap"
+            rel="stylesheet"
+        />
+        <meta
+            name="description"
+            content="Study MBBS in Philippines – Complete guide including fees, top universities, syllabus, admission process, and benefits for Indian students."
+        />
+        <title>
+            MBBS in Philippines for Indian Students: Fees, Admissions, and
+            Universities | Doctor Destiny
+        </title>
+    </head>
+    <body class="bg-[#F0F7FF] overflow-x-hidden">
+        <Navbar client:load />
+
+        <!-- Page Hero -->
+        <div class="bg-[#0E0C4F] pt-28 pb-16 px-6">
+            <div class="max-w-5xl mx-auto text-center">
+                <span
+                    class="inline-block py-1 px-4 rounded-full bg-white/10 text-[#D5AD36] text-sm font-bold mb-4 tracking-widest uppercase"
+                >
+                    Study Abroad
+                </span>
+                <h1
+                    class="text-4xl md:text-6xl font-extrabold text-white leading-tight mb-4"
+                >
+                    Study MBBS in <span class="text-[#00BFFF]">Philippines</span
+                    >
+                </h1>
+                <p
+                    class="text-lg text-gray-300 max-w-3xl mx-auto leading-relaxed"
+                >
+                    The Philippines offers top-quality medical education with a
+                    curriculum modeled after the US system. It boasts excellent
+                    facilities, English-speaking locals, and abundant global
+                    work opportunities with a high FMGE passing rate.
+                </p>
+                <div class="mt-8">
+                    <button
+                        class="bg-gradient-to-r from-[#D5AD36] to-[#f0c847] hover:shadow-[0_0_20px_rgba(213,173,54,0.6)] text-[#0E0C4F] px-8 py-3 rounded-full font-bold transition-all duration-300 hover:scale-105"
+                    >
+                        Enroll Now
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Country Layout (3-column) -->
+        <CountryLayout
+            countryName="Philippines"
+            navItems={[
+                { label: "Duration & Medium", id: "duration-medium" },
+                { label: "Recognition", id: "recognition" },
+                { label: "Eligibility", id: "eligibility" },
+                { label: "Documents & Admission", id: "admission" },
+                { label: "Why Philippines?", id: "benefits-challenges" },
+                { label: "Top Univs & Fees", id: "universities-fees" },
+                { label: "Course Syllabus", id: "syllabus" },
+                { label: "Reviews & Timeline", id: "reviews-timeline" },
+                { label: "Facilities & Support", id: "facilities" },
+                { label: "About Philippines", id: "about" },
+            ]}
+            faqs={[
+                {
+                    question:
+                        "What is the medium of teaching for MBBS in the Philippines?",
+                    answer: "The medium of instruction is English, eliminating the need to learn a new language.",
+                },
+                {
+                    question:
+                        "Do I need to qualify NEET to study in the Philippines?",
+                    answer: "Yes, NEET is mandatory for Indian students if they wish to practice medicine back in India.",
+                },
+                {
+                    question: "What is NMAT?",
+                    answer: "NMAT (National Medical Admission Test) is a mandatory national-level medical entrance exam for admission to medical colleges in the Philippines.",
+                },
+                {
+                    question: "Can I practice in India after my MBBS?",
+                    answer: "Yes, MBBS from the Philippines is recognized by NMC. Graduates must clear the FMGE/NEXT exam to practice.",
+                },
+                {
+                    question: "What is the BS-MD program?",
+                    answer: "Students typically complete a Pre-Medical (BS) course before entering the formal MBBS (MD) 4-year program, making it a 5-6 year course total depending on the pre-med duration.",
+                },
+            ]}
+        >
+            <!-- SECTION: Duration & Medium -->
+            <section id="duration-medium" class="mb-12 scroll-mt-24">
+                <h2
+                    class="text-2xl md:text-3xl font-bold text-[#0E0C4F] mb-4 pb-3 border-b-2 border-[#00BFFF]/30"
+                >
+                    Duration & Medium of Teaching
+                </h2>
+                <div class="grid md:grid-cols-2 gap-6">
+                    <div
+                        class="bg-white p-6 rounded-2xl shadow-sm border border-gray-100"
+                    >
+                        <h3
+                            class="flex items-center gap-2 font-bold text-[#0E0C4F] mb-3"
+                        >
+                            <span class="text-[#00BFFF]">⏱</span> Duration of MBBS
+                        </h3>
+                        <p class="text-gray-600 mb-3">
+                            The total duration usually spans around <strong
+                                >5.5 to 6 years</strong
+                            > depending on prior education.
+                        </p>
+                        <ul
+                            class="space-y-2 text-sm text-gray-600 list-disc list-inside"
+                        >
+                            <li>
+                                <strong>Pre-Medical Course (BS):</strong> Foundation
+                                course lasting around 1 to 2 years.
+                            </li>
+                            <li>
+                                <strong>Medical Course (MD):</strong> Equivalent to
+                                MBBS, lasting 4 years including clinical rotations.
+                            </li>
+                        </ul>
+                    </div>
+                    <div
+                        class="bg-white p-6 rounded-2xl shadow-sm border border-gray-100"
+                    >
+                        <h3
+                            class="flex items-center gap-2 font-bold text-[#0E0C4F] mb-3"
+                        >
+                            <span class="text-[#00BFFF]">🗣</span> Medium of Teaching
+                        </h3>
+                        <p class="text-gray-600 leading-relaxed text-sm mb-3">
+                            The medium of instruction for MBBS in the
+                            Philippines is <strong>English</strong>, making it
+                            highly accessible for international students.
+                        </p>
+                        <ul
+                            class="space-y-2 text-sm text-gray-600 list-disc list-inside"
+                        >
+                            <li>
+                                Eliminates the need for learning a new language.
+                            </li>
+                            <li>
+                                Allows students to focus fully on their medical
+                                education.
+                            </li>
+                            <li>90% of the local population speaks English.</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+            <!-- SECTION: Recognition -->
+            <section id="recognition" class="mb-12 scroll-mt-24">
+                <h2
+                    class="text-2xl md:text-3xl font-bold text-[#0E0C4F] mb-4 pb-3 border-b-2 border-[#00BFFF]/30"
+                >
+                    Recognition of Medical Universities
+                </h2>
+                <div class="bg-[#0E0C4F] text-white p-6 rounded-2xl">
+                    <p class="mb-4 text-gray-300">
+                        Universities in the Philippines are recognized by
+                        several prestigious global organizations:
+                    </p>
+                    <div class="grid grid-cols-2 lg:grid-cols-3 gap-4">
+                        {
+                            [
+                                "World Health Organization (WHO)",
+                                "National Medical Commission (NMC)",
+                                "Educational Commission for Foreign Med. Grads (ECFMG)",
+                                "World Federation for Medical Education (WFME)",
+                                "Foundation for Advancement of Int. Medical Ed. (FAIMER)",
+                            ].map((org) => (
+                                <div class="bg-white/10 p-3 rounded-lg text-sm text-center font-medium border border-white/20 flex items-center justify-center">
+                                    {org}
+                                </div>
+                            ))
+                        }
+                    </div>
+                </div>
+            </section>
+
+            <!-- SECTION: Eligibility -->
+            <section id="eligibility" class="mb-12 scroll-mt-24">
+                <h2
+                    class="text-2xl md:text-3xl font-bold text-[#0E0C4F] mb-4 pb-3 border-b-2 border-[#00BFFF]/30"
+                >
+                    Eligibility Criteria
+                </h2>
+                <div
+                    class="bg-blue-50/50 p-6 rounded-2xl border border-blue-100"
+                >
+                    <ul class="grid md:grid-cols-2 gap-4 text-sm text-gray-700">
+                        <li
+                            class="flex gap-3 items-start p-3 bg-white rounded-xl shadow-sm border border-gray-100"
+                        >
+                            <span class="text-[#00BFFF] text-lg">✔</span>
+                            <span
+                                >Students must have studied Science in 12th
+                                standard with an aggregate of <strong
+                                    >50% in Physics, Chemistry, and
+                                    Maths/Biology</strong
+                                >.</span
+                            >
+                        </li>
+                        <li
+                            class="flex gap-3 items-start p-3 bg-white rounded-xl shadow-sm border border-gray-100"
+                        >
+                            <span class="text-[#00BFFF] text-lg">✔</span>
+                            <span
+                                >For SC, ST, or OBC students, the minimum
+                                aggregate required is <strong>45%</strong
+                                >.</span
+                            >
+                        </li>
+                        <li
+                            class="flex gap-3 items-start p-3 bg-white rounded-xl shadow-sm border border-gray-100"
+                        >
+                            <span class="text-[#00BFFF] text-lg">✔</span>
+                            <span
+                                >Must be at least <strong>17 years old</strong> and
+                                not older than 25 years.</span
+                            >
+                        </li>
+                        <li
+                            class="flex gap-3 items-start p-3 bg-white rounded-xl shadow-sm border border-gray-100 border-l-4 border-l-red-500"
+                        >
+                            <span class="text-red-500 text-lg">⚠️</span>
+                            <span
+                                >Valid <strong>NEET score</strong> is necessary for
+                                those who wish to practice medicine in India after
+                                completing the course.</span
+                            >
+                        </li>
+                    </ul>
+                </div>
+            </section>
+
+            <!-- SECTION: Admission -->
+            <section id="admission" class="mb-12 scroll-mt-24">
+                <h2
+                    class="text-2xl md:text-3xl font-bold text-[#0E0C4F] mb-4 pb-3 border-b-2 border-[#00BFFF]/30"
+                >
+                    Documents Required & Admission
+                </h2>
+
+                <h3 class="font-bold text-lg text-[#0E0C4F] mb-3">
+                    Essential Documents
+                </h3>
+                <div
+                    class="bg-gray-50 p-6 rounded-2xl border border-gray-200 mb-8"
+                >
+                    <ul
+                        class="grid md:grid-cols-2 gap-y-2 gap-x-6 text-sm text-gray-700 list-disc list-inside"
+                    >
+                        <li>10th & 12th Mark sheets</li>
+                        <li>NEET scorecard (for Indian students)</li>
+                        <li>School Transfer & Leaving Certificates</li>
+                        <li>Medical check-up certificate</li>
+                        <li>No criminal record / Police clearance</li>
+                        <li>Copy of student's passport</li>
+                        <li>Guardian's passport & financial statement</li>
+                        <li>Code of Conduct Certificate</li>
+                        <li>Passport-sized photos</li>
+                        <li>Completed university application form</li>
+                    </ul>
+                </div>
+
+                <h3 class="font-bold text-lg text-[#0E0C4F] mb-4">
+                    Step-by-Step Admission Process
+                </h3>
+                <div class="space-y-4">
+                    {
+                        [
+                            {
+                                step: "1",
+                                title: "NMAT Exam",
+                                desc: "Appear for and pass the National Medical Admission Test (NMAT), mandatory for Philippines medical colleges.",
+                            },
+                            {
+                                step: "2",
+                                title: "Apply Online",
+                                desc: "Apply to your preferred university with your NMAT score and required documents.",
+                            },
+                            {
+                                step: "3",
+                                title: "Acceptance Letter",
+                                desc: "Upon approval of your admission form, receive the official acceptance letter.",
+                            },
+                            {
+                                step: "4",
+                                title: "Fee Submission",
+                                desc: "Submit the initial admission and tuition fees to secure your seat.",
+                            },
+                            {
+                                step: "5",
+                                title: "Visa Application",
+                                desc: "Apply for a student visa to the Philippines using your accepted documentation.",
+                            },
+                        ].map((s) => (
+                            <div class="flex gap-4 p-4 bg-white rounded-xl shadow-sm border border-gray-100">
+                                <span class="flex-shrink-0 w-8 h-8 rounded-full bg-[#00BFFF] text-white flex items-center justify-center font-bold">
+                                    {s.step}
+                                </span>
+                                <div>
+                                    <p class="font-bold text-gray-800">
+                                        {s.title}
+                                    </p>
+                                    <p class="text-sm text-gray-600">
+                                        {s.desc}
+                                    </p>
+                                </div>
+                            </div>
+                        ))
+                    }
+                </div>
+            </section>
+
+            <!-- SECTION: Benefits & Challenges -->
+            <section id="benefits-challenges" class="mb-12 scroll-mt-24">
+                <h2
+                    class="text-2xl md:text-3xl font-bold text-[#0E0C4F] mb-4 pb-3 border-b-2 border-[#00BFFF]/30"
+                >
+                    Why Philippines? (Pros & Cons)
+                </h2>
+                <div class="grid md:grid-cols-2 gap-8">
+                    <!-- Benefits -->
+                    <div>
+                        <h3
+                            class="font-bold text-green-700 flex items-center gap-2 mb-4 bg-green-50 px-4 py-2 rounded-lg"
+                        >
+                            <span>👍</span> Advantages of Philippines
+                        </h3>
+                        <ul class="space-y-3 text-sm text-gray-700">
+                            <li>
+                                ✔ Huge patient base offering ample clinical
+                                practice opportunities.
+                            </li>
+                            <li>
+                                ✔ English is widely spoken among patients,
+                                facilitating easy communication.
+                            </li>
+                            <li>
+                                ✔ Friendly, respectful environment for both male
+                                and female students.
+                            </li>
+                            <li>
+                                ✔ Exposure to top-quality tech and US-based
+                                curriculum format.
+                            </li>
+                            <li>
+                                ✔ WHO & NMC recognized, providing pathways to
+                                USMLE, PLAB, etc.
+                            </li>
+                            <li>
+                                ✔ Favorable fee structure and excellent hands-on
+                                facilities.
+                            </li>
+                            <li>
+                                ✔ Option to complete your internships in India.
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- Challenges -->
+                    <div>
+                        <h3
+                            class="font-bold text-red-700 flex items-center gap-2 mb-4 bg-red-50 px-4 py-2 rounded-lg"
+                        >
+                            <span>🛑</span> Disadvantages to Consider
+                        </h3>
+                        <ul class="space-y-3 text-sm text-gray-700">
+                            <li>
+                                ⚠ <strong>Weather:</strong> Frequent rainfall from
+                                June to Nov and chances of cyclones as it's an island
+                                country.
+                            </li>
+                            <li>
+                                ⚠ <strong>Costs:</strong> Some areas/cities can be
+                                quite expensive, and external housing may involve
+                                extra fees (like flooding fees).
+                            </li>
+                            <li>
+                                ⚠ <strong>Food hygiene:</strong> Not all local hotels
+                                prepare food hygienically outside campus.
+                            </li>
+                            <li>
+                                ⚠ <strong>Distractions:</strong> Exposure to nightlife
+                                and pubs can distract students.
+                            </li>
+                            <li>
+                                ⚠ <strong>Late patient exposure:</strong> Often students
+                                see patients mostly in the later stages (MD portion)
+                                of the course.
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+            <!-- SECTION: Top Universities & Fees -->
+            <section id="universities-fees" class="mb-12 scroll-mt-24">
+                <h2
+                    class="text-2xl md:text-3xl font-bold text-[#0E0C4F] mb-4 pb-3 border-b-2 border-[#00BFFF]/30"
+                >
+                    Top Universities & MBBS Fees (2024-25)
+                </h2>
+                <div
+                    class="overflow-x-auto rounded-xl border border-gray-200 shadow-sm mt-6"
+                >
+                    <table
+                        class="w-full text-left border-collapse min-w-[900px]"
+                    >
+                        <thead>
+                            <tr class="bg-[#0E0C4F] text-white text-sm">
+                                <th class="px-4 py-3 font-semibold"
+                                    >University Name</th
+                                >
+                                <th class="px-4 py-3 font-semibold">Est.</th>
+                                <th class="px-4 py-3 font-semibold">Duration</th
+                                >
+                                <th class="px-4 py-3 font-semibold"
+                                    >Total Fees (Rs.)</th
+                                >
+                                <th class="px-4 py-3 font-semibold"
+                                    >Hostel/Yr (Rs.)</th
+                                >
+                            </tr>
+                        </thead>
+                        <tbody class="text-gray-700 text-sm">
+                            {
+                                [
+                                    {
+                                        u: "AMA School of Medicine",
+                                        est: "2002",
+                                        dur: "5+1 Yr",
+                                        tf: "23,25,000",
+                                        hf: "63,000",
+                                    },
+                                    {
+                                        u: "University of Perpetual Help",
+                                        est: "1975",
+                                        dur: "5+1 Yr",
+                                        tf: "22,70,000",
+                                        hf: "49,000",
+                                    },
+                                    {
+                                        u: "Our Lady of Fatima University",
+                                        est: "1973",
+                                        dur: "5+1 Yr",
+                                        tf: "26,70,000",
+                                        hf: "42,000",
+                                    },
+                                    {
+                                        u: "Bicol Christian College of Medicine",
+                                        est: "1975",
+                                        dur: "5+1 Yr",
+                                        tf: "18,50,000",
+                                        hf: "84,000",
+                                    },
+                                    {
+                                        u: "Manila Central University",
+                                        est: "1904",
+                                        dur: "5+1 Yr",
+                                        tf: "27,15,000",
+                                        hf: "58,800",
+                                    },
+                                    {
+                                        u: "Emilio Aguinaldo College",
+                                        est: "1977",
+                                        dur: "5+1 Yr",
+                                        tf: "24,72,000",
+                                        hf: "56,000",
+                                    },
+                                ].map((item, index) => (
+                                    <tr
+                                        class={`border-b border-gray-100 ${index % 2 === 0 ? "bg-white" : "bg-gray-50/50"}`}
+                                    >
+                                        <td class="px-4 py-4 font-bold text-[#0E0C4F] bg-white lg:bg-transparent sticky left-0 lg:static shadow-[2px_0_5px_rgba(0,0,0,0.05)] lg:shadow-none">
+                                            {item.u}
+                                            <div class="text-[11px] font-normal text-gray-400 mt-1">
+                                                Recognized by NMC, WHO, FAIMER
+                                            </div>
+                                        </td>
+                                        <td class="px-4 py-4">{item.est}</td>
+                                        <td class="px-4 py-4">{item.dur}</td>
+                                        <td class="px-4 py-4 font-semibold text-blue-800">
+                                            Rs. {item.tf}
+                                        </td>
+                                        <td class="px-4 py-4">Rs. {item.hf}</td>
+                                    </tr>
+                                ))
+                            }
+                        </tbody>
+                    </table>
+                </div>
+            </section>
+
+            <!-- SECTION: Syllabus -->
+            <section id="syllabus" class="mb-12 scroll-mt-24">
+                <h2
+                    class="text-2xl md:text-3xl font-bold text-[#0E0C4F] mb-4 pb-3 border-b-2 border-[#00BFFF]/30"
+                >
+                    Pre-Medical (BS) & MD Course Syllabus
+                </h2>
+
+                <div class="grid lg:grid-cols-2 gap-8">
+                    <!-- Pre-Medical -->
+                    <div>
+                        <h3
+                            class="font-bold text-lg text-[#0E0C4F] bg-blue-50 py-2 px-4 rounded-t-xl border border-b-0 border-blue-100"
+                        >
+                            Pre-Medical Course (BS)
+                        </h3>
+                        <div
+                            class="overflow-hidden border border-gray-200 rounded-b-xl shadow-sm"
+                        >
+                            <table
+                                class="w-full text-left border-collapse text-sm"
+                            >
+                                <thead class="bg-gray-100 text-gray-700">
+                                    <tr>
+                                        <th class="px-4 py-2 w-24">Term</th>
+                                        <th class="px-4 py-2">Subjects</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr class="border-t border-gray-100">
+                                        <td class="px-4 py-3 font-semibold"
+                                            >1st</td
+                                        >
+                                        <td class="px-4 py-3 text-gray-600"
+                                            >Calculus & Analytical Geo.,
+                                            Biochemistry, Plant Morpho-anatomy,
+                                            Comp. Vertebrate Anatomy,
+                                            Psychology, Parasitology</td
+                                        >
+                                    </tr>
+                                    <tr
+                                        class="border-t border-gray-100 bg-gray-50/50"
+                                    >
+                                        <td class="px-4 py-3 font-semibold"
+                                            >2nd</td
+                                        >
+                                        <td class="px-4 py-3 text-gray-600"
+                                            >Plant Physiology, Genetics, Animal
+                                            Physio., Entomology, Freshwater
+                                            Biology, Microbiology, Dev. Biology</td
+                                        >
+                                    </tr>
+                                    <tr class="border-t border-gray-100">
+                                        <td class="px-4 py-3 font-semibold"
+                                            >3rd</td
+                                        >
+                                        <td class="px-4 py-3 text-gray-600"
+                                            >Ecology, Ed. for Sustainable Dev,
+                                            Research Method., Systematic Biol,
+                                            Cell & Molecular Bio, Politics</td
+                                        >
+                                    </tr>
+                                    <tr
+                                        class="border-t border-gray-100 bg-gray-50/50"
+                                    >
+                                        <td class="px-4 py-3 font-semibold"
+                                            >4th</td
+                                        >
+                                        <td class="px-4 py-3 text-gray-600"
+                                            >Rizal's Life/Works, Taxation, Human
+                                            Genetics, Radiation Biol, Histology,
+                                            Biological Research (Thesis),
+                                            Immunology</td
+                                        >
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+
+                    <!-- MBBS MD -->
+                    <div>
+                        <h3
+                            class="font-bold text-lg text-[#0E0C4F] bg-indigo-50 py-2 px-4 rounded-t-xl border border-b-0 border-indigo-100"
+                        >
+                            MBBS Course (MD)
+                        </h3>
+                        <div
+                            class="overflow-hidden border border-gray-200 rounded-b-xl shadow-sm"
+                        >
+                            <table
+                                class="w-full text-left border-collapse text-sm"
+                            >
+                                <thead class="bg-gray-100 text-gray-700">
+                                    <tr>
+                                        <th class="px-4 py-2 w-24">Term</th>
+                                        <th class="px-4 py-2">Subjects</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr class="border-t border-gray-100">
+                                        <td class="px-4 py-3 font-semibold"
+                                            >1st</td
+                                        >
+                                        <td class="px-4 py-3 text-gray-600"
+                                            >Anatomy, Histology, Biochemistry,
+                                            Psychiatry, Physiology,
+                                            Neuroscience, History of Med.,
+                                            Preventive Med, Bioethics</td
+                                        >
+                                    </tr>
+                                    <tr
+                                        class="border-t border-gray-100 bg-gray-50/50"
+                                    >
+                                        <td class="px-4 py-3 font-semibold"
+                                            >2nd</td
+                                        >
+                                        <td class="px-4 py-3 text-gray-600"
+                                            >Pharmacology, Pathology,
+                                            Parasitology, Medicine-1,
+                                            Epidemiology, Microbiology,
+                                            Pediatrics-1, Surgery, Neurosci-2</td
+                                        >
+                                    </tr>
+                                    <tr class="border-t border-gray-100">
+                                        <td class="px-4 py-3 font-semibold"
+                                            >3rd</td
+                                        >
+                                        <td class="px-4 py-3 text-gray-600"
+                                            >Pediatrics-2, Surgery-2,
+                                            Medicine-2, Internal Med, Legal Med,
+                                            Dermatology, Radiology, Cardiology,
+                                            Ophthalmology, OB-GYN</td
+                                        >
+                                    </tr>
+                                    <tr
+                                        class="border-t border-gray-100 bg-gray-50/50"
+                                    >
+                                        <td class="px-4 py-3 font-semibold"
+                                            >4th</td
+                                        >
+                                        <td class="px-4 py-3 text-gray-600"
+                                            >Surgery, Medicine, Psychiatry,
+                                            Ophthalmology, Neurology,
+                                            Pediatrics, Obstetrics and
+                                            Gynecology</td
+                                        >
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- SECTION: Reviews & Timeline -->
+            <section id="reviews-timeline" class="mb-12 scroll-mt-24">
+                <h2
+                    class="text-2xl md:text-3xl font-bold text-[#0E0C4F] mb-4 pb-3 border-b-2 border-[#00BFFF]/30"
+                >
+                    Student Reviews & Admission Timeline
+                </h2>
+
+                <div class="grid md:grid-cols-2 gap-8">
+                    <!-- Reviews -->
+                    <div>
+                        <h3 class="font-bold text-[#0E0C4F] mb-4">
+                            Indian Student Ratings (Out of 5)
+                        </h3>
+                        <div
+                            class="bg-white p-5 rounded-xl border border-gray-200 shadow-sm space-y-3"
+                        >
+                            {
+                                [
+                                    {
+                                        label: "Climate & Weather",
+                                        score: "3.9",
+                                        width: "78%",
+                                    },
+                                    {
+                                        label: "Tuition Fees",
+                                        score: "3.9",
+                                        width: "78%",
+                                    },
+                                    {
+                                        label: "Living Cost",
+                                        score: "3.7",
+                                        width: "74%",
+                                    },
+                                    {
+                                        label: "Safety of Students",
+                                        score: "3.6",
+                                        width: "72%",
+                                    },
+                                    {
+                                        label: "Education System",
+                                        score: "3.5",
+                                        width: "70%",
+                                    },
+                                    {
+                                        label: "Visa Processing",
+                                        score: "3.5",
+                                        width: "70%",
+                                    },
+                                ].map((r) => (
+                                    <div class="flex items-center gap-3">
+                                        <span class="w-1/3 text-xs font-medium text-gray-700">
+                                            {r.label}
+                                        </span>
+                                        <div class="w-full bg-gray-100 rounded-full h-2.5">
+                                            <div
+                                                class="bg-[#D5AD36] h-2.5 rounded-full"
+                                                style={`width: ${r.width}`}
+                                            />
+                                        </div>
+                                        <span class="text-sm font-bold w-8 text-right text-[#0E0C4F]">
+                                            {r.score}
+                                        </span>
+                                    </div>
+                                ))
+                            }
+                        </div>
+                    </div>
+
+                    <!-- Timeline -->
+                    <div>
+                        <h3 class="font-bold text-[#0E0C4F] mb-4">
+                            Admission Timeline Outline
+                        </h3>
+                        <div
+                            class="overflow-hidden rounded-xl border border-gray-200"
+                        >
+                            <table class="w-full text-left text-sm">
+                                <tbody>
+                                    <tr class="border-b bg-gray-50"
+                                        ><td
+                                            class="p-3 font-medium text-gray-800"
+                                            >Registration</td
+                                        ><td class="p-3 text-gray-500 font-bold"
+                                            >April - May</td
+                                        ></tr
+                                    >
+                                    <tr class="border-b bg-white"
+                                        ><td
+                                            class="p-3 font-medium text-gray-800"
+                                            >10+2 Results</td
+                                        ><td class="p-3 text-gray-500 font-bold"
+                                            >May - June</td
+                                        ></tr
+                                    >
+                                    <tr class="border-b bg-gray-50"
+                                        ><td
+                                            class="p-3 font-medium text-gray-800"
+                                            >Admission Starts</td
+                                        ><td class="p-3 text-gray-500 font-bold"
+                                            >June - July</td
+                                        ></tr
+                                    >
+                                    <tr class="border-b bg-white"
+                                        ><td
+                                            class="p-3 font-medium text-gray-800"
+                                            >Invitation Letter</td
+                                        ><td class="p-3 text-gray-500 font-bold"
+                                            >July - August</td
+                                        ></tr
+                                    >
+                                    <tr class="border-b bg-gray-50"
+                                        ><td
+                                            class="p-3 font-medium text-gray-800"
+                                            >Visa / Departure</td
+                                        ><td class="p-3 text-gray-500 font-bold"
+                                            >September</td
+                                        ></tr
+                                    >
+                                    <tr class="border-b bg-white"
+                                        ><td
+                                            class="p-3 font-medium text-gray-800"
+                                            >Classes Commence</td
+                                        ><td
+                                            class="p-3 text-[#00BFFF] font-bold"
+                                            >November - Dec</td
+                                        ></tr
+                                    >
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- SECTION: Facilities & Support -->
+            <section id="facilities" class="mb-12 scroll-mt-24">
+                <h2
+                    class="text-2xl md:text-3xl font-bold text-[#0E0C4F] mb-4 pb-3 border-b-2 border-[#00BFFF]/30"
+                >
+                    Hostels, Scholarships & Loans
+                </h2>
+                <div class="grid md:grid-cols-3 gap-6">
+                    <div
+                        class="bg-white border top-2 border-gray-100 p-6 rounded-2xl shadow-sm hover:shadow-md transition"
+                    >
+                        <span class="text-3xl mb-3 block">🏢</span>
+                        <h4 class="font-bold text-[#0E0C4F] mb-2">
+                            Accommodation
+                        </h4>
+                        <ul
+                            class="text-sm text-gray-600 space-y-2 list-disc list-inside"
+                        >
+                            <li>Separate hostels for boys and girls.</li>
+                            <li>
+                                Rooms with A/C, TV, Refrigerator, and Wi-Fi.
+                            </li>
+                            <li>
+                                Hygienic kitchens available for daily meals.
+                            </li>
+                            <li>
+                                Secure campuses protected by security guards.
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div
+                        class="bg-white border top-2 border-gray-100 p-6 rounded-2xl shadow-sm hover:shadow-md transition"
+                    >
+                        <span class="text-3xl mb-3 block">🎓</span>
+                        <h4 class="font-bold text-[#0E0C4F] mb-2">
+                            Scholarships
+                        </h4>
+                        <ul
+                            class="text-sm text-gray-600 space-y-2 list-disc list-inside"
+                        >
+                            <li>Financial aid available from universities.</li>
+                            <li>Granted majorly for academic excellence.</li>
+                            <li>
+                                State-level and international performance-based
+                                scholarships accessible.
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div
+                        class="bg-white border top-2 border-gray-100 p-6 rounded-2xl shadow-sm hover:shadow-md transition"
+                    >
+                        <span class="text-3xl mb-3 block">🏦</span>
+                        <h4 class="font-bold text-[#0E0C4F] mb-2">
+                            Education Loan
+                        </h4>
+                        <ul
+                            class="text-sm text-gray-600 space-y-2 list-disc list-inside"
+                        >
+                            <li>Strong banking tie-ups for Indian students.</li>
+                            <li>
+                                Proper documentation ensures quick approvals.
+                            </li>
+                            <li>
+                                Apply via national and private banks with
+                                repayment plans.
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+            <!-- SECTION: About -->
+            <section id="about" class="mb-12 scroll-mt-24">
+                <h2
+                    class="text-2xl md:text-3xl font-bold text-[#0E0C4F] mb-4 pb-3 border-b-2 border-[#00BFFF]/30"
+                >
+                    About the Philippines
+                </h2>
+                <div
+                    class="bg-gradient-to-br from-[#0E0C4F] to-[#252374] p-8 rounded-2xl text-white shadow-lg flex flex-col md:flex-row gap-8 items-center"
+                >
+                    <div class="w-full md:w-1/2">
+                        <h3 class="text-xl font-bold mb-4 text-[#D5AD36]">
+                            Quick Country Facts
+                        </h3>
+                        <p class="text-sm text-gray-300 leading-relaxed mb-6">
+                            The Philippines is a beautiful island country with
+                            friendly locals and a tropical climate similar to
+                            India, making it easy to adapt. With English as one
+                            of the primary languages, studying and traveling
+                            around the country is seamless.
+                        </p>
+                    </div>
+                    <div
+                        class="w-full md:w-1/2 bg-white/10 p-5 rounded-xl border border-white/20"
+                    >
+                        <ul class="text-sm grid grid-cols-2 gap-y-3 gap-x-4">
+                            <li>
+                                <span class="text-[#00BFFF]">Capital:</span> Manila
+                            </li>
+                            <li>
+                                <span class="text-[#00BFFF]">Currency:</span> Phil.
+                                Peso
+                            </li>
+                            <li>
+                                <span class="text-[#00BFFF]">Pop:</span> 10.49 Crores
+                            </li>
+                            <li>
+                                <span class="text-[#00BFFF]">Language:</span> English
+                                (90%)
+                            </li>
+                            <li>
+                                <span class="text-[#00BFFF]">Temp:</span> 24°C to
+                                31°C
+                            </li>
+                            <li>
+                                <span class="text-[#00BFFF]">Travel:</span> ~10 Hrs
+                                by Air
+                            </li>
+                            <li class="col-span-2">
+                                <span class="text-[#00BFFF]">Time Diff:</span> 2.5
+                                hours ahead of India
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+        </CountryLayout>
+
+        <Footer />
+    </body>
+</html>

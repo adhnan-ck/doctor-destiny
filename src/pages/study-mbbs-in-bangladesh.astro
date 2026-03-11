@@ -1,0 +1,766 @@
+---
+import "../styles/global.css";
+import "flag-icons/css/flag-icons.min.css";
+import Navbar from "../components/Navbar.jsx";
+import CountryLayout from "../components/CountryLayout.astro";
+import Footer from "../components/Footer.astro";
+---
+
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&display=swap"
+            rel="stylesheet"
+        />
+        <meta
+            name="description"
+            content="Study MBBS in Bangladesh – Complete guide including fees, top universities, syllabus, admission process, and benefits for Indian students."
+        />
+        <title>
+            MBBS in Bangladesh for Indian Students: Fees, Admissions, and
+            Universities | Doctor Destiny
+        </title>
+    </head>
+    <body class="bg-[#F0F7FF] overflow-x-hidden">
+        <Navbar client:load />
+
+        <!-- Page Hero -->
+        <div class="bg-[#0E0C4F] pt-28 pb-16 px-6">
+            <div class="max-w-5xl mx-auto text-center">
+                <span
+                    class="inline-block py-1 px-4 rounded-full bg-white/10 text-[#D5AD36] text-sm font-bold mb-4 tracking-widest uppercase"
+                >
+                    Study Abroad
+                </span>
+                <h1
+                    class="text-4xl md:text-6xl font-extrabold text-white leading-tight mb-4"
+                >
+                    Study MBBS in <span class="text-[#00BFFF]">Bangladesh</span>
+                </h1>
+                <p
+                    class="text-lg text-gray-300 max-w-3xl mx-auto leading-relaxed"
+                >
+                    Bangladesh offers high-quality medical education at
+                    affordable costs with excellent infrastructure. With a
+                    curriculum aligning with global standards and NMC pass
+                    percentages soaring, it is one of the favorite destinations
+                    for Indian students.
+                </p>
+                <div class="mt-8">
+                    <button
+                        class="bg-gradient-to-r from-[#D5AD36] to-[#f0c847] hover:shadow-[0_0_20px_rgba(213,173,54,0.6)] text-[#0E0C4F] px-8 py-3 rounded-full font-bold transition-all duration-300 hover:scale-105"
+                    >
+                        Enroll Now
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Country Layout (3-column) -->
+        <CountryLayout
+            countryName="Bangladesh"
+            navItems={[
+                { label: "Duration & Medium", id: "duration-medium" },
+                { label: "Recognition", id: "recognition" },
+                { label: "Eligibility & Docs", id: "eligibility" },
+                { label: "Admission Process", id: "admission" },
+                { label: "Why Bangladesh?", id: "benefits-challenges" },
+                { label: "Fee Structure", id: "fees" },
+                { label: "Course Syllabus", id: "syllabus" },
+                { label: "Program Overview", id: "overview" },
+                { label: "Intake & Timeline", id: "timeline" },
+                { label: "Expenses & About", id: "expenses" },
+            ]}
+            faqs={[
+                {
+                    question:
+                        "Is exploring MBBS in Bangladesh a good choice for Indian students?",
+                    answer: "Yes! High NMC pass percentages, similar culture, disease patterns, and low tuition fees make it an excellent choice for Indian medical aspirants.",
+                },
+                {
+                    question:
+                        "What is the duration of the MBBS course in Bangladesh?",
+                    answer: "The program spans 6 years, which includes 5 years of academic study and a 1-year internship.",
+                },
+                {
+                    question: "Is NEET qualification mandatory for Bangladesh?",
+                    answer: "Yes, NEET qualification with minimum qualifying marks is strictly required for Indian students to secure admission and practice in India later.",
+                },
+                {
+                    question: "Are IELTS or TOEFL scores required?",
+                    answer: "No, exams like IELTS and TOEFL are not required for MBBS admission in Bangladesh.",
+                },
+                {
+                    question: "Is the internship in Bangladesh valid in India?",
+                    answer: "Yes, but for Indian students, the 1-year internship in Bangladesh is optional as they can do it in India after clearing FMGE/NEXT.",
+                },
+            ]}
+        >
+            <!-- SECTION: Duration & Medium -->
+            <section id="duration-medium" class="mb-12 scroll-mt-24">
+                <h2
+                    class="text-2xl md:text-3xl font-bold text-[#0E0C4F] mb-4 pb-3 border-b-2 border-[#00BFFF]/30"
+                >
+                    Duration & Medium of Teaching
+                </h2>
+                <div class="grid md:grid-cols-2 gap-6">
+                    <div
+                        class="bg-white p-6 rounded-2xl shadow-sm border border-gray-100"
+                    >
+                        <h3
+                            class="flex items-center gap-2 font-bold text-[#0E0C4F] mb-3"
+                        >
+                            <span class="text-[#00BFFF]">⏱</span> Course Duration
+                        </h3>
+                        <p class="text-gray-600 mb-3">
+                            The MBBS program in Bangladesh spans <strong
+                                >6 years</strong
+                            > in total.
+                        </p>
+                        <ul
+                            class="space-y-2 text-sm text-gray-600 list-disc list-inside"
+                        >
+                            <li>
+                                <strong>5 Years:</strong> Divided into Pre-clinical,
+                                Para-clinical, and Clinical phases.
+                            </li>
+                            <li>
+                                <strong>1 Year:</strong> Dedicated internship providing
+                                valuable career benefits (Optional for Indian students).
+                            </li>
+                        </ul>
+                    </div>
+                    <div
+                        class="bg-white p-6 rounded-2xl shadow-sm border border-gray-100"
+                    >
+                        <h3
+                            class="flex items-center gap-2 font-bold text-[#0E0C4F] mb-3"
+                        >
+                            <span class="text-[#00BFFF]">🗣</span> Teaching Medium
+                        </h3>
+                        <p class="text-gray-600 leading-relaxed text-sm mb-3">
+                            The entire MBBS curriculum is taught in <strong
+                                >English</strong
+                            >. The education system provides high-quality
+                            standards at affordable costs, and aligns with
+                            robust global standards ensuring students are fully
+                            prepared for international practice.
+                        </p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- SECTION: Recognition -->
+            <section id="recognition" class="mb-12 scroll-mt-24">
+                <h2
+                    class="text-2xl md:text-3xl font-bold text-[#0E0C4F] mb-4 pb-3 border-b-2 border-[#00BFFF]/30"
+                >
+                    Recognition of Universities
+                </h2>
+                <div class="bg-[#0E0C4F] text-white p-6 rounded-2xl">
+                    <p class="mb-4 text-gray-300">
+                        Bangladesh medical universities maintain equivalent
+                        educational standards to South East Asia and the UK.
+                        They are recognized by:
+                    </p>
+                    <div class="grid grid-cols-2 lg:grid-cols-3 gap-4">
+                        {
+                            [
+                                "National Medical Commission (NMC)",
+                                "World Health Organization (WHO)",
+                                "Medical and Dental Council of Bangladesh",
+                                "Ministry of Health and Family Welfare, Govt of BD",
+                                "World Federation for Medical Education (WFME)",
+                                "Ministry of Education, Bangladesh",
+                                "Educational Commission for Foreign Med. Grad. (ECFMG)",
+                            ].map((org) => (
+                                <div class="bg-white/10 p-3 rounded-lg text-sm text-center font-medium border border-white/20 flex flex-col items-center justify-center">
+                                    {org}
+                                </div>
+                            ))
+                        }
+                    </div>
+                </div>
+            </section>
+
+            <!-- SECTION: Eligibility & Docs -->
+            <section id="eligibility" class="mb-12 scroll-mt-24">
+                <h2
+                    class="text-2xl md:text-3xl font-bold text-[#0E0C4F] mb-4 pb-3 border-b-2 border-[#00BFFF]/30"
+                >
+                    Eligibility & Required Documents
+                </h2>
+
+                <h3 class="font-bold text-lg text-[#0E0C4F] mb-3">
+                    Eligibility Criteria
+                </h3>
+                <div
+                    class="mb-6 bg-blue-50/50 p-5 rounded-xl border border-blue-100"
+                >
+                    <ul class="grid md:grid-cols-2 gap-3 text-sm text-gray-700">
+                        <li class="flex gap-2 items-start">
+                            <span class="text-[#00BFFF]">✔</span> Minimum <strong
+                                >60% aggregate in Physics, Chemistry, and
+                                Biology (PCB)</strong
+                            > in 12th standard.
+                        </li>
+                        <li class="flex gap-2 items-start">
+                            <span class="text-[#00BFFF]">✔</span> Must have a valid
+                            <strong>NEET Qualification scorecard</strong>.
+                        </li>
+                        <li class="flex gap-2 items-start">
+                            <span class="text-[#00BFFF]">✔</span> Gap in education
+                            should usually not exceed 1-2 years post-12th.
+                        </li>
+                        <li class="flex gap-2 items-start">
+                            <span class="text-[#00BFFF]">✔</span> No IELTS / TOEFL
+                            required.
+                        </li>
+                    </ul>
+                </div>
+
+                <h3 class="font-bold text-lg text-[#0E0C4F] mb-3">
+                    Documents Required
+                </h3>
+                <div class="bg-gray-50 p-6 rounded-2xl border border-gray-200">
+                    <ul
+                        class="grid md:grid-cols-2 gap-y-2 gap-x-6 text-sm text-gray-700 list-disc list-inside"
+                    >
+                        <li>10th and 12th-grade mark sheets</li>
+                        <li>NEET scorecard</li>
+                        <li>School leaving certificate</li>
+                        <li>Passport-sized photos</li>
+                        <li>No criminal record certificate</li>
+                        <li>Medical fitness certificate</li>
+                        <li>Birth certificate</li>
+                        <li>Proof of nationality</li>
+                        <li>
+                            Guardian's bank statement (proving financial
+                            capacity)
+                        </li>
+                    </ul>
+                    <div
+                        class="mt-4 p-3 bg-orange-50 rounded-lg border border-orange-100 text-xs text-orange-800"
+                    >
+                        <strong>Note:</strong> All documents must be attested by the
+                        Bangladesh Mission Abroad and the Education Minister of the
+                        student's home country.
+                    </div>
+                </div>
+            </section>
+
+            <!-- SECTION: Admission -->
+            <section id="admission" class="mb-12 scroll-mt-24">
+                <h2
+                    class="text-2xl md:text-3xl font-bold text-[#0E0C4F] mb-4 pb-3 border-b-2 border-[#00BFFF]/30"
+                >
+                    Admission Procedure
+                </h2>
+                <div class="space-y-4">
+                    {
+                        [
+                            {
+                                step: "1",
+                                title: "Research & Selection",
+                                desc: "Research and select the appropriate university considering its pros and cons.",
+                            },
+                            {
+                                step: "2",
+                                title: "Application Form",
+                                desc: "Complete the application form for your chosen MBBS program.",
+                            },
+                            {
+                                step: "3",
+                                title: "Document Submission",
+                                desc: "Submit all required and attested documents to the university.",
+                            },
+                            {
+                                step: "4",
+                                title: "Verification & Offer",
+                                desc: "The university verifies documents and issues an admission letter within 10 working days.",
+                            },
+                            {
+                                step: "5",
+                                title: "Pay Fees",
+                                desc: "Student must pay the overall initial fees.",
+                            },
+                            {
+                                step: "6",
+                                title: "Student Visa",
+                                desc: "Apply for a student visa to be issued by the Bangladeshi Embassy in Delhi.",
+                            },
+                            {
+                                step: "7",
+                                title: "Travel",
+                                desc: "Travel to Bangladesh and begin your medical studies.",
+                            },
+                        ].map((s) => (
+                            <div class="flex gap-4 p-4 bg-white rounded-xl shadow-sm border border-gray-100 hover:border-[#00BFFF] transition">
+                                <span class="flex-shrink-0 w-8 h-8 rounded-full bg-[#00BFFF] text-white flex items-center justify-center font-bold">
+                                    {s.step}
+                                </span>
+                                <div>
+                                    <p class="font-bold text-gray-800">
+                                        {s.title}
+                                    </p>
+                                    <p class="text-sm text-gray-600">
+                                        {s.desc}
+                                    </p>
+                                </div>
+                            </div>
+                        ))
+                    }
+                </div>
+            </section>
+
+            <!-- SECTION: Pros & Cons -->
+            <section id="benefits-challenges" class="mb-12 scroll-mt-24">
+                <h2
+                    class="text-2xl md:text-3xl font-bold text-[#0E0C4F] mb-4 pb-3 border-b-2 border-[#00BFFF]/30"
+                >
+                    Pros & Cons of Bangladesh
+                </h2>
+                <div class="grid md:grid-cols-2 gap-8">
+                    <!-- Pros -->
+                    <div>
+                        <h3
+                            class="font-bold text-green-700 flex items-center gap-2 mb-4 bg-green-50 px-4 py-2 rounded-lg"
+                        >
+                            <span>👍</span> Advantages
+                        </h3>
+                        <ul class="space-y-3 text-sm text-gray-700">
+                            <li>
+                                ✔ Home to some of the top medical colleges in
+                                Asia (20+ public, 50+ private).
+                            </li>
+                            <li>
+                                ✔ Very low tuition fees with options to pay in
+                                installments.
+                            </li>
+                            <li>
+                                ✔ No capitation fees, donations, or extra
+                                entrance tests (other than NEET).
+                            </li>
+                            <li>
+                                ✔ <strong>Highest NMC passing percentage</strong
+                                > compared to other countries due to similar medical
+                                curriculum.
+                            </li>
+                            <li>
+                                ✔ Degrees recognized globally allowing practice
+                                in India, Bangladesh, etc.
+                            </li>
+                            <li>
+                                ✔ High standard of infrastructure and excellent
+                                hostel facilities.
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- Cons -->
+                    <div>
+                        <h3
+                            class="font-bold text-red-700 flex items-center gap-2 mb-4 bg-red-50 px-4 py-2 rounded-lg"
+                        >
+                            <span>🛑</span> Disadvantages
+                        </h3>
+                        <ul class="space-y-3 text-sm text-gray-700">
+                            <li>
+                                ⚠ <strong>Curriculum gaps:</strong> Due to unique
+                                weather, some specific global diseases might not be
+                                covered extensively.
+                            </li>
+                            <li>
+                                ⚠ <strong>Practical work:</strong> Sometimes conducted
+                                using simulators rather than full cadaver programs.
+                            </li>
+                            <li>
+                                ⚠ <strong>Local Language:</strong> Learning Bengali/local
+                                dialects is often essential for effective communication
+                                with real patients during clinicals.
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+            <!-- SECTION: Fees -->
+            <section id="fees" class="mb-12 scroll-mt-24">
+                <h2
+                    class="text-2xl md:text-3xl font-bold text-[#0E0C4F] mb-4 pb-3 border-b-2 border-[#00BFFF]/30"
+                >
+                    MBBS Fees in Bangladesh (2024-25)
+                </h2>
+                <div
+                    class="overflow-x-auto rounded-xl border border-gray-200 shadow-sm mb-6"
+                >
+                    <table
+                        class="w-full text-left border-collapse min-w-[500px]"
+                    >
+                        <thead>
+                            <tr class="bg-[#0E0C4F] text-white text-sm">
+                                <th class="px-4 py-3 font-semibold"
+                                    >University Name</th
+                                >
+                                <th class="px-4 py-3 font-semibold"
+                                    >Total Tuition Fee (1st - 5th Yr)</th
+                                >
+                                <th class="px-4 py-3 font-semibold"
+                                    >Hostel Fee / Month</th
+                                >
+                            </tr>
+                        </thead>
+                        <tbody class="text-gray-700 text-sm">
+                            {
+                                [
+                                    {
+                                        u: "Holy Family Red Crescent Medical College",
+                                        t: "50,000 USD",
+                                        h: "100 USD",
+                                    },
+                                    {
+                                        u: "Dhaka National Medical Institute",
+                                        t: "48,000 USD",
+                                        h: "100 USD",
+                                    },
+                                    {
+                                        u: "International Medical College & Hospital",
+                                        t: "42,000 USD",
+                                        h: "90 USD",
+                                    },
+                                    {
+                                        u: "Delta Medical College",
+                                        t: "44,000 USD",
+                                        h: "90 USD",
+                                    },
+                                    {
+                                        u: "Jahurul Islam Medical College",
+                                        t: "39,000 USD",
+                                        h: "100 USD",
+                                    },
+                                    {
+                                        u: "Shahid Monsurali Medical College",
+                                        t: "48,000 USD",
+                                        h: "100 USD",
+                                    },
+                                    {
+                                        u: "AD DIN Women Medical College",
+                                        t: "36,000 USD",
+                                        h: "90 USD",
+                                    },
+                                    {
+                                        u: "Anwar Khan Medical College",
+                                        t: "44,000 USD",
+                                        h: "100 USD",
+                                    },
+                                ].map((item, index) => (
+                                    <tr
+                                        class={`border-b border-gray-100 ${index % 2 === 0 ? "bg-white" : "bg-gray-50/50"}`}
+                                    >
+                                        <td class="px-4 py-3 font-bold text-[#0E0C4F]">
+                                            {item.u}
+                                        </td>
+                                        <td class="px-4 py-3 text-blue-700 font-semibold">
+                                            {item.t}
+                                        </td>
+                                        <td class="px-4 py-3">{item.h}</td>
+                                    </tr>
+                                ))
+                            }
+                        </tbody>
+                    </table>
+                </div>
+
+                <div
+                    class="bg-gray-50 border border-gray-200 p-5 rounded-xl space-y-4"
+                >
+                    <div>
+                        <h4 class="font-bold text-[#0E0C4F] text-sm">
+                            Included in Tuition Fee:
+                        </h4>
+                        <p class="text-xs text-gray-600">
+                            College fee, library charges, laboratory charges,
+                            and examination fee. Payable in yearly or
+                            half-yearly installments.
+                        </p>
+                    </div>
+                    <div>
+                        <h4 class="font-bold text-[#0E0C4F] text-sm">
+                            Included in Hostel Fee:
+                        </h4>
+                        <p class="text-xs text-gray-600">
+                            Accommodation, beddings, furniture, 24-hr
+                            electricity, 24-hr gas in separate kitchen, hot/cold
+                            water, and centralized AC systems.
+                        </p>
+                    </div>
+                    <div class="text-[11px] text-red-600 font-medium">
+                        *Note: Fees are subject to change by universities at any
+                        time without prior notification. Contact us for exact
+                        INR conversion.
+                    </div>
+                </div>
+            </section>
+
+            <!-- SECTION: Syllabus -->
+            <section id="syllabus" class="mb-12 scroll-mt-24">
+                <h2
+                    class="text-2xl md:text-3xl font-bold text-[#0E0C4F] mb-4 pb-3 border-b-2 border-[#00BFFF]/30"
+                >
+                    Syllabus Phase Structure
+                </h2>
+                <div
+                    class="overflow-hidden border border-gray-200 rounded-xl shadow-sm"
+                >
+                    <table class="w-full text-left text-sm">
+                        <thead class="bg-[#0E0C4F] text-white">
+                            <tr>
+                                <th
+                                    class="px-4 py-3 w-32 border-r border-[#ffffff20]"
+                                    >Duration</th
+                                >
+                                <th
+                                    class="px-4 py-3 w-32 border-r border-[#ffffff20]"
+                                    >Phase</th
+                                >
+                                <th class="px-4 py-3">Subjects Covered</th>
+                            </tr>
+                        </thead>
+                        <tbody class="text-gray-700">
+                            <tr class="border-b bg-white">
+                                <td
+                                    class="px-4 py-4 font-bold border-r border-gray-100"
+                                    >1½ Years</td
+                                >
+                                <td
+                                    class="px-4 py-4 text-[#00BFFF] font-bold border-r border-gray-100"
+                                    >1st Phase</td
+                                >
+                                <td class="px-4 py-4"
+                                    >Anatomy, Physiology, Biochemistry</td
+                                >
+                            </tr>
+                            <tr class="border-b bg-gray-50">
+                                <td
+                                    class="px-4 py-4 font-bold border-r border-gray-100"
+                                    >1 Year</td
+                                >
+                                <td
+                                    class="px-4 py-4 text-[#00BFFF] font-bold border-r border-gray-100"
+                                    >2nd Phase</td
+                                >
+                                <td class="px-4 py-4"
+                                    >Community Medicine, Forensic Medicine</td
+                                >
+                            </tr>
+                            <tr class="border-b bg-white">
+                                <td
+                                    class="px-4 py-4 font-bold border-r border-gray-100"
+                                    >1 Year</td
+                                >
+                                <td
+                                    class="px-4 py-4 text-[#00BFFF] font-bold border-r border-gray-100"
+                                    >3rd Phase</td
+                                >
+                                <td class="px-4 py-4"
+                                    >Pharmacology & Therapeutics, Pathology,
+                                    Microbiology</td
+                                >
+                            </tr>
+                            <tr class="border-b bg-gray-50">
+                                <td
+                                    class="px-4 py-4 font-bold border-r border-gray-100"
+                                    >1½ Years</td
+                                >
+                                <td
+                                    class="px-4 py-4 text-[#00BFFF] font-bold border-r border-gray-100"
+                                    >4th Phase</td
+                                >
+                                <td class="px-4 py-4"
+                                    >Medicine & Allied subjects, Surgery &
+                                    Allied subjects, Obstetrics and Gynaecology</td
+                                >
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </section>
+
+            <!-- SECTION: Overview -->
+            <section id="overview" class="mb-12 scroll-mt-24">
+                <h2
+                    class="text-2xl md:text-3xl font-bold text-[#0E0C4F] mb-4 pb-3 border-b-2 border-[#00BFFF]/30"
+                >
+                    Program Overview details
+                </h2>
+                <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+                    {
+                        [
+                            { l: "Intake", v: "September" },
+                            { l: "Min. PCB %", v: "60%" },
+                            { l: "NEET Req.", v: "Yes" },
+                            { l: "IELTS/TOEFL", v: "Not Required" },
+                            { l: "Duration", v: "5 Yrs + 1 Yr Int." },
+                            { l: "Medium", v: "English" },
+                            { l: "Avg Total Fees", v: "~44,000 USD" },
+                            { l: "Process Time", v: "90 Days" },
+                        ].map((d) => (
+                            <div class="bg-white p-4 rounded-xl border border-gray-100 shadow-sm text-center">
+                                <div class="text-[#00BFFF] text-[10px] font-bold uppercase tracking-widest mb-1">
+                                    {d.l}
+                                </div>
+                                <div class="text-[#0E0C4F] font-extrabold">
+                                    {d.v}
+                                </div>
+                            </div>
+                        ))
+                    }
+                </div>
+            </section>
+
+            <!-- SECTION: Timeline -->
+            <section id="timeline" class="mb-12 scroll-mt-24">
+                <h2
+                    class="text-2xl md:text-3xl font-bold text-[#0E0C4F] mb-4 pb-3 border-b-2 border-[#00BFFF]/30"
+                >
+                    Intake & Admission Timeline
+                </h2>
+                <div class="grid md:grid-cols-2 gap-8">
+                    <div>
+                        <h4 class="font-bold text-[#0E0C4F] mb-3">
+                            Academic Semesters
+                        </h4>
+                        <div
+                            class="bg-gray-50 border border-gray-200 rounded-xl p-5 space-y-4"
+                        >
+                            <div>
+                                <h5 class="font-bold text-[#00BFFF]">
+                                    Semester 1
+                                </h5>
+                                <p class="text-sm text-gray-600">
+                                    Begins in February or early March and ends
+                                    in mid-July.
+                                </p>
+                            </div>
+                            <div class="h-px bg-gray-200 w-full"></div>
+                            <div>
+                                <h5 class="font-bold text-[#00BFFF]">
+                                    Semester 2
+                                </h5>
+                                <p class="text-sm text-gray-600">
+                                    Begins in mid-September and ends in early
+                                    February or January.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <h4 class="font-bold text-[#0E0C4F] mb-3">
+                            Application Flow
+                        </h4>
+                        <ul class="text-sm text-gray-700 space-y-3">
+                            <li class="flex justify-between border-b pb-2">
+                                <span>Portal Opens:</span>
+                                <strong>March</strong>
+                            </li>
+                            <li class="flex justify-between border-b pb-2">
+                                <span>Portal Closes:</span>
+                                <strong>June or July</strong>
+                            </li>
+                            <li class="flex justify-between border-b pb-2">
+                                <span>Admission Letter:</span>
+                                <strong>~10 working days</strong>
+                            </li>
+                            <li class="flex justify-between border-b pb-2">
+                                <span>Visa Processing:</span>
+                                <strong>~60 days</strong>
+                            </li>
+                            <li class="flex justify-between">
+                                <span>Academic Start:</span>
+                                <strong class="text-[#00BFFF]"
+                                    >September or October</strong>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+            <!-- SECTION: Expenses & About -->
+            <section id="expenses" class="mb-12 scroll-mt-24">
+                <h2
+                    class="text-2xl md:text-3xl font-bold text-[#0E0C4F] mb-4 pb-3 border-b-2 border-[#00BFFF]/30"
+                >
+                    Living Expenses & Country Facts
+                </h2>
+
+                <div class="grid md:grid-cols-2 gap-8 mb-8">
+                    <div
+                        class="bg-white p-6 rounded-2xl border border-gray-100 shadow-sm"
+                    >
+                        <h3 class="font-bold text-[#00BFFF] mb-4">
+                            Estimated Yearly/Monthly Expenses
+                        </h3>
+                        <ul class="space-y-3 text-sm text-gray-700">
+                            <li class="flex justify-between">
+                                <span>Monthly Living Cost:</span>
+                                <strong>150 - 250 USD</strong>
+                            </li>
+                            <li class="flex justify-between">
+                                <span>Hostel Fees (per year):</span>
+                                <strong>250 - 350 USD</strong>
+                            </li>
+                            <li class="flex justify-between">
+                                <span>Insurance (per year):</span>
+                                <strong>160 - 260 USD</strong>
+                            </li>
+                            <li class="flex justify-between">
+                                <span>Medical Checkups (per yr):</span>
+                                <strong>160 - 260 USD</strong>
+                            </li>
+                            <li class="flex justify-between">
+                                <span>Visa Extension (per yr):</span>
+                                <strong>150 - 300 USD</strong>
+                            </li>
+                            <li class="flex justify-between">
+                                <span>Local Delicacies (per yr):</span>
+                                <strong>100 - 130 USD</strong>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div
+                        class="bg-gradient-to-br from-[#0E0C4F] to-[#252374] p-6 rounded-2xl text-white shadow-lg"
+                    >
+                        <h3 class="font-bold text-[#D5AD36] mb-4">
+                            Discovering Bangladesh
+                        </h3>
+                        <p class="text-sm text-gray-300 leading-relaxed mb-4">
+                            Dhaka, the capital and educational hub of
+                            Bangladesh, is predominantly Bengali-speaking, with
+                            over 25% of the population fluent in English.
+                            Bangladesh shares a border with India, making travel
+                            incredibly easy.
+                        </p>
+                        <ul
+                            class="grid grid-cols-2 gap-y-2 text-sm text-gray-300"
+                        >
+                            <li><strong>Currency:</strong> Taka (BDT)</li>
+                            <li><strong>Exchange:</strong> 1 INR ≈ 1.19 BDT</li>
+                            <li><strong>Population:</strong> ~16.47 Million</li>
+                            <li>
+                                <strong>Rules:</strong> Drugs/Alcohol prohibited
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+        </CountryLayout>
+
+        <Footer />
+    </body>
+</html>

@@ -1,0 +1,420 @@
+---
+import "../styles/global.css";
+import "flag-icons/css/flag-icons.min.css";
+import Navbar from "../components/Navbar.jsx";
+import CountryLayout from "../components/CountryLayout.astro";
+import Footer from "../components/Footer.astro";
+---
+
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&display=swap"
+            rel="stylesheet"
+        />
+        <meta
+            name="description"
+            content="Study MBBS in Kyrgyzstan – Complete guide including top MCI listed universities, duration, and benefits for Indian students."
+        />
+        <title>
+            MBBS in Kyrgyzstan for Indian Students: Admissions and Universities
+            | Doctor Destiny
+        </title>
+    </head>
+    <body class="bg-[#F0F7FF] overflow-x-hidden">
+        <Navbar client:load />
+
+        <!-- Page Hero -->
+        <div class="bg-[#0E0C4F] pt-28 pb-16 px-6">
+            <div class="max-w-5xl mx-auto text-center">
+                <span
+                    class="inline-block py-1 px-4 rounded-full bg-white/10 text-[#D5AD36] text-sm font-bold mb-4 tracking-widest uppercase"
+                >
+                    Study Abroad
+                </span>
+                <h1
+                    class="text-4xl md:text-6xl font-extrabold text-white leading-tight mb-4"
+                >
+                    Study MBBS in <span class="text-[#00BFFF]">Kyrgyzstan</span>
+                </h1>
+                <p
+                    class="text-lg text-gray-300 max-w-3xl mx-auto leading-relaxed"
+                >
+                    Embrace a phenomenal medical career by studying MBBS in
+                    Kyrgyzstan. Benefit from a 5-year English-medium program at
+                    highly ranked MCI-listed government universities in one of
+                    Central Asia's most spectacular and student-friendly
+                    countries.
+                </p>
+                <div class="mt-8">
+                    <button
+                        class="bg-gradient-to-r from-[#D5AD36] to-[#f0c847] hover:shadow-[0_0_20px_rgba(213,173,54,0.6)] text-[#0E0C4F] px-8 py-3 rounded-full font-bold transition-all duration-300 hover:scale-105"
+                    >
+                        Enroll Now
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Country Layout (3-column) -->
+        <CountryLayout
+            countryName="Kyrgyzstan"
+            navItems={[
+                { label: "Duration & Medium", id: "duration-medium" },
+                { label: "Recognition", id: "recognition" },
+                { label: "Eligibility Criteria", id: "eligibility" },
+                { label: "Why Kyrgyzstan?", id: "benefits" },
+                { label: "MCI Govt. Universities", id: "universities-fees" },
+                { label: "Explore Kyrgyzstan", id: "explore" },
+            ]}
+            faqs={[
+                {
+                    question: "How long is the MBBS course in Kyrgyzstan?",
+                    answer: "The MBBS program in Kyrgyzstan has a precise duration of 5 years.",
+                },
+                {
+                    question: "What is the medium of instruction?",
+                    answer: "The entire MBBS program is taught effectively in English.",
+                },
+                {
+                    question: "Is NEET mandatory for Indian students?",
+                    answer: "Yes, qualifying for the NEET examination is mandatory for Indian students to secure admission and practice in India.",
+                },
+                {
+                    question: "Is Kyrgyzstan safe for international students?",
+                    answer: "Absolutely. It is one of the safest countries in Central Asia with a very welcoming attitude toward Indian students.",
+                },
+            ]}
+        >
+            <!-- SECTION: Duration & Medium -->
+            <section id="duration-medium" class="mb-12 scroll-mt-24">
+                <h2
+                    class="text-2xl md:text-3xl font-bold text-[#0E0C4F] mb-4 pb-3 border-b-2 border-[#00BFFF]/30"
+                >
+                    Duration & Medium of Study
+                </h2>
+                <div class="grid md:grid-cols-2 gap-6">
+                    <div
+                        class="bg-white p-6 rounded-2xl shadow-sm border border-gray-100"
+                    >
+                        <h3
+                            class="flex items-center gap-2 font-bold text-[#0E0C4F] mb-3"
+                        >
+                            <span class="text-[#00BFFF]">⏱</span> Course Duration
+                        </h3>
+                        <p class="text-gray-600 mb-3">
+                            The total duration for an MBBS program in Kyrgyzstan
+                            is <strong>5 Years</strong>.
+                        </p>
+                        <ul
+                            class="space-y-2 text-sm text-gray-600 list-disc list-inside"
+                        >
+                            <li>
+                                Focuses heavily on advanced theoretical medical
+                                science.
+                            </li>
+                            <li>
+                                Provides rigorous practical and clinical
+                                rotations in affiliated top-tier hospitals.
+                            </li>
+                        </ul>
+                    </div>
+                    <div
+                        class="bg-white p-6 rounded-2xl shadow-sm border border-gray-100"
+                    >
+                        <h3
+                            class="flex items-center gap-2 font-bold text-[#0E0C4F] mb-3"
+                        >
+                            <span class="text-[#00BFFF]">🗣</span> Medium of Study
+                        </h3>
+                        <p class="text-gray-600 leading-relaxed text-sm mb-3">
+                            The medium of instruction is entirely in <strong
+                                >English</strong
+                            >. International students find it incredibly easy to
+                            follow the academic curriculum without the pressure
+                            of learning an entirely new medical terminology in a
+                            foreign language.
+                        </p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- SECTION: Recognition -->
+            <section id="recognition" class="mb-12 scroll-mt-24">
+                <h2
+                    class="text-2xl md:text-3xl font-bold text-[#0E0C4F] mb-4 pb-3 border-b-2 border-[#00BFFF]/30"
+                >
+                    Recognition of Universities
+                </h2>
+                <div class="bg-[#0E0C4F] text-white p-6 rounded-2xl">
+                    <p class="mb-4 text-gray-300">
+                        Medical institutions in Kyrgyzstan possess high-ranking
+                        international accreditations, authorizing graduates to
+                        appear for global licensing exams:
+                    </p>
+                    <div
+                        class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4"
+                    >
+                        {
+                            [
+                                "National Medical Commission (NMC/MCI)",
+                                "World Health Organization (WHO)",
+                                "Educational Commission for Foreign Medical Graduates (ECFMG)",
+                                "Foundation for Advancement of International Medical Education and Research (FAIMER)",
+                                "World Federation for Medical Education (WFME)",
+                            ].map((org) => (
+                                <div class="bg-white/10 p-3 rounded-lg text-sm text-center font-medium border border-white/20 flex flex-col items-center justify-center">
+                                    {org}
+                                </div>
+                            ))
+                        }
+                    </div>
+                </div>
+            </section>
+
+            <!-- SECTION: Eligibility -->
+            <section id="eligibility" class="mb-12 scroll-mt-24">
+                <h2
+                    class="text-2xl md:text-3xl font-bold text-[#0E0C4F] mb-4 pb-3 border-b-2 border-[#00BFFF]/30"
+                >
+                    Eligibility Criteria
+                </h2>
+                <div
+                    class="mb-6 bg-blue-50/50 p-6 rounded-xl border border-blue-100"
+                >
+                    <ul class="grid md:grid-cols-2 gap-4 text-sm text-gray-700">
+                        <li
+                            class="flex gap-3 items-start p-3 bg-white rounded-xl shadow-sm border border-gray-100"
+                        >
+                            <span class="text-[#00BFFF] text-lg">✔</span>
+                            <span
+                                ><strong>Academic Marks:</strong> Must achieve a minimum
+                                of 50% aggregate in Physics, Chemistry, and Biology
+                                (PCB) in 12th standard.</span
+                            >
+                        </li>
+                        <li
+                            class="flex gap-3 items-start p-3 bg-white rounded-xl shadow-sm border border-gray-100"
+                        >
+                            <span class="text-[#00BFFF] text-lg">✔</span>
+                            <span
+                                ><strong>NEET Exam:</strong> Indian students are required
+                                to clear the NEET examination to be eligible for admissions
+                                and practice locally.</span
+                            >
+                        </li>
+                        <li
+                            class="flex gap-3 items-start p-3 bg-white rounded-xl shadow-sm border border-gray-100"
+                        >
+                            <span class="text-[#00BFFF] text-lg">✔</span>
+                            <span
+                                ><strong>Age Limit:</strong> Must be at least 17 years
+                                of age prior to December 31st of the admission year.</span
+                            >
+                        </li>
+                    </ul>
+                </div>
+            </section>
+
+            <!-- SECTION: Why Kyrgyzstan -->
+            <section id="benefits" class="mb-12 scroll-mt-24">
+                <h2
+                    class="text-2xl md:text-3xl font-bold text-[#0E0C4F] mb-4 pb-3 border-b-2 border-[#00BFFF]/30"
+                >
+                    Why Study MBBS in Kyrgyzstan?
+                </h2>
+                <div
+                    class="bg-white p-6 rounded-2xl border border-gray-200 shadow-sm"
+                >
+                    <p class="text-gray-700 leading-relaxed mb-4">
+                        Kyrgyzstan delivers one of the most budget-friendly
+                        medical education solutions in the world without
+                        compromising on quality.
+                    </p>
+                    <ul
+                        class="space-y-3 text-sm text-gray-700 list-disc list-inside"
+                    >
+                        <li>
+                            <strong>Unmatched Affordability:</strong> Tuition and
+                            living expenses in Kyrgyzstan are significantly lower
+                            compared to private institutions in India.
+                        </li>
+                        <li>
+                            <strong>Safe & Secure:</strong> State-of-the-art security
+                            in hostels. Standardized safety measures applied extensively
+                            across campuses.
+                        </li>
+                        <li>
+                            <strong>Indian Community:</strong> Countless Indian students
+                            enroll annually, meaning Indian food and student associations
+                            are prominent and accessible.
+                        </li>
+                        <li>
+                            <strong>Easy Admission:</strong> Direct admissions typically
+                            do not require TOEFL or IELTS exams, fast-tracking your
+                            medical journey.
+                        </li>
+                        <li>
+                            <strong>Global Opportunity:</strong> MCI/NMC approved
+                            lists ensure you can write exams like FMGE, USMLE, and
+                            PLAB natively.
+                        </li>
+                    </ul>
+                </div>
+            </section>
+
+            <!-- SECTION: Universities -->
+            <section id="universities-fees" class="mb-12 scroll-mt-24">
+                <h2
+                    class="text-2xl md:text-3xl font-bold text-[#0E0C4F] mb-4 pb-3 border-b-2 border-[#00BFFF]/30"
+                >
+                    MCI Listed Govt. Universities
+                </h2>
+                <div
+                    class="overflow-x-auto rounded-xl border border-gray-200 shadow-sm mb-6"
+                >
+                    <table
+                        class="w-full text-left border-collapse min-w-[500px]"
+                    >
+                        <thead>
+                            <tr class="bg-[#0E0C4F] text-white text-sm">
+                                <th
+                                    class="px-4 py-3 font-semibold w-16 text-center"
+                                    >SR NO.</th
+                                >
+                                <th class="px-4 py-3 font-semibold"
+                                    >University Name</th
+                                >
+                                <th class="px-4 py-3 font-semibold">Location</th
+                                >
+                            </tr>
+                        </thead>
+                        <tbody class="text-gray-700 text-sm">
+                            <tr class="border-b border-gray-100 bg-white">
+                                <td class="px-4 py-4 text-center font-bold"
+                                    >1</td
+                                >
+                                <td class="px-4 py-4 font-bold text-[#0E0C4F]"
+                                    >Kyrgyzstan State Medical Academy</td
+                                >
+                                <td
+                                    class="px-4 py-4 text-gray-600 font-semibold"
+                                    >Bishkek</td
+                                >
+                            </tr>
+                            <tr class="border-b border-gray-100 bg-gray-50/50">
+                                <td class="px-4 py-4 text-center font-bold"
+                                    >2</td
+                                >
+                                <td class="px-4 py-4 font-bold text-[#0E0C4F]"
+                                    >International School of Medicine</td
+                                >
+                                <td
+                                    class="px-4 py-4 text-gray-600 font-semibold"
+                                    >Bishkek</td
+                                >
+                            </tr>
+                            <tr class="border-b border-gray-100 bg-white">
+                                <td class="px-4 py-4 text-center font-bold"
+                                    >3</td
+                                >
+                                <td class="px-4 py-4 font-bold text-[#0E0C4F]"
+                                    >Osh State University</td
+                                >
+                                <td
+                                    class="px-4 py-4 text-gray-600 font-semibold"
+                                    >Osh</td
+                                >
+                            </tr>
+                            <tr class="border-b border-gray-100 bg-gray-50/50">
+                                <td class="px-4 py-4 text-center font-bold"
+                                    >4</td
+                                >
+                                <td class="px-4 py-4 font-bold text-[#0E0C4F]"
+                                    >Asian Medical Institute</td
+                                >
+                                <td
+                                    class="px-4 py-4 text-gray-600 font-semibold"
+                                    >Kant</td
+                                >
+                            </tr>
+                            <tr class="border-b border-gray-100 bg-white">
+                                <td class="px-4 py-4 text-center font-bold"
+                                    >5</td
+                                >
+                                <td class="px-4 py-4 font-bold text-[#0E0C4F]"
+                                    >Jalalabad State Medical University</td
+                                >
+                                <td
+                                    class="px-4 py-4 text-gray-600 font-semibold"
+                                    >Jalalabad</td
+                                >
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </section>
+
+            <!-- SECTION: Explore Kyrgyzstan -->
+            <section id="explore" class="mb-12 scroll-mt-24">
+                <h2
+                    class="text-2xl md:text-3xl font-bold text-[#0E0C4F] mb-4 pb-3 border-b-2 border-[#00BFFF]/30"
+                >
+                    Let’s Explore Kyrgyzstan
+                </h2>
+                <div
+                    class="bg-gradient-to-br from-[#0E0C4F] to-[#252374] p-8 rounded-2xl text-white shadow-lg flex flex-col md:flex-row gap-8 items-center"
+                >
+                    <div class="w-full md:w-1/2">
+                        <h3 class="text-xl font-bold mb-4 text-[#D5AD36]">
+                            The Jewel of Central Asia
+                        </h3>
+                        <p class="text-sm text-gray-300 leading-relaxed mb-6">
+                            Renowned for its incredible mountainous landscapes
+                            and rich history, Kyrgyzstan effortlessly blends
+                            affordable living with robust academic
+                            infrastructures, making it a major hub for medical
+                            education.
+                        </p>
+                    </div>
+                    <div
+                        class="w-full md:w-1/2 bg-white/10 p-5 rounded-xl border border-white/20"
+                    >
+                        <ul class="text-sm grid grid-cols-2 gap-y-4 gap-x-4">
+                            <li>
+                                <span class="text-[#00BFFF]">Capital:</span> Bishkek
+                            </li>
+                            <li>
+                                <span class="text-[#00BFFF]">Currency:</span> Som
+                                (KGS)
+                            </li>
+                            <li class="col-span-2">
+                                <span class="text-[#00BFFF]"
+                                    >Weather Range:</span
+                                > Winter & Summer Variances (-08°C to 31°C)
+                            </li>
+                            <li class="col-span-2">
+                                <span class="text-[#00BFFF]"
+                                    >Metropolitan Cities:</span
+                                > Bishkek, Jalalabad, Osh
+                            </li>
+                            <li class="col-span-2">
+                                <span class="text-[#00BFFF]"
+                                    >Direct Flight:</span
+                                > New Delhi (Routing typically 6-7 Hours)
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+        </CountryLayout>
+
+        <Footer />
+    </body>
+</html>

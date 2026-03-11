@@ -1,0 +1,899 @@
+---
+import "../styles/global.css";
+import "flag-icons/css/flag-icons.min.css";
+import Navbar from "../components/Navbar.jsx";
+import CountryLayout from "../components/CountryLayout.astro";
+import Footer from "../components/Footer.astro";
+---
+
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&display=swap"
+            rel="stylesheet"
+        />
+        <meta
+            name="description"
+            content="Study MBBS in Russia – Complete guide including fees, top universities, syllabus, admission process, and benefits for Indian students."
+        />
+        <title>
+            MBBS in Russia for Indian Students: Fees, Admissions, and
+            Universities | Doctor Destiny
+        </title>
+    </head>
+    <body class="bg-[#F0F7FF] overflow-x-hidden">
+        <Navbar client:load />
+
+        <!-- Page Hero -->
+        <div class="bg-[#0E0C4F] pt-28 pb-16 px-6">
+            <div class="max-w-5xl mx-auto text-center">
+                <span
+                    class="inline-block py-1 px-4 rounded-full bg-white/10 text-[#D5AD36] text-sm font-bold mb-4 tracking-widest uppercase"
+                >
+                    Study Abroad
+                </span>
+                <h1
+                    class="text-4xl md:text-6xl font-extrabold text-white leading-tight mb-4"
+                >
+                    Study MBBS in <span class="text-[#00BFFF]">Russia</span>
+                </h1>
+                <p
+                    class="text-lg text-gray-300 max-w-3xl mx-auto leading-relaxed"
+                >
+                    Russia is a top choice for Indian students pursuing an MBBS
+                    degree, offering affordable tuition, modern infrastructure,
+                    and internationally recognized medical programs. With over
+                    25 renowned medical universities, Russia hosts more than
+                    20,000 Indian students in a safe, supportive environment.
+                </p>
+                <div class="mt-8">
+                    <button
+                        class="bg-gradient-to-r from-[#D5AD36] to-[#f0c847] hover:shadow-[0_0_20px_rgba(213,173,54,0.6)] text-[#0E0C4F] px-8 py-3 rounded-full font-bold transition-all duration-300 hover:scale-105"
+                    >
+                        Enroll Now
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Country Layout (3-column) -->
+        <CountryLayout
+            countryName="Russia"
+            navItems={[
+                { label: "Duration & Medium", id: "duration-medium" },
+                { label: "Global Recognition", id: "recognition" },
+                { label: "Eligibility & Admission", id: "admission" },
+                { label: "Documents Required", id: "documents" },
+                { label: "Top Universities", id: "universities" },
+                { label: "Fee Structure", id: "fees" },
+                { label: "Intake & Syllabus", id: "syllabus" },
+                { label: "Russia vs India", id: "comparison" },
+                { label: "Benefits & Challenges", id: "benefits-challenges" },
+                { label: "Scholarships", id: "scholarships" },
+                { label: "Career Info", id: "career" },
+            ]}
+            faqs={[
+                {
+                    question:
+                        "What is the NEET score required for MBBS in Russia?",
+                    answer: "To study MBBS in Russia, Indian students must qualify for the NEET exam with at least the 50th percentile (45% for SC/OBC/ST).",
+                },
+                {
+                    question: "How long is MBBS in Russia?",
+                    answer: "The MBBS program in Russia is 6 years long, including 5 years of academic study and 1 year of clinical internship.",
+                },
+                {
+                    question: "Can Russian doctors work in India?",
+                    answer: "Yes, graduates can practice in India after clearing the FMGE/NEXT exam conducted by the NMC.",
+                },
+                {
+                    question: "Do MBBS students get holidays in Russia?",
+                    answer: "Yes, students get winter holidays (usually January) and summer holidays (July and August).",
+                },
+                {
+                    question: "Is Russia safe for Indian students?",
+                    answer: "Yes, universities provide secure hostels and campuses, and Russia enforces strict laws against ragging to ensure student safety.",
+                },
+            ]}
+        >
+            <!-- SECTION: Duration & Medium -->
+            <section id="duration-medium" class="mb-12 scroll-mt-24">
+                <h2
+                    class="text-2xl md:text-3xl font-bold text-[#0E0C4F] mb-4 pb-3 border-b-2 border-[#00BFFF]/30"
+                >
+                    Duration & Education Medium
+                </h2>
+                <div class="grid md:grid-cols-2 gap-6">
+                    <div
+                        class="bg-white p-6 rounded-2xl shadow-sm border border-gray-100"
+                    >
+                        <h3
+                            class="flex items-center gap-2 font-bold text-[#0E0C4F] mb-3"
+                        >
+                            <span class="text-[#00BFFF]">⏱</span> Duration of MBBS
+                        </h3>
+                        <p class="text-gray-600 mb-3">
+                            The MBBS program in Russia lasts for <strong
+                                >6 years</strong
+                            >.
+                        </p>
+                        <ul
+                            class="space-y-2 text-sm text-gray-600 list-disc list-inside"
+                        >
+                            <li>
+                                <strong>5 Years:</strong> gaining theoretical knowledge.
+                            </li>
+                            <li>
+                                <strong>1 Year:</strong> clinical training period
+                                / internship at an affiliated hospital to gain practical
+                                experience.
+                            </li>
+                        </ul>
+                    </div>
+                    <div
+                        class="bg-white p-6 rounded-2xl shadow-sm border border-gray-100"
+                    >
+                        <h3
+                            class="flex items-center gap-2 font-bold text-[#0E0C4F] mb-3"
+                        >
+                            <span class="text-[#00BFFF]">🗣</span> Education Medium
+                        </h3>
+                        <ul
+                            class="space-y-2 text-sm text-gray-600 list-disc list-inside"
+                        >
+                            <li>
+                                Russian medical universities and colleges offer
+                                MBBS courses in <strong>English</strong>.
+                            </li>
+                            <li>
+                                Students can opt to complete their MBBS studies
+                                in Russian.
+                            </li>
+                            <li>
+                                The university offers support for learning a new
+                                language.
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+            <!-- SECTION: Recognition -->
+            <section id="recognition" class="mb-12 scroll-mt-24">
+                <h2
+                    class="text-2xl md:text-3xl font-bold text-[#0E0C4F] mb-4 pb-3 border-b-2 border-[#00BFFF]/30"
+                >
+                    Recognition of Russian Medical Universities
+                </h2>
+                <div class="bg-[#0E0C4F] text-white p-6 rounded-2xl">
+                    <p class="mb-4 text-gray-300">
+                        Degrees awarded by Russian MBBS universities are
+                        internationally recognized. They are accredited by
+                        prestigious organizations, including:
+                    </p>
+                    <div class="grid grid-cols-2 md:grid-cols-3 gap-4">
+                        {
+                            [
+                                "WHO (World Health Organization)",
+                                "NMC (National Medical Commission)",
+                                "ECFMG (Educational Commission for Foreign Medical Graduates)",
+                                "FAIMER (Foundation for Advancement of International Medical Ed.)",
+                                "WFME (World Federation for Medical Education)",
+                                "Ministry of Education, Russia",
+                            ].map((org) => (
+                                <div class="bg-white/10 p-3 rounded-lg text-sm text-center font-medium border border-white/20">
+                                    {org}
+                                </div>
+                            ))
+                        }
+                    </div>
+                </div>
+            </section>
+
+            <!-- SECTION: Eligibility & Admission -->
+            <section id="admission" class="mb-12 scroll-mt-24">
+                <h2
+                    class="text-2xl md:text-3xl font-bold text-[#0E0C4F] mb-4 pb-3 border-b-2 border-[#00BFFF]/30"
+                >
+                    Eligibility & Admission Procedure (2024-25)
+                </h2>
+
+                <div class="mb-8">
+                    <h3 class="font-bold text-lg text-[#0E0C4F] mb-3">
+                        Qualifications for Admission:
+                    </h3>
+                    <ul class="grid md:grid-cols-2 gap-3 text-gray-600">
+                        <li class="flex gap-2 items-start">
+                            <span class="text-[#00BFFF]">✔</span> Be between 17 and
+                            25 years old by Dec 31 of the admission year.
+                        </li>
+                        <li class="flex gap-2 items-start">
+                            <span class="text-[#00BFFF]">✔</span> Completed Class
+                            12 in Science (Physics, Chemistry, Math, English).
+                        </li>
+                        <li class="flex gap-2 items-start">
+                            <span class="text-[#00BFFF]">✔</span> At least 50% in
+                            10+2 exams (45% for SC/OBC/ST).
+                        </li>
+                        <li class="flex gap-2 items-start">
+                            <span class="text-[#00BFFF]">✔</span> Qualified in the
+                            NEET exam.
+                        </li>
+                    </ul>
+                </div>
+
+                <h3 class="font-bold text-lg text-[#0E0C4F] mb-3">
+                    Step-by-Step Admission Process:
+                </h3>
+                <div class="space-y-4">
+                    {
+                        [
+                            {
+                                step: "1",
+                                title: "Free Counseling",
+                                desc: "Contact a representative to learn about the university, fees, and accommodation.",
+                            },
+                            {
+                                step: "2",
+                                title: "Submit Application",
+                                desc: "Complete the admission form and submit 10th/12th mark sheets and passport copies.",
+                            },
+                            {
+                                step: "3",
+                                title: "Confirmation",
+                                desc: "The university issues an admission confirmation letter.",
+                            },
+                            {
+                                step: "4",
+                                title: "Deposit Fees",
+                                desc: "Proceed to deposit the fees to secure your admission.",
+                            },
+                            {
+                                step: "5",
+                                title: "Apply for Visa",
+                                desc: "With fees paid, apply for a student visa.",
+                            },
+                            {
+                                step: "6",
+                                title: "Travel to Russia",
+                                desc: "Once approved, book tickets and prepare to start your MBBS journey!",
+                            },
+                        ].map((s) => (
+                            <div class="flex gap-4 p-4 bg-white rounded-xl shadow-sm border border-gray-100">
+                                <span class="flex-shrink-0 w-8 h-8 rounded-full bg-[#00BFFF] text-white flex items-center justify-center font-bold">
+                                    {s.step}
+                                </span>
+                                <div>
+                                    <p class="font-bold text-gray-800">
+                                        {s.title}
+                                    </p>
+                                    <p class="text-sm text-gray-600">
+                                        {s.desc}
+                                    </p>
+                                </div>
+                            </div>
+                        ))
+                    }
+                </div>
+            </section>
+
+            <!-- SECTION: Documents -->
+            <section id="documents" class="mb-12 scroll-mt-24">
+                <h2
+                    class="text-2xl md:text-3xl font-bold text-[#0E0C4F] mb-4 pb-3 border-b-2 border-[#00BFFF]/30"
+                >
+                    Documents Required
+                </h2>
+                <div
+                    class="bg-blue-50/50 p-6 rounded-2xl border border-blue-100"
+                >
+                    <p class="text-gray-600 mb-4">
+                        Students need the following essential documents to apply
+                        for MBBS programs and visas in Russia:
+                    </p>
+                    <ul
+                        class="grid md:grid-cols-2 gap-y-2 gap-x-6 text-sm text-gray-700 list-disc list-inside"
+                    >
+                        <li>Passport (at least 18 months validity)</li>
+                        <li>10th & 12th grade certificates and mark sheets</li>
+                        <li>
+                            Birth certificate (translated to English &
+                            notarized)
+                        </li>
+                        <li>10 recent photos (4.5 x 3.5 cm, 70% face)</li>
+                        <li>Official invitation letter from the university</li>
+                        <li>HIV test report</li>
+                        <li>
+                            Documents authorized by Ministry of External Affairs
+                        </li>
+                        <li>Documents legalized by Russian Embassy</li>
+                        <li>Visa fee payment</li>
+                        <li>Bank receipt of first-year tuition fee payment</li>
+                        <li>Health and Travel insurance certificates</li>
+                        <li>Bank statements to secure seats</li>
+                    </ul>
+                </div>
+            </section>
+
+            <!-- SECTION: Top Universities -->
+            <section id="universities" class="mb-12 scroll-mt-24">
+                <h2
+                    class="text-2xl md:text-3xl font-bold text-[#0E0C4F] mb-4 pb-3 border-b-2 border-[#00BFFF]/30"
+                >
+                    Top Medical Universities in Russia
+                </h2>
+                <div class="flex flex-wrap gap-3">
+                    {
+                        [
+                            "Altai State Medical Univ.",
+                            "Crimea Federal Univ.",
+                            "Kazan State Medical Univ.",
+                            "Izhevsk State MBBS Univ.",
+                            "Volgograd State MBBS Univ.",
+                            "Syktyvkar State MBBS Univ.",
+                            "Kursk State MBBS Univ.",
+                            "Irkutsk State MBBS Univ.",
+                            "Dagestan State MBBS Univ.",
+                            "Bashkir State MBBS Univ.",
+                            "Orel State University",
+                            "Mari State MBBS Univ.",
+                            "Nizhny Novgorod MBBS Univ.",
+                            "Kazan Federal University",
+                            "First Moscow State MBBS Univ.",
+                            "Omsk State MBBS Univ.",
+                            "Novosibirsk State MBBS Univ.",
+                            "Northern State MBBS Univ.",
+                            "Ryazan State MBBS Univ.",
+                            "Perm State MBBS Univ.",
+                            "Orenburg State MBBS Univ.",
+                            "Tambov State University",
+                            "Smolensk State MBBS Univ.",
+                            "Saint Petersburg MBBS Univ.",
+                            "People's Friendship Univ.",
+                            "Tver State MBBS Univ.",
+                            "Belgorod University",
+                        ].map((uni) => (
+                            <span class="px-4 py-2 bg-white border border-gray-200 rounded-lg text-sm font-medium text-gray-700 shadow-sm">
+                                {uni}
+                            </span>
+                        ))
+                    }
+                </div>
+            </section>
+
+            <!-- SECTION: Fee Structure -->
+            <section id="fees" class="mb-12 scroll-mt-24">
+                <h2
+                    class="text-2xl md:text-3xl font-bold text-[#0E0C4F] mb-4 pb-3 border-b-2 border-[#00BFFF]/30"
+                >
+                    MBBS in Russia Fees Structure (2024-25)
+                </h2>
+                <div
+                    class="overflow-x-auto rounded-xl border border-gray-200 shadow-sm"
+                >
+                    <table
+                        class="w-full text-left border-collapse min-w-[600px]"
+                    >
+                        <thead>
+                            <tr class="bg-[#0E0C4F] text-white text-sm">
+                                <th class="px-4 py-3 font-semibold"
+                                    >University Name</th
+                                >
+                                <th class="px-4 py-3 font-semibold"
+                                    >Tuition Fee (USD)</th
+                                >
+                                <th class="px-4 py-3 font-semibold"
+                                    >Hostel Fee (USD)</th
+                                >
+                                <th class="px-4 py-3 font-semibold"
+                                    >Tuition Fee (Approx INR)</th
+                                >
+                            </tr>
+                        </thead>
+                        <tbody class="text-gray-700 text-sm">
+                            {
+                                [
+                                    {
+                                        name: "Kazan Medical University",
+                                        inr: "321,750",
+                                        hostel: "6000",
+                                        usd: "4500",
+                                    },
+                                    {
+                                        name: "St.Petersburg I.I. Mechnikov State Med. Acad.",
+                                        inr: "321,750",
+                                        hostel: "6000",
+                                        usd: "4500",
+                                    },
+                                    {
+                                        name: "Stavropol Medical University",
+                                        inr: "350,350",
+                                        hostel: "750",
+                                        usd: "4900",
+                                    },
+                                    {
+                                        name: "Tver Medical University",
+                                        inr: "429,000",
+                                        hostel: "3000",
+                                        usd: "6000",
+                                    },
+                                    {
+                                        name: "Altai Medical University",
+                                        inr: "393,250",
+                                        hostel: "8000",
+                                        usd: "5500",
+                                    },
+                                    {
+                                        name: "I.M. Sechenov First Moscow Medical University",
+                                        inr: "715,000",
+                                        hostel: "8000",
+                                        usd: "10000",
+                                    },
+                                    {
+                                        name: "Irkutsk Medical University",
+                                        inr: "357,500",
+                                        hostel: "8000",
+                                        usd: "5000",
+                                    },
+                                    {
+                                        name: "Kuban Medical University",
+                                        inr: "250,250",
+                                        hostel: "8000",
+                                        usd: "3500",
+                                    },
+                                    {
+                                        name: "Novosibirsk Medical University",
+                                        inr: "214,500",
+                                        hostel: "8000",
+                                        usd: "3000",
+                                    },
+                                    {
+                                        name: "Siberian Medical University",
+                                        inr: "286,000",
+                                        hostel: "8000",
+                                        usd: "4000",
+                                    },
+                                    {
+                                        name: "The Peoples Friendship University of Russia",
+                                        inr: "500,500",
+                                        hostel: "8000",
+                                        usd: "7000",
+                                    },
+                                    {
+                                        name: "Perm State University",
+                                        inr: "250,250",
+                                        hostel: "350",
+                                        usd: "3500",
+                                    },
+                                    {
+                                        name: "Mari State University",
+                                        inr: "250,250",
+                                        hostel: "308",
+                                        usd: "3500",
+                                    },
+                                    {
+                                        name: "Volgograd State Medical University",
+                                        inr: "421,850",
+                                        hostel: "588",
+                                        usd: "5900",
+                                    },
+                                    {
+                                        name: "Bashkir State University",
+                                        inr: "250,250",
+                                        hostel: "350",
+                                        usd: "3500",
+                                    },
+                                    {
+                                        name: "Ulyanovsk State University",
+                                        inr: "278,850",
+                                        hostel: "503",
+                                        usd: "3900",
+                                    },
+                                    {
+                                        name: "Smolensk State University",
+                                        inr: "393,250",
+                                        hostel: "770",
+                                        usd: "5500",
+                                    },
+                                    {
+                                        name: "Kazan Federal University",
+                                        inr: "572,000",
+                                        hostel: "280",
+                                        usd: "8000",
+                                    },
+                                    {
+                                        name: "Pskov State University",
+                                        inr: "193,050",
+                                        hostel: "350",
+                                        usd: "2700",
+                                    },
+                                    {
+                                        name: "Orenburg State Medical University",
+                                        inr: "300,300",
+                                        hostel: "390",
+                                        usd: "4200",
+                                    },
+                                ].map((item, index) => (
+                                    <tr
+                                        class={`border-b border-gray-100 ${index % 2 === 0 ? "bg-white" : "bg-gray-50/50"}`}
+                                    >
+                                        <td class="px-4 py-3 font-medium text-[#0E0C4F]">
+                                            {item.name}
+                                        </td>
+                                        <td class="px-4 py-3">${item.usd}</td>
+                                        <td class="px-4 py-3">
+                                            ${item.hostel}
+                                        </td>
+                                        <td class="px-4 py-3 font-semibold">
+                                            ₹{item.inr}
+                                        </td>
+                                    </tr>
+                                ))
+                            }
+                        </tbody>
+                    </table>
+                </div>
+            </section>
+
+            <!-- SECTION: Intake & Syllabus -->
+            <section id="syllabus" class="mb-12 scroll-mt-24">
+                <h2
+                    class="text-2xl md:text-3xl font-bold text-[#0E0C4F] mb-4 pb-3 border-b-2 border-[#00BFFF]/30"
+                >
+                    Intake & Syllabus
+                </h2>
+                <div
+                    class="bg-gray-50 p-6 rounded-2xl mb-6 border border-gray-200"
+                >
+                    <h3 class="font-bold text-[#0E0C4F] mb-3">
+                        Intake Details:
+                    </h3>
+                    <ul
+                        class="text-sm text-gray-700 space-y-2 list-disc list-inside"
+                    >
+                        <li>The academic year is divided into 2 semesters.</li>
+                        <li>
+                            <strong>1st semester:</strong> September to January.
+                        </li>
+                        <li>
+                            <strong>2nd semester:</strong> February to June.
+                        </li>
+                        <li>
+                            Medical courses are taught bilingually, employing
+                            modern practical teaching methods.
+                        </li>
+                        <li>
+                            Emphasis on research methodologies and
+                            international-level seminars.
+                        </li>
+                    </ul>
+                </div>
+
+                <div
+                    class="overflow-x-auto rounded-xl border border-gray-200 shadow-sm"
+                >
+                    <table class="w-full text-left border-collapse">
+                        <thead>
+                            <tr class="bg-[#0E0C4F] text-white text-sm">
+                                <th class="px-4 py-3 font-semibold w-24"
+                                    >Year</th
+                                >
+                                <th class="px-4 py-3 font-semibold"
+                                    >Subjects Covered</th
+                                >
+                            </tr>
+                        </thead>
+                        <tbody class="text-gray-700 text-sm">
+                            {
+                                [
+                                    {
+                                        y: "1st (1-2 Sem)",
+                                        sub: "Biology, Physics, Chemistry, Nursing, Anatomy, Histology, Latin, Public Health, History",
+                                    },
+                                    {
+                                        y: "2nd (3-4 Sem)",
+                                        sub: "Economics, Philosophy, Culturology, Russian lang., Physical Training, Mathematics, Physiology, Biochemistry, Immunology, Hygiene, Psychology, Medical Law, Bioethics",
+                                    },
+                                    {
+                                        y: "3rd (5-6 Sem)",
+                                        sub: "Microbiology, Pathology, Pharmacology, Internal med., Topographical anatomy, Operative surgery, Radiology",
+                                    },
+                                    {
+                                        y: "4th (7-8 Sem)",
+                                        sub: "Surgery, Dermatology, Venereology, Obstetrics, Gynaecology, Neurology, Therapy, Med. Rehabilitation, Urology, Pediatrics, Phthisiology, Endocrinology",
+                                    },
+                                    {
+                                        y: "5th (9-10 Sem)",
+                                        sub: "E.N.T., Ophthalmology, Surgical Gynaecology, Psychiatry, Traumatology, Orthopedics, Physiotherapy, Outpatient therapy, Gene therapy, Infectious diseases",
+                                    },
+                                    {
+                                        y: "6th (11-12 Sem)",
+                                        sub: "Oncology & radiation, Occupational diseases, Anesthesiology, Intensive care, Dentistry, Clinical Immunology, General practice, Neurosurgery, Forensic medicine, Epidemiology",
+                                    },
+                                ].map((item, index) => (
+                                    <tr
+                                        class={`border-b border-gray-100 ${index % 2 === 0 ? "bg-white" : "bg-gray-50/50"}`}
+                                    >
+                                        <td class="px-4 py-3 font-bold text-[#0E0C4F] whitespace-nowrap">
+                                            {item.y}
+                                        </td>
+                                        <td class="px-4 py-3 leading-relaxed">
+                                            {item.sub}
+                                        </td>
+                                    </tr>
+                                ))
+                            }
+                        </tbody>
+                    </table>
+                </div>
+            </section>
+
+            <!-- SECTION: Compare -->
+            <section id="comparison" class="mb-12 scroll-mt-24">
+                <h2
+                    class="text-2xl md:text-3xl font-bold text-[#0E0C4F] mb-4 pb-3 border-b-2 border-[#00BFFF]/30"
+                >
+                    Comparing MBBS in Russia vs India
+                </h2>
+                <div
+                    class="grid md:grid-cols-2 gap-0 overflow-hidden rounded-2xl border border-gray-200 shadow-sm"
+                >
+                    <div
+                        class="bg-blue-50/80 p-6 border-b md:border-b-0 md:border-r border-gray-200"
+                    >
+                        <h4
+                            class="font-bold text-center text-xl text-[#0E0C4F] mb-4 border-b pb-2 border-blue-200"
+                        >
+                            MBBS in Russia
+                        </h4>
+                        <ul class="space-y-4 text-sm text-gray-700">
+                            <li>
+                                <strong class="text-[#00BFFF]"
+                                    >Batch Size:</strong
+                                > 25 to 30 students.
+                            </li>
+                            <li>
+                                <strong class="text-[#00BFFF]">Duration:</strong
+                                > 6 years.
+                            </li>
+                            <li>
+                                <strong class="text-[#00BFFF]"
+                                    >Affordability:</strong
+                                > Cheap and flexible due to heavy government subsidies.
+                            </li>
+                            <li>
+                                <strong class="text-[#00BFFF]"
+                                    >Fee Structure:</strong
+                                > INR 2 to 4 Lakhs per annum.
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="bg-white p-6">
+                        <h4
+                            class="font-bold text-center text-xl mb-4 border-b pb-2"
+                        >
+                            MBBS in India
+                        </h4>
+                        <ul class="space-y-4 text-sm text-gray-700">
+                            <li>
+                                <strong class="text-gray-900"
+                                    >Batch Size:</strong
+                                > 100 to 120 or more.
+                            </li>
+                            <li>
+                                <strong class="text-gray-900">Duration:</strong> 5
+                                years.
+                            </li>
+                            <li>
+                                <strong class="text-gray-900"
+                                    >Affordability:</strong
+                                > Generally expensive (especially in private institutes).
+                            </li>
+                            <li>
+                                <strong class="text-gray-900"
+                                    >Fee Structure:</strong
+                                > Govt: ₹40K-2L/yr. Private: ₹10L-20L/yr.
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+            <!-- SECTION: Benefits & Challenges -->
+            <section id="benefits-challenges" class="mb-12 scroll-mt-24">
+                <h2
+                    class="text-2xl md:text-3xl font-bold text-[#0E0C4F] mb-4 pb-3 border-b-2 border-[#00BFFF]/30"
+                >
+                    Benefits & Challenges
+                </h2>
+
+                <div class="grid md:grid-cols-2 gap-8">
+                    <!-- Benefits -->
+                    <div>
+                        <h3
+                            class="font-bold text-green-700 flex items-center gap-2 mb-4 bg-green-50 px-4 py-2 rounded-lg"
+                        >
+                            <span>👍</span> Advantages of Russia
+                        </h3>
+                        <ul class="space-y-3 text-sm text-gray-700">
+                            <li>
+                                ✔ No entrance exams or donations. Simple
+                                admission process.
+                            </li>
+                            <li>
+                                ✔ High standard syllabus, advanced labs, modern
+                                teaching techniques.
+                            </li>
+                            <li>
+                                ✔ Government-affiliated, NMC-approved, and
+                                globally recognized.
+                            </li>
+                            <li>
+                                ✔ Highly affordable fees, with canteens serving
+                                Indian food.
+                            </li>
+                            <li>
+                                ✔ Scholarships and advantageous educational loan
+                                facilities available.
+                            </li>
+                            <li>
+                                ✔ Safe campuses, strict anti-ragging laws, high
+                                visa approval rate.
+                            </li>
+                            <li>
+                                ✔ Excellent international exposure with
+                                opportunities to work globally.
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- Challenges -->
+                    <div>
+                        <h3
+                            class="font-bold text-red-700 flex items-center gap-2 mb-4 bg-red-50 px-4 py-2 rounded-lg"
+                        >
+                            <span>🛑</span> Challenges Faced
+                        </h3>
+                        <ul class="space-y-3 text-sm text-gray-700">
+                            <li>
+                                ⚠ <strong>Weather:</strong> Adapting to bitterly cold
+                                weather.
+                            </li>
+                            <li>
+                                ⚠ <strong>Homesickness:</strong> Major challenge in
+                                the beginning.
+                            </li>
+                            <li>
+                                ⚠ <strong>Language Barrier:</strong> Learning Russian
+                                can be an extra burden.
+                            </li>
+                            <li>
+                                ⚠ <strong>Culture:</strong> Adapting to new cultures
+                                can be overwhelming.
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div
+                    class="mt-8 bg-orange-50 p-5 rounded-xl border border-orange-100"
+                >
+                    <h4 class="font-bold text-orange-800 mb-2">
+                        Important Information Before Applying:
+                    </h4>
+                    <p class="text-sm text-gray-700">
+                        Evaluate tuition fees, living costs, availability of
+                        Indian food, NMC/FMGE passing rates, whether the
+                        university is Govt. run, and total Indian community
+                        presence before making your choice.
+                    </p>
+                </div>
+            </section>
+
+            <!-- SECTION: Scholarships -->
+            <section id="scholarships" class="mb-12 scroll-mt-24">
+                <h2
+                    class="text-2xl md:text-3xl font-bold text-[#0E0C4F] mb-4 pb-3 border-b-2 border-[#00BFFF]/30"
+                >
+                    Scholarships & Loan Assistance
+                </h2>
+                <div class="grid md:grid-cols-2 gap-6 text-sm text-gray-700">
+                    <div
+                        class="bg-white p-5 rounded-2xl shadow-sm border border-gray-100"
+                    >
+                        <h4 class="font-bold text-[#00BFFF] mb-2 text-base">
+                            Government & Private Scholarships
+                        </h4>
+                        <p class="mb-3">
+                            To help with financial constraints, various avenues
+                            exist:
+                        </p>
+                        <ul class="list-disc list-inside space-y-2">
+                            <li>
+                                <strong>Govt. Scholarships:</strong> Cover tuition,
+                                accommodation, and essential costs for international
+                                students.
+                            </li>
+                            <li>
+                                <strong>Educational Grants:</strong> Select medical
+                                universities offer direct grants assisting students.
+                            </li>
+                        </ul>
+                    </div>
+                    <div
+                        class="bg-white p-5 rounded-2xl shadow-sm border border-gray-100"
+                    >
+                        <h4 class="font-bold text-[#00BFFF] mb-2 text-base">
+                            Loan Assistance for Indian Students
+                        </h4>
+                        <p>
+                            We provide comprehensive education loan assistance.
+                            We help students secure educational loans through
+                            national and private Indian banks, with our
+                            consultants guiding you through every step of the
+                            documentation and application process.
+                        </p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- SECTION: Career -->
+            <section id="career" class="mb-12 scroll-mt-24">
+                <h2
+                    class="text-2xl md:text-3xl font-bold text-[#0E0C4F] mb-4 pb-3 border-b-2 border-[#00BFFF]/30"
+                >
+                    Career Paths & PG Options
+                </h2>
+                <div
+                    class="bg-gradient-to-br from-[#0E0C4F] to-[#252374] p-8 rounded-2xl text-white shadow-lg"
+                >
+                    <div class="grid md:grid-cols-2 gap-8">
+                        <div>
+                            <h3 class="text-xl font-bold mb-4 text-[#D5AD36]">
+                                Career Opportunities
+                            </h3>
+                            <ul class="space-y-3">
+                                <li>
+                                    ✦ Return to India, qualify through NEXT
+                                    exam, and practice legally.
+                                </li>
+                                <li>
+                                    ✦ Prepare for international licensing (USMLE
+                                    for USA, PLAB for UK).
+                                </li>
+                                <li>
+                                    ✦ Pursue Postgraduate (PG) degrees abroad.
+                                </li>
+                                <li>
+                                    ✦ Practice medicine within Russia directly.
+                                </li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h3 class="text-xl font-bold mb-4 text-[#D5AD36]">
+                                About PG in India
+                            </h3>
+                            <p
+                                class="text-sm text-gray-300 leading-relaxed mb-4"
+                            >
+                                Currently, India recognizes PG degrees from five
+                                major English-speaking countries (USA, UK, NZ,
+                                Australia, Canada). Note that PG degrees
+                                acquired directly from Russia are not yet widely
+                                recognized for direct entry in India without
+                                additional screening.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </CountryLayout>
+
+        <Footer />
+    </body>
+</html>
