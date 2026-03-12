@@ -1,0 +1,295 @@
+---
+import "../styles/global.css";
+import "flag-icons/css/flag-icons.min.css";
+import Navbar from "../components/Navbar.jsx";
+import CountryLayout from "../components/CountryLayout.astro";
+import Footer from "../components/Footer.astro";
+---
+
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&display=swap"
+            rel="stylesheet"
+        />
+        <meta
+            name="description"
+            content="Study MBBS in Uzbekistan – Discover affordable English-medium medical programs like Samarkand State Medical University that are NMC and WHO recognized."
+        />
+        <title>Study MBBS in Uzbekistan: Top Universities, Fees & Admissions | Doctor Destiny</title>
+    </head>
+    <body class="bg-[#F0F7FF] overflow-x-hidden">
+        <Navbar client:load />
+
+        <!-- Page Hero -->
+        <div class="bg-[#0E0C4F] pt-28 pb-16 px-6">
+            <div class="max-w-5xl mx-auto text-center">
+                <span
+                    class="inline-block py-1 px-4 rounded-full bg-white/10 text-[#D5AD36] text-sm font-bold mb-4 tracking-widest uppercase"
+                >
+                    Study Abroad
+                </span>
+                <h1
+                    class="text-4xl md:text-6xl font-extrabold text-white leading-tight mb-4"
+                >
+                    Study MBBS in <span class="text-[#00BFFF]">Uzbekistan</span>
+                </h1>
+                <p
+                    class="text-lg text-gray-300 max-w-3xl mx-auto leading-relaxed"
+                >
+                    A prime, highly sought-after destination in Central Asia offering excellent, English-medium medical education at remarkably low costs, backed by NMC guidelines and global recognitions.
+                </p>
+                <div class="mt-8">
+                    <button class="bg-gradient-to-r from-[#D5AD36] to-[#f0c847] hover:shadow-[0_0_20px_rgba(213,173,54,0.6)] text-[#0E0C4F] px-8 py-3 rounded-full font-bold transition-all duration-300 hover:scale-105">
+                        Enroll Now
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Country Layout (3-column) -->
+        <CountryLayout
+            countryName="Uzbekistan"
+            navItems={[
+                { label: "Overview & Duration", id: "overview" },
+                { label: "Top Universities", id: "universities" },
+                { label: "Recognition", id: "recognition" },
+                { label: "Eligibility", id: "eligibility" },
+                { label: "Why Uzbekistan?", id: "benefits" },
+                { label: "Fee Structure", id: "fees" },
+                { label: "Admission Process", id: "process" },
+            ]}
+            faqs={[
+                {
+                    question: "Is MBBS in Uzbekistan valid in India?",
+                    answer: "Yes, degrees from state medical universities in Uzbekistan are valid in India. Graduates must pass the FMGE/NExT screening test to practice.",
+                },
+                {
+                    question: "What is the duration of the course?",
+                    answer: "The duration complies perfectly with NMC regulations: 5 years of academic study + 1 year of compulsory rotating clinical internship (6 years total).",
+                },
+                {
+                    question: "Is English the medium of instruction?",
+                    answer: "Yes, top universities catering to international students offer the entire MBBS curriculum entirely in the English medium.",
+                },
+                {
+                    question: "What is the approximate cost of studying in Uzbekistan?",
+                    answer: "It is very affordable. Total tuition and accommodation for the entire 6 years typically amounts to ₹15 Lakhs to ₹22 Lakhs.",
+                }
+            ]}
+        >
+            <!-- SECTION: Overview -->
+            <section id="overview" class="mb-12 scroll-mt-24">
+                <h2 class="text-2xl md:text-3xl font-bold text-[#0E0C4F] mb-4 pb-3 border-b-2 border-[#00BFFF]/30">
+                    Overview & Course Duration
+                </h2>
+                <div class="bg-white p-6 rounded-2xl shadow-sm border border-gray-100 mb-6">
+                    <p class="text-gray-700 leading-relaxed mb-4">
+                        Uzbekistan has rapidly grown into an education hub for Indian medical aspirants, offering state-funded, highly subsidized medical programs with excellent faculty-to-student ratios.
+                    </p>
+                    <div class="p-4 bg-blue-50/50 rounded-xl border border-blue-100">
+                        <p class="text-sm text-gray-700">
+                            <strong>Duration:</strong> <strong class="text-[#0E0C4F]">6 Years</strong> in total.
+                        </p>
+                        <ul class="list-disc list-inside mt-2 text-sm text-gray-600 space-y-1 ml-2">
+                            <li>5 Years of rigorous academic and preclinical studies.</li>
+                            <li>1 Year of compulsory rotating internship embedded into the 6th year.</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+             <!-- SECTION: Universities -->
+            <section id="universities" class="mb-12 scroll-mt-24">
+                <h2 class="text-2xl md:text-3xl font-bold text-[#0E0C4F] mb-4 pb-3 border-b-2 border-[#00BFFF]/30">
+                    Top Medical Universities in Uzbekistan
+                </h2>
+                <div class="overflow-x-auto rounded-xl border border-gray-200 shadow-sm">
+                    <table class="w-full text-left border-collapse min-w-[600px]">
+                        <thead>
+                            <tr class="bg-[#0E0C4F] text-white text-sm">
+                                <th class="px-4 py-3 font-semibold">University Name</th>
+                                <th class="px-4 py-3 font-semibold">Location</th>
+                            </tr>
+                        </thead>
+                        <tbody class="text-gray-700 text-sm">
+                            <tr class="border-b bg-white">
+                                <td class="px-4 py-3 font-bold text-[#0E0C4F]">Samarkand State Medical University</td>
+                                <td class="px-4 py-3">Samarkand</td>
+                            </tr>
+                            <tr class="border-b bg-gray-50/50">
+                                <td class="px-4 py-3 font-bold text-[#0E0C4F]">Tashkent Medical Academy</td>
+                                <td class="px-4 py-3">Tashkent</td>
+                            </tr>
+                            <tr class="border-b bg-white">
+                                <td class="px-4 py-3 font-bold text-[#0E0C4F]">Bukhara State Medical Institute</td>
+                                <td class="px-4 py-3">Bukhara</td>
+                            </tr>
+                            <tr class="border-b bg-gray-50/50">
+                                <td class="px-4 py-3 font-bold text-[#0E0C4F]">Andijan State Medical Institute</td>
+                                <td class="px-4 py-3">Andijan</td>
+                            </tr>
+                            <tr class="bg-white">
+                                <td class="px-4 py-3 font-bold text-[#0E0C4F]">Fergana Medical Institute of Public Health</td>
+                                <td class="px-4 py-3">Fergana</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </section>
+
+            <!-- SECTION: Recognition -->
+            <section id="recognition" class="mb-12 scroll-mt-24">
+                <h2 class="text-2xl md:text-3xl font-bold text-[#0E0C4F] mb-4 pb-3 border-b-2 border-[#00BFFF]/30">
+                    Global Recognition
+                </h2>
+                <div class="bg-[#0E0C4F] text-white p-6 rounded-2xl">
+                    <p class="mb-4 text-gray-300">
+                        Uzbek State Medical Universities hold premier global accreditations, ensuring mobility for their graduates:
+                    </p>
+                    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+                        {
+                            [
+                                "World Health Organization (WHO)",
+                                "National Medical Commission (NMC, India)",
+                                "FAIMER",
+                                "UNESCO",
+                                "Medical Councils of UK, USA, USA & AUS"
+                            ].map((org) => (
+                                <div class="bg-white/10 p-3 rounded-lg text-sm text-center font-medium border border-white/20">
+                                    {org}
+                                </div>
+                            ))
+                        }
+                    </div>
+                </div>
+            </section>
+
+            <!-- SECTION: Eligibility -->
+            <section id="eligibility" class="mb-12 scroll-mt-24">
+                <h2 class="text-2xl md:text-3xl font-bold text-[#0E0C4F] mb-4 pb-3 border-b-2 border-[#00BFFF]/30">
+                    Eligibility Criteria
+                </h2>
+                <div class="bg-white p-6 rounded-2xl border border-gray-100 shadow-sm">
+                    <ul class="space-y-4 text-gray-700">
+                        <li class="flex gap-3">
+                            <span class="text-[#00BFFF] shrink-0 font-bold">50%</span>
+                            <span>A minimum aggregate of 50% marks in Physics, Chemistry, and Biology (PCB) in 10+2 examinations.</span>
+                        </li>
+                        <li class="flex gap-3">
+                            <span class="text-[#00BFFF] shrink-0 font-bold">NEET</span>
+                            <span>Mandatory qualification in the NEET UG exam if the student intends to return to India.</span>
+                        </li>
+                        <li class="flex gap-3">
+                            <span class="text-[#00BFFF] shrink-0 font-bold">17+</span>
+                            <span>The applicant must be 17 years old by December 31st of the year of admission.</span>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+
+            <!-- SECTION: Benefits -->
+            <section id="benefits" class="mb-12 scroll-mt-24">
+                <h2 class="text-2xl md:text-3xl font-bold text-[#0E0C4F] mb-4 pb-3 border-b-2 border-[#00BFFF]/30">
+                    Why Study MBBS in Uzbekistan?
+                </h2>
+                <div class="grid md:grid-cols-2 gap-6 text-sm text-gray-700">
+                    <div class="p-5 bg-white rounded-xl border border-gray-100 shadow-sm">
+                        <h4 class="font-bold text-[#0E0C4F] mb-2 flex items-center gap-2">
+                            <span>🎓</span> Academic Excellence
+                        </h4>
+                        <p>Over a century of medical teaching experience with strong ties to Russian academic rigor and heavy exposure to European clinical styles.</p>
+                    </div>
+                    <div class="p-5 bg-white rounded-xl border border-gray-100 shadow-sm">
+                        <h4 class="font-bold text-[#0E0C4F] mb-2 flex items-center gap-2">
+                            <span>🇮🇳</span> High FMGE Success
+                        </h4>
+                        <p>Uzbek universities routinely hire visiting Indian faculty to coach students specifically for the FMGE/NExT screening test.</p>
+                    </div>
+                    <div class="p-5 bg-white rounded-xl border border-gray-100 shadow-sm">
+                        <h4 class="font-bold text-[#0E0C4F] mb-2 flex items-center gap-2">
+                            <span>🗣️</span> 100% English Taught
+                        </h4>
+                        <p>Zero requirement to learn the local Uzbek or Russian languages for academic or examination purposes during the program.</p>
+                    </div>
+                    <div class="p-5 bg-white rounded-xl border border-gray-100 shadow-sm">
+                        <h4 class="font-bold text-[#0E0C4F] mb-2 flex items-center gap-2">
+                            <span>💸</span> Huge Cost Savings
+                        </h4>
+                        <p>Extremely subsidized state universities translate to an entire 6-year degree costing less than half of an Indian private medical college seat.</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- SECTION: Fees -->
+            <section id="fees" class="mb-12 scroll-mt-24">
+                <h2 class="text-2xl md:text-3xl font-bold text-[#0E0C4F] mb-4 pb-3 border-b-2 border-[#00BFFF]/30">
+                    Fee Structure
+                </h2>
+                <div class="bg-blue-50/50 p-6 rounded-2xl border border-blue-100">
+                    <div class="grid md:grid-cols-2 gap-4">
+                        <div class="bg-white p-4 rounded-xl border border-blue-100">
+                            <span class="block text-xs font-bold text-[#00BFFF] uppercase">Average Tuition Fees</span>
+                            <span class="text-xl font-bold text-[#0E0C4F]">$2,500 - $3,500 USD / Year</span>
+                            <p class="text-xs text-gray-500 mt-1">(Approx. ₹2 Lakhs to ₹3 Lakhs / Year)</p>
+                        </div>
+                        <div class="bg-white p-4 rounded-xl border border-blue-100">
+                            <span class="block text-xs font-bold text-[#00BFFF] uppercase">Hostel Fees</span>
+                            <span class="text-xl font-bold text-[#0E0C4F]">$600 - $800 USD / Year</span>
+                            <p class="text-xs text-gray-500 mt-1">Highly secure on-campus accommodation.</p>
+                        </div>
+                    </div>
+                    <p class="text-xs text-gray-500 mt-4 leading-relaxed bg-white/60 p-3 rounded border border-gray-100">
+                        *Note: Living expenses are very affordable in Uzbekistan (Approx. ₹10,000 to ₹15,000 per month). Meals, transport, and utilities mirror Indian costs closely.
+                    </p>
+                </div>
+            </section>
+
+             <!-- SECTION: Process -->
+            <section id="process" class="mb-12 scroll-mt-24">
+                <h2 class="text-2xl md:text-3xl font-bold text-[#0E0C4F] mb-4 pb-3 border-b-2 border-[#00BFFF]/30">
+                    Admission Process
+                </h2>
+                <div class="space-y-4">
+                    <div class="flex gap-4 items-start p-5 bg-white rounded-xl shadow-sm border border-gray-100">
+                        <span class="flex-shrink-0 w-10 h-10 rounded-full bg-[#0E0C4F] text-white flex items-center justify-center font-bold text-sm">1</span>
+                        <div>
+                            <h4 class="font-bold text-[#0E0C4F]">Consultation</h4>
+                            <p class="text-sm text-gray-600 mt-1">Connect with Doctor Destiny representatives to choose the right state university in Uzbekistan.</p>
+                        </div>
+                    </div>
+                    <div class="flex gap-4 items-start p-5 bg-white rounded-xl shadow-sm border border-gray-100">
+                        <span class="flex-shrink-0 w-10 h-10 rounded-full bg-[#0E0C4F] text-white flex items-center justify-center font-bold text-sm">2</span>
+                        <div>
+                            <h4 class="font-bold text-[#0E0C4F]">Application & Documents</h4>
+                            <p class="text-sm text-gray-600 mt-1">Submit online application alongside 10th/12th marksheets, NEET scorecard, birth certificate, and a valid passport.</p>
+                        </div>
+                    </div>
+                    <div class="flex gap-4 items-start p-5 bg-white rounded-xl shadow-sm border border-gray-100">
+                        <span class="flex-shrink-0 w-10 h-10 rounded-full bg-[#0E0C4F] text-white flex items-center justify-center font-bold text-sm">3</span>
+                        <div>
+                            <h4 class="font-bold text-[#0E0C4F]">Invitation Letter</h4>
+                            <p class="text-sm text-gray-600 mt-1">Upon review, the university issues a formal Invitation Letter and an Admission Confirmation letter.</p>
+                        </div>
+                    </div>
+                    <div class="flex gap-4 items-start p-5 bg-white rounded-xl shadow-sm border border-gray-100">
+                        <span class="flex-shrink-0 w-10 h-10 rounded-full bg-[#D5AD36] text-white flex items-center justify-center font-bold text-sm">4</span>
+                        <div>
+                            <h4 class="font-bold text-[#0E0C4F]">Visa Stamping & Departure</h4>
+                            <p class="text-sm text-gray-600 mt-1">Pay the necessary university registration fees, procure the e-visa or stamp visa from the embassy, and depart for Tashkent!</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+        </CountryLayout>
+
+        <Footer />
+    </body>
+</html>

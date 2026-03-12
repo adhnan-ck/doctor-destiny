@@ -1,0 +1,289 @@
+---
+import "../styles/global.css";
+import "flag-icons/css/flag-icons.min.css";
+import Navbar from "../components/Navbar.jsx";
+import CountryLayout from "../components/CountryLayout.astro";
+import Footer from "../components/Footer.astro";
+---
+
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&display=swap"
+            rel="stylesheet"
+        />
+        <meta
+            name="description"
+            content="Study MBBS (Staatsexamen) in Germany – Navigate free public tuition, German language requirements, and top medical universities like Heidelberg and Charité Berlin."
+        />
+        <title>Study MBBS in Germany: Free Tuition, Universities & Admissions | Doctor Destiny</title>
+    </head>
+    <body class="bg-[#F0F7FF] overflow-x-hidden">
+        <Navbar client:load />
+
+        <!-- Page Hero -->
+        <div class="bg-[#0E0C4F] pt-28 pb-16 px-6">
+            <div class="max-w-5xl mx-auto text-center">
+                <span
+                    class="inline-block py-1 px-4 rounded-full bg-white/10 text-[#D5AD36] text-sm font-bold mb-4 tracking-widest uppercase"
+                >
+                    Study Abroad
+                </span>
+                <h1
+                    class="text-4xl md:text-6xl font-extrabold text-white leading-tight mb-4"
+                >
+                    Study Medicine in <span class="text-[#00BFFF]">Germany</span>
+                </h1>
+                <p
+                    class="text-lg text-gray-300 max-w-3xl mx-auto leading-relaxed"
+                >
+                    Experience world-class healthcare education with nearly zero tuition fees. Germany offers highly competitive, prestigious medical programs (Staatsexamen) for students dedicated to mastering the German language and achieving academic excellence.
+                </p>
+                <div class="mt-8">
+                    <button class="bg-gradient-to-r from-[#D5AD36] to-[#f0c847] hover:shadow-[0_0_20px_rgba(213,173,54,0.6)] text-[#0E0C4F] px-8 py-3 rounded-full font-bold transition-all duration-300 hover:scale-105">
+                        Enroll Now
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Country Layout (3-column) -->
+        <CountryLayout
+            countryName="Germany"
+            navItems={[
+                { label: "Overview & Duration", id: "overview" },
+                { label: "Top Universities", id: "universities" },
+                { label: "Eligibility (Language + Academics)", id: "eligibility" },
+                { label: "Why Germany?", id: "benefits" },
+                { label: "Fee Structure", id: "fees" },
+                { label: "Admission & Studienkolleg", id: "process" },
+            ]}
+            faqs={[
+                {
+                    question: "Is MBBS really free in Germany?",
+                    answer: "Yes, most public universities in Germany charge €0 for tuition. You only pay a minor semester contribution (approx. €100-€350) which often includes public transit passes. However, private universities charge substantial fees.",
+                },
+                {
+                    question: "Can I study medicine in Germany in English?",
+                    answer: "Virtually all undergraduate medical programs (Staatsexamen) leading to licensure are taught entirely in German. A C1 level of German proficiency is mandatory for admission and clinical interaction.",
+                },
+                {
+                    question: "What is the Studienkolleg (Foundation Year)?",
+                    answer: "Because the Indian 12th standard is not completely equivalent to the German 'Abitur', most Indian students must complete a 1-year M-Kurs (Medical Course) foundation year before starting the actual 6-year medical degree.",
+                },
+                {
+                    question: "Is the degree valid everywhere?",
+                    answer: "Absolutely. A medical degree from Germany is one of the most respected globally, recognized by the WHO, NMC (India), and medical boards across the EU and USA.",
+                }
+            ]}
+        >
+            <!-- SECTION: Overview -->
+            <section id="overview" class="mb-12 scroll-mt-24">
+                <h2 class="text-2xl md:text-3xl font-bold text-[#0E0C4F] mb-4 pb-3 border-b-2 border-[#00BFFF]/30">
+                    Overview & Course Duration
+                </h2>
+                <div class="bg-white p-6 rounded-2xl shadow-sm border border-gray-100 mb-6">
+                    <p class="text-gray-700 leading-relaxed mb-6">
+                        In Germany, the medical degree is not called MBBS; it is a unified state examination program known as <strong class="text-[#0E0C4F]">Staatsexamen</strong>. The structure is rigorously divided into theoretical, clinical, and practical phases.
+                    </p>
+                    
+                    <h3 class="font-bold text-[#0E0C4F] mb-3 text-lg">Total Duration: 6 Years & 3 Months (excluding language/foundation years)</h3>
+                    <div class="space-y-3">
+                        <div class="p-3 border-l-4 border-blue-400 bg-blue-50/50">
+                            <h4 class="font-bold text-[#0E0C4F]">1. Pre-Clinical Phase (2 Years)</h4>
+                            <p class="text-sm text-gray-600">Focuses on basic sciences (Anatomy, Biochemistry, Physiology, etc.). Ends with the 1st State Examination (Physikum).</p>
+                        </div>
+                        <div class="p-3 border-l-4 border-indigo-400 bg-indigo-50/50">
+                            <h4 class="font-bold text-[#0E0C4F]">2. Clinical Phase (3 Years)</h4>
+                            <p class="text-sm text-gray-600">Core clinical subjects like surgery, internal medicine, and pediatrics, heavily involving hospital rotations and lectures.</p>
+                        </div>
+                        <div class="p-3 border-l-4 border-emerald-400 bg-emerald-50/50">
+                            <h4 class="font-bold text-[#0E0C4F]">3. Practical Year (Praktisches Jahr / PJ) (1 Year)</h4>
+                            <p class="text-sm text-gray-600">Full-time, intense hospital placement split into three 4-month blocks. Concludes with the final 2nd State Examination to earn your license (Approbation).</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+             <!-- SECTION: Universities -->
+            <section id="universities" class="mb-12 scroll-mt-24">
+                <h2 class="text-2xl md:text-3xl font-bold text-[#0E0C4F] mb-4 pb-3 border-b-2 border-[#00BFFF]/30">
+                    Top Medical Universities in Germany
+                </h2>
+                <p class="text-gray-600 mb-6 text-sm">German medical schools are highly ranked globally for their research output and clinical excellence.</p>
+                <div class="overflow-x-auto rounded-xl border border-gray-200 shadow-sm">
+                    <table class="w-full text-left border-collapse min-w-[600px]">
+                        <thead>
+                            <tr class="bg-[#0E0C4F] text-white text-sm">
+                                <th class="px-4 py-3 font-semibold">University Name</th>
+                                <th class="px-4 py-3 font-semibold">Location</th>
+                            </tr>
+                        </thead>
+                        <tbody class="text-gray-700 text-sm">
+                            <tr class="border-b bg-white">
+                                <td class="px-4 py-3 font-bold text-[#0E0C4F]">Heidelberg University</td>
+                                <td class="px-4 py-3">Heidelberg</td>
+                            </tr>
+                            <tr class="border-b bg-gray-50/50">
+                                <td class="px-4 py-3 font-bold text-[#0E0C4F]">Charité – Universitätsmedizin Berlin</td>
+                                <td class="px-4 py-3">Berlin</td>
+                            </tr>
+                            <tr class="border-b bg-white">
+                                <td class="px-4 py-3 font-bold text-[#0E0C4F]">Ludwig Maximilian University of Munich (LMU)</td>
+                                <td class="px-4 py-3">Munich</td>
+                            </tr>
+                            <tr class="border-b bg-gray-50/50">
+                                <td class="px-4 py-3 font-bold text-[#0E0C4F]">Technical University of Munich (TUM)</td>
+                                <td class="px-4 py-3">Munich</td>
+                            </tr>
+                            <tr class="border-b bg-white">
+                                <td class="px-4 py-3 font-bold text-[#0E0C4F]">RWTH Aachen University</td>
+                                <td class="px-4 py-3">Aachen</td>
+                            </tr>
+                            <tr class="bg-gray-50/50">
+                                <td class="px-4 py-3 font-bold text-[#0E0C4F]">Eberhard Karls University of Tübingen</td>
+                                <td class="px-4 py-3">Tübingen</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </section>
+
+            <!-- SECTION: Eligibility -->
+            <section id="eligibility" class="mb-12 scroll-mt-24">
+                <h2 class="text-2xl md:text-3xl font-bold text-[#0E0C4F] mb-4 pb-3 border-b-2 border-[#00BFFF]/30">
+                    Eligibility Criteria (Highly Competitive)
+                </h2>
+                <div class="bg-white p-6 rounded-2xl border border-gray-100 shadow-sm">
+                    <div class="p-4 bg-red-50/50 border border-red-100 rounded-lg mb-6 flex gap-3">
+                        <span class="text-red-500 font-bold text-xl">!</span>
+                        <p class="text-sm text-gray-700">Germany is incredibly competitive. Usually, only students with grades equivalent to a perfect 1.0 - 1.5 in the German grading system (approx. <strong class="text-red-600">90-95%+ in Indian 12th standard</strong>) stand a chance at public university admission.</p>
+                    </div>
+
+                    <ul class="space-y-5 text-gray-700">
+                        <li class="flex gap-4 items-start">
+                            <span class="text-[#0E0C4F] bg-blue-50 px-2 py-1 rounded text-sm font-bold mt-1">📚 Academics</span>
+                            <div class="text-sm">
+                                <strong class="block mb-1 text-[#0E0C4F]">Abitur Equivalence / Studienkolleg:</strong>
+                                Since the Indian 12th certificate is not a direct equivalent to the German Abitur, Indian students must first pass an entrance exam (Aufnahmeprüfung) to enter a 1-year Medical Foundation Course (<strong class="text-[#00BFFF]">M-Kurs Studienkolleg</strong>), followed by the final Feststellungsprüfung (FSP) exam.
+                            </div>
+                        </li>
+                        <li class="flex gap-4 items-start">
+                            <span class="text-[#0E0C4F] bg-blue-50 px-2 py-1 rounded text-sm font-bold mt-1">🗣️ Language</span>
+                            <div class="text-sm">
+                                <strong class="block mb-1 text-[#0E0C4F]">German Proficiency (C1 Level):</strong>
+                                Mandatory proof of highly advanced German language skills (TestDaF level 4, DSH-2, or Goethe C1). You cannot study medicine in Germany without fluency in German.
+                            </div>
+                        </li>
+                        <li class="flex gap-4 items-start">
+                            <span class="text-[#0E0C4F] bg-blue-50 px-2 py-1 rounded text-sm font-bold mt-1">📝 Exams</span>
+                            <div class="text-sm">
+                                <strong class="block mb-1 text-[#0E0C4F]">NEET-UG & APS:</strong>
+                                A valid NEET scorecard is mandatory for Indians. Further, an APS Certificate (Academic Evaluation Centre) verifying your Indian documents is an absolute strict requirement for the German Student Visa.
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+
+            <!-- SECTION: Benefits -->
+            <section id="benefits" class="mb-12 scroll-mt-24">
+                <h2 class="text-2xl md:text-3xl font-bold text-[#0E0C4F] mb-4 pb-3 border-b-2 border-[#00BFFF]/30">
+                    Why Study in Germany?
+                </h2>
+                <div class="grid md:grid-cols-2 gap-6 text-sm text-gray-700">
+                    <div class="p-5 bg-white rounded-xl border border-gray-100 shadow-sm">
+                        <h4 class="font-bold text-[#0E0C4F] mb-2 flex items-center gap-2">
+                            <span>💶</span> Zero Tuition Fees
+                        </h4>
+                        <p>Public universities charge no tuition, making it the highest ROI medical destination globally.</p>
+                    </div>
+                    <div class="p-5 bg-white rounded-xl border border-gray-100 shadow-sm">
+                        <h4 class="font-bold text-[#0E0C4F] mb-2 flex items-center gap-2">
+                            <span>🏥</span> Settlement Pathways
+                        </h4>
+                        <p>Germany faces a massive shortage of doctors. Earning your Approbation (license) directly there makes settling and working as a specialist in Germany extremely straightforward.</p>
+                    </div>
+                    <div class="p-5 bg-white rounded-xl border border-gray-100 shadow-sm">
+                        <h4 class="font-bold text-[#0E0C4F] mb-2 flex items-center gap-2">
+                            <span>🔬</span> World-Leading Research
+                        </h4>
+                        <p>Access to some of the most advanced medical research, laboratories, and simulation centers in the world.</p>
+                    </div>
+                    <div class="p-5 bg-white rounded-xl border border-gray-100 shadow-sm">
+                        <h4 class="font-bold text-[#0E0C4F] mb-2 flex items-center gap-2">
+                            <span>🇪🇺</span> EU Blue Card
+                        </h4>
+                        <p>Immediate access to the entire Schengen zone and straightforward pathways to European Permanent Residency (PR).</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- SECTION: Fees -->
+            <section id="fees" class="mb-12 scroll-mt-24">
+                <h2 class="text-2xl md:text-3xl font-bold text-[#0E0C4F] mb-4 pb-3 border-b-2 border-[#00BFFF]/30">
+                    Fee Structure & Blocked Account
+                </h2>
+                <div class="bg-blue-50/50 p-6 rounded-2xl border border-blue-100">
+                    <div class="grid md:grid-cols-2 gap-4">
+                        <div class="bg-white p-4 rounded-xl border border-blue-100">
+                            <span class="block text-xs font-bold text-[#00BFFF] uppercase">Tuition Fees (Public)</span>
+                            <span class="text-xl font-bold text-[#0E0C4F]">€100 - €350 / Semester</span>
+                            <p class="text-xs text-gray-500 mt-1">This is a mandatory administrative 'semester contribution', not a tuition fee.</p>
+                        </div>
+                        <div class="bg-white p-4 rounded-xl border border-blue-100">
+                            <span class="block text-xs font-bold text-[#00BFFF] uppercase">Tuition Fees (Baden-Württemberg)</span>
+                            <span class="text-xl font-bold text-[#0E0C4F]">€1,500 / Semester</span>
+                            <p class="text-xs text-gray-500 mt-1">Note: This specific state has reintroduced tuition for Non-EU students.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="mt-6 p-4 bg-yellow-50 border border-yellow-200 rounded-xl">
+                        <h4 class="font-bold text-yellow-800 mb-2">The Blocked Account (Sperrkonto)</h4>
+                        <p class="text-sm text-gray-700">
+                            To obtain your German student visa, you MUST deposit exactly <strong class="text-[#0E0C4F]">€11,208 per year</strong> (approx. ₹10 Lakhs) into a German Blocked Account. This proves you have the funds to cover your rent, food, and health insurance. It is released back to you in monthly payouts to fund your living expenses.
+                        </p>
+                    </div>
+                </div>
+            </section>
+
+             <!-- SECTION: Process -->
+            <section id="process" class="mb-12 scroll-mt-24">
+                <h2 class="text-2xl md:text-3xl font-bold text-[#0E0C4F] mb-4 pb-3 border-b-2 border-[#00BFFF]/30">
+                    The Application Pathway
+                </h2>
+                <div class="relative space-y-6 before:absolute before:left-[19px] before:top-2 before:bottom-2 before:w-0.5 before:bg-blue-100">
+                    <div class="pl-12 relative">
+                        <div class="absolute left-0 top-0 w-10 h-10 bg-[#0E0C4F] rounded-full text-white flex items-center justify-center font-bold z-10">1</div>
+                        <h4 class="font-bold text-[#0E0C4F]">Language & Validation</h4>
+                        <p class="text-sm text-gray-600">Achieve B2/C1 German proficiency. Apply for the APS Certificate (takes months, start early) and get your Indian grades converted via Uni-Assist.</p>
+                    </div>
+                    <div class="pl-12 relative">
+                        <div class="absolute left-0 top-0 w-10 h-10 bg-[#0E0C4F] rounded-full text-white flex items-center justify-center font-bold z-10">2</div>
+                        <h4 class="font-bold text-[#0E0C4F]">Studienkolleg (M-Kurs)</h4>
+                        <p class="text-sm text-gray-600">Travel to Germany, clear the Aufnahmeprüfung (entrance exam), and complete 1 year of the M-Kurs foundation curriculum.</p>
+                    </div>
+                    <div class="pl-12 relative">
+                        <div class="absolute left-0 top-0 w-10 h-10 bg-[#0E0C4F] rounded-full text-white flex items-center justify-center font-bold z-10">3</div>
+                        <h4 class="font-bold text-[#0E0C4F]">FSP & University Application</h4>
+                        <p class="text-sm text-gray-600">Pass the final Feststellungsprüfung (FSP). Combine your FSP score with your 12th standard score. Apply to public medical universities via the Uni-Assist or directly.</p>
+                    </div>
+                    <div class="pl-12 relative">
+                        <div class="absolute left-0 top-0 w-10 h-10 bg-[#D5AD36] rounded-full text-white flex items-center justify-center font-bold z-10">4</div>
+                        <h4 class="font-bold text-[#0E0C4F]">Start Staatsexamen</h4>
+                        <p class="text-sm text-gray-600">If your combined grade is top-tier (1.0 - 1.5), secure admission and begin your 6-year medical degree in Germany!</p>
+                    </div>
+                </div>
+            </section>
+
+        </CountryLayout>
+
+        <Footer />
+    </body>
+</html>

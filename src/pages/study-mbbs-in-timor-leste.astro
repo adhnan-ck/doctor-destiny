@@ -1,0 +1,291 @@
+---
+import "../styles/global.css";
+import "flag-icons/css/flag-icons.min.css";
+import Navbar from "../components/Navbar.jsx";
+import CountryLayout from "../components/CountryLayout.astro";
+import Footer from "../components/Footer.astro";
+---
+
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&display=swap"
+            rel="stylesheet"
+        />
+        <meta
+            name="description"
+            content="Study MBBS in Timor Leste – A detailed guide to an affordable, NMC-recognized medical education destination for Indian students featuring top universities and low study costs."
+        />
+        <title>Study MBBS in Timor Leste: Top Universities, Fees & Admissions | Doctor Destiny</title>
+    </head>
+    <body class="bg-[#F0F7FF] overflow-x-hidden">
+        <Navbar client:load />
+
+        <!-- Page Hero -->
+        <div class="bg-[#0E0C4F] pt-28 pb-16 px-6">
+            <div class="max-w-5xl mx-auto text-center">
+                <span
+                    class="inline-block py-1 px-4 rounded-full bg-white/10 text-[#D5AD36] text-sm font-bold mb-4 tracking-widest uppercase"
+                >
+                    Study Abroad
+                </span>
+                <h1
+                    class="text-4xl md:text-6xl font-extrabold text-white leading-tight mb-4"
+                >
+                    Study MBBS in <span class="text-[#00BFFF]">Timor Leste</span>
+                </h1>
+                <p
+                    class="text-lg text-gray-300 max-w-3xl mx-auto leading-relaxed"
+                >
+                    An emerging, highly affordable destination for Indian medical aspirants. Featuring English-medium instruction, NMC-compliant curriculum, and tropical climates directly relatable to Indian healthcare needs.
+                </p>
+                <div class="mt-8">
+                    <button class="bg-gradient-to-r from-[#D5AD36] to-[#f0c847] hover:shadow-[0_0_20px_rgba(213,173,54,0.6)] text-[#0E0C4F] px-8 py-3 rounded-full font-bold transition-all duration-300 hover:scale-105">
+                        Enroll Now
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Country Layout (3-column) -->
+        <CountryLayout
+            countryName="Timor Leste"
+            navItems={[
+                { label: "Overview & Duration", id: "overview" },
+                { label: "Recognition", id: "recognition" },
+                { label: "Eligibility", id: "eligibility" },
+                { label: "Top Universities", id: "universities" },
+                { label: "Why Timor Leste?", id: "benefits" },
+                { label: "Fee Structure", id: "fees" },
+                { label: "Admission Process", id: "process" },
+            ]}
+            faqs={[
+                {
+                    question: "Is MBBS in Timor Leste recognized in India?",
+                    answer: "Yes, degrees from recognized universities (like UCT) are valid since they rigidly follow NMC guidelines (5.5-year duration + 1-year internship).",
+                },
+                {
+                    question: "What is the medium of teaching?",
+                    answer: "The entire 5.5-year medical course is taught directly in English, eliminating the need to learn a complex new language like in Russia or China.",
+                },
+                {
+                    question: "What is the total cost of studying MBBS in Timor Leste?",
+                    answer: "It is one of the most affordable options globally, with the total package (Tuition + Hostel) ranging around ₹15 to ₹25 Lakhs for the entire course.",
+                },
+                {
+                    question: "Is the climate similar to India?",
+                    answer: "Yes, Timor Leste has a tropical climate very similar to India. This translates into studying the same disease patterns, which directly helps in clearing the FMGE/NExT exam.",
+                }
+            ]}
+        >
+            <!-- SECTION: Overview -->
+            <section id="overview" class="mb-12 scroll-mt-24">
+                <h2 class="text-2xl md:text-3xl font-bold text-[#0E0C4F] mb-4 pb-3 border-b-2 border-[#00BFFF]/30">
+                    Overview & Course Duration
+                </h2>
+                <div class="bg-white p-6 rounded-2xl shadow-sm border border-gray-100 mb-6">
+                    <p class="text-gray-700 leading-relaxed mb-4">
+                        Timor Leste (East Timor) provides an identical curriculum to Indian medical colleges, significantly reducing the friction when graduates return to India to practice.
+                    </p>
+                    <div class="p-4 bg-blue-50/50 rounded-xl border border-blue-100">
+                        <p class="text-sm text-gray-700">
+                            <strong>Duration:</strong> <strong class="text-[#0E0C4F]">5.5 Years</strong> in total.
+                        </p>
+                        <ul class="list-disc list-inside mt-2 text-sm text-gray-600 space-y-1 ml-2">
+                            <li>4.5 Years of intensive theoretical and practical academic classes.</li>
+                            <li>1 Year of compulsory clinical internship in affiliated hospitals.</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+            <!-- SECTION: Recognition -->
+            <section id="recognition" class="mb-12 scroll-mt-24">
+                <h2 class="text-2xl md:text-3xl font-bold text-[#0E0C4F] mb-4 pb-3 border-b-2 border-[#00BFFF]/30">
+                    Global Recognition
+                </h2>
+                <div class="bg-[#0E0C4F] text-white p-6 rounded-2xl">
+                    <p class="mb-4 text-gray-300">
+                        Top universities in Timor Leste hold prestigious accreditations, allowing graduates to practice worldwide:
+                    </p>
+                    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+                        {
+                            [
+                                "National Medical Commission (NMC)",
+                                "World Health Organization (WHO)",
+                                "WFME",
+                                "FAIMER",
+                                "ECFMG (USA)",
+                            ].map((org) => (
+                                <div class="bg-white/10 p-3 rounded-lg text-sm text-center font-medium border border-white/20">
+                                    {org}
+                                </div>
+                            ))
+                        }
+                    </div>
+                </div>
+            </section>
+
+            <!-- SECTION: Eligibility -->
+            <section id="eligibility" class="mb-12 scroll-mt-24">
+                <h2 class="text-2xl md:text-3xl font-bold text-[#0E0C4F] mb-4 pb-3 border-b-2 border-[#00BFFF]/30">
+                    Eligibility Criteria
+                </h2>
+                <div class="bg-white p-6 rounded-2xl border border-gray-100 shadow-sm">
+                    <ul class="space-y-4 text-gray-700">
+                        <li class="flex gap-3">
+                            <span class="text-[#00BFFF] shrink-0 font-bold">50%</span>
+                            <span>Minimum aggregate in Physics, Chemistry, and Biology (PCB) in 12th standard exams.</span>
+                        </li>
+                        <li class="flex gap-3">
+                            <span class="text-[#00BFFF] shrink-0 font-bold">NEET</span>
+                            <span>A valid, qualifying score in the NEET-UG examination for the current academic year.</span>
+                        </li>
+                        <li class="flex gap-3">
+                            <span class="text-[#00BFFF] shrink-0 font-bold">17+</span>
+                            <span>The student must have attained the age of 17 years by December 31st of the admission year.</span>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+
+            <!-- SECTION: Universities -->
+            <section id="universities" class="mb-12 scroll-mt-24">
+                <h2 class="text-2xl md:text-3xl font-bold text-[#0E0C4F] mb-4 pb-3 border-b-2 border-[#00BFFF]/30">
+                    Top Medical Universities Request
+                </h2>
+                <div class="overflow-x-auto rounded-xl border border-gray-200 shadow-sm">
+                    <table class="w-full text-left border-collapse min-w-[600px]">
+                        <thead>
+                            <tr class="bg-[#0E0C4F] text-white text-sm">
+                                <th class="px-4 py-3 font-semibold">University Name</th>
+                                <th class="px-4 py-3 font-semibold">NMC Recognized</th>
+                            </tr>
+                        </thead>
+                        <tbody class="text-gray-700 text-sm">
+                            <tr class="border-b bg-white">
+                                <td class="px-4 py-3 font-bold text-[#0E0C4F]">Universidade Católica Timorense (UCT)</td>
+                                <td class="px-4 py-3 text-green-600 font-bold">Yes</td>
+                            </tr>
+                            <tr class="border-b bg-gray-50/50">
+                                <td class="px-4 py-3 font-bold text-[#0E0C4F]">National University of Timor-Leste (UNTL)</td>
+                                <td class="px-4 py-3 text-green-600 font-bold">Yes</td>
+                            </tr>
+                            <tr class="bg-white">
+                                <td class="px-4 py-3 font-bold text-[#0E0C4F]">Institute of Health Sciences (ICS)</td>
+                                <td class="px-4 py-3 text-green-600 font-bold">Yes</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </section>
+
+            <!-- SECTION: Benefits -->
+            <section id="benefits" class="mb-12 scroll-mt-24">
+                <h2 class="text-2xl md:text-3xl font-bold text-[#0E0C4F] mb-4 pb-3 border-b-2 border-[#00BFFF]/30">
+                    Why Study in Timor Leste?
+                </h2>
+                <div class="grid md:grid-cols-2 gap-6 text-sm text-gray-700">
+                    <div class="p-5 bg-white rounded-xl border border-gray-100 shadow-sm flex items-start gap-3">
+                        <span class="text-2xl mt-1">🗣️</span>
+                        <div>
+                            <h4 class="font-bold text-[#0E0C4F] mb-1">English Medium Curriculum</h4>
+                            <p>No requirement to spend an extra year learning foreign languages; clinical communication is streamlined.</p>
+                        </div>
+                    </div>
+                    <div class="p-5 bg-white rounded-xl border border-gray-100 shadow-sm flex items-start gap-3">
+                        <span class="text-2xl mt-1">☀️</span>
+                        <div>
+                            <h4 class="font-bold text-[#0E0C4F] mb-1">Identical Climate</h4>
+                            <p>Tropical climate ensures that students study communicable and non-communicable diseases identical to the Indian subcontinent.</p>
+                        </div>
+                    </div>
+                    <div class="p-5 bg-white rounded-xl border border-gray-100 shadow-sm flex items-start gap-3">
+                        <span class="text-2xl mt-1">📋</span>
+                        <div>
+                            <h4 class="font-bold text-[#0E0C4F] mb-1">Indian Syllabus Alignment</h4>
+                            <p>Universities like UCT have tailored their 5.5-year MD curriculums entirely around the NMC India guidelines.</p>
+                        </div>
+                    </div>
+                    <div class="p-5 bg-white rounded-xl border border-gray-100 shadow-sm flex items-start gap-3">
+                        <span class="text-2xl mt-1">💸</span>
+                        <div>
+                            <h4 class="font-bold text-[#0E0C4F] mb-1">Unmatched Affordability</h4>
+                            <p>With yearly tuition fees sometimes sinking as low as ₹2.5-3 Lakhs, it bypasses the massive financial burden of Indian private colleges.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- SECTION: Fees -->
+            <section id="fees" class="mb-12 scroll-mt-24">
+                <h2 class="text-2xl md:text-3xl font-bold text-[#0E0C4F] mb-4 pb-3 border-b-2 border-[#00BFFF]/30">
+                    Fee Structure
+                </h2>
+                <div class="bg-blue-50/50 p-6 rounded-2xl border border-blue-100">
+                    <div class="grid md:grid-cols-2 gap-4">
+                        <div class="bg-white p-4 rounded-xl border border-blue-100">
+                            <span class="block text-xs font-bold text-[#00BFFF] uppercase">Average Tuition Fees</span>
+                            <span class="text-xl font-bold text-[#0E0C4F]">$1,500 - $8,500 USD / Year</span>
+                            <p class="text-xs text-gray-500 mt-1">(Approx. ₹1.2 to ₹7 Lakhs / Year)</p>
+                        </div>
+                        <div class="bg-white p-4 rounded-xl border border-blue-100">
+                            <span class="block text-xs font-bold text-[#00BFFF] uppercase">Hostel & Living</span>
+                            <span class="text-xl font-bold text-[#0E0C4F]">$310 - $670 USD / Month</span>
+                            <p class="text-xs text-gray-500 mt-1">Very modest and equivalent to Indian living expenditures.</p>
+                        </div>
+                    </div>
+                    <p class="text-xs text-gray-500 mt-4 leading-relaxed bg-white/60 p-3 rounded border border-gray-100">
+                        *Note: First-year package might include one-time application, admission, or visa processing charges. Always verify actual current figures from Doctor Destiny's counseling desk.
+                    </p>
+                </div>
+            </section>
+
+             <!-- SECTION: Process -->
+            <section id="process" class="mb-12 scroll-mt-24">
+                <h2 class="text-2xl md:text-3xl font-bold text-[#0E0C4F] mb-4 pb-3 border-b-2 border-[#00BFFF]/30">
+                    Admission Process
+                </h2>
+                <div class="space-y-4">
+                    <div class="flex gap-4 items-start p-5 bg-white rounded-xl shadow-sm border border-gray-100">
+                        <span class="flex-shrink-0 w-10 h-10 rounded-full bg-[#0E0C4F] text-white flex items-center justify-center font-bold text-sm">1</span>
+                        <div>
+                            <h4 class="font-bold text-[#0E0C4F]">Document Submission</h4>
+                            <p class="text-sm text-gray-600 mt-1">Submit high-quality scans of 10th and 12th mark sheets, NEET scorecard, birth certificate, and valid Passport.</p>
+                        </div>
+                    </div>
+                    <div class="flex gap-4 items-start p-5 bg-white rounded-xl shadow-sm border border-gray-100">
+                        <span class="flex-shrink-0 w-10 h-10 rounded-full bg-[#0E0C4F] text-white flex items-center justify-center font-bold text-sm">2</span>
+                        <div>
+                            <h4 class="font-bold text-[#0E0C4F]">Admission Letter</h4>
+                            <p class="text-sm text-gray-600 mt-1">The university evaluates eligibility and issues an admission/provisional offer letter within a few working days.</p>
+                        </div>
+                    </div>
+                    <div class="flex gap-4 items-start p-5 bg-white rounded-xl shadow-sm border border-gray-100">
+                        <span class="flex-shrink-0 w-10 h-10 rounded-full bg-[#0E0C4F] text-white flex items-center justify-center font-bold text-sm">3</span>
+                        <div>
+                            <h4 class="font-bold text-[#0E0C4F]">Fee Payment</h4>
+                            <p class="text-sm text-gray-600 mt-1">Pay the initial tuition/registration fee directly to the university's official bank account to secure the seat.</p>
+                        </div>
+                    </div>
+                    <div class="flex gap-4 items-start p-5 bg-white rounded-xl shadow-sm border border-gray-100">
+                        <span class="flex-shrink-0 w-10 h-10 rounded-full bg-[#D5AD36] text-white flex items-center justify-center font-bold text-sm">4</span>
+                        <div>
+                            <h4 class="font-bold text-[#0E0C4F]">Visa & Travel</h4>
+                            <p class="text-sm text-gray-600 mt-1">Receive the Ministry Invitation, process the student visa, and pack for your departure. Doctor Destiny assists through every step!</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+        </CountryLayout>
+
+        <Footer />
+    </body>
+</html>

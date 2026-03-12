@@ -24,7 +24,11 @@ export default function DestinationCard({ country, image, flag, span = '', href 
             {/* Flag Badge — top right */}
             {flag && (
                 <div className="absolute top-3 right-3 z-10 shadow-lg rounded-md overflow-hidden border border-white/30" style={{ width: '36px', height: '24px' }}>
-                    <span className={`fi fi-${flag}`} style={{ width: '100%', height: '100%', display: 'block', backgroundSize: 'cover' }} />
+                    {flag.includes('/') || flag.includes('.') ? (
+                        <img src={flag} alt="Flag" className="w-full h-full object-cover" />
+                    ) : (
+                        <span className={`fi fi-${flag}`} style={{ width: '100%', height: '100%', display: 'block', backgroundSize: 'cover' }} />
+                    )}
                 </div>
             )}
 

@@ -46,8 +46,8 @@ const Navbar = () => {
                 { name: 'MBBS in Philippines', href: '/study-mbbs-in-philippines' },
                 { name: 'MBBS in Russia', href: '/study-mbbs-in-russia' },
                 { name: 'MBBS in Timor Leste', href: '/study-mbbs-in-timor-leste' },
-                { name: 'MBBS in UK', href: '/study-mbbs-in-uk' },
-                { name: 'MBBS in USA', href: '/study-mbbs-in-usa' },
+                { name: 'MBBS in UK and USA', href: '/study-mbbs-in-uk-and-usa' },
+
                 { name: 'MBBS in Uzbekistan', href: '/study-mbbs-in-uzbekistan' },
             ],
         },

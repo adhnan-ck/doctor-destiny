@@ -1,0 +1,263 @@
+---
+import "../styles/global.css";
+import "flag-icons/css/flag-icons.min.css";
+import Navbar from "../components/Navbar.jsx";
+import CountryLayout from "../components/CountryLayout.astro";
+import Footer from "../components/Footer.astro";
+---
+
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&display=swap"
+            rel="stylesheet"
+        />
+        <meta
+            name="description"
+            content="Study MBBS in India – The ultimate guide to medical education in India, covering NEET-UG, top medical colleges like AIIMS, fees, and the admission process."
+        />
+        <title>Study MBBS in India: Top Colleges, NEET & Admission 2024 | Doctor Destiny</title>
+    </head>
+    <body class="bg-[#F0F7FF] overflow-x-hidden">
+        <Navbar client:load />
+
+        <!-- Page Hero -->
+        <div class="bg-[#0E0C4F] pt-28 pb-16 px-6">
+            <div class="max-w-5xl mx-auto text-center">
+                <span
+                    class="inline-block py-1 px-4 rounded-full bg-white/10 text-[#D5AD36] text-sm font-bold mb-4 tracking-widest uppercase"
+                >
+                    Domestic Study
+                </span>
+                <h1
+                    class="text-4xl md:text-6xl font-extrabold text-white leading-tight mb-4"
+                >
+                    Study MBBS in <span class="text-[#00BFFF]">India</span>
+                </h1>
+                <p
+                    class="text-lg text-gray-300 max-w-3xl mx-auto leading-relaxed"
+                >
+                    A guide to pursuing the highly sought-after MBBS degree within India. Navigate the competitive landscape of NEET, understand the fee variations, and explore the nation's premier medical institutions.
+                </p>
+                <div class="mt-8">
+                    <button class="bg-gradient-to-r from-[#D5AD36] to-[#f0c847] hover:shadow-[0_0_20px_rgba(213,173,54,0.6)] text-[#0E0C4F] px-8 py-3 rounded-full font-bold transition-all duration-300 hover:scale-105">
+                        Enroll Now
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Country Layout (3-column) -->
+        <CountryLayout
+            countryName="India"
+            navItems={[
+                { label: "Overview & Duration", id: "overview" },
+                { label: "Top Colleges", id: "colleges" },
+                { label: "Eligibility criteria", id: "eligibility" },
+                { label: "Fee Structure", id: "fees" },
+                { label: "Admission Process", id: "process" },
+            ]}
+            faqs={[
+                {
+                    question: "Is NEET compulsory for studying MBBS in India?",
+                    answer: "Yes, qualifying for the National Eligibility cum Entrance Test (NEET-UG) is strictly mandatory for admission into any valid MBBS, BDS, or AYUSH course in India.",
+                },
+                {
+                    question: "How long is the MBBS course in India?",
+                    answer: "The MBBS program spans 5.5 years, which consists of 4.5 years of academic classes followed by a one-year mandatory rotating clinical internship.",
+                },
+                {
+                    question: "What is the difference between AIQ and State Quota?",
+                    answer: "15% of seats in government colleges fall under the All India Quota (AIQ) where students from any state can apply. The remaining 85% are reserved for candidates holding the domicile of that specific state.",
+                },
+                {
+                    question: "What are the options if I don't score high enough for a Government college?",
+                    answer: "Students often apply for seats in Private Colleges, Deemed Universities (which have significantly higher fees), or choose to study MBBS abroad in countries like Russia, Georgia, or Uzbekistan.",
+                }
+            ]}
+        >
+            <!-- SECTION: Overview -->
+            <section id="overview" class="mb-12 scroll-mt-24">
+                <h2 class="text-2xl md:text-3xl font-bold text-[#0E0C4F] mb-4 pb-3 border-b-2 border-[#00BFFF]/30">
+                    Overview of MBBS in India
+                </h2>
+                <div class="bg-white p-6 rounded-2xl shadow-sm border border-gray-100 mb-6">
+                    <p class="text-gray-700 leading-relaxed mb-4">
+                        Pursuing a Bachelor of Medicine and Bachelor of Surgery (MBBS) in India is a rigorous endeavor. Governed by the National Medical Commission (NMC), the curriculum is structured to provide heavy clinical exposure mirroring the diverse health challenges of the population.
+                    </p>
+                    <div class="p-4 bg-orange-50/50 rounded-xl border border-orange-100">
+                        <p class="text-sm text-gray-700">
+                            <strong>Duration:</strong> Exactly <strong class="text-[#0E0C4F]">5.5 Years</strong> in total.
+                        </p>
+                        <ul class="list-disc list-inside mt-2 text-sm text-gray-600 space-y-1 ml-2">
+                            <li>4.5 Years of academic coursework (split into 9 semesters).</li>
+                            <li>1 Year of compulsory rotating medical internship (CRMI) in hospitals.</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+             <!-- SECTION: Top Colleges -->
+            <section id="colleges" class="mb-12 scroll-mt-24">
+                <h2 class="text-2xl md:text-3xl font-bold text-[#0E0C4F] mb-4 pb-3 border-b-2 border-[#00BFFF]/30">
+                    Top Medical Colleges in India
+                </h2>
+                <p class="text-gray-600 mb-6 text-sm">Below are some of the most prestigious medical colleges renowned for academic excellence and clinical training.</p>
+
+                <div class="overflow-x-auto rounded-xl border border-gray-200 shadow-sm">
+                    <table class="w-full text-left border-collapse min-w-[600px]">
+                        <thead>
+                            <tr class="bg-[#0E0C4F] text-white text-sm">
+                                <th class="px-4 py-3 font-semibold">Institute Name</th>
+                                <th class="px-4 py-3 font-semibold">Location</th>
+                                <th class="px-4 py-3 font-semibold">Category</th>
+                            </tr>
+                        </thead>
+                        <tbody class="text-gray-700 text-sm">
+                            <tr class="border-b bg-white">
+                                <td class="px-4 py-3 font-bold text-[#0E0C4F]">All India Institute of Medical Sciences (AIIMS)</td>
+                                <td class="px-4 py-3">New Delhi</td>
+                                <td class="px-4 py-3 font-bold text-[#00BFFF]">Government</td>
+                            </tr>
+                            <tr class="border-b bg-gray-50/50">
+                                <td class="px-4 py-3 font-bold text-[#0E0C4F]">Christian Medical College (CMC)</td>
+                                <td class="px-4 py-3">Vellore</td>
+                                <td class="px-4 py-3 font-bold text-[#D5AD36]">Private</td>
+                            </tr>
+                            <tr class="border-b bg-white">
+                                <td class="px-4 py-3 font-bold text-[#0E0C4F]">Post Graduate Institute of Medical Education & Research (PGIMER)</td>
+                                <td class="px-4 py-3">Chandigarh</td>
+                                <td class="px-4 py-3 font-bold text-[#00BFFF]">Government</td>
+                            </tr>
+                            <tr class="border-b bg-gray-50/50">
+                                <td class="px-4 py-3 font-bold text-[#0E0C4F]">Maulana Azad Medical College (MAMC)</td>
+                                <td class="px-4 py-3">New Delhi</td>
+                                <td class="px-4 py-3 font-bold text-[#00BFFF]">Government</td>
+                            </tr>
+                            <tr class="border-b bg-white">
+                                <td class="px-4 py-3 font-bold text-[#0E0C4F]">Armed Forces Medical College (AFMC)</td>
+                                <td class="px-4 py-3">Pune</td>
+                                <td class="px-4 py-3 font-bold text-[#00BFFF]">Armed Forces</td>
+                            </tr>
+                            <tr class="border-b bg-gray-50/50">
+                                <td class="px-4 py-3 font-bold text-[#0E0C4F]">JIPMER</td>
+                                <td class="px-4 py-3">Puducherry</td>
+                                <td class="px-4 py-3 font-bold text-[#00BFFF]">Government</td>
+                            </tr>
+                            <tr class="bg-white">
+                                <td class="px-4 py-3 font-bold text-[#0E0C4F]">Kasturba Medical College (KMC)</td>
+                                <td class="px-4 py-3">Manipal</td>
+                                <td class="px-4 py-3 font-bold text-[#D5AD36]">Private</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </section>
+
+            <!-- SECTION: Eligibility -->
+            <section id="eligibility" class="mb-12 scroll-mt-24">
+                <h2 class="text-2xl md:text-3xl font-bold text-[#0E0C4F] mb-4 pb-3 border-b-2 border-[#00BFFF]/30">
+                    Eligibility Criteria (2024-25)
+                </h2>
+                <div class="grid md:grid-cols-2 gap-4">
+                    <div class="bg-white p-5 rounded-xl border border-gray-100 shadow-sm">
+                        <div class="text-[#00BFFF] mb-2 font-bold text-xl">17+</div>
+                        <h4 class="font-bold text-[#0E0C4F] mb-1">Age Limit</h4>
+                        <p class="text-sm text-gray-600">Candidates must be at least 17 years old by December 31st of the admission year. There is currently no upper age limit for NEET.</p>
+                    </div>
+                    <div class="bg-white p-5 rounded-xl border border-gray-100 shadow-sm">
+                        <div class="text-[#00BFFF] mb-2 font-bold text-xl">50%</div>
+                        <h4 class="font-bold text-[#0E0C4F] mb-1">Academic Qualification</h4>
+                        <p class="text-sm text-gray-600">Must have passed 10+2 with Physics, Chemistry, Biology/Bio-tech, and English. Minimum aggregate of 50% for General (40% for SC/ST/OBC).</p>
+                    </div>
+                    <div class="bg-white p-5 rounded-xl border border-gray-100 shadow-sm md:col-span-2">
+                        <div class="text-[#00BFFF] mb-2 font-bold text-xl">NEET-UG</div>
+                        <h4 class="font-bold text-[#0E0C4F] mb-1">Entrance Examination Requirement</h4>
+                        <p class="text-sm text-gray-600">Admission globally hinges on cracking the <strong class="text-[#0E0C4F]">National Eligibility cum Entrance Test (NEET-UG)</strong> conducted annually by NTA.</p>
+                    </div>
+                </div>
+            </section>
+            
+            <!-- SECTION: Fees -->
+            <section id="fees" class="mb-12 scroll-mt-24">
+                <h2 class="text-2xl md:text-3xl font-bold text-[#0E0C4F] mb-4 pb-3 border-b-2 border-[#00BFFF]/30">
+                    Fee Structure Variations
+                </h2>
+                <div class="grid md:grid-cols-3 gap-6 text-sm">
+                    <div class="p-5 bg-blue-50/50 rounded-xl border border-blue-200">
+                        <h4 class="font-bold text-[#00BFFF] mb-3 text-lg">Government Colleges</h4>
+                        <p class="text-gray-700 leading-relaxed mb-4">Highly subsidized and the first choice for top merit holders.</p>
+                        <div class="mt-auto">
+                            <span class="block text-xs text-gray-500 uppercase font-bold tracking-wide">Annual Fees Range</span>
+                            <span class="text-xl font-bold text-[#0E0C4F]">₹10,000 to ₹1.5 Lakhs</span>
+                        </div>
+                    </div>
+                    
+                    <div class="p-5 bg-orange-50/50 rounded-xl border border-orange-200">
+                        <h4 class="font-bold text-orange-600 mb-3 text-lg">Private Medical Colleges</h4>
+                        <p class="text-gray-700 leading-relaxed mb-4">Higher fees; admission subject to state counseling policies and management quotas.</p>
+                        <div class="mt-auto">
+                            <span class="block text-xs text-gray-500 uppercase font-bold tracking-wide">Annual Fees Range</span>
+                            <span class="text-xl font-bold text-[#0E0C4F]">₹8 Lakhs to ₹25 Lakhs</span>
+                        </div>
+                    </div>
+
+                    <div class="p-5 bg-purple-50/50 rounded-xl border border-purple-200">
+                        <h4 class="font-bold text-purple-700 mb-3 text-lg">Deemed Universities</h4>
+                        <p class="text-gray-700 leading-relaxed mb-4">Autonomous institutions with the highest fee brackets, governed by MCC counseling.</p>
+                        <div class="mt-auto">
+                            <span class="block text-xs text-gray-500 uppercase font-bold tracking-wide">Total Course Fees</span>
+                            <span class="text-xl font-bold text-[#0E0C4F]">₹70 Lakhs to ₹1.5 Crores</span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+             <!-- SECTION: Process -->
+            <section id="process" class="mb-12 scroll-mt-24">
+                <h2 class="text-2xl md:text-3xl font-bold text-[#0E0C4F] mb-4 pb-3 border-b-2 border-[#00BFFF]/30">
+                    NEET Admission & Counselling Process
+                </h2>
+                <div class="space-y-4">
+                    <div class="flex gap-4 items-start p-5 bg-white rounded-xl shadow-sm border border-gray-100">
+                        <span class="flex-shrink-0 w-10 h-10 rounded-full bg-[#0E0C4F] text-white flex items-center justify-center font-bold text-sm">1</span>
+                        <div>
+                            <h4 class="font-bold text-[#0E0C4F]">NEET Examination</h4>
+                            <p class="text-sm text-gray-600 mt-1">Register for and appear in the offline NEET-UG examination conducted by the National Testing Agency (NTA) usually in May.</p>
+                        </div>
+                    </div>
+                    <div class="flex gap-4 items-start p-5 bg-white rounded-xl shadow-sm border border-gray-100">
+                        <span class="flex-shrink-0 w-10 h-10 rounded-full bg-[#0E0C4F] text-white flex items-center justify-center font-bold text-sm">2</span>
+                        <div>
+                            <h4 class="font-bold text-[#0E0C4F]">Result & Cut-off</h4>
+                            <p class="text-sm text-gray-600 mt-1">Check the scorecard and ensure qualification by meeting the percentile cutoffs categorized by NTA.</p>
+                        </div>
+                    </div>
+                    <div class="flex gap-4 items-start p-5 bg-white rounded-xl shadow-sm border border-gray-100">
+                        <span class="flex-shrink-0 w-10 h-10 rounded-full bg-[#0E0C4F] text-white flex items-center justify-center font-bold text-sm">3</span>
+                        <div>
+                            <h4 class="font-bold text-[#0E0C4F]">Counselling Registration (MCC / State)</h4>
+                            <p class="text-sm text-gray-600 mt-1">Register for MCC counseling for All India Quota (15%) & Deemed Universities, or state authority counseling for the 85% state quota.</p>
+                        </div>
+                    </div>
+                    <div class="flex gap-4 items-start p-5 bg-white rounded-xl shadow-sm border border-gray-100">
+                        <span class="flex-shrink-0 w-10 h-10 rounded-full bg-[#D5AD36] text-white flex items-center justify-center font-bold text-sm">4</span>
+                        <div>
+                            <h4 class="font-bold text-[#0E0C4F]">Choice Filling & Allotment</h4>
+                            <p class="text-sm text-gray-600 mt-1">Fill in preferred college choices. Seats are allotted based on rank, category, and availability. Finally, report to the allotted college for document verification.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+        </CountryLayout>
+
+        <Footer />
+    </body>
+</html>
