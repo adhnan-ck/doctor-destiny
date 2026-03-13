@@ -4,6 +4,7 @@ import Navbar from "../components/Navbar";
 import Footer from "../components/Footer.astro";
 import { Image } from "astro:assets";
 import mdImg from "../assets/MD.png";
+import founder2Img from "../assets/founder_2.jpeg";
 ---
 
 <html lang="en">
@@ -184,6 +185,35 @@ import mdImg from "../assets/MD.png";
             .founder-name-card span {
                 font-size: 0.8rem;
                 color: var(--gray);
+            }
+
+            /* ── SECTION 1b: SECOND FOUNDER (reversed) ── */
+            .founder-section-alt {
+                background: #fff;
+                padding: 96px 24px;
+            }
+
+            .founder-inner-alt {
+                max-width: 1200px;
+                margin: 0 auto;
+                display: grid;
+                grid-template-columns: 1.15fr 1fr;
+                gap: 80px;
+                align-items: center;
+            }
+
+            @media (max-width: 900px) {
+                .founder-inner-alt {
+                    grid-template-columns: 1fr;
+                    gap: 40px;
+                }
+                .founder-inner-alt .founder-image-wrap {
+                    order: -1;
+                }
+            }
+
+            .founder-inner-alt .founder-image-wrap {
+                max-width: 380px;
             }
 
             /* ── SECTION 2: WHO WE ARE ── */
@@ -815,6 +845,71 @@ import mdImg from "../assets/MD.png";
             </div>
         </section>
 
+        <!-- SECTION 1b: SECOND FOUNDER -->
+        <section class="founder-section-alt">
+            <div class="founder-inner-alt">
+                <!-- Left: Content -->
+                <div class="founder-content">
+                    <div class="badge">MEET OUR CO-FOUNDER</div>
+                    <h2>Mr. Afreed <span>H.S</span></h2>
+                    <p>
+                        Mr. Afreed H.S, Co-Founder and Director of Operations
+                        at Doctor Destiny, brings a wealth of expertise in
+                        student counselling and international education
+                        management. With a deep understanding of the challenges
+                        faced by aspiring medical students, he has been
+                        instrumental in shaping the consultancy's student-first
+                        philosophy.
+                    </p>
+                    <br />
+                    <p>
+                        His compassionate approach, meticulous attention to
+                        detail, and hands-on experience in managing university
+                        partnerships across Russia, Georgia, Nepal, and
+                        Kyrgyzstan have made him the backbone of Doctor
+                        Destiny's operational excellence. He ensures every
+                        student's journey — from counselling to landing abroad —
+                        is smooth, transparent, and successful.
+                    </p>
+                </div>
+
+                <!-- Right: Photo -->
+                <div class="founder-image-wrap">
+                    <div class="founder-accent"></div>
+                    <div class="founder-accent-2"></div>
+                    <div class="founder-image-placeholder">
+                        <div class="placeholder-bg-icons">
+                            <svg
+                                style="top: 10%; left: 10%; width: 60px; height: 60px;"
+                                viewBox="0 0 24 24"
+                                ><path
+                                    d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 14H9V8h2v8zm4 0h-2V8h2v8z"
+                                ></path></svg
+                            >
+                            <svg
+                                style="bottom: 20%; right: 10%; width: 80px; height: 80px;"
+                                viewBox="0 0 24 24"
+                                ><path
+                                    d="M17 12h-5v5h5v-5zM16 1v2H8V1H6v2H5c-1.11 0-1.99.9-1.99 2L3 19c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2h-1V1h-2zm3 18H5V8h14v11z"
+                                ></path></svg
+                            >
+                        </div>
+                        <Image
+                            src={founder2Img}
+                            alt="Mr. Afreed H.S - Co-Founder & Director"
+                            loading="lazy"
+                        />
+                        <div class="founder-name-card">
+                            <div>
+                                <strong>Mr. AFREED H.S</strong>
+                                <span>Co-Founder &amp; Director, Doctor Destiny</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
         <!-- SECTION 2: WHO WE ARE -->
         <section class="whoweare-section">
             <div class="whoweare-inner">
@@ -1149,7 +1244,7 @@ import mdImg from "../assets/MD.png";
                                 </div>
                             </div>
 
-                            <!-- ADVISOR 2 – placeholder -->
+                            <!-- ADVISOR 2: Dr. P. Harihara Murthy -->
                             <div class="advisor-slide">
                                 <div class="advisor-card">
                                     <div class="advisor-photo">
@@ -1170,34 +1265,38 @@ import mdImg from "../assets/MD.png";
                                             <span>Photo</span>
                                         </div>
                                         <div class="advisor-name">
-                                            Advisor Name
+                                            Dr. P. Harihara Murthy
                                         </div>
                                         <div class="advisor-creds">
-                                            Qualifications
+                                            MBBS, MS, DLO
                                         </div>
                                     </div>
                                     <div class="advisor-info">
-                                        <h3>Advisor Name</h3>
+                                        <h3>Dr. P. Harihara Murthy</h3>
                                         <div class="creds-line">
-                                            Degree | Specialization
+                                            MBBS, MS, DLO | ENT Specialist & Head & Neck Surgeon
                                         </div>
                                         <p>
-                                            Advisor bio goes here. Replace this
-                                            placeholder with the actual
-                                            advisor's details, background, and
-                                            areas of expertise.
+                                            With over 35 years of experience, Dr. P. Harihara Murthy is a renowned ENT specialist, head & neck surgeon, and snoring & sleep apnea surgeon. He has dedicated his career to treating a wide range of ENT disorders and mentoring the next generation of surgeons.
+                                        </p>
+                                        <p>
+                                            Dr. Murthy continues to provide expert care and advanced surgical solutions, ensuring the best outcomes for his patients.
                                         </p>
                                         <div class="roles-heading">
-                                            Key Roles
+                                            Key Roles & Experience
                                         </div>
                                         <div class="advisor-roles">
                                             <div class="advisor-role-item">
-                                                Role 1 – Organization /
-                                                Institution
+                                                Founder – Murthy ENT Centre, Koramangala, Bengaluru.
                                             </div>
                                             <div class="advisor-role-item">
-                                                Role 2 – Organization /
-                                                Institution
+                                                Former Faculty – Devaraj Urs Medical University, Kolar.
+                                            </div>
+                                            <div class="advisor-role-item">
+                                                Senior Consultant – Apollo Group of Hospitals & Trustwell Hospitals, Bengaluru.
+                                            </div>
+                                            <div class="advisor-role-item">
+                                                Mentor – Guiding and training young ENT surgeons.
                                             </div>
                                         </div>
                                     </div>

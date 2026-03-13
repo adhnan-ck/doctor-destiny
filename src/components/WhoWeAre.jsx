@@ -1,6 +1,6 @@
 const WhoWeAre = () => {
     // Replace this with your actual YouTube video ID
-    const youtubeVideoId = "dQw4w9WgXcQ";
+    const youtubeVideoId = "zU3n_7-YkM8";
 
     return (
         <section className="w-full bg-white py-16 px-6">
