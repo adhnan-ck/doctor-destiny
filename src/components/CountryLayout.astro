@@ -55,23 +55,41 @@ const { countryName, navItems, faqs } = Astro.props;
                         <br /> MBBS Study Abroad
                     </h3>
 
-                    <form class="space-y-3">
+                    <form
+                        class="space-y-3 callback-form"
+                        name="callback-requests"
+                        method="POST"
+                        data-netlify="true"
+                        netlify-honeypot="bot-field"
+                    >
+                        <input type="hidden" name="form-name" value="callback-requests" />
+                        <p class="hidden" style="display:none;">
+                            <label>Don’t fill this out: <input name="bot-field" /></label>
+                        </p>
                         <input
                             type="text"
+                            name="full-name"
+                            required
                             placeholder="Name"
                             class="w-full px-4 py-2.5 rounded-xl bg-white/10 border border-white/20 text-white text-sm placeholder-gray-300 focus:outline-none focus:border-[#D5AD36] transition-colors"
                         />
                         <input
                             type="tel"
+                            name="phone"
+                            required
                             placeholder="Phone"
                             class="w-full px-4 py-2.5 rounded-xl bg-white/10 border border-white/20 text-white text-sm placeholder-gray-300 focus:outline-none focus:border-[#D5AD36] transition-colors"
                         />
                         <input
                             type="email"
+                            name="email"
+                            required
                             placeholder="Email"
                             class="w-full px-4 py-2.5 rounded-xl bg-white/10 border border-white/20 text-white text-sm placeholder-gray-300 focus:outline-none focus:border-[#D5AD36] transition-colors"
                         />
                         <select
+                            name="course"
+                            required
                             class="w-full px-4 py-2.5 rounded-xl bg-white/10 border border-white/20 text-white text-sm focus:outline-none focus:border-[#D5AD36] transition-colors appearance-none cursor-pointer"
                         >
                             <option
@@ -91,15 +109,18 @@ const { countryName, navItems, faqs } = Astro.props;
                         </select>
                         <input
                             type="text"
+                            name="neet-score"
                             placeholder="Your NEET Score?"
                             class="w-full px-4 py-2.5 rounded-xl bg-white/10 border border-white/20 text-white text-sm placeholder-gray-300 focus:outline-none focus:border-[#D5AD36] transition-colors"
                         />
                         <input
                             type="text"
+                            name="preferences"
                             placeholder="Your MBBS Country Preference, College, Budget, Facility..."
                             class="w-full px-4 py-3 rounded-xl bg-white/10 border border-white/20 text-white text-sm placeholder-gray-300 focus:outline-none focus:border-[#D5AD36] transition-colors"
                         />
                         <button
+                            type="submit"
                             class="w-full bg-[#d5ad36] hover:bg-[#d62f3a] text-white font-bold py-3.5 rounded-xl shadow-lg transform hover:-translate-y-0.5 transition-all duration-300 mt-1 text-base"
                         >
                             Request a Callback
@@ -122,23 +143,41 @@ const { countryName, navItems, faqs } = Astro.props;
                     Get Your <span class="text-[#00BFFF]">Blueprint</span> To <br
                     /> MBBS Study Abroad
                 </h3>
-                <form class="space-y-3">
+                <form
+                    class="space-y-3 callback-form"
+                    name="callback-requests"
+                    method="POST"
+                    data-netlify="true"
+                    netlify-honeypot="bot-field"
+                >
+                    <input type="hidden" name="form-name" value="callback-requests" />
+                    <p class="hidden" style="display:none;">
+                        <label>Don’t fill this out: <input name="bot-field" /></label>
+                    </p>
                     <input
                         type="text"
+                        name="full-name"
+                        required
                         placeholder="Name"
                         class="w-full px-4 py-3 rounded-xl bg-white/10 border border-white/20 text-white placeholder-gray-300 focus:outline-none focus:border-[#D5AD36] transition-colors"
                     />
                     <input
                         type="tel"
+                        name="phone"
+                        required
                         placeholder="Phone"
                         class="w-full px-4 py-3 rounded-xl bg-white/10 border border-white/20 text-white placeholder-gray-300 focus:outline-none focus:border-[#D5AD36] transition-colors"
                     />
                     <input
                         type="email"
+                        name="email"
+                        required
                         placeholder="Email"
                         class="w-full px-4 py-3 rounded-xl bg-white/10 border border-white/20 text-white placeholder-gray-300 focus:outline-none focus:border-[#D5AD36] transition-colors"
                     />
                     <select
+                        name="course"
+                        required
                         class="w-full px-4 py-3 rounded-xl bg-white/10 border border-white/20 text-white focus:outline-none focus:border-[#D5AD36] transition-colors appearance-none cursor-pointer"
                     >
                         <option value="" disabled selected class="text-gray-500"
@@ -152,15 +191,18 @@ const { countryName, navItems, faqs } = Astro.props;
                     </select>
                     <input
                         type="text"
+                        name="neet-score"
                         placeholder="Your NEET Score?"
                         class="w-full px-4 py-3 rounded-xl bg-white/10 border border-white/20 text-white placeholder-gray-300 focus:outline-none focus:border-[#D5AD36] transition-colors"
                     />
                     <input
                         type="text"
+                        name="preferences"
                         placeholder="Your MBBS Country Preference, College, Budget, Facility..."
                         class="w-full px-4 py-3.5 rounded-xl bg-white/10 border border-white/20 text-white placeholder-gray-300 focus:outline-none focus:border-[#D5AD36] transition-colors"
                     />
                     <button
+                        type="submit"
                         class="w-full bg-[#d5ad36] hover:bg-[#d62f3a] text-white font-bold py-4 rounded-xl shadow-lg transform hover:-translate-y-1 transition-all duration-300 mt-1 text-lg"
                     >
                         Request a Callback
@@ -208,6 +250,22 @@ const { countryName, navItems, faqs } = Astro.props;
             </section>
         )
     }
+
+    <!-- Success Dialog -->
+    <dialog id="success-dialog" class="rounded-2xl shadow-2xl p-0 backdrop:bg-black/50 backdrop:backdrop-blur-sm border-0 bg-white m-auto fixed inset-0 z-50">
+        <div class="px-8 py-10 flex flex-col items-center text-center max-w-sm">
+            <div class="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mb-6 text-green-500">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" />
+                </svg>
+            </div>
+            <h3 class="text-2xl font-bold text-[#0E0C4F] mb-3">Submission Successful!</h3>
+            <p class="text-gray-600 mb-8">Thank you for reaching out to us! Our team will get back to you shortly with the blueprint to your MBBS journey.</p>
+            <button type="button" id="close-dialog" class="w-full bg-[#0E0C4F] hover:bg-[#00BFFF] text-white font-bold py-3 px-6 rounded-xl transition-colors duration-300">
+                Close
+            </button>
+        </div>
+    </dialog>
 </div>
 
 <style>
@@ -314,4 +372,56 @@ const { countryName, navItems, faqs } = Astro.props;
             }
         });
     });
+
+    // Form submission handler
+    const callbackForms = document.querySelectorAll(".callback-form");
+    const successDialog = document.getElementById("success-dialog");
+    const closeDialogBtn = document.getElementById("close-dialog");
+
+    if (callbackForms.length > 0) {
+        callbackForms.forEach((callbackForm) => {
+            callbackForm.addEventListener("submit", async (e) => {
+                e.preventDefault();
+                
+                const form = e.target;
+                const formData = new FormData(form as HTMLFormElement);
+                const submitBtn = (form as HTMLFormElement).querySelector('button[type="submit"]');
+
+                if (submitBtn) {
+                    (submitBtn as HTMLButtonElement).disabled = true;
+                    submitBtn.innerHTML = '<span class="animate-pulse">Submitting...</span>';
+                }
+                
+                try {
+                    await fetch("/", {
+                        method: "POST",
+                        headers: { "Content-Type": "application/x-www-form-urlencoded" },
+                        // @ts-ignore
+                        body: new URLSearchParams(formData as any).toString(),
+                    });
+                    
+                    (form as HTMLFormElement).reset();
+                    if (successDialog) {
+                        // @ts-ignore
+                        (successDialog as HTMLDialogElement).showModal();
+                    }
+                } catch (error) {
+                    console.error("Form submission error:", error);
+                    alert("There was an error submitting the form. Please try again.");
+                } finally {
+                    if (submitBtn) {
+                        (submitBtn as HTMLButtonElement).disabled = false;
+                        submitBtn.innerHTML = 'Request a Callback';
+                    }
+                }
+            });
+        });
+    }
+
+    if (closeDialogBtn && successDialog) {
+        closeDialogBtn.addEventListener("click", () => {
+            // @ts-ignore
+            (successDialog as HTMLDialogElement).close();
+        });
+    }
 </script>

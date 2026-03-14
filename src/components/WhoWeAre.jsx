@@ -56,7 +56,7 @@ const WhoWeAre = () => {
 
                         {/* CTA Button */}
                         <a
-                            href="/about"
+                            href="/about-us"
                             className="inline-block mt-2 bg-[#D5AD36] hover:bg-[#d62f3a] text-white font-semibold px-8 py-3 rounded-full shadow-md transition-all duration-300 hover:-translate-y-0.5"
                         >
                             View More

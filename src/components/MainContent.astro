@@ -154,34 +154,56 @@ import groupDoctors from "../assets/group-doctors.jpg";
           Abroad
         </h3>
 
-        <form class="space-y-3 md:space-y-4">
+        <form
+          id="callback-form"
+          name="callback-requests"
+          method="POST"
+          data-netlify="true"
+          netlify-honeypot="bot-field"
+          class="space-y-3 md:space-y-4"
+        >
+          <input type="hidden" name="form-name" value="callback-requests" />
+
+          <p class="hidden" style="display:none;">
+            <label>Don’t fill this out: <input name="bot-field" /></label>
+          </p>
+
           <div class="grid grid-cols-1 md:grid-cols-2 gap-3 md:gap-4">
             <input
               type="text"
+              name="full-name"
               placeholder="Full Name"
+              required
               class="w-full px-4 py-2.5 md:py-3 rounded-xl bg-white/10 border border-white/20 text-white placeholder-gray-300 focus:outline-none focus:border-[#D5AD36] transition-colors"
             />
             <input
               type="tel"
+              name="phone"
               placeholder="Phone Number"
+              required
               class="w-full px-4 py-2.5 md:py-3 rounded-xl bg-white/10 border border-white/20 text-white placeholder-gray-300 focus:outline-none focus:border-[#D5AD36] transition-colors"
             />
           </div>
 
           <input
             type="email"
+            name="email"
             placeholder="Email Address"
+            required
             class="w-full px-4 py-2.5 md:py-3 rounded-xl bg-white/10 border border-white/20 text-white placeholder-gray-300 focus:outline-none focus:border-[#D5AD36] transition-colors"
           />
 
           <input
             type="text"
+            name="location"
             placeholder="City / Address"
             class="w-full px-4 py-2.5 md:py-3 rounded-xl bg-white/10 border border-white/20 text-white placeholder-gray-300 focus:outline-none focus:border-[#D5AD36] transition-colors"
           />
 
           <div class="grid grid-cols-1 md:grid-cols-2 gap-3 md:gap-4">
             <select
+              name="course"
+              required
               class="w-full px-4 py-2.5 md:py-3 rounded-xl bg-white/10 border border-white/20 text-white focus:outline-none focus:border-[#D5AD36] transition-colors appearance-none cursor-pointer"
             >
               <option value="" disabled selected class="text-gray-500"
@@ -191,9 +213,11 @@ import groupDoctors from "../assets/group-doctors.jpg";
               <option value="md-ms" class="text-black">MD-MS</option>
               <option value="ms" class="text-black">MS</option>
               <option value="bds" class="text-black">BDS</option>
-              <option value="bds" class="text-black">MDS</option>
+              <option value="mds" class="text-black">MDS</option>
             </select>
+
             <select
+              name="source"
               class="w-full px-4 py-2.5 md:py-3 rounded-xl bg-white/10 border border-white/20 text-white focus:outline-none focus:border-[#D5AD36] transition-colors appearance-none cursor-pointer"
             >
               <option value="" disabled selected class="text-gray-500"
@@ -212,17 +236,35 @@ import groupDoctors from "../assets/group-doctors.jpg";
           <div class="w-full">
             <input
               type="text"
+              name="preferences"
               placeholder="Country Preference, College, Budget, Facility"
               class="w-full px-4 py-4 md:py-5 rounded-xl bg-white/10 border border-white/20 text-white placeholder-gray-300 focus:outline-none focus:border-[#D5AD36] transition-colors text-lg"
             />
           </div>
 
           <button
+            type="submit"
             class="w-full bg-[#d5ad36] hover:bg-[#d62f3a] text-white font-bold py-4 rounded-xl shadow-lg transform hover:-translate-y-1 transition-all duration-300 mt-2 text-lg"
           >
             Request A Callback
           </button>
         </form>
+
+        <!-- Success Dialog -->
+        <dialog id="success-dialog" class="rounded-2xl shadow-2xl p-0 backdrop:bg-black/50 backdrop:backdrop-blur-sm border-0 bg-white m-auto fixed inset-0 z-50">
+          <div class="px-8 py-10 flex flex-col items-center text-center max-w-sm">
+            <div class="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mb-6 text-green-500">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" />
+              </svg>
+            </div>
+            <h3 class="text-2xl font-bold text-[#0E0C4F] mb-3">Submission Successful!</h3>
+            <p class="text-gray-600 mb-8">Thank you for reaching out to us! Our team will get back to you shortly with the blueprint to your MBBS journey.</p>
+            <button type="button" id="close-dialog" class="w-full bg-[#0E0C4F] hover:bg-[#00BFFF] text-white font-bold py-3 px-6 rounded-xl transition-colors duration-300">
+              Close
+            </button>
+          </div>
+        </dialog>
       </div>
     </div>
   </section>
@@ -560,8 +602,11 @@ import groupDoctors from "../assets/group-doctors.jpg";
 
       <div>
         <h4 class="text-lg font-bold mb-6 text-[#D5AD36]">Offices</h4>
-        <p class="text-gray-300 mb-2">Bengaluru (HQ)</p>
-        <p class="text-gray-300 mb-2">Bellary</p>
+        <p class="text-gray-300 mb-1 font-semibold">Ballary</p>
+        <p class="text-gray-400 text-sm leading-relaxed">
+          Nandi Arcade, 2nd Floor,<br />Opposite to Fire Station,<br />Infantry
+          Road, BALLARY
+        </p>
       </div>
 
       <div>
@@ -621,4 +666,54 @@ import groupDoctors from "../assets/group-doctors.jpg";
       icon.style.transform = expanded ? "rotate(180deg)" : "rotate(0deg)";
     }
   });
+
+  // Form submission handler
+  const callbackForm = document.getElementById("callback-form");
+  const successDialog = document.getElementById("success-dialog");
+  const closeDialogBtn = document.getElementById("close-dialog");
+
+  if (callbackForm) {
+    callbackForm.addEventListener("submit", async (e) => {
+      e.preventDefault();
+      
+      const form = e.target as HTMLFormElement;
+      const formData = new FormData(form);
+      const submitBtn = form.querySelector('button[type="submit"]') as HTMLButtonElement | null;
+
+      if (submitBtn) {
+        submitBtn.disabled = true;
+        submitBtn.innerHTML = '<span class="animate-pulse">Submitting...</span>';
+      }
+      
+      try {
+        await fetch("/", {
+          method: "POST",
+          headers: { "Content-Type": "application/x-www-form-urlencoded" },
+          // @ts-ignore
+          body: new URLSearchParams(formData as any).toString(),
+        });
+        
+        form.reset();
+        if (successDialog) {
+          // @ts-ignore
+          (successDialog as HTMLDialogElement).showModal();
+        }
+      } catch (error) {
+        console.error("Form submission error:", error);
+        alert("There was an error submitting the form. Please try again.");
+      } finally {
+        if (submitBtn) {
+          submitBtn.disabled = false;
+          submitBtn.innerHTML = 'Request A Callback';
+        }
+      }
+    });
+  }
+
+  if (closeDialogBtn && successDialog) {
+    closeDialogBtn.addEventListener("click", () => {
+      // @ts-ignore
+      successDialog.close();
+    });
+  }
 </script>
