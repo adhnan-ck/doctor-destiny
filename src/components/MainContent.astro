@@ -251,16 +251,42 @@ import groupDoctors from "../assets/group-doctors.jpg";
         </form>
 
         <!-- Success Dialog -->
-        <dialog id="success-dialog" class="rounded-2xl shadow-2xl p-0 backdrop:bg-black/50 backdrop:backdrop-blur-sm border-0 bg-white m-auto fixed inset-0 z-50">
-          <div class="px-8 py-10 flex flex-col items-center text-center max-w-sm">
-            <div class="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mb-6 text-green-500">
-              <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
-                <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" />
+        <dialog
+          id="success-dialog"
+          class="rounded-2xl shadow-2xl p-0 backdrop:bg-black/50 backdrop:backdrop-blur-sm border-0 bg-white m-auto fixed inset-0 z-50"
+        >
+          <div
+            class="px-8 py-10 flex flex-col items-center text-center max-w-sm"
+          >
+            <div
+              class="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mb-6 text-green-500"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="h-8 w-8"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+                stroke-width="2"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M5 13l4 4L19 7"></path>
               </svg>
             </div>
-            <h3 class="text-2xl font-bold text-[#0E0C4F] mb-3">Submission Successful!</h3>
-            <p class="text-gray-600 mb-8">Thank you for reaching out to us! Our team will get back to you shortly with the blueprint to your MBBS journey.</p>
-            <button type="button" id="close-dialog" class="w-full bg-[#0E0C4F] hover:bg-[#00BFFF] text-white font-bold py-3 px-6 rounded-xl transition-colors duration-300">
+            <h3 class="text-2xl font-bold text-[#0E0C4F] mb-3">
+              Submission Successful!
+            </h3>
+            <p class="text-gray-600 mb-8">
+              Thank you for reaching out to us! Our team will get back to you
+              shortly with the blueprint to your MBBS journey.
+            </p>
+            <button
+              type="button"
+              id="close-dialog"
+              class="w-full bg-[#0E0C4F] hover:bg-[#00BFFF] text-white font-bold py-3 px-6 rounded-xl transition-colors duration-300"
+            >
               Close
             </button>
           </div>
@@ -423,8 +449,8 @@ import groupDoctors from "../assets/group-doctors.jpg";
 <ServiceCards />
 <WhyChooseUs />
 <OurProcess />
-<!-- <WinningRecord client:visible />
-<TestimonialSection client:visible /> -->
+<!-- <WinningRecord client:visible /> -->
+<TestimonialSection client:visible />
 <!-- Footer / Contact -->
 <footer
   class="bg-[#0E0C4F] text-white pt-20 pb-10 rounded-t-[3rem]"
@@ -611,7 +637,7 @@ import groupDoctors from "../assets/group-doctors.jpg";
 
       <div>
         <h4 class="text-lg font-bold mb-6 text-[#D5AD36]">Contact Us</h4>
-        <p class="text-gray-300 mb-4">info@doctordestiny.com</p>
+        <p class="text-gray-300 mb-4">admissions@doctordestiny.com</p>
         <a
           href="/contact-us#contact-form"
           class="bg-gradient-to-r from-[#D5AD36] to-[#f0c847] hover:shadow-[0_0_20px_rgba(213,173,54,0.6)] text-[#0E0C4F] px-6 py-3 rounded-xl w-full font-semibold transition-all duration-300 hover:scale-105 block text-center"
@@ -675,16 +701,19 @@ import groupDoctors from "../assets/group-doctors.jpg";
   if (callbackForm) {
     callbackForm.addEventListener("submit", async (e) => {
       e.preventDefault();
-      
+
       const form = e.target as HTMLFormElement;
       const formData = new FormData(form);
-      const submitBtn = form.querySelector('button[type="submit"]') as HTMLButtonElement | null;
+      const submitBtn = form.querySelector(
+        'button[type="submit"]',
+      ) as HTMLButtonElement | null;
 
       if (submitBtn) {
         submitBtn.disabled = true;
-        submitBtn.innerHTML = '<span class="animate-pulse">Submitting...</span>';
+        submitBtn.innerHTML =
+          '<span class="animate-pulse">Submitting...</span>';
       }
-      
+
       try {
         await fetch("/", {
           method: "POST",
@@ -692,7 +721,7 @@ import groupDoctors from "../assets/group-doctors.jpg";
           // @ts-ignore
           body: new URLSearchParams(formData as any).toString(),
         });
-        
+
         form.reset();
         if (successDialog) {
           // @ts-ignore
@@ -704,7 +733,7 @@ import groupDoctors from "../assets/group-doctors.jpg";
       } finally {
         if (submitBtn) {
           submitBtn.disabled = false;
-          submitBtn.innerHTML = 'Request A Callback';
+          submitBtn.innerHTML = "Request A Callback";
         }
       }
     });

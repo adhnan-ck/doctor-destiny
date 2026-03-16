@@ -11,7 +11,7 @@ import Footer from "../components/Footer.astro";
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+        <link rel="icon" type="image/x-icon" href="/favicon.ico" />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
         <link
@@ -22,7 +22,10 @@ import Footer from "../components/Footer.astro";
             name="description"
             content="Study MBBS in Europe – Comprehensive guide to medical education in Poland, Hungary, Romania, Bulgaria, and Italy for Indian students."
         />
-        <title>Study MBBS in Europe: Top Universities, Fees & Admissions | Doctor Destiny</title>
+        <title>
+            Study MBBS in Europe: Top Universities, Fees & Admissions | Doctor
+            Destiny
+        </title>
     </head>
     <body class="bg-[#F0F7FF] overflow-x-hidden">
         <Navbar client:load />
@@ -43,10 +46,16 @@ import Footer from "../components/Footer.astro";
                 <p
                     class="text-lg text-gray-300 max-w-3xl mx-auto leading-relaxed"
                 >
-                    Europe is home to some of the world's oldest and most prestigious medical universities. Experience a high standard of living, world-class clinical training, and degrees recognized across the globe including Poland, Hungary, Romania, and Italy.
+                    Europe is home to some of the world's oldest and most
+                    prestigious medical universities. Experience a high standard
+                    of living, world-class clinical training, and degrees
+                    recognized across the globe including Poland, Hungary,
+                    Romania, and Italy.
                 </p>
                 <div class="mt-8">
-                    <button class="bg-gradient-to-r from-[#D5AD36] to-[#f0c847] hover:shadow-[0_0_20px_rgba(213,173,54,0.6)] text-[#0E0C4F] px-8 py-3 rounded-full font-bold transition-all duration-300 hover:scale-105">
+                    <button
+                        class="bg-gradient-to-r from-[#D5AD36] to-[#f0c847] hover:shadow-[0_0_20px_rgba(213,173,54,0.6)] text-[#0E0C4F] px-8 py-3 rounded-full font-bold transition-all duration-300 hover:scale-105"
+                    >
                         Enroll Now
                     </button>
                 </div>
@@ -82,87 +91,161 @@ import Footer from "../components/Footer.astro";
                 {
                     question: "Is NEET mandatory for studying in Europe?",
                     answer: "Yes, for Indian students to practice in India upon return, qualifying NEET is mandatory as per NMC guidelines.",
-                }
+                },
             ]}
         >
             <!-- SECTION: Overview -->
             <section id="overview" class="mb-12 scroll-mt-24">
-                <h2 class="text-2xl md:text-3xl font-bold text-[#0E0C4F] mb-4 pb-3 border-b-2 border-[#00BFFF]/30">
+                <h2
+                    class="text-2xl md:text-3xl font-bold text-[#0E0C4F] mb-4 pb-3 border-b-2 border-[#00BFFF]/30"
+                >
                     Overview & Course Duration
                 </h2>
-                <div class="bg-white p-6 rounded-2xl shadow-sm border border-gray-100 mb-6">
+                <div
+                    class="bg-white p-6 rounded-2xl shadow-sm border border-gray-100 mb-6"
+                >
                     <p class="text-gray-700 leading-relaxed">
-                        Medical education in Europe is highly sought after for its adherence to ECTS (European Credit Transfer and Accumulation System) standards and its focus on clinical expertise. Countries like Poland, Hungary, and Romania have become major hubs for Indian students.
+                        Medical education in Europe is highly sought after for
+                        its adherence to ECTS (European Credit Transfer and
+                        Accumulation System) standards and its focus on clinical
+                        expertise. Countries like Poland, Hungary, and Romania
+                        have become major hubs for Indian students.
                     </p>
                 </div>
-                <div class="bg-white p-6 rounded-2xl shadow-sm border border-gray-100">
-                    <h3 class="flex items-center gap-2 font-bold text-[#0E0C4F] mb-3">
+                <div
+                    class="bg-white p-6 rounded-2xl shadow-sm border border-gray-100"
+                >
+                    <h3
+                        class="flex items-center gap-2 font-bold text-[#0E0C4F] mb-3"
+                    >
                         <span class="text-[#00BFFF]">⏱</span> Course Duration
                     </h3>
-                    <p class="text-gray-600 mb-3">Overall duration: <strong>6 Years</strong>.</p>
-                    <ul class="space-y-2 text-sm text-gray-700 list-disc list-inside">
-                        <li><strong>Pre-Clinical Stage:</strong> Focus on anatomy, physiology, and biochemistry (Years 1-3).</li>
-                        <li><strong>Clinical Stage:</strong> Practical training in hospitals and patient care (Years 4-6).</li>
-                        <li><strong>Internship:</strong> Final years usually involve heavy clinical rotations.</li>
+                    <p class="text-gray-600 mb-3">
+                        Overall duration: <strong>6 Years</strong>.
+                    </p>
+                    <ul
+                        class="space-y-2 text-sm text-gray-700 list-disc list-inside"
+                    >
+                        <li>
+                            <strong>Pre-Clinical Stage:</strong> Focus on anatomy,
+                            physiology, and biochemistry (Years 1-3).
+                        </li>
+                        <li>
+                            <strong>Clinical Stage:</strong> Practical training in
+                            hospitals and patient care (Years 4-6).
+                        </li>
+                        <li>
+                            <strong>Internship:</strong> Final years usually involve
+                            heavy clinical rotations.
+                        </li>
                     </ul>
                 </div>
             </section>
 
             <!-- SECTION: Destinations -->
             <section id="destinations" class="mb-12 scroll-mt-24">
-                <h2 class="text-2xl md:text-3xl font-bold text-[#0E0C4F] mb-4 pb-3 border-b-2 border-[#00BFFF]/30">
+                <h2
+                    class="text-2xl md:text-3xl font-bold text-[#0E0C4F] mb-4 pb-3 border-b-2 border-[#00BFFF]/30"
+                >
                     Main European Destinations
                 </h2>
                 <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6 text-sm">
-                    <div class="bg-blue-50/50 p-5 rounded-xl border border-blue-100">
-                        <h4 class="font-bold text-[#0E0C4F] mb-2 flex items-center gap-2">
-                           <span class="fi fi-pl"></span> Poland
+                    <div
+                        class="bg-blue-50/50 p-5 rounded-xl border border-blue-100"
+                    >
+                        <h4
+                            class="font-bold text-[#0E0C4F] mb-2 flex items-center gap-2"
+                        >
+                            <span class="fi fi-pl"></span> Poland
                         </h4>
-                        <p class="text-gray-600">Known for high-tech medical simulation centers and strict academic standards.</p>
+                        <p class="text-gray-600">
+                            Known for high-tech medical simulation centers and
+                            strict academic standards.
+                        </p>
                     </div>
-                    <div class="bg-red-50/50 p-5 rounded-xl border border-red-100">
-                        <h4 class="font-bold text-[#0E0C4F] mb-2 flex items-center gap-2">
-                           <span class="fi fi-hu"></span> Hungary
+                    <div
+                        class="bg-red-50/50 p-5 rounded-xl border border-red-100"
+                    >
+                        <h4
+                            class="font-bold text-[#0E0C4F] mb-2 flex items-center gap-2"
+                        >
+                            <span class="fi fi-hu"></span> Hungary
                         </h4>
-                        <p class="text-gray-600">Home to some of the top-ranked medical universities with centuries of history.</p>
+                        <p class="text-gray-600">
+                            Home to some of the top-ranked medical universities
+                            with centuries of history.
+                        </p>
                     </div>
-                    <div class="bg-yellow-50/50 p-5 rounded-xl border border-yellow-100">
-                        <h4 class="font-bold text-[#0E0C4F] mb-2 flex items-center gap-2">
-                           <span class="fi fi-ro"></span> Romania
+                    <div
+                        class="bg-yellow-50/50 p-5 rounded-xl border border-yellow-100"
+                    >
+                        <h4
+                            class="font-bold text-[#0E0C4F] mb-2 flex items-center gap-2"
+                        >
+                            <span class="fi fi-ro"></span> Romania
                         </h4>
-                        <p class="text-gray-600">Affordable tuition fees and a large community of international medical students.</p>
+                        <p class="text-gray-600">
+                            Affordable tuition fees and a large community of
+                            international medical students.
+                        </p>
                     </div>
-                    <div class="bg-indigo-50/50 p-5 rounded-xl border border-indigo-100">
-                        <h4 class="font-bold text-[#0E0C4F] mb-2 flex items-center gap-2">
-                           <span class="fi fi-it"></span> Italy
+                    <div
+                        class="bg-indigo-50/50 p-5 rounded-xl border border-indigo-100"
+                    >
+                        <h4
+                            class="font-bold text-[#0E0C4F] mb-2 flex items-center gap-2"
+                        >
+                            <span class="fi fi-it"></span> Italy
                         </h4>
-                        <p class="text-gray-600">Offers English-medium degrees through the IMAT entrance exam at public universities.</p>
+                        <p class="text-gray-600">
+                            Offers English-medium degrees through the IMAT
+                            entrance exam at public universities.
+                        </p>
                     </div>
-                    <div class="bg-emerald-50/50 p-5 rounded-xl border border-emerald-100">
-                        <h4 class="font-bold text-[#0E0C4F] mb-2 flex items-center gap-2">
-                           <span class="fi fi-bg"></span> Bulgaria
+                    <div
+                        class="bg-emerald-50/50 p-5 rounded-xl border border-emerald-100"
+                    >
+                        <h4
+                            class="font-bold text-[#0E0C4F] mb-2 flex items-center gap-2"
+                        >
+                            <span class="fi fi-bg"></span> Bulgaria
                         </h4>
-                        <p class="text-gray-600">Low living costs and modern facilities, gaining popularity among Indian students.</p>
+                        <p class="text-gray-600">
+                            Low living costs and modern facilities, gaining
+                            popularity among Indian students.
+                        </p>
                     </div>
-                    <div class="bg-gray-50/50 p-5 rounded-xl border border-gray-100">
-                        <h4 class="font-bold text-[#0E0C4F] mb-2 flex items-center gap-2">
-                           <span class="fi fi-by"></span> Belarus
+                    <div
+                        class="bg-gray-50/50 p-5 rounded-xl border border-gray-100"
+                    >
+                        <h4
+                            class="font-bold text-[#0E0C4F] mb-2 flex items-center gap-2"
+                        >
+                            <span class="fi fi-by"></span> Belarus
                         </h4>
-                        <p class="text-gray-600">A time-tested destination with extremely standardized medical curriculum.</p>
+                        <p class="text-gray-600">
+                            A time-tested destination with extremely
+                            standardized medical curriculum.
+                        </p>
                     </div>
                 </div>
             </section>
 
             <!-- SECTION: Recognition -->
             <section id="recognition" class="mb-12 scroll-mt-24">
-                <h2 class="text-2xl md:text-3xl font-bold text-[#0E0C4F] mb-4 pb-3 border-b-2 border-[#00BFFF]/30">
+                <h2
+                    class="text-2xl md:text-3xl font-bold text-[#0E0C4F] mb-4 pb-3 border-b-2 border-[#00BFFF]/30"
+                >
                     Global Recognition
                 </h2>
                 <div class="bg-[#0E0C4F] text-white p-6 rounded-2xl">
                     <p class="mb-4 text-gray-300">
-                        European medical degrees are governed by the Bologna process and are globally recognized by:
+                        European medical degrees are governed by the Bologna
+                        process and are globally recognized by:
                     </p>
-                    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+                    <div
+                        class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4"
+                    >
                         {
                             [
                                 "World Health Organization (WHO)",
@@ -170,7 +253,7 @@ import Footer from "../components/Footer.astro";
                                 "ECFMG (USA)",
                                 "General Medical Council (GMC, UK)",
                                 "FAIMER",
-                                "UNESCO"
+                                "UNESCO",
                             ].map((org) => (
                                 <div class="bg-white/10 p-3 rounded-lg text-sm text-center font-medium border border-white/20">
                                     {org}
@@ -183,26 +266,52 @@ import Footer from "../components/Footer.astro";
 
             <!-- SECTION: Eligibility -->
             <section id="eligibility" class="mb-12 scroll-mt-24">
-                <h2 class="text-2xl md:text-3xl font-bold text-[#0E0C4F] mb-4 pb-3 border-b-2 border-[#00BFFF]/30">
+                <h2
+                    class="text-2xl md:text-3xl font-bold text-[#0E0C4F] mb-4 pb-3 border-b-2 border-[#00BFFF]/30"
+                >
                     Eligibility Criteria
                 </h2>
-                <div class="bg-white p-6 rounded-2xl border border-gray-100 shadow-sm">
+                <div
+                    class="bg-white p-6 rounded-2xl border border-gray-100 shadow-sm"
+                >
                     <ul class="space-y-4 text-gray-700">
                         <li class="flex gap-3">
-                            <span class="text-[#00BFFF] shrink-0 font-bold">50%</span>
-                            <span>Minimum aggregate in Physics, Chemistry, and Biology (PCB) in 12th standard (40% for reserved categories).</span>
+                            <span class="text-[#00BFFF] shrink-0 font-bold"
+                                >50%</span
+                            >
+                            <span
+                                >Minimum aggregate in Physics, Chemistry, and
+                                Biology (PCB) in 12th standard (40% for reserved
+                                categories).</span
+                            >
                         </li>
                         <li class="flex gap-3">
-                            <span class="text-[#00BFFF] shrink-0 font-bold">NEET</span>
-                            <span>Qualifying marks in NEET are mandatory for Indian students to practice in India.</span>
+                            <span class="text-[#00BFFF] shrink-0 font-bold"
+                                >NEET</span
+                            >
+                            <span
+                                >Qualifying marks in NEET are mandatory for
+                                Indian students to practice in India.</span
+                            >
                         </li>
                         <li class="flex gap-3">
-                            <span class="text-[#00BFFF] shrink-0 font-bold">17+</span>
-                            <span>Age must be at least 17 years by December 31st of the admission year.</span>
+                            <span class="text-[#00BFFF] shrink-0 font-bold"
+                                >17+</span
+                            >
+                            <span
+                                >Age must be at least 17 years by December 31st
+                                of the admission year.</span
+                            >
                         </li>
                         <li class="flex gap-3">
-                            <span class="text-[#00BFFF] shrink-0 font-bold">IELTS</span>
-                            <span>Some top universities in Poland/Hungary may require basic English proficiency proof, though most don't.</span>
+                            <span class="text-[#00BFFF] shrink-0 font-bold"
+                                >IELTS</span
+                            >
+                            <span
+                                >Some top universities in Poland/Hungary may
+                                require basic English proficiency proof, though
+                                most don't.</span
+                            >
                         </li>
                     </ul>
                 </div>
@@ -210,48 +319,72 @@ import Footer from "../components/Footer.astro";
 
             <!-- SECTION: Universities -->
             <section id="universities" class="mb-12 scroll-mt-24">
-                <h2 class="text-2xl md:text-3xl font-bold text-[#0E0C4F] mb-4 pb-3 border-b-2 border-[#00BFFF]/30">
+                <h2
+                    class="text-2xl md:text-3xl font-bold text-[#0E0C4F] mb-4 pb-3 border-b-2 border-[#00BFFF]/30"
+                >
                     Top Universities in Europe
                 </h2>
-                <div class="overflow-x-auto rounded-xl border border-gray-200 shadow-sm">
-                    <table class="w-full text-left border-collapse min-w-[600px]">
+                <div
+                    class="overflow-x-auto rounded-xl border border-gray-200 shadow-sm"
+                >
+                    <table
+                        class="w-full text-left border-collapse min-w-[600px]"
+                    >
                         <thead>
                             <tr class="bg-[#0E0C4F] text-white text-sm">
-                                <th class="px-4 py-3 font-semibold">University Name</th>
+                                <th class="px-4 py-3 font-semibold"
+                                    >University Name</th
+                                >
                                 <th class="px-4 py-3 font-semibold">Country</th>
                             </tr>
                         </thead>
                         <tbody class="text-gray-700 text-sm">
                             <tr class="border-b bg-white">
-                                <td class="px-4 py-3 font-bold text-[#0E0C4F]">Semmelweis University</td>
+                                <td class="px-4 py-3 font-bold text-[#0E0C4F]"
+                                    >Semmelweis University</td
+                                >
                                 <td class="px-4 py-3">Hungary</td>
                             </tr>
                             <tr class="border-b bg-gray-50/50">
-                                <td class="px-4 py-3 font-bold text-[#0E0C4F]">Medical University of Warsaw</td>
+                                <td class="px-4 py-3 font-bold text-[#0E0C4F]"
+                                    >Medical University of Warsaw</td
+                                >
                                 <td class="px-4 py-3">Poland</td>
                             </tr>
                             <tr class="border-b bg-white">
-                                <td class="px-4 py-3 font-bold text-[#0E0C4F]">Jagiellonian University</td>
+                                <td class="px-4 py-3 font-bold text-[#0E0C4F]"
+                                    >Jagiellonian University</td
+                                >
                                 <td class="px-4 py-3">Poland</td>
                             </tr>
                             <tr class="border-b bg-gray-50/50">
-                                <td class="px-4 py-3 font-bold text-[#0E0C4F]">University of Debrecen</td>
+                                <td class="px-4 py-3 font-bold text-[#0E0C4F]"
+                                    >University of Debrecen</td
+                                >
                                 <td class="px-4 py-3">Hungary</td>
                             </tr>
                             <tr class="border-b bg-white">
-                                <td class="px-4 py-3 font-bold text-[#0E0C4F]">Carol Davila University of Medicine</td>
+                                <td class="px-4 py-3 font-bold text-[#0E0C4F]"
+                                    >Carol Davila University of Medicine</td
+                                >
                                 <td class="px-4 py-3">Romania</td>
                             </tr>
                             <tr class="border-b bg-gray-50/50">
-                                <td class="px-4 py-3 font-bold text-[#0E0C4F]">Medical University Sofia</td>
+                                <td class="px-4 py-3 font-bold text-[#0E0C4F]"
+                                    >Medical University Sofia</td
+                                >
                                 <td class="px-4 py-3">Bulgaria</td>
                             </tr>
                             <tr class="border-b bg-white">
-                                <td class="px-4 py-3 font-bold text-[#0E0C4F]">Humanitas University</td>
+                                <td class="px-4 py-3 font-bold text-[#0E0C4F]"
+                                    >Humanitas University</td
+                                >
                                 <td class="px-4 py-3">Italy</td>
                             </tr>
                             <tr class="border-b bg-gray-50/50">
-                                <td class="px-4 py-3 font-bold text-[#0E0C4F]">Charles University</td>
+                                <td class="px-4 py-3 font-bold text-[#0E0C4F]"
+                                    >Charles University</td
+                                >
                                 <td class="px-4 py-3">Czech Republic</td>
                             </tr>
                         </tbody>
@@ -261,97 +394,190 @@ import Footer from "../components/Footer.astro";
 
             <!-- SECTION: Benefits -->
             <section id="benefits" class="mb-12 scroll-mt-24">
-                <h2 class="text-2xl md:text-3xl font-bold text-[#0E0C4F] mb-4 pb-3 border-b-2 border-[#00BFFF]/30">
+                <h2
+                    class="text-2xl md:text-3xl font-bold text-[#0E0C4F] mb-4 pb-3 border-b-2 border-[#00BFFF]/30"
+                >
                     Why Study MBBS in Europe?
                 </h2>
                 <div class="grid md:grid-cols-2 gap-6 text-sm text-gray-700">
-                    <div class="p-5 bg-white rounded-xl border border-gray-100 shadow-sm">
-                        <h4 class="font-bold text-[#0E0C4F] mb-2 flex items-center gap-2">
+                    <div
+                        class="p-5 bg-white rounded-xl border border-gray-100 shadow-sm"
+                    >
+                        <h4
+                            class="font-bold text-[#0E0C4F] mb-2 flex items-center gap-2"
+                        >
                             <span>🇪🇺</span> EU Standards
                         </h4>
-                        <p>High-quality clinical training that follows strict European Union guidelines and medical protocols.</p>
+                        <p>
+                            High-quality clinical training that follows strict
+                            European Union guidelines and medical protocols.
+                        </p>
                     </div>
-                    <div class="p-5 bg-white rounded-xl border border-gray-100 shadow-sm">
-                        <h4 class="font-bold text-[#0E0C4F] mb-2 flex items-center gap-2">
+                    <div
+                        class="p-5 bg-white rounded-xl border border-gray-100 shadow-sm"
+                    >
+                        <h4
+                            class="font-bold text-[#0E0C4F] mb-2 flex items-center gap-2"
+                        >
                             <span>🚂</span> Travel Benefits
                         </h4>
-                        <p>Schengen visa allows students to travel across most European countries easily during holidays.</p>
+                        <p>
+                            Schengen visa allows students to travel across most
+                            European countries easily during holidays.
+                        </p>
                     </div>
-                    <div class="p-5 bg-white rounded-xl border border-gray-100 shadow-sm">
-                        <h4 class="font-bold text-[#0E0C4F] mb-2 flex items-center gap-2">
+                    <div
+                        class="p-5 bg-white rounded-xl border border-gray-100 shadow-sm"
+                    >
+                        <h4
+                            class="font-bold text-[#0E0C4F] mb-2 flex items-center gap-2"
+                        >
                             <span>💼</span> Career Prospects
                         </h4>
-                        <p>Strong base for taking residency exams like USMLE or PLAB due to world-class clinical foundations.</p>
+                        <p>
+                            Strong base for taking residency exams like USMLE or
+                            PLAB due to world-class clinical foundations.
+                        </p>
                     </div>
-                    <div class="p-5 bg-white rounded-xl border border-gray-100 shadow-sm">
-                        <h4 class="font-bold text-[#0E0C4F] mb-2 flex items-center gap-2">
+                    <div
+                        class="p-5 bg-white rounded-xl border border-gray-100 shadow-sm"
+                    >
+                        <h4
+                            class="font-bold text-[#0E0C4F] mb-2 flex items-center gap-2"
+                        >
                             <span>🏫</span> Modern Infrastructure
                         </h4>
-                        <p>Most universities feature digitalized libraries, simulation centers, and advanced laboratories.</p>
+                        <p>
+                            Most universities feature digitalized libraries,
+                            simulation centers, and advanced laboratories.
+                        </p>
                     </div>
                 </div>
             </section>
 
             <!-- SECTION: Fees -->
             <section id="fees" class="mb-12 scroll-mt-24">
-                <h2 class="text-2xl md:text-3xl font-bold text-[#0E0C4F] mb-4 pb-3 border-b-2 border-[#00BFFF]/30">
+                <h2
+                    class="text-2xl md:text-3xl font-bold text-[#0E0C4F] mb-4 pb-3 border-b-2 border-[#00BFFF]/30"
+                >
                     Fee Structure
                 </h2>
-                <div class="bg-blue-50/50 p-6 rounded-2xl border border-blue-100">
-                    <p class="text-sm text-gray-700 mb-4">Tuition fees in Europe vary significantly by country:</p>
+                <div
+                    class="bg-blue-50/50 p-6 rounded-2xl border border-blue-100"
+                >
+                    <p class="text-sm text-gray-700 mb-4">
+                        Tuition fees in Europe vary significantly by country:
+                    </p>
                     <div class="grid md:grid-cols-2 gap-4">
-                        <div class="bg-white p-4 rounded-xl border border-blue-100">
-                            <span class="block text-xs font-bold text-[#00BFFF] uppercase">Romania/Bulgaria</span>
-                            <span class="text-lg font-bold text-[#0E0C4F]">€4,000 - €8,000 / Year</span>
+                        <div
+                            class="bg-white p-4 rounded-xl border border-blue-100"
+                        >
+                            <span
+                                class="block text-xs font-bold text-[#00BFFF] uppercase"
+                                >Romania/Bulgaria</span
+                            >
+                            <span class="text-lg font-bold text-[#0E0C4F]"
+                                >€4,000 - €8,000 / Year</span
+                            >
                         </div>
-                        <div class="bg-white p-4 rounded-xl border border-blue-100">
-                            <span class="block text-xs font-bold text-[#00BFFF] uppercase">Poland/Hungary</span>
-                            <span class="text-lg font-bold text-[#0E0C4F]">€10,000 - €18,000 / Year</span>
+                        <div
+                            class="bg-white p-4 rounded-xl border border-blue-100"
+                        >
+                            <span
+                                class="block text-xs font-bold text-[#00BFFF] uppercase"
+                                >Poland/Hungary</span
+                            >
+                            <span class="text-lg font-bold text-[#0E0C4F]"
+                                >€10,000 - €18,000 / Year</span
+                            >
                         </div>
                     </div>
                     <p class="text-xs text-gray-500 mt-4 leading-relaxed">
-                        *Note: Living expenses usually range between €300 - €600 per month depending on the city. 1 Euro (EUR) is approximately ₹88 - ₹92 INR.
+                        *Note: Living expenses usually range between €300 - €600
+                        per month depending on the city. 1 Euro (EUR) is
+                        approximately ₹88 - ₹92 INR.
                     </p>
                 </div>
             </section>
 
-             <!-- SECTION: Process -->
+            <!-- SECTION: Process -->
             <section id="process" class="mb-12 scroll-mt-24">
-                <h2 class="text-2xl md:text-3xl font-bold text-[#0E0C4F] mb-4 pb-3 border-b-2 border-[#00BFFF]/30">
+                <h2
+                    class="text-2xl md:text-3xl font-bold text-[#0E0C4F] mb-4 pb-3 border-b-2 border-[#00BFFF]/30"
+                >
                     Admission Process
                 </h2>
                 <div class="space-y-4">
-                    <div class="flex gap-4 items-start p-5 bg-white rounded-xl shadow-sm border border-gray-100">
-                        <span class="flex-shrink-0 w-10 h-10 rounded-full bg-[#0E0C4F] text-white flex items-center justify-center font-bold text-sm">1</span>
+                    <div
+                        class="flex gap-4 items-start p-5 bg-white rounded-xl shadow-sm border border-gray-100"
+                    >
+                        <span
+                            class="flex-shrink-0 w-10 h-10 rounded-full bg-[#0E0C4F] text-white flex items-center justify-center font-bold text-sm"
+                            >1</span
+                        >
                         <div>
-                            <h4 class="font-bold text-[#0E0C4F]">Counselling</h4>
-                            <p class="text-sm text-gray-600 mt-1">Select the right country and university based on your budget and preferences with Doctor Destiny.</p>
+                            <h4 class="font-bold text-[#0E0C4F]">
+                                Counselling
+                            </h4>
+                            <p class="text-sm text-gray-600 mt-1">
+                                Select the right country and university based on
+                                your budget and preferences with Doctor Destiny.
+                            </p>
                         </div>
                     </div>
-                    <div class="flex gap-4 items-start p-5 bg-white rounded-xl shadow-sm border border-gray-100">
-                        <span class="flex-shrink-0 w-10 h-10 rounded-full bg-[#0E0C4F] text-white flex items-center justify-center font-bold text-sm">2</span>
+                    <div
+                        class="flex gap-4 items-start p-5 bg-white rounded-xl shadow-sm border border-gray-100"
+                    >
+                        <span
+                            class="flex-shrink-0 w-10 h-10 rounded-full bg-[#0E0C4F] text-white flex items-center justify-center font-bold text-sm"
+                            >2</span
+                        >
                         <div>
-                            <h4 class="font-bold text-[#0E0C4F]">Application</h4>
-                            <p class="text-sm text-gray-600 mt-1">Submission of documents (10th/12th marksheet, Passport copy, NEET scorecard).</p>
+                            <h4 class="font-bold text-[#0E0C4F]">
+                                Application
+                            </h4>
+                            <p class="text-sm text-gray-600 mt-1">
+                                Submission of documents (10th/12th marksheet,
+                                Passport copy, NEET scorecard).
+                            </p>
                         </div>
                     </div>
-                    <div class="flex gap-4 items-start p-5 bg-white rounded-xl shadow-sm border border-gray-100">
-                        <span class="flex-shrink-0 w-10 h-10 rounded-full bg-[#0E0C4F] text-white flex items-center justify-center font-bold text-sm">3</span>
+                    <div
+                        class="flex gap-4 items-start p-5 bg-white rounded-xl shadow-sm border border-gray-100"
+                    >
+                        <span
+                            class="flex-shrink-0 w-10 h-10 rounded-full bg-[#0E0C4F] text-white flex items-center justify-center font-bold text-sm"
+                            >3</span
+                        >
                         <div>
-                            <h4 class="font-bold text-[#0E0C4F]">Admission Letter</h4>
-                            <p class="text-sm text-gray-600 mt-1">Upon approval, the university issues a provisional admission letter.</p>
+                            <h4 class="font-bold text-[#0E0C4F]">
+                                Admission Letter
+                            </h4>
+                            <p class="text-sm text-gray-600 mt-1">
+                                Upon approval, the university issues a
+                                provisional admission letter.
+                            </p>
                         </div>
                     </div>
-                    <div class="flex gap-4 items-start p-5 bg-white rounded-xl shadow-sm border border-gray-100">
-                        <span class="flex-shrink-0 w-10 h-10 rounded-full bg-[#D5AD36] text-white flex items-center justify-center font-bold text-sm">4</span>
+                    <div
+                        class="flex gap-4 items-start p-5 bg-white rounded-xl shadow-sm border border-gray-100"
+                    >
+                        <span
+                            class="flex-shrink-0 w-10 h-10 rounded-full bg-[#D5AD36] text-white flex items-center justify-center font-bold text-sm"
+                            >4</span
+                        >
                         <div>
-                            <h4 class="font-bold text-[#0E0C4F]">Visa & Travel</h4>
-                            <p class="text-sm text-gray-600 mt-1">Visa processing, document translation (if required), and pre-departure formalities.</p>
+                            <h4 class="font-bold text-[#0E0C4F]">
+                                Visa & Travel
+                            </h4>
+                            <p class="text-sm text-gray-600 mt-1">
+                                Visa processing, document translation (if
+                                required), and pre-departure formalities.
+                            </p>
                         </div>
                     </div>
                 </div>
             </section>
-
         </CountryLayout>
 
         <Footer />

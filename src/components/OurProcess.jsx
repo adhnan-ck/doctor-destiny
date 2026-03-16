@@ -1,5 +1,5 @@
 import React from 'react';
-import mbbsImg from '../assets/mbbs.avif';
+import mbbsImg from '../assets/our-process-doctor.png';
 
 const OurProcess = () => {
     const processes = [
@@ -8,11 +8,7 @@ const OurProcess = () => {
             title: 'Consultation',
             description: 'Personalised guidance on course',
             icon: (
-                <svg className="w-12 h-12" viewBox="0 0 24 24" fill="none" stroke="#D5AD36" strokeWidth="2">
-                    <rect x="2" y="7" width="20" height="14" rx="2" />
-                    <path d="M16 3v4M8 3v4M2 11h20" />
-                    <path d="M8 15h.01M12 15h.01M16 15h.01" />
-                </svg>
+                <img src="https://static.wixstatic.com/media/cab221_c4db428721db40deb0362421e8f8ee34~mv2.png/v1/fill/w_70,h_70,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/cab221_c4db428721db40deb0362421e8f8ee34~mv2.png" alt="Student with books" className="w-full h-auto object-contain" />
             ),
             bgColor: 'bg-[#8AB4F8]'
         },
@@ -21,12 +17,7 @@ const OurProcess = () => {
             title: 'Application',
             description: 'Streamline your study abroad',
             icon: (
-                <svg className="w-12 h-12" viewBox="0 0 24 24" fill="none" stroke="#D5AD36" strokeWidth="2">
-                    <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z" />
-                    <polyline points="14 2 14 8 20 8" />
-                    <circle cx="12" cy="13" r="2" />
-                    <path d="M12 15v4" />
-                </svg>
+                <img src="https://static.wixstatic.com/media/cab221_3da8ba88345c43d7b934df3e267fe6db~mv2.png/v1/fill/w_68,h_68,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/resume.png" alt="Student with books" className="w-full h-auto object-contain" />
             ),
             bgColor: 'bg-[#0B3D91]'
         },
@@ -35,11 +26,7 @@ const OurProcess = () => {
             title: 'Arrival Care',
             description: 'Comprehensive support on arrival',
             icon: (
-                <svg className="w-12 h-12" viewBox="0 0 24 24" fill="none" stroke="#D5AD36" strokeWidth="2">
-                    <path d="M12 2L2 7l10 5 10-5-10-5z" />
-                    <path d="M2 17l10 5 10-5" />
-                    <path d="M2 12l10 5 10-5" />
-                </svg>
+                <img src="https://static.wixstatic.com/media/cab221_327be7879a7a4b2da381b13622f5a144~mv2.png/v1/fill/w_49,h_49,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/arrived.png" alt="Student with books" className="w-full h-auto object-contain" />
             ),
             bgColor: 'bg-[#8AB4F8]'
         }
@@ -104,21 +91,16 @@ const OurProcess = () => {
                             ))}
                         </div>
 
-                        {/* Student Image in Octagon Shape */}
-                        <div className="relative w-80 h-80 md:w-96 md:h-96">
-                            <div
-                                className="w-full h-full overflow-hidden"
-                                style={{
-                                    clipPath: 'polygon(30% 0%, 70% 0%, 100% 30%, 100% 70%, 70% 100%, 30% 100%, 0% 70%, 0% 30%)'
-                                }}
-                            >
-                                <img
-                                    src={mbbsImg.src}
-                                    alt="Student with books"
-                                    className="w-full h-full object-cover"
-                                />
-                            </div>
+                        {/* Student Image */}
+                        <div className="relative max-w-sm">
+
+                            <img
+                                src={mbbsImg.src}
+                                alt="Student with books"
+                                className="w-full h-auto object-contain"
+                            />
                         </div>
+
                     </div>
 
                 </div>

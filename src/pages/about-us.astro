@@ -5,6 +5,7 @@ import Footer from "../components/Footer.astro";
 import { Image } from "astro:assets";
 import mdImg from "../assets/MD.png";
 import founder2Img from "../assets/founder_2.jpeg";
+import doctorAboutImg from "../assets/doctor-image-aboutus.png";
 ---
 
 <html lang="en">
@@ -1139,9 +1140,10 @@ import founder2Img from "../assets/founder_2.jpeg";
 
                 <div class="vision-image-wrap">
                     <div class="vision-image-placeholder">
-                        <img
-                            src="https://static.wixstatic.com/media/8b6a5b_aa7219a24eb44df59d89402231fd60e9~mv2.jpg/v1/fill/w_487,h_545,fp_0.50_0.50,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/portrait-of-happy-and-smiling-hispanic-doctor-man-2023-11-27-05-18-43-utc_edited.jpg"
-                            alt="High Success Rate"
+                        <Image
+                            src={doctorAboutImg}
+                            alt="Doctor Vision"
+                            class="w-full h-full object-cover"
                         />
                     </div>
                 </div>

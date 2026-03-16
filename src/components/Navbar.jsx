@@ -52,6 +52,7 @@ const Navbar = () => {
             ],
         },
         { name: 'About Us', href: '/about-us' },
+        { name: 'Gallery', href: '/gallery' },
         { name: 'Contact Us', href: '/contact-us', isButton: true },
     ];
 
@@ -66,14 +67,14 @@ const Navbar = () => {
                 {/* Logo */}
                 <a href="/" className="flex items-center gap-3 group">
                     <img src={logo2.src} alt="Doctor Dreams Logo" className="h-12 w-auto group-hover:scale-105 transition-transform duration-300" />
-                    <span className={`font-trajan font-bold text-lg md:text-2xl tracking-widest transition-colors duration-300 ${scrolled ? 'text-[#0E0C4F]' : 'text-white'
+                    <span className={`font-trajan font-bold text-lg xl:text-2xl lg:text-xl md:text-2xl tracking-widest transition-colors duration-300 ${scrolled ? 'text-[#0E0C4F]' : 'text-white'
                         }`}>
                         DOCTOR DESTINY
                     </span>
                 </a>
 
                 {/* Desktop Menu */}
-                <div className="hidden lg:flex items-center gap-8 xl:gap-10">
+                <div className="hidden lg:flex items-center gap-6 xl:gap-8">
                     {navLinks.map((link) => (
                         <div key={link.name} className="relative group/nav">
                             {link.isButton ? (
